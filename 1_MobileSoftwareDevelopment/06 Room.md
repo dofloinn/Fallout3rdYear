@@ -1,5 +1,4 @@
 Android <mark style="background: #AD21D9;">ROOM</mark> is for Storing Permanent data
-
 ### <mark style="background: #AD21D9;">Annotations</mark>
 
 Annotations provide information about your program (classes, methods, fields) accessible to processing by <mark style="background: #AD21D9;">external tools</mark>.

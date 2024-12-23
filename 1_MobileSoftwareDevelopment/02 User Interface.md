@@ -465,4 +465,4 @@ For good graphics quality across devices, provide multiple versions of each bitm
 <mark style="background: #AD21D9;">Don't use device-dependent or density-dependent units:</mark>  
 - Actual Pixels (px)  
 - Actual Measurement (in, mm)  
-- Points - typography 1/72 inch (pt
+- Points - typography 1/72 inch (pt)
