@@ -36,3 +36,20 @@
 
 ![](https://i.imgur.com/pI1Zo5f.png)
 
+![](https://i.imgur.com/rjbAmRw.png)
+
+![](https://i.imgur.com/x71dLmN.png)
+
+![](https://i.imgur.com/ALbN8gy.png)
+
+![](https://i.imgur.com/nJmZ2ph.png)
+
+![](https://i.imgur.com/V7oLbzl.png)
+
+![](https://i.imgur.com/SfsVp2u.png)
+
+![](https://i.imgur.com/nPCyq62.png)
+
+![](https://i.imgur.com/I43OdfF.png)
+
+![](https://i.imgur.com/hKxs3dV.png)

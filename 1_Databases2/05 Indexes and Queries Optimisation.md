@@ -320,4 +320,3 @@ What is "Recheck condition" and why is it needed?
 If the bitmap gets too large we convert it to "lossy" style, in which we only remember which pages contain matching tuples instead of remembering each tuple individually (the index is no more by row but by page). When that happens, the table-visiting phase has to examine each tuple on the page and recheck the scan condition to see which tuples to return.  (Tom Lane)
 
 A bitmap index scan becomes lossy if ``work_mem`` is not big enough to contain a bitmap that contains one bit per table row. 
-
