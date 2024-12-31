@@ -21,3 +21,15 @@ Course Topics:
 - Transport Layer (Operational concepts: Services and protocols, transport addresses and connections, etc.)
 - Application Layer (Common networked applications)
 - The Berkeley Sockets API - The Socket Abstraction (Socket primitives, addressing, inter-process communications, iterative and concurrent applications etc.)
+
+<mark style="background: #FF5582A6;">Exam Topics (from Polina):</mark>
+no q6
+no operations state transition
+no protocol architecture
+no encapsulation
+no list of services by transport layer
+no byte ordering
+
+defo HTTP, topic 5 and 7
+connections, flow control, bytes, wireshark
+http req/responses - headers
