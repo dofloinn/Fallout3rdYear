@@ -1,6 +1,5 @@
 # <mark style="background: #BABD00;">02 Intro to Cloud Computing</mark>
 
-
 ### <mark style="background: #BABD00;">What is Cloud Computing?</mark>
 
 <mark style="background: #BABD00;">A customer-oriented definition:</mark>
@@ -44,7 +43,7 @@
 
 <mark style="background: #BABD00;">Dropbox:</mark>  
 - Online file storage  
-- Automatic synchronization across computers  
+- Automatic synchronisation across computers  
 - Sharing of files with other users  
 - Web access + mobile access  
 - Backup of data + restore (30 days)
@@ -88,8 +87,7 @@
 - potentially negates the need of having physical hardware at hand for doing so  
 - provides numerous Linux, Unix and Windows environments to work in  
 - provides variety of tools, services, SDKs and the like running on those OSs  
-- Usually requires specific knowledge to use APIs for creating and managing the virtual OSs in the cloud infrastructure  
-- therefore usually not user-friendly and simple to use
+- Usually requires specific knowledge to use APIs for creating and managing the virtual OSs in the cloud infrastructure, therefore usually not user-friendly and simple to use
 
 <mark style="background: #BABD00;">IaaS provider examples:</mark>
 - AWS
@@ -119,7 +117,7 @@ But where we do these tasks may change..
 
 <mark style="background: #BABD00;">Deployment</mark> happens in the cloud.
 
-The major players are:
+<mark style="background: #BABD00;">The major players are:</mark>
 1. Amazon 
 2. Microsoft Azure
 3. Google
@@ -159,7 +157,7 @@ Each has their own set of tools on offer.
 
 <mark style="background: #BABD00;">Multi-Tier Systems:</mark>
 - Database server on one host  
-- Web server and Application server on another host  (connected by a LAN)  
+- Web server and Application server on another host (connected by a LAN)  
 - (Thin) Clients downloaded as applets. Communicates with the application server.  
 
 ![](https://i.imgur.com/oggBGaO.png)
@@ -204,7 +202,7 @@ Typical configuration:
 Often use Internet infrastructure  
 
 <mark style="background: #BABD00;">Characteristics:</mark>  
-- Heterogeneous data sources that need to be synchronized in real time:  
+- Heterogeneous data sources that need to be synchronised in real time:  
 	- Video  
 	- Audio  
 	- Text  
@@ -214,7 +212,7 @@ Often use Internet infrastructure
 
 <mark style="background: #BABD00;">Examples:</mark>  
 - Tele-teaching tools  
-- Video- conferencing  
+- Video-conferencing  
 - Video and audio on demand
 
 #### <mark style="background: #BABD00;">Intranets:</mark>  
@@ -246,7 +244,7 @@ Often use Internet infrastructure
 
 <mark style="background: #BABD00;">Avionics control systems</mark>  - Flight management systems in aircraft  
 
-<mark style="background: #BABD00;">Automotive control systems</mark> - Mercedes S- Class cars are equipped with 50+ autonomous embedded processors  
+<mark style="background: #BABD00;">Automotive control systems</mark> - Mercedes S-Class cars are equipped with 50+ autonomous embedded processors  
 
 <mark style="background: #BABD00;">Connected through proprietary bus</mark> - like LANs  
 
@@ -256,18 +254,15 @@ Often use Internet infrastructure
 
 <mark style="background: #BABD00;">Tele Surgery</mark> - "Lindbergh Operation"
 
-
 ### <mark style="background: #BABD00;">Additional Notes:</mark>
 
-<mark style="background: #BABD00;">GSM</mark> - (Global System for Mobile Communications, originally Groupe SpécialMobile), is a standard developed by the European Telecommunications Standards Institute (ETSI) to describe the protocols  for second-generation (2G) digital cellular networks used by mobile phones, first deployed in Finland in July 1991.[2] As of 2014 it has become the de facto global standard for mobile communications - with over 90% market share, operating in over 219 countries and territories.[3]  
+<mark style="background: #BABD00;">GSM</mark> - (Global System for Mobile Communications, originally Groupe SpécialMobile), is a standard developed by the European Telecommunications Standards Institute (ETSI) to describe the protocols  for second-generation (2G) digital cellular networks used by mobile phones, first deployed in Finland in July 1991.[2] As of 2014 it has become the de-facto global standard for mobile communications - with over 90% market share, operating in over 219 countries and territories.[3]  
 
-<mark style="background: #BABD00;">UMTS</mark> - The Universal Mobile Telecommunications System (UMTS) is a third generation mobile  
-cellular system for networks based on the GSM standard.  
+<mark style="background: #BABD00;">UMTS</mark> - The Universal Mobile Telecommunications System (UMTS) is a third generation mobile cellular system for networks based on the GSM standard.  
 
 <mark style="background: #BABD00;">Multiplexing</mark> (sometimes contracted to muxing) is a method by which multiple analogue or digital signals are combined into one signal over a shared medium. The aim is to share an expensive resource.  
 
-<mark style="background: #BABD00;">The Lindbergh Operation</mark> was a complete tele-surgical operation carried out by a team of French  
-surgeons located in New York on a patient in Strasbourg, France (over a distance of several thousand miles) using telecommunications solutions based on high-speed services and sophisticated surgical robotics. The operation was performed successfully on September 7, 2001 by Professor Jacques Marescaux and his team from the IRCAD (Institute for Research into Cancer of the Digestive System). This was the first time in medical history that a technical solution proved capable of reducing the time delay inherent to long distance transmissions sufficiently to make this type of procedure possible. The name was derived from that of American aviator Charles Lindbergh, because he was the first person to fly solo across the Atlantic
+<mark style="background: #BABD00;">The Lindbergh Operation</mark> was a complete tele-surgical operation carried out by a team of French surgeons located in New York on a patient in Strasbourg, France (over a distance of several thousand miles) using telecommunications solutions based on high-speed services and sophisticated surgical robotics. The operation was performed successfully on September 7, 2001 by Professor Jacques Marescaux and his team from the IRCAD (Institute for Research into Cancer of the Digestive System). This was the first time in medical history that a technical solution proved capable of reducing the time delay inherent to long distance transmissions sufficiently to make this type of procedure possible. The name was derived from that of American aviator Charles Lindbergh, because he was the first person to fly solo across the Atlantic
 
 # <mark style="background: #BABD00;">04 Requirements of Distributed Computing</mark>
 
@@ -294,7 +289,7 @@ Cost effective for sharing expensive resources
 <mark style="background: #BABD00;">Security implications due to many users accessing the common resources</mark>  
 - How to control/restrict access? Resource manager components  
 - Resource manager controls access, provides naming scheme and controls concurrency  
-- Client-server v n-tier architecture (distributed objects)
+- Client-server vs n-tier architecture (distributed objects)
 
 ### <mark style="background: #BABD00;">Openness:</mark>
 
@@ -304,7 +299,7 @@ Well defined and documented interfaces of components need to be published.
 
 Allows other components know what services are available  
 
-System needs to adhere to recognized standards  
+System needs to adhere to recognised standards  
 
 <mark style="background: #BABD00;">Components achieve openness by communicating using well-defined interfaces:</mark>  
 - supports changing functional requirements as an organisation grows  
@@ -335,7 +330,7 @@ Components access and update shared resources (e.g. variables, databases, device
 
 ### <mark style="background: #BABD00;">Scalability:</mark>
 
-Adoption of distributed systems to  
+<mark style="background: #BABD00;">Adoption of distributed systems to:</mark>  
 - accommodate a growing load (e.g. more users)  
 - respond faster (this is the hard one)  
 
@@ -359,15 +354,14 @@ Fault tolerance is achieved by redundancy (replication)
 
 Non-functional requirements can be satisfied through the various forms of transparency within distributed systems.  
 
-Application developers and users should perceive distributed systems as  
+<mark style="background: #BABD00;">Application developers and users should perceive distributed systems as:</mark>  
 - One system  
 - A collection of co-operating components which should be hidden  
 - Efficient and cost-effective to construct and maintain (only possible if the complexity of distribution is hidden from the users)
 
 ### <mark style="background: #BABD00;">Dimensions of Transparency:</mark>
 
-Defined in the international standard on Open Distributed Processing (ODP):  
-“Distribution transparency is the property of hiding the properties  of distribution from end users”.
+Defined in the international standard on <mark style="background: #BABD00;">Open Distributed Processing (ODP)</mark>: “Distribution transparency is the property of hiding the properties  of distribution from end users”.
 
 Transparency in computing is discussed in terms of hiding complexity from the user.
 
@@ -377,7 +371,7 @@ Transparency in computing is discussed in terms of hiding complexity from the us
 - Enables local and remote components to be accessed using identical operations.  
 - Example: File system operations in NFS.  
 - Example: Navigation in the Web.  
-- Example: SQL Queries  
+- Example: SQL Queries.  
 
 It is critical in building distributed systems using heterogeneous computer architecture and programming languages.
 
@@ -434,7 +428,6 @@ A component can be relocated without users or clients noticing it (i.e. allows t
 
 <mark style="background: #BABD00;">Failure</mark> - Enables distributed system to conceal faults.
 
-
 # <mark style="background: #BABD00;">05 Load Balancing</mark>
 
 ### <mark style="background: #BABD00;">Load Balancing:</mark>
@@ -470,6 +463,7 @@ Often referred to as scaling-up or scaling down.
 Requires that you modify the hardware (expand or reduce its capacity and performance).  
 
 Or redeploy the solution using alternative hardware that has the appropriate capacity and performance.  
+
 Vertical scaling is often a disruptive process that requires making the system temporarily unavailable while it is being redeployed .  
 
 <mark style="background: #BABD00;">Not a common approach in the Cloud Industry!</mark>
@@ -506,7 +500,7 @@ Buffer is a memory space which stores the input data as it is received and passe
 
 <mark style="background: #BABD00;">Example:</mark>
 - Video or audio streaming  
-- When you download an audio or video file from the Internet, it may load the first 10% of it into a buffer and then begin to play. While the clip plays back, the computer continually downloads the  rest of the clip and stores it in the buffer. Because the clip is being played from the buffer, not  directly from the Internet, there is less of a chance that the audio or video will stall or skip when there is network congestion.  
+- When you download an audio or video file from the Internet, it may load the first 10% of it into a buffer and then begin to play. While the clip plays back, the computer continually downloads the rest of the clip and stores it in the buffer. Because the clip is being played from the buffer, not  directly from the Internet, there is less of a chance that the audio or video will stall or skip when there is network congestion.  
 - There are buffers for screens, printers, keyboards,  network connections, etc
 
 ### <mark style="background: #BABD00;">Caching:</mark>
@@ -546,11 +540,11 @@ The computer software gains access to more memory than is physically installed, 
 
 ### <mark style="background: #BABD00;">Virtual Machine:</mark>
 
-Typically a single Operating System runs on a computer at any one time  
+<mark style="background: #BABD00;">Typically a single Operating System runs on a computer at any one time:</mark>  
 - Single OS installed or  
 - Dual Boot where you choose the OS to load  
 
-A virtual machine (VM) is a "completely isolated guest operating system installation within a normal host operating system“.  
+A <mark style="background: #BABD00;">virtual machine (VM)</mark> is a "completely isolated guest operating system installation within a normal host operating system“.  
 
 The underlying Operating System is unaware of the virtual environment and runs as though it is in control of the computer  
 
@@ -581,9 +575,9 @@ The Java Virtual Machine allows Java code to be portable between various hardwar
 
 <mark style="background: #BABD00;">Desktop virtualisation</mark> is a technology which enables detachment of the user state, the Operating System (OS), and the applications from endpoint devices.
 
-Enables organisations to host and centrally manage desktops. Desktops run as virtual machines within the data centre and accessed over a network  
+Enables organisations to host and centrally manage desktops. Desktops run as virtual machines within the data centre and are accessed over a network  
 
-<mark style="background: #BABD00;">Desktop virtualization benefits:</mark>  
+<mark style="background: #BABD00;">Desktop virtualisation benefits:</mark>  
 - Flexibility of access due to enablement of thin clients  
 - Improved data security  
 - Simplified data backup and PC maintenance
@@ -614,9 +608,9 @@ Network virtualisation runs multiple virtual networks on a physical network.
 
 Using virtual infrastructure solutions enterprise IT managers can address challenges that include:  
 - <mark style="background: #BABD00;">Server Consolidation and Containment</mark> – Eliminating ‘server sprawl’ via deployment of systems as virtual machines (VMs) that can run safely and move transparently across shared hardware, and increase server utilisation rates from 5-15% to 60-80%.  
-- <mark style="background: #BABD00;">Test and Development Optimisation</mark> – Rapidly provisioning test and development servers by reusing pre-configured systems, enhancing developer collaboration and standardizing development environments.  
-- <mark style="background: #BABD00;">Business Continuity</mark> – Reducing the cost and complexity of business continuity (high availability and disaster recovery solutions) by encapsulating entire systems into single files that can be replicated and restored on any target server, thus minimizing downtime.  
-- <mark style="background: #BABD00;">Enterprise Desktop</mark> – Securing unmanaged PCs, workstations and laptops without compromising end user autonomy by layering a security policy in software around desktop virtual machines.
+- <mark style="background: #BABD00;">Test and Development Optimisation</mark> – Rapidly provisioning test and development servers by reusing pre-configured systems, enhancing developer collaboration and standardising development environments.  
+- <mark style="background: #BABD00;">Business Continuity</mark> – Reducing the cost and complexity of business continuity (high availability and disaster recovery solutions) by encapsulating entire systems into single files that can be replicated and restored on any target server, thus minimising downtime.  
+- <mark style="background: #BABD00;">Enterprise Desktop</mark> – Securing unmanaged PCs, workstations and laptops without compromising end-user autonomy by layering a security policy in software around desktop virtual machines.
 
 ### <mark style="background: #BABD00;">What is a Hypervisor?</mark>
 
@@ -624,7 +618,7 @@ Virtualisation is the addition of a software layer (the <mark style="background:
 
 ![](https://i.imgur.com/ZWIP5Uq.png)
 
-Has two components:  
+<mark style="background: #BABD00;">Has two components:</mark>  
 - Kernel  
 - Virtual Machine Monitor (VMM)
 
@@ -637,7 +631,7 @@ Has two components:
 <mark style="background: #BABD00;">Type 1 (or native, bare metal)</mark>  
 - Run directly on the host's hardware to control the hardware and to monitor guest operating systems. A guest operating system thus runs on another level above the hypervisor. (Hyper-V, VMWare ESXi Server , Xen etc)  
 - Typically the preferred approach because they can achieve higher virtualisation efficiency by dealing directly with the hardware.  
-- Type 1 hypervisors provide higher performance efficiency, availability, and security than type 2 hypervisors.  
+- Type 1 hypervisors provide higher performance efficiency, availability, and security than type 2 hypervisors.
 
 <mark style="background: #BABD00;">Type 2:</mark>  
 - hypervisors run on a host operating system that provides virtualisation services, such as I/O device support and memory management.  
@@ -688,7 +682,7 @@ Get the most out of your existing infrastructure.
 
 Transforming a <mark style="background: #BABD00;">Classic Data Centre (CDC)</mark> into a <mark style="background: #BABD00;">Virtualised Data Centre (VDC)</mark> requires virtualising the core elements of the data centre.
 
-Using a phased approach to a virtualised infrastructure enables smoother transition to virtualize core elements.
+Using a phased approach to a virtualised infrastructure enables smoother transition to virtualise core elements.
 
 ![](https://i.imgur.com/SWp1MUx.png)
 
@@ -697,9 +691,9 @@ Using a phased approach to a virtualised infrastructure enables smoother transit
 <mark style="background: #BABD00;">Compute Virtualisation:</mark> It is a technique of masking or abstracting the physical compute hardware and enabling multiple operating systems (OSs) to run concurrently on a single or clustered physical machine(s).
 
 Enables creation of multiple virtual machines (VMs), each running an OS and application  
-- VM is a logical entity that looks and behaves like physical machine  
-- Virtualisation layer resides between hardware and VMs -> Also known as hypervisor  
-- VMs are provided with standardized hardware resources
+- VM is a logical entity that looks and behaves like physical machine
+- Virtualisation layer resides between hardware and VMs -> Also known as hypervisor
+- VMs are provided with standardised hardware resources
 
 ![](https://i.imgur.com/lL4unw0.png)
 
@@ -707,7 +701,7 @@ Enables creation of multiple virtual machines (VMs), each running an OS and appl
 - Server consolidation  
 - Isolation  
 - Encapsulation  
-- Hardware independence  
+- Hardware independence
 - Reduced cost
 
 ### <mark style="background: #BABD00;">Resource Management:</mark>
@@ -744,7 +738,7 @@ Parameters that control the resources consumed by a child resource pool or a vir
 
 ### <mark style="background: #BABD00;">Optimising CPU Resources:</mark>
 
-Modern CPUs are equipped with multiple cores and hyper-threading:
+<mark style="background: #BABD00;">Modern CPUs are equipped with multiple cores and hyper-threading:</mark>
 - Multi-core processors have multiple processing units (cores) in a single CPU  
 - Hyper-threading makes a physical CPU appear as two or more logical CPUs  
 
@@ -752,7 +746,7 @@ Allocating a CPU resource efficiently and fairly is critical
 
 Hypervisor schedules virtual CPUs on the physical CPUs  
 
-Hypervisors support multi-core, hyper-threading, and CPU load-balancing features to optimize CPU resources
+Hypervisors support multi-core, hyper-threading, and CPU load-balancing features to optimise CPU resources
 
 ### <mark style="background: #BABD00;">Multi-core Processors:</mark>
 
@@ -796,7 +790,7 @@ VMs are stored as set of files on storage space available to hypervisor
 Size of virtual disk file represents storage space allocated to virtual disk  
 
 <mark style="background: #BABD00;">VMs remain unaware of:</mark>
-- Total space available to the hypervisor  
+- Total space available to the hypervisor
 - Underlying storage technologies
 
 ![](https://i.imgur.com/ESrjNhO.png)
@@ -805,7 +799,7 @@ Size of virtual disk file represents storage space allocated to virtual disk
 
 Hypervisor performs virtual provisioning to create virtual disks for VMs: Virtual machine sees full logical disk size at all times  
 
-Hypervisor allocates storage space to the virtual disk only when VM requires storage space: Eliminates the need to overprovision virtual disks
+Hypervisor allocates storage space to the virtual disk only when VM requires storage space, which eliminates the need to over-provision virtual disks
 
 ![](https://i.imgur.com/cFT9boD.png)
 
@@ -825,7 +819,7 @@ Allows communication between nodes in a virtual network without routing of frame
 
 Enforces routing for communication between virtual networks  
 
-Restricts management traffic, including ‘Network Broadcast’, from propagating to other virtual network  
+Restricts management traffic, including ‘Network Broadcast’, from propagating to other virtual network
 
 Enables functional grouping of nodes in a virtual network
 
@@ -835,7 +829,13 @@ Involves virtualising physical and VM networks.
 
 #### <mark style="background: #BABD00;">Physical Network:</mark>
 
-Consists of following physical components: Network adapters, switches, routers, bridges, repeaters, and hubs  
+<mark style="background: #BABD00;">Consists of following physical components:</mark> 
+- Network adapters, 
+- switches, 
+- routers, 
+- bridges, 
+- repeaters, 
+- hubs  
 
 <mark style="background: #BABD00;">Provides connectivity:</mark>  
 - Among physical servers running hypervisor  
@@ -865,8 +865,9 @@ Consists of following physical components: Network adapters, switches, routers, 
 
 <mark style="background: #BABD00;">Desktop Virtualisation:</mark> Technology which enables detachment of the user state, the Operating System (OS), and the applications from endpoint devices.
 
-Enables organisations to host and centrally manage desktops:
-- Desktops run as virtual machines within the VDC, They may be accessed over LAN/WAN  
+<mark style="background: #BABD00;">Enables organisations to host and centrally manage desktops:</mark>
+- Desktops run as virtual machines within the VDC, 
+- They may be accessed over LAN/WAN  ,
 - Endpoint devices may be thin clients or PCs
 
 ![](https://i.imgur.com/w7zwbP4.png)
@@ -887,7 +888,7 @@ Enables organisations to host and centrally manage desktops:
 
 <mark style="background: #BABD00;">Application Virtualisation:</mark>  It is the technique of presenting an application to an end user without any installation, integration, or dependencies on the underlying computing platform
 
-Allows application to be delivered in an isolated environment
+<mark style="background: #BABD00;">Allows application to be delivered in an isolated environment:</mark>
 - Aggregates Operating System (OS) resources and the application into a virtualised container  
 - Ensures integrity of Operating System (OS) and applications  
 - Avoids conflicts between different applications or different versions of the same application
@@ -920,9 +921,11 @@ Allows application to be delivered in an isolated environment
 
 Cloud has changed the economics of IT  
 
-Cloud enables to move from a CAPEX to an OPEX model  
+Cloud enables movement from a CAPEX to an OPEX model  
 
-There are a variety of costs and expenses that companies have to pay to continue running their businesses. The most common are capital expenditures (<mark style="background: #BABD00;">CapEx</mark>) and operating expenses (<mark style="background: #BABD00;">OpEx</mark>). Capital expenditures are major purchases that a company makes, which are used over the long term. Operating expenses, on the other hand, are the day-to-day expenses that a company incurs to keep its business running.
+There are a variety of costs and expenses that companies have to pay to continue running their businesses. The most common are capital expenditures (<mark style="background: #BABD00;">CapEx</mark>) and operating expenses (<mark style="background: #BABD00;">OpEx</mark>). 
+
+Capital expenditures are major purchases that a company makes, which are used over the long term. Operating expenses, on the other hand, are the day-to-day expenses that a company incurs to keep its business running.
 
 <mark style="background: #BABD00;">Cloud provides the following key cost savings:</mark>  
 - Infrastructure cost  
@@ -946,8 +949,8 @@ There are a variety of costs and expenses that companies have to pay to continue
 ### <mark style="background: #BABD00;">Cloud Challenges – Provider’s Perspective:</mark>
 
 <mark style="background: #BABD00;">Service warranty and service cost:</mark>  
-- Resources must be kept ready to meet unpredictable demand  
-- Hefty penalty, if SLAs are not fulfilled  
+- Resources must be kept ready to meet unpredictable demand
+- Hefty penalty, if SLAs are not fulfilled
 
 <mark style="background: #BABD00;">Huge numbers of software to manage:</mark>  
 - Huge number of applications and platform software to purchase  
@@ -972,7 +975,7 @@ Data coming in is either stored in memory for quick access (non-permanent storag
 
 ### <mark style="background: #BABD00;">Data Storage Types:</mark> 
 
-Single disk drive (self explanatory)  
+<mark style="background: #BABD00;">Single disk drive</mark> (self explanatory)  
 
 <mark style="background: #BABD00;">Volume:</mark> a “logical” disk drive. A concatenation of drives. When one fills up, it goes to the next one. No RAID, no striping. To the OS, a logical volume looks like one disk drive.  
 
@@ -980,7 +983,7 @@ Single disk drive (self explanatory)
 
 <mark style="background: #BABD00;">SCSI:</mark> SCSI stands for Small Computer System Interface. It is a means of attaching additional storage to a computer. For example, a typical RAID Controller is a SCSI device that allows connection to an external storage enclosure with multiple drives.  
 
-<mark style="background: #BABD00;">ISCSI:</mark> Internet/SCSI protocol. Another approach to offering storage on a network. Rather then using file protocols to communicate across a TCP/IP network, native SCSI commands are “encapsulated” in TCP/IP packets. 
+<mark style="background: #BABD00;">ISCSI:</mark> Internet/SCSI protocol. Another approach to offering storage on a network. Rather than using file protocols to communicate across a TCP/IP network, native SCSI commands are “encapsulated” in TCP/IP packets. 
 
 <mark style="background: #BABD00;">NAS:</mark> Network Attached Storage. Rather than simply attaching storage to one machine, it is attached to the computer network. Multiple machines can now access the storage. A file protocol must be used to communicate across the network. 
 
@@ -1049,7 +1052,7 @@ Direct Attached Storage -RAID controller is internal to the computer system, and
 
 Direct Attached Storage (DAS)  
 
-Storage is captive ‘behind’ the server  
+Storage is captive ‘behind’ the server.  
 
 <mark style="background: #BABD00;">Server CPU must handle user I/O requests, but also:</mark>  
 - User-database inquiries  
@@ -1059,7 +1062,7 @@ Storage is captive ‘behind’ the server
 
 Data access is file system and platform dependent  
 
-Costly to scale; complex to manage
+Costly to scale and complex to manage
 
 ![](https://i.imgur.com/Utvgob9.png)
 
@@ -1128,7 +1131,7 @@ SANs may span multiple sites..
 
 <mark style="background: #BABD00;">Consolidation:</mark> 
 - Replacement of multiple independent storage devices by fewer devices that support capacity sharing - disk and tape pooling.  
-- SANs provide the ultimate in scalability - software can allow multiple SAN devices to appear as a single pool of storage accessible to all processors on the SAN.  
+- SANs provide the ultimate scalability - software can allow multiple SAN devices to appear as a single pool of storage accessible to all processors on the SAN.  
 - Storage on a SAN can be managed from a single point of control. Controls over which hosts can see which storage (called zoning and LUN masking) can be implemented.
 
 <mark style="background: #BABD00;">Protection:</mark>  
@@ -1189,7 +1192,6 @@ NAS will generally cost more than DAS (because of its built-in file sharing inte
 ![](https://i.imgur.com/EMKCax4.png)
 
 # <mark style="background: #BABD00;">09 Cloud Migration Considerations:</mark>
-
 
 <mark style="background: #BABD00;">Upon completion of this lesson, you should be able to:</mark>  
 - Discuss the considerations for migration to Cloud  
@@ -1306,7 +1308,7 @@ Requires cost consideration of the following elements:
 
 ### <mark style="background: #BABD00;">Security and Compliance Assessment:</mark>
 
-Involves security advisor early in the process  
+Involves security advisor early in the process
 
 <mark style="background: #BABD00;">Enables organisations to:</mark>  
 - Identify risk tolerance and security threats for an application  
@@ -1342,7 +1344,7 @@ Goal of this phase is to verify that an application runs as expected in the Clou
 
 <mark style="background: #BABD00;">Proof of Concept enables organisations to:</mark>  
 - Explore the capabilities of the Cloud  
-- Explore the different business continuity and disaster recovery options offered by the Cloud vendor  
+- Explore the different business continuity and disaster recovery options offered by the Cloud vendor
 - Estimate the effort required to roll out the application  
 - Identify applications that can be immediately moved after proof of concept
 
@@ -1390,12 +1392,13 @@ Relinquish idle resources
 
 ### <mark style="background: #BABD00;">RAID Techniques:</mark>
 
-<mark style="background: #BABD00;">RAID:</mark> It is a technique that combines multiple disk drives into a logical unit (RAID set) and provides protection, performance, or both.
+<mark style="background: #BABD00;">RAID:</mark> Redundant Arrays of Independent Disks. It is a technique that combines multiple disk drives into a logical unit (RAID set) and provides protection, performance, or both.
 
 Due to mechanical components in a disk drive it offers limited performance  
 
 An individual drive has a certain life expectancy and is measured in MTBF (Mean Time Between Failures):  
-- For example: If the MTBF of a drive is 750,000 hours, and there are 1000 drives in the array, then the MTBF of the array is 750 hours (750,000/1000)  
+
+For example: If the MTBF of a drive is 750,000 hours, and there are 1000 drives in the array, then the MTBF of the array is 750 hours (750,000/1000)  
 
 RAID was introduced to mitigate these problems
 
@@ -1420,7 +1423,7 @@ Uses a specialised hardware controller installed either on a host or on an array
 
 ### <mark style="background: #BABD00;">RAID Techniques:</mark>
 
-<mark style="background: #BABD00;">Striping:</mark>  Striping is a technique which offers the best performance of any RAID configuration. In a striped array, data is interleaved across all the drives in the array.  
+<mark style="background: #BABD00;">Striping:</mark> Striping is a technique which offers the best performance of any RAID configuration. In a striped array, data is interleaved across all the drives in the array.  
 
 <mark style="background: #BABD00;">Mirroring:</mark> whatever you write to one drive, gets written simultaneously to another. Thus, you always have an exact duplicate of your data on the second drive.  
 
@@ -1511,7 +1514,7 @@ Also called Nested RAID
 ![](https://i.imgur.com/RAsCHIW.png)
 
 <mark style="background: #BABD00;">RAID 4:</mark>  
-- very similar to RAID 3. RAID 4 uses block level striping with parity disk. (Block> Byte)  
+- very similar to RAID 3. RAID 4 uses block level striping with parity disk. (Block > Byte)  
 - Pros? advantage of block level change the stripe size to suit your application needs.
 
 ![](https://i.imgur.com/FCq7YgC.png)
@@ -1601,7 +1604,7 @@ A mark-up language is a language with annotations.
 
 ### <mark style="background: #BABD00;">Creating a Snapshot:</mark>
 
-Two types of checkpoints:
+<mark style="background: #BABD00;">Two types of checkpoints:</mark>
 - Production Checkpoints
 - Standard Checkpoints
 
@@ -1635,7 +1638,7 @@ Two types of checkpoints
 - uses Volume Shadow Copy Service or File System Freeze on a Linux virtual machine to create a data-consistent backup of the virtual machine. No snapshot of the virtual machine memory state is taken. 
 
 <mark style="background: #BABD00;">Standard Checkpoints:</mark>
-- Creates application-consistent checkpoints that capture the current state of the applications.  
+- Creates application-consistent checkpoints that capture the current state of the applications. 
 - Takes a snapshot of the virtual machine and virtual machine memory state at the time the checkpoint is initiated.  
 - A snapshot is not a full backup and can cause data consistency issues with systems that replicate data between different nodes such as Active Directory.  
 - Hyper-V only offered standard checkpoints (formerly called snapshots) prior to Windows 10.
@@ -1653,7 +1656,7 @@ If the data set is large, it can be difficult to back up all of it at one time
 - the line-of-business applications that are being backed up,  
 - the storage management hardware and software.
 
-Volume Shadow Copy Service (VSS) facilitates the conversation between these components to allow them to work better together.  
+<mark style="background: #BABD00;">Volume Shadow Copy Service (VSS)</mark> facilitates the conversation between these components to allow them to work better together.  
 
 When all the components support VSS, you can use them to back up your application data without taking the applications offline.  
 
@@ -1667,23 +1670,23 @@ VSS coordinates the actions that are required to create a consistent shadow copy
 
 ### <mark style="background: #BABD00;">How are snapshots stored?</mark>
 
-When you take a snapshot of a running VM, Hyper-V briefly pauses the VM to create a new automatic virtual hard disk (AVHD) which is <mark style="background: #BABD00;">essentially a differencing disk</mark>, attaches it to the VM to store changes to the VM data, saves the processor state into a file (.bin), then resumes the VM.  
+When you take a snapshot of a running VM, Hyper-V briefly pauses the VM to create a new <mark style="background: #BABD00;">automatic virtual hard disk (AVHD)</mark> which is <mark style="background: #BABD00;">essentially a differencing disk</mark>, attaches it to the VM to store changes to the VM data, saves the processor state into a file (.bin), then resumes the VM.  
 
 Hyper-V also makes a copy of the VM configuration file, and saves the contents of the VM memory and processor state.  
 
 Snapshots can also be created when a VM is turned-off, in which case Hyper-V does not need to capture VM memory or processor state data.
 
-Snapshot data files are stored as .avhd files (with Hyper-V).  
+Snapshot data files are stored as ``.avhd`` files (with Hyper-V).  
 
 Taking multiple snapshots can quickly consume storage space!  
 
 Files usually are located in the same folder (or a sub folder) as the virtual hard disk.  
 
-Do not delete .avhd files directly from the storage location. Instead, use Hyper-V Manager to select the virtual machine, and then delete the snapshots from the snapshot tree.
+Do not delete ``.avhd`` files directly from the storage location. Instead, use Hyper-V Manager to select the virtual machine, and then delete the snapshots from the snapshot tree.
 
 ### <mark style="background: #BABD00;">Virtual Disk File Formats:</mark>
 
-<mark style="background: #BABD00;">VMDK:</mark> An open format developed by VMWare.  Most common format (used by Oracle VirtualBox)
+<mark style="background: #BABD00;">VMDK:</mark> An open format developed by VMWare. Most common format (used by Oracle VirtualBox)
 
 <mark style="background: #BABD00;">VHD:</mark> A native format from Microsoft (Hyper-V and Microsoft Virtual PC)
 
@@ -1711,13 +1714,13 @@ Do not delete .avhd files directly from the storage location. Instead, use Hyper
 
 ### <mark style="background: #BABD00;">Snapshot considerations:</mark>
 
-Taking a snapshot (also known as checkpoint) reduces the performance of the virtual machine while the snapshot is created. You should not use these snapshots on virtual machines that provide  
-services in a production environment.  
-[Microsoft Learning Link](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/best-practices-analyzer/avoid-using-checkpoints-on-a-virtual-machine-server-workload-production)  
+Taking a snapshot (also known as checkpoint) reduces the performance of the virtual machine while the snapshot is created. You should not use these snapshots on virtual machines that provide services in a production environment.
+
+[Microsoft Learning Link](https://learn.microsoft.com/en-us/windows-server/virtualisation/hyper-v/best-practices-analyzer/avoid-using-checkpoints-on-a-virtual-machine-server-workload-production)  
 
 MS do not recommend using snapshots on virtual machines that are configured with fixed virtual hard disks because they reduce the performance benefits that are otherwise gained by using fixed virtual hard disks. (Why?)
 
-[Link 1 - Winsows 2012](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn818483(v=ws.11) "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn818483(v=ws.11)")
+[Link 1 - Windows 2012](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn818483(v=ws.11) "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn818483(v=ws.11)")
 
 [Link2 - Fixed vs dynamic disks](https://learn.microsoft.com/en-us/answers/questions/560255/fixed-vs-dynamic-disks "https://learn.microsoft.com/en-us/answers/questions/560255/fixed-vs-dynamic-disks")
 
@@ -1785,7 +1788,7 @@ Takes some time, but you can make an importable copy of many virtual machines at
 
 <mark style="background: #BABD00;">Use PowerShell and it’s support of WMI to administer Hyper-V. So, a script could automate:</mark>  
 - Shutting down the virtual machine  
-- Exporting the virtual machine and/or Copy the .VHD files  
+- Exporting the virtual machine and/or Copy the ``.VHD`` files  
 - Starting the virtual machine  
 
 Or treat it as if it were a physical server – complete with backup agents installed into it, and using some enterprise class backup and archiving solution. It all depends upon the purpose of the server, the business applications and/or data housed therein, the ease with which you want to be able to recreate the server, etc. Altaro, VEEAM, etc.
@@ -1831,9 +1834,9 @@ This guarantees that the software will always run the same, regardless of the en
 ### <mark style="background: #BABD00;">Docker containers</mark>
 
 <mark style="background: #BABD00;">Lightweight:</mark>
-- Containers running on one machine all share the same OS kernel  
-- They start instantly and make more efficient use of RAM  
-- Images are constructed from layered file systems  
+- Containers running on one machine all share the same OS kernel 
+- They start instantly and make more efficient use of RAM
+- Images are constructed from layered file systems
 - They can share common files, making disk usage and image downloads much more efficient
 
 <mark style="background: #BABD00;">Open:</mark>
@@ -1849,7 +1852,7 @@ Containers have similar resource isolation and allocation benefits as VMs but a 
 
 <mark style="background: #BABD00;">Docker Container:</mark>
 - It includes the application and all of its dependencies, but share the kernel with other containers.  
-- They run as an isolated process in userspace on the host operating system.  
+- They run as an isolated process in user-space on the host operating system.  
 - Docker containers run on any computer, on any infrastructure and in any cloud
 
 ![](https://i.imgur.com/Avz94PV.png)
@@ -1883,7 +1886,7 @@ Containers have similar resource isolation and allocation benefits as VMs but a 
 - With Docker, you can easily take copies of your live environment and run on any new endpoint running Docker.
 
 <mark style="background: #BABD00;">Empower Developer Creativity:</mark>
-- The isolation capabilities of Docker containers free developers from the worries of using “approved” language stacks and tooling  
+- The isolation capabilities of Docker containers free developers from the worries of using “approved” language stacks and tooling
 - Developers can use the best language and tools for their application service without worrying about causing conflict issues
 
 <mark style="background: #BABD00;">Eliminate Environment Inconsistencies:</mark>
@@ -1932,9 +1935,9 @@ After spending a few hours troubleshooting alongside the QA engineer, you discov
 - You can create Docker images from a running container. For example, one could launch a container, install a bunch of software packages using a package manager like APT or yum, and then commit those changes to a new Docker image.
 
 <mark style="background: #BABD00;">Solution in Example:</mark>
-- First, define a Docker image for launching a container for running the REST endpoint  
-- Use this to test our code on a laptop, and the QA engineer can use this to test the code in Google Compute Engine/AWS EC2/Azure VM.  
-- The REST endpoints are going to be developed using Ruby and the Sinatra framework, so these will need to be installed in the image  
+- First, define a Docker image for launching a container for running the REST endpoint
+- Use this to test our code on a laptop, and the QA engineer can use this to test the code in Google Compute Engine/AWS EC2/Azure VM.
+- The REST endpoints are going to be developed using Ruby and the Sinatra framework, so these will need to be installed in the image
 - The back end will use Google Firestore/Amazon DynamoDB/Azure CosmosDB
 
 ![](https://i.imgur.com/rjSx09H.png)
@@ -1947,21 +1950,21 @@ After spending a few hours troubleshooting alongside the QA engineer, you discov
 
 <mark style="background: #BABD00;">NIST:</mark> National Institute of Standards and Technology (USA)
 
-<mark style="background: #BABD00;">Cloud computing</mark> is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.  
+<mark style="background: #BABD00;">Cloud computing</mark> is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.
 
-This cloud model is composed of five essential characteristics, three service models, and four deployment  models.  
+This cloud model is composed of five essential characteristics, three service models, and four deployment models.
 
 #### <mark style="background: #BABD00;">Essential Characteristics:</mark>  
 
-<mark style="background: #BABD00;">On-demand self-service.</mark> A consumer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human interaction with each service provider.  
+<mark style="background: #BABD00;">On-demand self-service:</mark> A consumer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human interaction with each service provider.  
 
-<mark style="background: #BABD00;">Broad network access.</mark> Capabilities are available over the network and accessed through standard  mechanisms that promote use by heterogeneous thin or thick client platforms (e.g., mobile phones, tablets, laptops, and workstations).  
+<mark style="background: #BABD00;">Broad network access:</mark> Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g., mobile phones, tablets, laptops, and workstations).  
 
-<mark style="background: #BABD00;">Resource pooling.</mark> The provider’s computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. There is a sense of location independence in that the customer generally has no control or knowledge over the exact location of the provided resources but may be able to specify location at a higher level of abstraction (e.g., country, state, or datacenter). Examples of resources include storage, processing, memory, and network bandwidth.  
+<mark style="background: #BABD00;">Resource pooling:</mark> The provider’s computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. There is a sense of location independence in that the customer generally has no control or knowledge over the exact location of the provided resources but may be able to specify location at a higher level of abstraction (e.g., country, state, or datacentre). Examples of resources include storage, processing, memory, and network bandwidth.  
 
-<mark style="background: #BABD00;">Rapid elasticity.</mark> Capabilities can be elastically provisioned and released, in some cases automatically, to scale rapidly outward and inward commensurate with demand. To the consumer, the capabilities available for provisioning often appear to be unlimited and can be appropriated in any quantity at any time.  
+<mark style="background: #BABD00;">Rapid elasticity:</mark> Capabilities can be elastically provisioned and released, in some cases automatically, to scale rapidly outward and inward commensurate with demand. To the consumer, the capabilities available for provisioning often appear to be unlimited and can be appropriated in any quantity at any time.  
 
-<mark style="background: #BABD00;">Measured service.</mark> Cloud systems automatically control and optimise resource use by leveraging a metering capability<sup>1</sup> at some level of abstraction appropriate to the type of service (e.g., storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and consumer of the utilized service.  
+<mark style="background: #BABD00;">Measured service:</mark> Cloud systems automatically control and optimise resource use by leveraging a metering capability<sup>1</sup> at some level of abstraction appropriate to the type of service (e.g., storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and consumer of the utilised service.  
 
 #### <mark style="background: #BABD00;">Service Models:</mark>  
 
@@ -1973,13 +1976,13 @@ This cloud model is composed of five essential characteristics, three service mo
 
 #### <mark style="background: #BABD00;">Deployment Models:</mark>  
 
-<mark style="background: #BABD00;">Private cloud.</mark> The cloud infrastructure is provisioned for exclusive use by a single organisation comprising multiple consumers (e.g., business units). It may be owned, managed, and operated by the organisation, a third party, or some combination of them, and it may exist on or off premises.
+<mark style="background: #BABD00;">Private cloud:</mark> The cloud infrastructure is provisioned for exclusive use by a single organisation comprising multiple consumers (e.g., business units). It may be owned, managed, and operated by the organisation, a third party, or some combination of them, and it may exist on or off premises.
 
-<mark style="background: #BABD00;">Community cloud.</mark> The cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organisations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be owned, managed, and operated by one or more of the organisations in the community, a third party, or some combination of them, and it may exist on or off premises.  
+<mark style="background: #BABD00;">Community cloud:</mark> The cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organisations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be owned, managed, and operated by one or more of the organisations in the community, a third party, or some combination of them, and it may exist on or off premises.  
 
-<mark style="background: #BABD00;">Public cloud.</mark> The cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organisation, or some combination of them. It exists on the premises of the cloud provider.  
+<mark style="background: #BABD00;">Public cloud:</mark> The cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organisation, or some combination of them. It exists on the premises of the cloud provider.  
 
-<mark style="background: #BABD00;">Hybrid cloud.</mark> The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds).
+<mark style="background: #BABD00;">Hybrid cloud:</mark> The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardised or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds).
 
 <mark style="background: #BABD00;">Footnotes:</mark>
 1. Typically this is done on a pay-per-use or charge-per-use basis.  
@@ -2009,11 +2012,11 @@ Although the benefits of using a CDN vary depending on the size and needs of an 
 
 1. <mark style="background: #BABD00;">Improving website load times</mark> - By distributing content closer to website visitors by using a nearby CDN server (among other optimisations), visitors experience faster page loading times. As visitors are more inclined to click away from a slow-loading site, a CDN can reduce bounce rates and increase the amount of time that people spend on the site. In other words, a faster a website means more visitors will stay and stick around longer.
 
-2. <mark style="background: #BABD00;">Reducing bandwidth costs</mark> - Bandwidth consumption costs for website hosting is a primary expense for websites. Through caching and other optimizations, CDNs are able to reduce the amount of data an origin server must provide, thus reducing hosting costs for website owners.
+2. <mark style="background: #BABD00;">Reducing bandwidth costs</mark> - Bandwidth consumption costs for website hosting is a primary expense for websites. Through caching and other optimisations, CDNs are able to reduce the amount of data an origin server must provide, thus reducing hosting costs for website owners.
 
 3. <mark style="background: #BABD00;">Increasing content availability and redundancy</mark> - Large amounts of traffic or hardware failures can interrupt normal website function. Thanks to their distributed nature, a CDN can handle more traffic and withstand hardware failure better than many origin servers.
 
-4. <mark style="background: #BABD00;">Improving website security</mark> - A CDN may improve security by providing [DDoS mitigation](https://www.cloudflare.com/learning/ddos/ddos-mitigation/), improvements to security certificates, and other optimizations.
+4. <mark style="background: #BABD00;">Improving website security</mark> - A CDN may improve security by providing [DDoS mitigation](https://www.cloudflare.com/learning/ddos/ddos-mitigation/), improvements to security certificates, and other optimisations.
 
 #### <mark style="background: #BABD00;">How does a CDN work?</mark>
 
@@ -2028,10 +2031,10 @@ Beyond placement of servers in IXPs, a CDN makes a number of optimisations on st
 #### <mark style="background: #BABD00;">Latency - How does a CDN improve website load times?</mark>
 
 When it comes to websites loading content, users drop off quickly as a site slows down. CDN services can help to reduce load times in the following ways:
-- The globally distributed nature of a CDN means reduce distance between users and website resources. Instead of having to connect to wherever a website’s [origin server](https://www.cloudflare.com/learning/cdn/glossary/origin-server/) may live, a CDN lets users connect to a geographically closer [data centre](https://www.cloudflare.com/learning/cdn/glossary/internet-exchange-point-ixp/). Less travel time means faster service.
+- The globally distributed nature of a CDN means reduced distance between users and website resources. Instead of having to connect to wherever a website’s [origin server](https://www.cloudflare.com/learning/cdn/glossary/origin-server/) may live, a CDN lets users connect to a geographically closer [data centre](https://www.cloudflare.com/learning/cdn/glossary/internet-exchange-point-ixp/). Less travel time means faster service.
 - Hardware and software optimisations such as efficient load balancing and solid-state hard drives can help data reach the user faster.
 - CDNs can reduce the amount of data that’s transferred by reducing file sizes using tactics such as [minification](https://www.cloudflare.com/learning/performance/why-minify-javascript-code/) and file compression. Smaller file sizes mean quicker load times.
-- CDNs can also speed up sites which use [TLS](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/)/[SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/) certificates by optimizing connection reuse and enabling TLS false start.
+- CDNs can also speed up sites which use [TLS](https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/)/[SSL](https://www.cloudflare.com/learning/ssl/what-is-ssl/) certificates by optimising connection reuse and enabling TLS false start.
 
 [Explore all the ways a CDN helps websites load faster](https://www.cloudflare.com/learning/cdn/performance/)
 
@@ -2048,10 +2051,6 @@ Uptime is a critical component for anyone with an Internet property. Hardware fa
 #### <mark style="background: #BABD00;">Data security - How does a CDN protect data?</mark>
 
 Information security is an integral part of a CDN. a CDN can keep a site secured with fresh [TLS/SSL certificates](https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/) which will ensure a high standard of authentication, [encryption](https://www.cloudflare.com/learning/ssl/what-is-encryption/), and integrity. Investigate the security concerns surrounding CDNs, and explore what can be done to securely deliver content. [Learn about CDN SSL/TLS security](https://www.cloudflare.com/learning/cdn/cdn-ssl-tls-security/)
-
-#### <mark style="background: #BABD00;">Bandwidth expense - How does a CDN reduce bandwidth costs?</mark>
-
-Every time an origin server responds to a request, bandwidth is consumed. See how a CDN, like the [Cloudflare CDN](https://www.cloudflare.com/application-services/products/cdn/), cuts down on origin requests and [reduces bandwidth costs](https://www.cloudflare.com/learning/cdn/how-cdns-reduce-bandwidth-cost/).
 
 ### <mark style="background: #BABD00;">Serverless Computing:</mark>
 
@@ -2077,11 +2076,15 @@ Application development is generally split into two realms: the frontend and the
 
 ![](https://i.imgur.com/yZlc8Zm.png)
 
-For example, let’s imagine a website that sells concert tickets. When a user types a website address into the browser window, the browser sends a request to the backend server, which responds with the website data. The user will then see the frontend of the website, which can include content such as text, images, and form fields for the user to fill out. The user can then interact with one of the form fields on the frontend to search for their favourite musical act. When the user clicks on ‘submit’, this will trigger another request to the backend. The backend code checks its database to see if a performer with this name exists, and if so, when they will be playing next, and how many tickets are available. The backend will then pass that data back to the frontend, and the frontend will display the results in a way that makes sense to the user. Similarly, when the user creates an account and enters financial information to buy the tickets, another back-and-forth communication between the frontend and backend will occur.
+For example, let’s imagine a website that sells concert tickets. When a user types a website address into the browser window, the browser sends a request to the backend server, which responds with the website data. The user will then see the frontend of the website, which can include content such as text, images, and form fields for the user to fill out. The user can then interact with one of the form fields on the frontend to search for their favourite musical act. 
+
+When the user clicks on ‘submit’, this will trigger another request to the backend. The backend code checks its database to see if a performer with this name exists, and if so, when they will be playing next, and how many tickets are available. The backend will then pass that data back to the frontend, and the frontend will display the results in a way that makes sense to the user. Similarly, when the user creates an account and enters financial information to buy the tickets, another back-and-forth communication between the frontend and backend will occur.
 
 #### <mark style="background: #BABD00;">What kind of backend services can serverless computing provide?</mark>
 
-Most serverless providers offer database and storage services to their customers, and many also have [Function-as-a-Service (FaaS)](https://www.cloudflare.com/learning/serverless/glossary/function-as-a-service-faas/) platforms, like [Cloudflare Workers](https://www.cloudflare.com/developer-platform/workers/). FaaS allows developers to execute small pieces of code on the [network edge](https://www.cloudflare.com/learning/serverless/glossary/what-is-edge-computing/). With FaaS, developers can build a modular architecture, making a codebase that is more scalable without having to spend resources on maintaining the underlying backend. [Learn more about FaaS >>](https://www.cloudflare.com/learning/serverless/glossary/function-as-a-service-faas/)
+Most serverless providers offer database and storage services to their customers, and many also have [Function-as-a-Service (FaaS)](https://www.cloudflare.com/learning/serverless/glossary/function-as-a-service-faas/) platforms, like [Cloudflare Workers](https://www.cloudflare.com/developer-platform/workers/). FaaS allows developers to execute small pieces of code on the [network edge](https://www.cloudflare.com/learning/serverless/glossary/what-is-edge-computing/). 
+
+With FaaS, developers can build a modular architecture, making a codebase that is more scalable without having to spend resources on maintaining the underlying backend. [Learn more about FaaS >>](https://www.cloudflare.com/learning/serverless/glossary/function-as-a-service-faas/)
 
 #### <mark style="background: #BABD00;">What are the advantages of serverless computing?</mark>
 
@@ -2126,7 +2129,7 @@ As more and more of the drawbacks of using serverless get addressed and the popu
 
 <mark style="background: #BABD00;">Network Switch:</mark> Resides at the Data Link Layer. Data transmission form is a Frame. Uses MAC address. Used for connecting two or more nodes in the same network (L2) or different network (L3). A network switch is a computer networking device that is used to connect many devices together on a computer network. A switch is considered more advanced than a hub because a switch will send on a msg to device that needs or request it. Allow connections to multiple devices, manage ports, manage VLAN security settings.  
 
-<mark style="background: #BABD00;">Network Hub (or Repeater):</mark> Also called repeaters — are even less advanced that switches; while a hub broadcasts the same data to all its ports, a network switch forwards data only to those devices that the data is intended for. Network hubs do not manage any traffic coming through them; they only broadcast — or repeat — packets from an incoming port to all other ports.
+<mark style="background: #BABD00;">Network Hub (or Repeater):</mark> Also called repeaters - are even less advanced that switches; while a hub broadcasts the same data to all its ports, a network switch forwards data only to those devices that the data is intended for. Network hubs do not manage any traffic coming through them; they only broadcast - or repeat - packets from an incoming port to all other ports.
 
 # <mark style="background: #BABD00;">How HTTPS works:</mark>
 
@@ -2136,11 +2139,11 @@ Computers and other devices communicate using IP addresses to identify each othe
 
 Humans can't remember IP addresses, so they use words. e.g. google.com
 
-The domain name system (DNS) brings the two together and gets you to your destination.
+The domain name system (<mark style="background: #BABD00;">DNS</mark>) brings the two together and gets you to your destination.
 
 The resolver server is usually your <mark style="background: #BABD00;">ISP</mark> (Internet service provider). All resolvers must know where to locate the root server.
 
-The root server knows where to locate the .COM TLD server. TLD stands for Top-Level Domain.
+The root server knows where to locate the .COM TLD server. <mark style="background: #BABD00;">TLD</mark> stands for Top-Level Domain.
 
 There are 13 root servers that exist today. Root servers sit at the top of the DNS hierarchy.
 
@@ -2214,7 +2217,7 @@ HTTPS needs a way to provide privacy, integrity, and identification on the web. 
 - Only the private key can open a box locked with the public key pair.
 - This is great not only for privacy, but also for identification since we know for sure that only the owner of the 2 keys can open the message.
 
-When you view a website with https, your browser will display a lock on the address bar.
+<mark style="background: #BABD00;">When you view a website with https, your browser will display a lock on the address bar:</mark>
 - Your browser communicated with a server, where the website is hosted, and they both established a secure connection to transmit messages.
 - They needed to agree on how to communicate securely. If the negotiation is not successful, your browser lets you know by showing an error or warning.
 - If an agreement is reached, your browser is happy to display a padlock on the address bar.
@@ -2261,7 +2264,7 @@ If the root certificate is compromised, it's easier to revoke the intermediate c
 
 [Source](https://www.purestorage.com/knowledge/what-is-lun-storage.html)
 
-It’s common for servers to have multiple storage devices. A logical unit number (LUN) assigns a unique value to each drive. A LUN can be assigned to a group of drives configured as a single volume, a partition on a drive, or the entire drive itself. A LUN value can be automatically assigned or manually assigned by an administrator. In this article, we take a look at how LUNs work and the benefits and downsides of using them.  
+It’s common for servers to have multiple storage devices. A <mark style="background: #BABD00;">logical unit number</mark> (LUN) assigns a unique value to each drive. A LUN can be assigned to a group of drives configured as a single volume, a partition on a drive, or the entire drive itself. A LUN value can be automatically assigned or manually assigned by an administrator. In this article, we take a look at how LUNs work and the benefits and downsides of using them.  
 
 #### <mark style="background: #BABD00;">What Is a LUN in Storage?</mark>
 
@@ -2273,17 +2276,17 @@ The purpose of a LUN is for clients to make requests from storage space and retr
 
 When you build a new server or add a drive to a server, you must partition it. Partitioning forces you to choose a file system. You can choose to make the entire drive space a part of the partition, use only some of the drive space for a partition, or create a logical volume from a group of drives. A LUN can be assigned to the new partition or a set of partitions.
 
-When a server has several disks configured as a RAID (redundant array of independent disks) on SCSI (Small Computer System Interface) ports, the server uses a LUN to communicate with the right storage unit. LUN assignment is common with SCSI disks, but a storage area network (SAN) with other storage ports (e.g., SATA or SAS) could be configured as a RAID and connected via a Fibre Channel where a LUN is assigned.
+When a server has several disks configured as a <mark style="background: #BABD00;">RAID</mark> (redundant array of independent disks) on <mark style="background: #BABD00;">SCSI</mark> (Small Computer System Interface) ports, the server uses a <mark style="background: #BABD00;">LUN</mark> to communicate with the right storage unit. LUN assignment is common with SCSI disks, but a storage area network (<mark style="background: #BABD00;">SAN</mark>) with other storage ports (e.g., SATA or SAS) could be configured as a RAID and connected via a Fibre Channel where a LUN is assigned.
 
 For a user, the LUN is seen as a single-mounted storage device even if several partitions or a RAID of disks represent a single LUN. A server accessing internal storage needs the LUN to identify the right disk to read to or write from. LUNs assigned to a SAN are necessary for client computers to mount the right disk and assign it a name (e.g., X or Z as a drive letter).
 
-It’s possible for a single LUN to identify thousands of logical volumes, especially in a SAN environment. Administrators can assign a LUN to SAN volumes or the SAN unit can automatically assign a LUN to storage. LUNs can be reassigned by administrators later after bootup to customize configurations to meet certain setup requirements.
+It’s possible for a single LUN to identify thousands of logical volumes, especially in a SAN environment. Administrators can assign a LUN to SAN volumes or the SAN unit can automatically assign a LUN to storage. LUNs can be reassigned by administrators later after bootup to customise configurations to meet certain setup requirements.
 
 #### <mark style="background: #BABD00;">Alternatives and Implementations of LUN Storage</mark>
 
 Every server or network storage device has a LUN so that operating systems can identify a volume to read or write to disks. For many enterprise environments, large network storage devices use RAID storage, which means that several disks could be represented by a single LUN. A large SAN with several disks configured as a single volume could also have a single LUN.
 
-Unless you use older [SCSI technology](https://blog.purestorage.com/purely-technical/iscsi-setup-with-flasharray/) on your personal computer, you only find LUN storage in older SAN or server hardware. Newer SATA (Serial Advanced Technology Attachment) drives are used in servers and personal computers, but SCSI was replaced with SAS (Serial Attached SCSI) or [iSCSI](https://blog.purestorage.com/purely-informational/iscsi-vs-fc-vs-fcoe-choosing-the-right-storage-protocol-for-your-business/) (Internet Small Computer System Interface). Enterprise systems may use SATA or SAS depending on the type of storage and speeds necessary to support a large volume of read and write requests.
+Unless you use older [SCSI technology](https://blog.purestorage.com/purely-technical/iscsi-setup-with-flasharray/) on your personal computer, you only find LUN storage in older SAN or server hardware. Newer <mark style="background: #BABD00;">SATA (Serial Advanced Technology Attachment)</mark> drives are used in servers and personal computers, but SCSI was replaced with <mark style="background: #BABD00;">SAS (Serial Attached SCSI)</mark> or [iSCSI](https://blog.purestorage.com/purely-informational/iscsi-vs-fc-vs-fcoe-choosing-the-right-storage-protocol-for-your-business/) (Internet Small Computer System Interface). Enterprise systems may use SATA or SAS depending on the type of storage and speeds necessary to support a large volume of read and write requests.
 
 #### <mark style="background: #BABD00;">Benefits of Using LUN Storage</mark>
 
@@ -2297,9 +2300,9 @@ Although a LUN enables mounting drives and resource sharing on a local device, i
 
 A LUN is a numeric assignment for SCSI or a Fibre Channel, but a LUN is often associated with a SAN using a RAID system. A standard user will not run into LUN assignments, but administrators working with legacy hardware might find LUN management challenging. Remember that a LUN represents a slice of storage in a SAN, but it does not always represent a single disk or partition. LUN assignments can be manual or automatic, but most administrators use SAN software to manage LUN values.
 
-Any downsides to LUN are management related. Initial setup might be somewhat convenient, but any new space added to the SAN must be given a LUN or added to existing volumes so that current storage capacity can be expanded. Some administrators might struggle to add new disks to a LUN depending on the operating system and SAN configuration. Most operating systems have an interface to make it somewhat convenient to add storage to current capacity, but administrators might find that they need to troubleshoot when new disks aren’t recognized by the system.
+Any downsides to LUN are management related. Initial setup might be somewhat convenient, but any new space added to the SAN must be given a LUN or added to existing volumes so that current storage capacity can be expanded. Some administrators might struggle to add new disks to a LUN depending on the operating system and SAN configuration. Most operating systems have an interface to make it somewhat convenient to add storage to current capacity, but administrators might find that they need to troubleshoot when new disks aren’t recognised by the system.
 
-LUNs aren’t always assigned in a SAN or NAS environment. RAID volumes can also exist on a physical server where administrators can assign a LUN. An operating system running on a virtual machine can also use a LUN. Administrators should create a LUN strategy to ensure that reads and writes are optimized for performance. Too many applications and users writing to the same LUN can cause performance degradation, so ensure that LUNs are assigned with performance in mind.
+LUNs aren’t always assigned in a SAN or NAS environment. RAID volumes can also exist on a physical server where administrators can assign a LUN. An operating system running on a virtual machine can also use a LUN. Administrators should create a LUN strategy to ensure that reads and writes are optimised for performance. Too many applications and users writing to the same LUN can cause performance degradation, so ensure that LUNs are assigned with performance in mind.
 
 #### <mark style="background: #BABD00;">Conclusion</mark>
 
@@ -2368,8 +2371,7 @@ The following slides provide details on some of the above mentioned concepts.
 
 In an information system security framework, authentication and authorisation capabilities are required to ensure legitimate access to data.  
 
-Authentication is a process to ensure that a user’s or asset’s credentials (for example identity) are genuine so that no illegitimate access to information is allowed. Multi-factor authentication is a special method for authentication, which considers multiple factors together for authenticating a  
-user.  
+Authentication is a process to ensure that a user’s or asset’s credentials (for example identity) are genuine so that no illegitimate access to information is allowed. Multi-factor authentication is a special method for authentication, which considers multiple factors together for authenticating a user.  
 
 Authorisation is a process to grant specific access rights to a user on resources. Authorisation defines the limits of the access rights of a user on a resource; for example, read-only access or read-write access on a file.  
 
@@ -2398,8 +2400,7 @@ For example, a two-factor authentication could be based upon the first and secon
 
 ### <mark style="background: #BABD00;">Defense-in-Depth:</mark>
 
-<mark style="background: #BABD00;">Defense-in-Depth (DID):</mark>  An information assurance strategy, whereby multiple security measures  
-are used to reduce the risk of security threats if one component of the protection gets compromised.
+<mark style="background: #BABD00;">Defense-in-Depth (DID):</mark>  An information assurance strategy, whereby multiple security measures are used to reduce the risk of security threats if one component of the protection gets compromised.
 
 DID is also known as a "layered approach“ to security  
 
@@ -2439,7 +2440,7 @@ Careful design and implementation of a system's TCB can significantly improve it
 
 An important design concept while designing a security framework for an information system is the concept of Trusted Computing Base (TCB). TCB of an information system is the set of all components that are critical to its security, in the sense that vulnerabilities occurring inside the TCB might jeopardise the security of the entire system.  
 
-TCB is often the only part of the entire system which runs in a privileged mode, thus enhancing the inherent security of the system. 
+TCB is often the only part of the entire system which runs in a privileged mode, thus enhancing the inherent security of the system.
 
 TCB controls and authenticates access to the system resources and verifies system integrity. TCB is usually designed as a combination of hardware and software components. 
 
@@ -2459,7 +2460,7 @@ The unencrypted data is called cleartext (or plaintext) and encrypted data is ca
 - Both encryption and decryption require keys (special knowledge)  
 - Keys for encryption and decryption can be the same or different
 
-Encryption is the process of converting data (information) to a form that cannot be used in any meaningful manner without special knowledge. Encryption is a key technique to enable the confidentiality and integrity of data. The non encrypted data, which is given to the encryption process as an input, is called plaintext (cleartext) and the encrypted data, which is an outcome of the encryption process, is called ciphertext. The process of converting the encrypted data back into its original form is called decryption.  
+Encryption is the process of converting data (information) to a form that cannot be used in any meaningful manner without special knowledge. Encryption is a key technique to enable the confidentiality and integrity of data. The non encrypted data, which is given to the encryption process as an input, is called plaintext (cleartext) and the encrypted data, which is an outcome of the encryption process, is called ciphertext. The process of converting the encrypted data back into its original form is called decryption.
 
 Encryption (and decryption) requires key(s) (special knowledge) or process to apply on data. When the keys for encryption and decryption are the same, it is known as symmetric encryption. When these keys are different (but related), it is known as asymmetric encryption. For data encryption, most often, symmetric encryption is used. Asymmetric encryption is most commonly used to secure separate end points of a connection, for example, Web browser and Web server (using https), VPN client and server, or for transferring a symmetric key.
 
@@ -2474,7 +2475,7 @@ Virtualisation-specific security concerns are common for all Cloud models
 - Difficult for CSPs to meet the security needs of all the clients  
 - Different clients may have different requirements
 
-Security concerns, which arise specifically due to virtualisation, are common to all Cloud models.  
+Security concerns, which arise specifically due to virtualisation, are common to all Cloud models.
 
 As compared to VDC or Private Clouds, in Public Clouds, there are additional security concerns which demand specific counter measures. This is because, in a VDC or a Private Cloud, a client has complete control over the resources and can enforce security policies.  
 
@@ -2482,7 +2483,7 @@ In Public (and hybrid) Clouds, however, clients usually do not have that much co
 
 For Cloud Service Providers (CSPs) also, it is not easy to enforce all the security measures that meet the security needs of all the clients, because different clients may have different security demands based upon their objective of using the Cloud services. In public Clouds, there are additional security concerns, which demand special measures.  
 
-From a security perspective, both Cloud users as well as service providers have several concerns and face multiple threats. Some of the concerns and threats are common to both of them. From a CSP perspective, majority of the concerns and threats are common to all Cloud-deployment models. Therefore, in cases where a security concern or threat is specific to a Cloud model (for example Public Cloud), it will be explicitly mentioned.
+From a security perspective, both Cloud users as well as service providers have several concerns and face multiple threats. Some of the concerns and threats are common to both of them. From a CSP perspective, a majority of the concerns and threats are common to all Cloud-deployment models. Therefore, in cases where a security concern or threat is specific to a Cloud model (for example Public Cloud), it will be explicitly mentioned.
 
 ### <mark style="background: #BABD00;">Security Concerns and Threats:</mark>
 
@@ -2504,15 +2505,15 @@ Security concerns and threats in a Cloud environment can be classified for CSPs 
 
 For a CSP, the <mark style="background: #BABD00;">key security concerns</mark> are <mark style="background: #BABD00;">multitenancy</mark> and ‘<mark style="background: #BABD00;">velocity-of-attack</mark>’. Though these are also concerns for Cloud users, it is the CSP who needs to adopt suitable counter measures to address these concerns.  
 
-<mark style="background: #BABD00;">Multitenancy</mark> refers to the fact that the Cloud infrastructure, by virtue of virtualisation, enables multiple independent clients (tenants) to be serviced using same set of resources. This consequently increases the risks for data confidentiality and integrity.  
+<mark style="background: #BABD00;">Multitenancy</mark> refers to the fact that the Cloud infrastructure, by virtue of virtualisation, enables multiple independent clients (tenants) to be serviced using same set of resources. This consequently increases the risks for data confidentiality and integrity.
 
-These risks are especially more severe in case of Public Cloud environment. This is because, in Public Cloud, services can be used by competing clients as compared to Private Clouds. Also, the number of Cloud users are much higher in Public Clouds.  
+These risks are especially more severe in case of Public Cloud environment. This is because, in Public Cloud, services can be used by competing clients as compared to Private Clouds. Also, the number of Cloud users are much higher in Public Clouds.
 
 The <mark style="background: #BABD00;">Velocity-of-attack</mark> in the Cloud refers to a situation where any existing security threat in the Cloud spreads more rapidly and has larger impact than that in the Classic Data Centre (CDC) environments.  
 
 Information assurance, data privacy, and ownership are among the key Cloud security concerns for its users.  
 
-Information assurance covers many related aspects of ensuring that data in a Cloud is “safe”. Data privacy and ownership concerns specifically relate to the risk of an unauthorised data disclosure.  
+Information assurance covers many related aspects of ensuring that data in a Cloud is “safe”. Data privacy and ownership concerns specifically relate to the risk of an unauthorised data disclosure.
 
 <mark style="background: #BABD00;">The key security threats for VDC and Cloud infrastructure include:</mark>  
 - <mark style="background: #BABD00;">VM theft:</mark> It involves unauthorised copying or movement of a VM.  
@@ -2538,7 +2539,9 @@ In spite of the benefits offered by multitenancy to a CSP, it is a major securit
 
 This is because Cloud infrastructure and services are, by nature, shared among multiple business entities, for example, multiple business units in an organisation or different companies. Co-location of multiple VMs in a single server and sharing the same resources increase the attack surface of vulnerability. This gives rise to a potential security concern for the Cloud users because it makes private data of one client vulnerable to theft by other competing clients who run applications using the same resources.  
 
-There also exists a danger that in the absence of adequate security controls, a tenant application might disrupt operations of other tenants, for example, by launching DoS attacks. An already compromised VM might enable an attacker to compromise the security of other VMs (running on the same server) or of the hypervisor. A compromised guest OS in a VM can also impact other guest OSs in other VMs.  
+There also exists a danger that in the absence of adequate security controls, a tenant application might disrupt operations of other tenants, for example, by launching DoS attacks. 
+
+An already compromised VM might enable an attacker to compromise the security of other VMs (running on the same server) or of the hypervisor. A compromised guest OS in a VM can also impact other guest OSs in other VMs.  
 
 For CSPs also, multitenancy makes it harder to enforce uniform security controls and counter measures for all the clients.  
 
@@ -2564,7 +2567,7 @@ There also exists homogeneity (similarity) in the platforms and components (for 
 
 Owing to these factors, security threats are amplified more and spread quickly, which is considered as the “velocity of attack” factor in the Cloud. Owing to this factor, security threats can cause much higher levels of losses to the Cloud service providers and to its clients, compared to those in a CDC.  
 
-Mitigating the spread of a threat in a Cloud is also comparatively more difficult than in a CDC environment.  
+Mitigating the spread of a threat in a Cloud is also comparatively more difficult than in a CDC environment.
 
 Because of the potentially high velocity-of-attack, CSPs need to adopt and deploy stronger and robust security enforcement and containment mechanisms, for example, defense-in-depth. Cloud users also need to carefully assess the security services deployed by a CSP before moving operations to the Cloud.
 
@@ -2645,11 +2648,11 @@ Is a result of inadequate controls on VM files allowing unauthorised copies or m
 
 VM theft enables an attacker to copy and/or move a VM in an unauthorised manner. VM theft is a result of inadequate controls on VM files allowing their unauthorised copy or movement. VM theft can cause a very high degree of loss to a Cloud client if its files and data are sensitive in nature.  
 
-Copy and Move restrictions are essential to safeguard against VM theft. Such restrictions effectively bind a VM to a specific (secure) physical machine so that even if there is a forceful copy of the VM, it will not operate on any other machine. A VM with copy and move restrictions cannot run on a hypervisor installed on any other machine. These restrictions use a combination of virtualisation management and storage management services for their effective enforcement.  
+Copy and Move restrictions are essential to safeguard against VM theft. Such restrictions effectively bind a VM to a specific (secure) physical machine so that even if there is a forceful copy of the VM, it will not operate on any other machine. A VM with copy and move restrictions cannot run on a hypervisor installed on any other machine. These restrictions use a combination of virtualisation management and storage management services for their effective enforcement. 
 
 Even though these restrictions are essential to safeguard against VM theft, they, on the other hand, might limit the benefit of load balancing of VMs across physical servers. Therefore, it is advisable that copy and move restrictions be applied in a limited way, especially only on those VMs, which are considered security critical/sensitive or are relatively more vulnerable for theft.  
 
-Apart from VM theft, another threat on the VM level is known as <mark style="background: #BABD00;">‘VM escape’</mark>. Normally, virtual machines are encapsulated and isolated from each other. There is no straightforward way for a guest OS and the applications running on it to break out of the virtual machine boundary and directly interact with the parent hypervisor.  
+Apart from VM theft, another threat on the VM level is known as <mark style="background: #BABD00;">‘VM escape’</mark>. Normally, virtual machines are encapsulated and isolated from each other. There is no straightforward way for a guest OS and the applications running on it to break out of the virtual machine boundary and directly interact with the parent hypervisor.
 
 The process of breaking out and interacting with the hypervisor is called a VM escape. Since the hypervisor controls the execution of all VMs, due to VM escape, an attacker can gain control over every other VM running on it by bypassing security controls that are placed on those VMs.
 
@@ -2674,8 +2677,8 @@ A rootkit is a malicious program which is installed before an hypervisor or VMM 
 Using such a rogue hypervisor, an attacker can run unauthorised applications on a guest OS without that OS realising the presence of such an application. With hyperjacking, an attacker can control the interaction between the VMs and the underlying physical machine.  
 
 <mark style="background: #BABD00;">Regular security measures are ineffective against this rough hypervisor because:</mark>  
-- Guest OS would remain unaware of the fact that the underlying server has been attacked and  
-- The antivirus and firewall applications cannot detect such rogue hypervisor because they are installed over the server itself  
+- Guest OS would remain unaware of the fact that the underlying server has been attacked
+- The antivirus and firewall applications cannot detect such rogue hypervisor because they are installed over the server itself
 
 <mark style="background: #BABD00;">Measures against hyperjacking include:</mark>  
 - Hardware-assisted secure launching of the hypervisor so that rootkit level malicious programs cannot launch. This involves designing and using a TCB so that the hypervisor gets support at the hardware level itself  
@@ -2683,11 +2686,11 @@ Using such a rogue hypervisor, an attacker can run unauthorised applications on 
 
 ### <mark style="background: #BABD00;">Security Threat: Data Leakage:</mark>
 
-Confidential data stored on a third party Cloud is potentially vulnerable to unauthorised access or manipulation  
+Confidential data stored on a third party Cloud is potentially vulnerable to unauthorised access or manipulation
 
-Attacks on service provider’s control systems (for example passwords lists) could make all the clients’ data vulnerable  
+Attacks on service provider’s control systems (for example passwords lists) could make all the clients’ data vulnerable
 
-Cloud users must evaluate end-to-end data protection measures by all the concerned parties who have any level of access on the data  
+Cloud users must evaluate end-to-end data protection measures by all the concerned parties who have any level of access on the data
 
 <mark style="background: #BABD00;">Side Channel Attacks (SCA) can be used for data leakage in Cloud:</mark> An SCA extracts information by monitoring indirect activities; for example cache data, keystroke activity, etc.  
 
@@ -2719,7 +2722,9 @@ A DoS attack prevents legitimate users from accessing a resource or service. DoS
 - Attack aims to exhaust computing resources, for example, network bandwidth and CPU cycles. An attack may involve massive quantities of data sent to the target with the intention of consuming bandwidth/processing resources.  
 - Attack involves exploiting weaknesses in a protocol to target network resources; for example, resetting of TCP sessions, IP address spoofing, or corrupting DNS server cache.  
 
-A Distributed DoS (DDoS) attack is a special type of DoS attack in which several systems launch coordinated DoS attack on their target(s), thereby causing denial of service to the users of the targeted system(s). In a DDoS attack, the main attacker is able to multiply the effectiveness of the DoS attack by harnessing the resources of multiple collaborating systems. These collaborating systems serve as attack platforms. Typically a DDoS master program is installed on one compute system using a stolen account. Then, at a designated time, the master program communicates to any number of "agent" programs installed on computers anywhere on the network. When the agents receive the command, they initiate the attack.  
+A Distributed DoS (DDoS) attack is a special type of DoS attack in which several systems launch coordinated DoS attack on their target(s), thereby causing denial of service to the users of the targeted system(s). In a DDoS attack, the main attacker is able to multiply the effectiveness of the DoS attack by harnessing the resources of multiple collaborating systems. 
+
+These collaborating systems serve as attack platforms. Typically a DDoS master program is installed on one compute system using a stolen account. Then, at a designated time, the master program communicates to any number of "agent" programs installed on computers anywhere on the network. When the agents receive the command, they initiate the attack.  
 
 In a virtualised environment, a rough VM could be used to launch DoS attack against the hypervisor or other VMs running on the same hypervisor. Such a rough VM could use the internal virtual network for launching the DoS attacks. To protect against such VM based DoS attacks, the resource consumption of a VM should be restricted to specific limits.
 
@@ -2727,7 +2732,7 @@ In a virtualised environment, a rough VM could be used to launch DoS attack agai
 
 <mark style="background: #BABD00;">Topics covered in this lesson:</mark>  
 - Security at compute level, including securing server, hypervisor, VM, guest OS, and applications  
-- Security at network and storage levels, including virtual  firewall, demilitarized zone, and data shredding  
+- Security at network and storage levels, including virtual  firewall, demilitarised zone, and data shredding  
 - Intrusion detection in VDC and Cloud  
 - Physical Security of the premises  
 - Access Control and Identity management services in Cloud
@@ -2735,19 +2740,19 @@ In a virtualised environment, a rough VM could be used to launch DoS attack agai
 ### <mark style="background: #BABD00;">Security at Compute Level:</mark>
 
 <mark style="background: #BABD00;">Securing a compute system includes:</mark>  
-- Securing physical server  
-- Securing hypervisor  
-- Securing VMs  
-- VM Isolation  
-- VM Hardening 
-- Security at guest OS level  
-- Guest OS Hardening  
-- Security at application level  
+- Securing physical server
+- Securing hypervisor
+- Securing VMs
+- VM Isolation
+- VM Hardening
+- Security at guest OS level
+- Guest OS Hardening
+- Security at application level
 - Application Hardening
 
-Securing a compute infrastructure includes enforcing security of the physical server, hypervisor, VM, and guest OS.  
+Securing a compute infrastructure includes enforcing security of the physical server, hypervisor, VM, and guest OS.
 
-Security at the hypervisor level primarily aims at securing hypervisor from the rootkits and malware based attacks and protection of the hypervisor management system. 
+Security at the hypervisor level primarily aims at securing hypervisor from the rootkits and malware based attacks and protection of the hypervisor management system.
 
 VM isolation and hardening are two key techniques for securing VMs. Security at the guest OS level uses sandboxing and hardening as two key methods. Application hardening is used to reduce vulnerability of the applications from getting exploited by malicious attackers. All these security methods are explained in the following slides.
 
@@ -2782,12 +2787,12 @@ Attacks on the hypervisor impact all the VMs running on it - a single point of s
 - Harden VMs to prevent attacks  
 
 <mark style="background: #BABD00;">Protection of the hypervisor management system is critical because an insecure management system can:</mark>  
-- Make existing VMs vulnerable for attacks  
-- Enable creation of new malicious VMs  
+- Make existing VMs vulnerable for attacks
+- Enable creation of new malicious VMs
 
 <mark style="background: #BABD00;">Can be achieved by:</mark>  
-- Configuring strong security on the firewall between the management system and the network  
-- Providing direct access only to administrators to management server  
+- Configuring strong security on the firewall between the management system and the network
+- Providing direct access only to administrators to management server
 - Disable access to management console to prevent unauthorised access
 
 A Hypervisor in a virtualised environment presents a single point of security failure for all the VMs running on it. A single breach of the hypervisor places all the guest OSs on these VMs at high risk.  
@@ -2808,7 +2813,7 @@ Access to the management system should be restricted only to authorised administ
 
 <mark style="background: #BABD00;">Considerations:</mark>  
 - Use VM templates to provision new VMs  
-- Limit the resources that VM can consume to  prevent DoS attacks  
+- Limit the resources that a VM can consume to prevent DoS attacks  
 - Disable unused functions and devices on VM  
 - Use a directory service for authentication  
 - Perform vulnerability scanning and penetration testing of the guest OS
@@ -2823,7 +2828,10 @@ Apart from isolation, VMs should be hardened against security threats. Hardening
 - Increase in the number of services, ports, and applications running on the VM also increases the area of attack surface. Therefore, unneeded functions and unused devices should be disabled.  
 - Configure access permissions for the selected group of administrators. Avoid account sharing by groups of users and strictly control root privileges. Employ directory based authentication to ensure the genuineness of credentials.  
 - Take VM backups on a regular basis and schedule point-in-time snapshots to restore a VM to a safe state, in case of an attack.  
-- Perform vulnerability scanning of the guest OS regularly to identify existing vulnerabilities. Perform a penetration test to determine the feasibility of an attack and the extent of business impact of the attack. Note that in Public Clouds, usually, penetration tests originating from outside the CSP network are forbidden by the CSP. Therefore, a Cloud user should rely upon the CSP to perform these tests.
+- Perform vulnerability scanning of the guest OS regularly to identify existing vulnerabilities.
+- Perform a penetration test to determine the feasibility of an attack and the extent of business impact of the attack. 
+
+Note that in Public Clouds, usually, penetration tests originating from outside the CSP network are forbidden by the CSP. Therefore, a Cloud user should rely upon the CSP to perform these tests.
 
 ![](https://i.imgur.com/ObANoSi.png)
 
@@ -2842,7 +2850,7 @@ Apart from isolation, VMs should be hardened against security threats. Hardening
 
 Sandboxing is another important measure for guest OS and application security
 
-Apart from the measures to secure a hypervisor and VMs, VDC and Cloud environment also require further measures on the guest OS and application levels. Hardening is one such important measure which can effectively safeguard guest OS and the applications running on it.  
+Apart from the measures to secure a hypervisor and VMs, VDC and Cloud environment also require further measures on the guest OS and application levels. Hardening is one such important measure which can effectively safeguard guest OS and the applications running on it.
 
 OS hardening, for example, may involve actions such as configuring system and network components, deleting unused files, and applying the latest patches. There are hardening checklists available for major OSs which administrators should follow to harden the guest OSs deployed in VDC or Cloud. In cases where a VM is to be used for business critical applications, the guest OS should be installed in the TCB mode – an option available with many OSs. Such TCB mode installation, however, requires hypervisor support for configuring trusted virtual hardware components (for example virtual CPU).  
 
@@ -2867,9 +2875,9 @@ A <mark style="background: #BABD00;">firewall</mark> is a security technology de
 
 A firewall is implemented on a compute level and limits access between networks and/or systems in accordance with a specific security policy. A firewall is used to protect networks from unauthorised access while permitting only legitimate communications.
 
-In a VDC and Cloud infrastructure, a firewall can also be used to protect hypervisors and VMs; for example, if remote administration is enabled on a hypervisor, access to all the remote administration interfaces should be restricted by a firewall.  
+In a VDC and Cloud infrastructure, a firewall can also be used to protect hypervisors and VMs; for example, if remote administration is enabled on a hypervisor, access to all the remote administration interfaces should be restricted by a firewall.
 
-Securing the VM-to-VM traffic running on a server is a key security problem in a VDC environment. Securing this virtual network is a considerable challenge because virtual switches could be invisible to network and/or system administrators, who usually enforce security at the network level.  
+Securing the VM-to-VM traffic running on a server is a key security problem in a VDC environment. Securing this virtual network is a considerable challenge because virtual switches could be invisible to network and/or system administrators, who usually enforce security at the network level.
 
 Because the virtual network traffic may never leave the server, security administrators cannot observe VM-to-VM traffic, cannot intercept it, and so, cannot know what that traffic is for. Thus, logging of the VM-to-VM network activity within a single server and verification of virtual machine access for regulatory compliance purposes is relatively difficult. 
 
@@ -2892,7 +2900,7 @@ A virtualised DMZ is a DMZ established in a virtualised environment using virtua
 
 ### <mark style="background: #BABD00;">Securing at Network level:</mark>
 
-<mark style="background: #BABD00;">Data-in-flight:</mark>  Data which is being transferred over a network i.e., “moving”  
+<mark style="background: #BABD00;">Data-in-flight:</mark> Data which is being transferred over a network i.e., “moving”  
 
 <mark style="background: #BABD00;">Encryption of Data-in-flight:</mark>  
 - Provides confidentiality and integrity  
@@ -2900,7 +2908,11 @@ A virtualised DMZ is a DMZ established in a virtualised environment using virtua
 
 ![](https://i.imgur.com/Kv4f5mZ.png)
 
-Encryption of data-in-flight is the key method for providing confidentiality and integrity services. Encryption makes the data indecipherable to an unauthorised user who otherwise may have access to the (encrypted) data. Encryption is indeed a key security measure against “sniffing” attacks. In a sniffing attack, a non recipient malicious device/user accesses the data transmitted over the network.  
+Encryption of data-in-flight is the key method for providing confidentiality and integrity services.
+
+Encryption makes the data indecipherable to an unauthorised user who otherwise may have access to the (encrypted) data.
+
+Encryption is indeed a key security measure against <mark style="background: #BABD00;">sniffing</mark> attacks. In a sniffing attack, a non recipient malicious device/user accesses the data transmitted over the network.  
 
 <mark style="background: #BABD00;">Methods used for encrypting data-in-flight include:</mark>  
 - <mark style="background: #BABD00;">Application-level encryption:</mark> Encryption is applied at the application level where the data is generated. Encrypting at the application level protects data against unauthorised access; for example, Transport Layer Security (TLS) protocol allows client/server applications to enforce encryption service.  
@@ -2921,7 +2933,7 @@ Storage Area Networks(SAN) have their unique vulnerabilities, for example, fabri
 
 Major threats to storage system in a VDC and Cloud environment arise due to compromises at compute, network, and/or physical security levels. This is because an access to storage systems needs to be made by using compute and network infrastructure. 
 
-Therefore, adequate security measures need to be in place at compute and network levels to ensure storage security. 
+Therefore, adequate security measures need to be in place at compute and network levels to ensure storage security.
 
 <mark style="background: #BABD00;">Security mechanisms that might help to protect storage includes:</mark>  
 - Access control methods to regulate which users and processes access the data on the storage systems.  
@@ -2943,7 +2955,7 @@ This may include using separate LUNs for VM components and for VM data and segre
 
 <mark style="background: #BABD00;">Encryption of Data-at-rest:</mark> 
 - Provides confidentiality and integrity services  
-- Reduces legal liabilities of a CSP due to an unauthorised disclosure of data on its Cloud because even if the encrypted data becomes accessible to an unauthorised user, it cannot be used in any meaningful way.  
+- Reduces legal liabilities of a CSP due to an unauthorised disclosure of data on its Cloud because even if the encrypted data becomes accessible to an unauthorised user, it cannot be used in any meaningful way.
 
 <mark style="background: #BABD00;">Full disk encryption is the key method used for encrypting data-at-rest residing on a disk:</mark> 
 - Full disk encryption employs software application or built-in hardware capability to encrypt every bit of data that goes on a disk or disk volume. 
@@ -2980,9 +2992,9 @@ Unlike data stored in a privately controlled storage or in a CDC, data and infor
 - 24/7/365 onsite guarded security  
 - Biometric authentication based physical access
 
-Cloud customers essentially lose control over physical security when they move to the Cloud, because the actual servers can be anywhere the provider decides to put them. 
+Cloud customers essentially lose control over physical security when they move to the Cloud, because the actual servers can be anywhere the provider decides to put them.
 
-Since physical Cloud infrastructure supports many Cloud clients together, its security is very critical both for the CSP as well as its clients. 
+Since physical Cloud infrastructure supports many Cloud clients together, its security is very critical both for the CSP as well as its clients.
 
 Policies, processes, and procedures are critical elements of successful physical security that can protect the equipment and data housed in the hosting centre.  
 
@@ -2990,7 +3002,7 @@ Policies, processes, and procedures are critical elements of successful physical
 - Leaving a port in unconfigured or disabled state so that unknown devices or components cannot connect to the infrastructure. Additionally, bind specific devices to designated ports.  
 - Apply MAC/WWPN binding and VLAN restrictions to physical Ethernet switches.  
 - 24/7/365 onsite security for the premise where the Cloud physical infrastructure is hosted  
-- Biometric authentication based access to the premises  
+- Biometric authentication based access to the premises
 - Closed circuit TV cameras to monitor activity throughout the facility
 
 ### <mark style="background: #BABD00;">Role Based Access Control:</mark>
@@ -3006,7 +3018,7 @@ CSP may use RBAC to control an administrative access to the hypervisor managemen
 
 In a Role Based Access Control (RBAC) model, resource access rights (permissions) are given to subjects (users and processes) based upon their roles. A role may represent a job function, for example, an administrator. 
 
-Permissions are associated with the roles and subjects are not given any direct permissions. Subjects acquire permissions to perform operations on resources based upon the roles assigned to them.  
+Permissions are associated with the roles and subjects are not given any direct permissions. Subjects acquire permissions to perform operations on resources based upon the roles assigned to them.
 
 For RBAC, users need to be grouped together into roles. As an example, a set of IT administrators can be given permissions to start, stop, and delete VMs that are running in the Cloud. However, there could be a specific subset of production servers that even the IT administrators are not allowed to control.  
 
@@ -3026,7 +3038,7 @@ To handle sensitive data and compliance requirements, a Cloud needs RBAC capabil
 - Is an open standard for decentralised authentication and access control  
 - Can be used while allowing users to log onto many services using the same digital identity
 
-Identity management is an administrative process that deals with identifying users of an information system. Additionally, identity management also controls access to system resources by placing restrictions using user identities . The key identity management-related aspects in Cloud are as follows:  
+Identity management is an administrative process that deals with identifying users of an information system. Additionally, identity management also controls access to system resources by placing restrictions using user identities. The key identity management-related aspects in Cloud are as follows:  
 
 <mark style="background: #BABD00;">One-time password:</mark> Because passwords can be compromised, they must be protected. The One-Time Password (OTP) concept demands that a new password be used for each new log on and thus provides necessary security against password compromises. Time-dependent password generated by hardware security tokens (for example, RSA SecureID) is an example of OTP. OTP is specifically useful in situations where likelihood of password compromises are high, for example, remote login based network access.  
 
@@ -3036,7 +3048,7 @@ Identity management is an administrative process that deals with identifying use
 
 ### <mark style="background: #BABD00;">Governance, Risks and Compliance:</mark>
 
-This lesson covers governance, risk, and compliance aspects in Cloud. Governance aspects include SLAs and information flow regulations. Risk assessment includes identification of critical assets, potential risks, and the classification of critical assets into risk categories. Compliance includes internal and external policy compliance
+This lesson covers governance, risk, and compliance aspects in Cloud. Governance aspects include SLAs and information flow regulations. Risk assessment includes identification of critical assets, potential risks, and the classification of critical assets into risk categories. Compliance includes internal and external policy compliance.
 
 <mark style="background: #BABD00;">Governance</mark> refers to the policies, processes, laws, and institutions that define the structure by which companies are directed and managed.  
 
@@ -3048,7 +3060,7 @@ This lesson covers governance, risk, and compliance aspects in Cloud. Governance
 
 <mark style="background: #BABD00;">Compliance</mark> refers to the act of adhering to and demonstrating adherence to external laws and regulations as well as corporate policies and procedures.
 
-An <mark style="background: #BABD00;">Enterprise GRC (eGRC)</mark> solution allow a business to build an efficient, collaborative enterprise governance, risk and compliance (eGRC) program across IT, finance, operations, and legal domains. 
+An <mark style="background: #BABD00;">Enterprise GRC (eGRC)</mark> solution allow a business to build an efficient, collaborative enterprise governance, risk and compliance (eGRC) program across IT, finance, operations, and legal domains.
 
 Such a program enables a business to manage risks, demonstrate compliance, automate business processes, and gain visibility into corporate risk and security controls.
 
@@ -3065,7 +3077,9 @@ Information (data) flow regulations may limit adoption of public Clouds for appl
 
 Among various Cloud deployment models, private Clouds offer the maximum information flow regulation
 
-National and international regulations could constrain the flow of information in Cloud. For example, Cloud offers location independence to its clients in terms of where the actual data resides. This might also lead to difficult legal issues; for example, a governmental data on a Cloud, handled abroad by private parties, fall under the foreign jurisdiction. There are various regulations, which specify that sensitive information cannot travel across regional boundaries; for example, European data protection laws impose additional obligations on the handling and processing of data transferred to the U.S.  
+National and international regulations could constrain the flow of information in Cloud. For example, Cloud offers location independence to its clients in terms of where the actual data resides. This might also lead to difficult legal issues; for example, a governmental data on a Cloud, handled abroad by private parties, fall under the foreign jurisdiction. 
+
+There are various regulations, which specify that sensitive information cannot travel across regional boundaries; for example, European data protection laws impose additional obligations on the handling and processing of data transferred to the U.S.  
 
 Another aspect is that existing security standards may also apply to Cloud; for example, it is recommended that CSPs follow ISO 27001, which is an Information Security Management System standard and formally specifies requirements to bring information security under explicit management control.  
 
@@ -3073,13 +3087,13 @@ Furthermore, there are regulations that control certain specific types of inform
 
 Such information flow regulations may limit adoption of Public Clouds for applications handling sensitive data. For example, governmental agencies might find it difficult to use public Clouds, which could potentially host their data in some other country due to cost advantages.  
 
-Among various Cloud deployment models, private Clouds offer the maximum information flow regulation because the control over data remains fully with the organisation
+Among various Cloud deployment models, private Clouds offer the maximum information flow regulation because the control over data remains fully with the organisation.
 
 ### <mark style="background: #BABD00;">Cloud Governance: Contract Termination:</mark>
 
-Cloud users need to assess implications of situations when services with a CSP should be terminated  
+Cloud users need to assess implications of situations when services with a CSP should be terminated.
 
-Termination agreement specifies the closure process  
+Termination agreement specifies the closure process.
 
 <mark style="background: #BABD00;">Situations may include:</mark>  
 - CSP going out of business  
@@ -3106,7 +3120,7 @@ considered:</mark>
 - A process for migrating the data back into the organisation or to another Cloud  
 - A prior assessment as to whether the data can be moved over the network in a reasonable amount of time or whether it is necessary to make special arrangements for a physical transfer  
 
-The plan for data destruction (storage, clones, backups) using shredding after the data has successfully moved from the Cloud
+The plan for data destruction (storage, clones, backups) using shredding after the data has successfully moved from the Cloud.
 
 ### <mark style="background: #BABD00;">Risk Assessment:</mark>
 
@@ -3120,28 +3134,28 @@ The plan for data destruction (storage, clones, backups) using shredding after t
 3. Classifying risks into severity levels  
 4. Associating potential risks with critical assets
 
-A risk assessment process aims to identify potential sources of risk while operating in a Cloud environment. This critical process is required before deciding to move operations to Cloud, especially if the decision is related to the Public Clouds.  
+A risk assessment process aims to identify potential sources of risk while operating in a Cloud environment. This critical process is required before deciding to move operations to Cloud, especially if the decision is related to the Public Clouds.
 
 <mark style="background: #BABD00;">Various steps involved in this process are:</mark>  
 1. <mark style="background: #BABD00;">Identifying critical and sensitive assets:</mark> All the assets (data, applications, and processes) must be carefully evaluated to assess as to how critical or sensitive an asset is for the organisation. Critical assets are necessary for the operation of the business. Sensitive assets are those having high business value for the organisation, for example, Intellectual Property (IP), project plans, and Personally Identifiable Information (PII).  
 2. <mark style="background: #BABD00;">Identifying potential risks:</mark> It is important to analyse and identify all the potential risks while operating in a Cloud environment. An example could be the legal situations under which a CSP might have to disclose data belonging to its clients.  
 3. <mark style="background: #BABD00;">Classifying risks into severity levels:</mark> After comprehensive classification of the risks associated with operating in Cloud, these risks need to be classified into various severity levels i.e., very high risk, moderately high risk, high risk, low risk, and no risk. These severity levels could alternately be numbered in a certain range, for example, 0 to 5.  
-4. <mark style="background: #BABD00;">Associating potential risks with critical assets:</mark> This step involves associating the critical assets with potential risks; for example, employee’s banking records can be identified as critical assets (in step 1), data disclosure could be a risk (identified in step 2) of very high severity level (in step 3). Based upon these, data disclosure risk may be associated with  employee records.  
+4. <mark style="background: #BABD00;">Associating potential risks with critical assets:</mark> This step involves associating the critical assets with potential risks; for example, employee’s banking records can be identified as critical assets (in step 1), data disclosure could be a risk (identified in step 2) of very high severity level (in step 3). Based upon these, data disclosure risk may be associated with  employee records.
 
 Based upon the risk assessment for the assets, a client could consider formulating terms and conditions of the contractual agreement with CSP; for example, a client might insist on having its data placed within certain geographical regions by the CSP.
 
 ### <mark style="background: #BABD00;">Compliance:</mark>
 
-Cloud adoption and operation for enterprise businesses need to abide by compliance policies    
+Cloud adoption and operation for enterprise businesses need to abide by compliance policies.
 
 <mark style="background: #BABD00;">Internal policy compliance:</mark>  
-- Controls the nature of IT operations within an organisation  
-- Needs to maintain same compliance even when operating in Cloud  
+- Controls the nature of IT operations within an organisation
+- Needs to maintain same compliance even when operating in Cloud
 
 <mark style="background: #BABD00;">External regulatory compliance:</mark>  
-- Includes legal legislations and industry regulations  
-- Controls the nature of IT operations related to flow of data out of an organisation  
-- May differ based upon the type of information, business, etc.  
+- Includes legal legislations and industry regulations
+- Controls the nature of IT operations related to flow of data out of an organisation
+- May differ based upon the type of information, business, etc.
 
 Meeting all varied client compliance requirements is difficult for a CSP  
 
@@ -3149,7 +3163,7 @@ Compared to Private Clouds, the Public Cloud environment makes compliance more c
 
 Cloud service adoption and operation for enterprise businesses should abide by compliance policies. There are primarily two types of policies controlling IT operations in an enterprise that requires compliance even after moving operations to Cloud.  
 
-<mark style="background: #BABD00;">Internal Policy Compliance:</mark> Controls the nature of IT operations within an organisation. A Cloud client organisation needs to maintain same compliance even when operating in Cloud. This would require clear assessment of the potential difficulties in maintaining the compliance in Cloud and a process to ensure that this is effectively achieved.  
+<mark style="background: #BABD00;">Internal Policy Compliance:</mark> Controls the nature of IT operations within an organisation. A Cloud client organisation needs to maintain same compliance even when operating in Cloud. This would require clear assessment of the potential difficulties in maintaining the compliance in Cloud and a process to ensure that this is effectively achieved.
 
 <mark style="background: #BABD00;">External Policy Compliance:</mark> Includes legal legislations and industry regulations. These external compliance policies control the nature of IT operations related to the flow of data out of an organisation. However, they may differ based upon the type of information (for example, source code versus employee records), business (for example medical services versus financial services), etc.  
 
@@ -3224,8 +3238,6 @@ Most important thing is to eliminate all single points of failure.
 - Network Components
 - Virtual network
 
-<mark style="background: #BABD00;">Site:</mark>
-
 To plan for an effective BC solution in a VDC, administrators need to identify potential single point of failure (SPOF). In a VDC, the SPOF includes the following:  
 
 <mark style="background: #BABD00;">SPOF in Compute Infrastructure:</mark>  
@@ -3249,9 +3261,9 @@ To plan for an effective BC solution in a VDC, administrators need to identify p
 
 To mitigate SPOFs identified before, VDC components are often designed with redundancy so that the system fails only if all the components, including the redundant components, fail simultaneously. Such a failure is very unlikely to happen except during catastrophic disasters.  
 
-Redundancy ensures that the failure of a single component does not affect the availability of the corresponding operations.  
+Redundancy ensures that the failure of a single component does not affect the availability of the corresponding operations.
 
-Because of the large number of components involved in the overall operation of a VDC and their underlying complexity and interactions with each other, a careful analysis need to be performed to eliminate every SPOF. In the diagram, critical enhancements in the infrastructure of a VDC to mitigate SPOF is illustrated. 
+Because of the large number of components involved in the overall operation of a VDC and their underlying complexity and interactions with each other, a careful analysis need to be performed to eliminate every SPOF. In the diagram, critical enhancements in the infrastructure of a VDC to mitigate SPOF is illustrated.
 
 <mark style="background: #BABD00;">Note that many of the employed mechanisms are similar to a CDC environment:</mark>  
 - Configuration of multiple HBAs to mitigate single HBA failure.  
@@ -3299,9 +3311,9 @@ VMFT creates a live instance of the primary VM that runs on another physical mac
 
 Secondary VM replays them to bring its own state same as of the primary VM. The hypervisor running on the primary server captures the sequence of events for the primary VM, including instructions from the virtual I/O devices, virtual NICs, user inputs, etc. And transfers them to the secondary server. 
 
-The hypervisor running on the secondary server receives these event sequences and sends them to the secondary VM for execution. The primary and the secondary VMs share the same virtual disk using VMFS, but all output (for example, write) operations are performed only by the primary VM. 
+The hypervisor running on the secondary server receives these event sequences and sends them to the secondary VM for execution. The primary and the secondary VMs share the same virtual disk using VMFS, but all output (for example, write) operations are performed only by the primary VM.
 
-A special locking mechanism ensures that the secondary VM does not perform write operations on the shared virtual disks. Any other output instructions from the secondary VM are also not allowed. 
+A special locking mechanism ensures that the secondary VM does not perform write operations on the shared virtual disks. Any other output instructions from the secondary VM are also not allowed.
 
 The hypervisor posts all events to the secondary VM at the same execution point as they occurred on the primary VM. This way, the two VMs play exactly the same set of events and their states are synchronised with each other.
 
@@ -3391,13 +3403,13 @@ Offers greater levels of performance, reliability, and security during site fail
 - data backup
 - replication functionality
 
-In case of a regional disaster, the whole VDC site requires recovery. To ensure error-free execution of BC solutions during a disaster, a non disruptive testing of <mark style="background: #BABD00;">Disaster Recovery (DR)</mark> plan is often required to be carried out beforehand.  
+In case of a regional disaster, the whole VDC site requires recovery. To ensure error-free execution of BC solutions during a disaster, a non disruptive testing of <mark style="background: #BABD00;">Disaster Recovery (DR)</mark> plan is often required to be carried out beforehand.
 
-To ensure a robust and consistent failover in case of a site failure or during testing, automatic site failover capabilities are highly desirable. This is because manual steps are often error prone. RTO <mark style="background: #BABD00;">(Recovery Time Objective)</mark> with automated failover is significantly less compared to the manual process. However, the DR product that automates setup, failover, and testing of DR plans must be compatible with the guest OS.  
+To ensure a robust and consistent failover in case of a site failure or during testing, automatic site failover capabilities are highly desirable. This is because manual steps are often error prone. RTO <mark style="background: #BABD00;">(Recovery Time Objective)</mark> with automated failover is significantly less compared to the manual process. However, the DR product that automates setup, failover, and testing of DR plans must be compatible with the guest OS.
 
-A hypervisor provides robust, reliable, and secure virtualisation platform that isolates applications and OSs from their underlying hardware. This considerably reduces the complexity of implementing and testing DR strategies. 
+A hypervisor provides robust, reliable, and secure virtualisation platform that isolates applications and OSs from their underlying hardware. This considerably reduces the complexity of implementing and testing DR strategies.
 
-Among the different types of hypervisors for BC, the “bare-metal” (Type 1) hypervisor provides a robust DR. During the DR process, the bare-metal approach offers greater levels of performance, reliability, and security; and is better equipped to leverage the power of x86 server architectures found in the datacentres.  
+Among the different types of hypervisors for BC, the “bare-metal” (Type 1) hypervisor provides a robust DR. During the DR process, the bare-metal approach offers greater levels of performance, reliability, and security; and is better equipped to leverage the power of x86 server architectures found in the datacentres.
 
 A VDC site failover process also depends upon other capabilities, including VM replication and migration capabilities, reliable network infrastructure between primary (production) site and the secondary (recovery or DR) site, and data backup capabilities
 
@@ -3487,22 +3499,24 @@ Selection of the restore point actually depends upon the choice of the RPO.
 <mark style="background: #BABD00;">The key steps involved in the restore process include:</mark>  
 1. Selection of the VM and virtual disks to be restored from the backup.  
 2. Selection of the destination location for the restoration: In case of an actual VM failure, the original physical machine itself is selected as a destination, whereas for restore rehearsal purposes, some alternate physical machine is selected.  
-3. Configuration settings: This includes deciding VM configuration settings either by using the existing backup or by applying new settings.  
+3. <mark style="background: #BABD00;">Configuration settings:</mark> This includes deciding VM configuration settings either by using the existing backup or by applying new settings.  
 
 Restoring a VM may take significantly fewer steps, compared to the recovery of physical machines. Therefore, recovery time requirements for a VM and consequently for the whole VDC are relatively shorter, compared to the CDC environment.
 
 ### <mark style="background: #BABD00;">VM Replication in VDC:</mark>
 
-VM replication is a critical requirement for successful BC
+VM replication is a critical requirement for successful BC.
 
-VM replication is performed at the hypervisor level Relies upon replication software to propagate changes made to a VM's virtual disk
+VM replication is performed at the hypervisor level. 
+
+Relies upon replication software to propagate changes made to a VM's virtual disk.
 
 <mark style="background: #BABD00;">To ensure data integrity, quiescing of VM is necessary before replication process starts:</mark>
 - Quiescing pauses currently running applications within a VM and forcibly flushes all data in the memory to the disk
 - To achieve application-level consistency, is performed at the application level
 - Applications complete any pending transactions and write the pending data to the disk
 
-<mark style="background: #BABD00;">VM replication</mark> is a critical requirement for successful BC and DR processes in a VDC. This is because, in a VDC environment, to restart operations, a user needs to primarily restart VMs on the secondary (backup) site. VM replication makes this possible by making the copies of these VMs available at the backup site. VM replication is performed at the hypervisor level and relies on replication software that can copy all the changes made to a VM disk to another server. VM replication requires a secondary site which is up and a network connectivity linking these sites.  
+<mark style="background: #BABD00;">VM replication</mark> is a critical requirement for successful BC and DR processes in a VDC. This is because, in a VDC environment, to restart operations, a user needs to primarily restart VMs on the secondary (backup) site. VM replication makes this possible by making the copies of these VMs available at the backup site. VM replication is performed at the hypervisor level and relies on replication software that can copy all the changes made to a VM disk to another server. VM replication requires a secondary site which is up and a network connectivity linking these sites.
 
 A virtual disk snapshot taken at the hypervisor level temporarily redirects incoming writes to a separate delta file. The delta file maintains these I/Os to be written to the virtual disk after the snapshot is taken. The virtual disk is then mounted by the replication software and any updates since the last replication cycle are copied to another identical virtual disk on a VM at the secondary site.  
 
@@ -3524,15 +3538,15 @@ Another method is to use a storage array to replicate the VM either to an array 
 
 ### <mark style="background: #BABD00;">VM Snapshot:</mark>
 
-Preserves the state and data of a VM at a specific point-in-time State includes VM configuration files as well as its power state (on, Off, suspended)
+Preserves the state and data of a VM at a specific point-in-time State includes VM configuration files as well as its power state (on, Off, suspended).
 
-Data includes all the files that makeup the VM including memory, and other devices, such as virtual NIC
+Data includes all the files that makeup the VM including memory, and other devices, such as virtual NIC.
 
-A log file captures the changes to the virtual disk after snapshot is taken
+A log file captures the changes to the virtual disk after snapshot is taken.
 
 ![](https://i.imgur.com/MAyLCcF.png)
 
-A snapshot preserves both the state and data of a VM at a specific point in time. State includes VM files such as BIOS, network configuration, and its power state (powered-on, powered-off, or suspended). 
+A snapshot preserves both the state and data of a VM at a specific point in time. State includes VM files such as BIOS, network configuration, and its power state (powered-on, powered-off, or suspended).
 
 Data includes all the files that makeup the VM, including virtual disks, memory, and other devices. In this method, instead of making a copy of the entire virtual disk of the VM, which may be very large in size, a snapshot is created. A snapshot includes a separate log file which captures the changes to the virtual disk of the VM since the snapshot was taken.  
 
@@ -3552,11 +3566,11 @@ A reusable image created from a VM Includes virtual hardware components, an inst
 - Repetitive installation and configuration tasks can be avoided
 - Deploying VMS from VM templates helps to enforce standards
 
-A VM template is a reusable image created from a VM. The VM template works like a master copy of a VM to be used for creating and provisioning new copies of the VM. The template typically includes virtual hardware components, an installed guest OS (with any applicable patches), and software applications.  
+A VM template is a reusable image created from a VM. The VM template works like a master copy of a VM to be used for creating and provisioning new copies of the VM. The template typically includes virtual hardware components, an installed guest OS (with any applicable patches), and software applications.
 
-Templates can be created in two ways, either by converting a powered-off VM into a template or by cloning a VM to a template. The advantage of converting a VM to a template is that the conversion is instantaneous. However, the template will not be used immediately.  
+Templates can be created in two ways, either by converting a powered-off VM into a template or by cloning a VM to a template. The advantage of converting a VM to a template is that the conversion is instantaneous. However, the template will not be used immediately.
 
-Cloning a VM to a template leaves the original VM intact, but will require waiting for the entire capacity of the VM to be duplicated into the template’s files.  
+Cloning a VM to a template leaves the original VM intact, but will require waiting for the entire capacity of the VM to be duplicated into the template’s files.
 
 A template differs from a clone because new VMs are deployed from templates. From a clone, only additional cloning can be done to create new VMs. However the new VMs which are created out of a Clone will reflect the changed state of the clone as compared to a VM template which preserves the original state.  
 
@@ -3578,9 +3592,9 @@ For example: hypervisor failure or scheduled hypervisor or storage array mainten
 
 There are many situations where moving a VM from one hypervisor to another is necessary.  
 
-The primary purpose is to achieve BC in case of hypervisor failure. Another situation might involve load balancing when one hypervisor is running many VMs but another hypervisor is relatively less occupied. Yet another reason might involve facilitating scheduled hypervisor or storage array maintenance.  
+The primary purpose is to achieve BC in case of hypervisor failure. Another situation might involve load balancing when one hypervisor is running many VMs but another hypervisor is relatively less occupied. Yet another reason might involve facilitating scheduled hypervisor or storage array maintenance.
 
-The process of moving VMs from one (source) hypervisor to another (target) is known as VM Migration. 
+The process of moving VMs from one (source) hypervisor to another (target) is known as VM Migration.
 
 <mark style="background: #BABD00;">There are primarily two different types of VM migrations:</mark>  
 - <mark style="background: #BABD00;">Server-to-server migration:</mark> This type of VM migration involves moving a VM from one hypervisor to another using a client (migration agent software) running on these hypervisors. The receiving hypervisor may be remotely located in a different data centre.  
@@ -3652,17 +3666,17 @@ TFA can be applied to any app written in any language.
 
 ### <mark style="background: #BABD00;">Twelve Factors:</mark>
 
-1. <mark style="background: #BABD00;">Codebase:</mark> One codebase tracked in revision control, many deploys.  
-2. <mark style="background: #BABD00;">Dependencies:</mark> Explicitly declare and isolate dependencies.  
-3. <mark style="background: #BABD00;">Config:</mark> Store config in the environment.  
-4. <mark style="background: #BABD00;">Backing Services:</mark> Treat backing services as attached resources.  
-5. <mark style="background: #BABD00;">Build, release, run:</mark> Strictly separate build and run stages.  
+1. <mark style="background: #BABD00;">Codebase:</mark> One codebase tracked in revision control, many deploys.
+2. <mark style="background: #BABD00;">Dependencies:</mark> Explicitly declare and isolate dependencies.
+3. <mark style="background: #BABD00;">Config:</mark> Store config in the environment.
+4. <mark style="background: #BABD00;">Backing Services:</mark> Treat backing services as attached resources.
+5. <mark style="background: #BABD00;">Build, release, run:</mark> Strictly separate build and run stages.
 6. <mark style="background: #BABD00;">Processes:</mark> Execute the app as one or more stateless processes
-7. <mark style="background: #BABD00;">Port Binding:</mark> Export services via port binding.  
-8. <mark style="background: #BABD00;">Concurrency:</mark> Scale out via the process model.  
-9. <mark style="background: #BABD00;">Disposability:</mark> Maximise robustness with fast start-up and graceful shutdown.  
-10. <mark style="background: #BABD00;">Dev/prod parity:</mark> Keep development, staging, and production as similar as possible.  
-11. <mark style="background: #BABD00;">Logs:</mark> Treat logs as event streams.  
+7. <mark style="background: #BABD00;">Port Binding:</mark> Export services via port binding.
+8. <mark style="background: #BABD00;">Concurrency:</mark> Scale out via the process model.
+9. <mark style="background: #BABD00;">Disposability:</mark> Maximise robustness with fast start-up and graceful shutdown.
+10. <mark style="background: #BABD00;">Dev/prod parity:</mark> Keep development, staging, and production as similar as possible.
+11. <mark style="background: #BABD00;">Logs:</mark> Treat logs as event streams.
 12. <mark style="background: #BABD00;">Admin processes:</mark> Run admin/management tasks as one-off processes.
 
 ### <mark style="background: #BABD00;">Codebase:</mark>
@@ -3738,7 +3752,7 @@ Environment variables are easy to change between deploys without changing any co
 
 Unlike config files, there is little chance of them being checked into the code repo accidentally.  
 
-All configuration data should be stored in a separate place from the code, and read in by the code at runtime.  
+All configuration data should be stored in a separate place from the code, and read in by the code at runtime.
 
 So, when you deploy code to an environment, you copy the correct configuration files into the codebase at that time.
 
@@ -3796,7 +3810,7 @@ In other words, the state of your system is completely defined by your databases
 
 Twelve-factor processes are stateless and share-nothing. Any data that needs to persist must be stored in a stateful backing service, typically a database.
 
-Some web systems rely on “sticky sessions”.  That is, caching user session data in memory of the app’s process and expecting future requests from the same visitor to be routed to the same process.  
+Some web systems rely on “sticky sessions”. That is, caching user session data in memory of the app’s process and expecting future requests from the same visitor to be routed to the same process.  
 
 Sticky sessions are a violation of twelve-factor and should never be used or relied upon.  
 
@@ -3834,7 +3848,7 @@ Software doesn’t wear out.
 - <mark style="background: #BABD00;">Efficiency:</mark> Software should not make wasteful use of system resources.  
 - <mark style="background: #BABD00;">Maintainability:</mark> Software must evolve to meet changing needs.  
 - <mark style="background: #BABD00;">Portability:</mark> We should be able to move software from machine to machine as we require.
-- <mark style="background: #BABD00;">Others:</mark> Functional suitability, Compatibility, Security (ISO/IEC 25010:2011
+- <mark style="background: #BABD00;">Others:</mark> Functional suitability, Compatibility, Security (ISO/IEC 25010:2011)
 
 <mark style="background: #BABD00;">The cost of change:</mark>
 ![](https://i.imgur.com/JCoSRyn.png)
@@ -3884,7 +3898,7 @@ All inbound traffic to a web role passes through a stateless load balancer, whic
 
 Individual role instances do not have public IP addresses, and are not directly addressable from the Internet. (This is why you can’t ‘Ping’ the IP addresses).  
 
-Web roles are stateless, so that any client request can be routed to any role instance.  
+Web roles are stateless, so that any client request can be routed to any role instance.
 
 A Status-check event is raised every 15 seconds. This can be used to indicate if the role is ready to receive traffic, or is busy and should be taken out of the load balancer rotation.
 
@@ -3944,9 +3958,9 @@ For example, HTTP requests may be handled by a web process, and long-running bac
 
 The idea is that lots of little processes are handling specific needs.  
 
-So you might have dozens of handlers at the ready to process web requests, and another dozen to handle API calls for your enterprise users. And still another half-dozen processing background welcome-emails going to new users.  
+So you might have dozens of handlers at the ready to process web requests, and another dozen to handle API calls for your enterprise users. And still another half-dozen processing background welcome-emails going to new users.
 
-By keeping all these small parts working independently, and running them as separate processes, your application will scale better. In particular, you’ll be able to do more stuff concurrently.  
+By keeping all these small parts working independently, and running them as separate processes, your application will scale better. In particular, you’ll be able to do more stuff concurrently.
 
 By scaling horizontally (or vertically).
 
@@ -3964,11 +3978,11 @@ Processes shut down gracefully.
 
 For a web process, a graceful shutdown is achieved by ceasing to listen on the service port (thereby refusing any new requests), allowing any current requests to finish, and then exiting.
 
-Further, your application should be robust against sudden death (crashing) in the case of a failure in the underlying hardware.  
+Further, your application should be robust against sudden death (crashing) in the case of a failure in the underlying hardware.
 
-Meaning, if it does crash, it should always be able to start back up cleanly.  
+Meaning, if it does crash, it should always be able to start back up cleanly.
 
-You should never do any mandatory “clean-up” tasks when the app shuts down, because that might cause problems if they failed to run in a crash scenario.  
+You should never do any mandatory “clean-up” tasks when the app shuts down, because that might cause problems if they failed to run in a crash scenario.
 
 A recommended approach is use of a robust queueing backend, such as Beanstalkd, that returns jobs to the queue when clients disconnect or time out.
 
@@ -4011,7 +4025,7 @@ Logs are the stream of aggregated, time-ordered events collected from the output
 
 Logs have no fixed beginning or end, but flow continuously as long as the app is operating.  
 
-Logs in their raw form are typically a text format with one event per line (though backtraces from exceptions may span multiple lines).
+Logs in their raw form are typically a text format with one event per line (though back-traces from exceptions may span multiple lines).
 
 <mark style="background: #BABD00;">A twelve-factor app never concerns itself with routing or storage of its output stream.</mark>  
 - It should not attempt to write to or manage logfiles. Instead, each running process writes its event stream, unbuffered, to stdout.  
@@ -4152,7 +4166,7 @@ The goal is to create a single, integrated seamless automated pipeline of activi
 - Involves using tried and tested software development practices (including design patterns).
 - To not only provision Infrastructure but all the processes governing the management of said Infrastructure.
 
-Differs from <mark style="background: #BABD00;">infrastructure automation</mark>, which just involves replicating steps multiple times and reproducing them on several servers. It
+Differs from <mark style="background: #BABD00;">infrastructure automation</mark>, which just involves replicating steps multiple times and reproducing them on several servers.
 
 <mark style="background: #BABD00;">Programmable Infrastructure (IaC):</mark>
 - The knowledge of server provisioning, configuration management and deployment is no longer only with the systems admins.
@@ -4162,13 +4176,14 @@ Differs from <mark style="background: #BABD00;">infrastructure automation</mark>
 - Vagrant, ansible, puppet, Chef, Salt, Terraform, Consul, Bcfg2, CFEngine, etc.
 - Many of these tools provide RESTFul APIs that leverage to support any desired degree of interoperability.
 - Terraform used for creation and provisioning broad infra
-- Ansible very good at provsioning SPECIFIC instances. Often used with Terraform.
+- Ansible very good at provisioning SPECIFIC instances. Often used with Terraform.
 
 ![](https://i.imgur.com/vGuVViZ.png)
 
 The infrastructure is provisioned, created and managed by specifications in configuration files.
 
 This is declarative - you specify WHAT, not HOW.
+
 ### <mark style="background: #BABD00;">Idempotent:</mark>
 
 Comes from maths, a mathematical op is idempotent if and only if you perform an operation one or more times then the result is the exact same as if you performed it only once. e.g. adding by 1 is not idempotent (0+1 =1, 1+1=2) but multiplying by 0 is (1 x 0 = 0, 2 x 0 =0)
@@ -4307,7 +4322,7 @@ Reduce integration problems allowing you to deliver software more rapidly
 
 ### <mark style="background: #BABD00;">Team Responsibilities:</mark>  
 - Check in frequently.  
-- Don’t check in broken code  
+- Don’t check in broken code.
 - Don’t check in untested code.  
 - Don’t check in when the build is broken.  
 - Don’t go home after checking in until the system builds.  
@@ -4317,13 +4332,13 @@ Reduce integration problems allowing you to deliver software more rapidly
 
 ### <mark style="background: #BABD00;">Automate the Build:</mark>
 
-What exactly do we mean by ‘Automate the build’?  
+What exactly do we mean by ‘Automate the build’?
 
-Getting the sources turned into a running system can often be a complicated process involving compilation, moving files around, loading schemas into the databases, and so on.  
+Getting the sources turned into a running system can often be a complicated process involving compilation, moving files around, loading schemas into the databases, and so on.
 
-However like most tasks in this part of software development it can be automated - and as a result should be automated. Asking people to type in strange commands or clicking through dialog boxes is a breeding ground for mistakes.  
+However like most tasks in this part of software development it can be automated - and as a result should be automated. Asking people to type in strange commands or clicking through dialog boxes is a breeding ground for mistakes.
 
-A common mistake is not to include everything in the automated build.  
+A common mistake is not to include everything in the automated build.
 
 <mark style="background: #BABD00;">Rule of thumb:</mark> anyone should be able to bring in a virgin machine, check the sources out of the repository, issue a single command, and have a running system on their machine.
 
@@ -4335,7 +4350,7 @@ A CI activity whereby a build takes a long time is counter-productive.
 
 Most consider a build that takes an hour to be totally unreasonable. 10 minutes is reasonable.  
 
-Recall - It's worth putting in concentrated effort to make it happen, because every minute you reduce off the build time is a minute saved for each developer every time they commit. Since CI demands frequent commits, this adds up to a lot of time.  
+Recall - It's worth putting in concentrated effort to make it happen, because every minute you reduce off the build time is a minute saved for each developer every time they commit. Since CI demands frequent commits, this adds up to a lot of time.
 
 One approach to reducing overall build time is to use a multi-stage build process.
 
@@ -4375,11 +4390,11 @@ We achieve all this by ensuring our code is always in a deployable state, even i
 
 ### <mark style="background: #BABD00;">Why Continuous Delivery?</mark>
 
-It is often assumed that if we want to deploy software more frequently, we must accept lower levels of stability and reliability in our systems. 
+It is often assumed that if we want to deploy software more frequently, we must accept lower levels of stability and reliability in our systems.
 
-High performance teams consistently deliver services faster and more reliably than their low performing competition.  
+High performance teams consistently deliver services faster and more reliably than their low performing competition.
 
-CD provides an distinct competitive advantage for organisations who embrace it
+CD provides an distinct competitive advantage for organisations who embrace it.
 
 ### <mark style="background: #BABD00;">Benefits of Continuous Delivery?</mark>
 
@@ -4393,7 +4408,7 @@ CD provides an distinct competitive advantage for organisations who embrace it
 
 The primary goal of continuous delivery is to make software deployments painless, low-risk events that can be performed at any time, on demand.  
 
-By applying patterns such as blue-green deployments it is relatively straightforward to achieve zero-downtime deployments that are undetectable to users  
+By applying patterns such as blue-green deployments it is relatively straightforward to achieve zero-downtime deployments that are undetectable to users.
 
 A pattern is "a named strategy for solving a recurring problem". 
 
@@ -4411,10 +4426,6 @@ Blue-green deployment also gives you a rapid way to rollback - if anything goes 
 <mark style="background: #BABD00;">Faster time to market:</mark>  
 - It’s not uncommon for the integration and test/fix phase of the traditional phased software delivery lifecycle to consume weeks or even months.  
 - By automating the build and deployment, environment provisioning, and regression testing processes, We also avoid the large amounts of re-work that plague the phased approach.
-
-<mark style="background: #BABD00;">Higher Quality:</mark>  
-- When developers have automated tools that discover regressions within minutes, teams are freed to focus their effort on user research and higher level testing activities such as exploratory testing, usability testing, and performance and security testing.  
-- By building a deployment pipeline, these activities can be performed continuously throughout the delivery process, ensuring quality is built in to products and services from the beginning.
 
 <mark style="background: #BABD00;">Higher Quality:</mark>  
 - When developers have automated tools that discover regressions within minutes, teams are freed to focus their effort on user research and higher level testing activities such as exploratory testing, usability testing, and performance and security testing.  
@@ -4448,16 +4459,16 @@ Blue-green deployment also gives you a rapid way to rollback - if anything goes 
 <mark style="background: #BABD00;">Build Quality In:</mark>  
 - W. Edwards Deming, a key figure in the history of the Lean movement offered 14 key principles for management.  
 - Principle three states, “Cease dependence on inspection to achieve quality. Eliminate the need for inspection on a mass basis by building quality into the product in the first place.”  
-- It’s much cheaper to fix problems and defects if we find them immediately—ideally before they are ever checked into version control, by running automated tests locally
+- It’s much cheaper to fix problems and defects if we find them immediately - ideally before they are ever checked into version control, by running automated tests locally
 - Creating and evolving feedback loops to detect problems as early as possible is an essential and never-ending work in continuous delivery.  
-- If we find a problem in our exploratory testing, we must not only fix it, but then ask: How could we have caught the problem with an automated acceptance test?  
+- If we find a problem in our exploratory testing, we must not only fix it, but then ask: How could we have caught the problem with an automated acceptance test?
 - When an acceptance test fails, we should ask: Could we have written a unit test to catch this problem?
 
 <mark style="background: #BABD00;">Work in Small Batches:</mark>  
 - In traditional phased approaches to software development, handoffs from dev to test or test to IT operations consist of whole releases: months worth of work by teams consisting of tens or hundreds of people.  
 - In Continuous Delivery, we take the opposite approach, and try and get every change in version control as far towards release as we can, getting comprehensive feedback as rapidly as possible.  
 - Working in small batches has many benefits. It reduces the time it takes to get feedback on our work, makes it easier to triage and remediate problems, increases efficiency and motivation, and prevents us from succumbing to the sunk cost fallacy.
-- <mark style="background: #BABD00;">Sunk Cost Fallacy:</mark> Reasoning that further investment is  warranted on the fact that the resources already invested will be lost otherwise, not taking into consideration the overall losses involved in the further investment (Short term thinking).  
+- <mark style="background: #BABD00;">Sunk Cost Fallacy:</mark> Reasoning that further investment is warranted on the fact that the resources already invested will be lost otherwise, not taking into consideration the overall losses involved in the further investment (Short term thinking).  
 - The reason we work in small batches is because of the large fixed cost of handing off changes.  
 - A key goal of continuous delivery is to change the economics of the software delivery process to make it economically viable to work in small batches so we can obtain the many benefits of this approach.
 
@@ -4620,10 +4631,10 @@ If we discover a defect in the acceptance tests, we should be looking to improve
 ### <mark style="background: #BABD00;">Canary Deployments – what is it?</mark>
 
 <mark style="background: #BABD00;">A deployment strategy that gradually rolls out a new version to a subset of users.</mark>  
-- Release to 5% of users  
-- Monitor metrics and feedback  
-- Expand to 25%, continue to monitor metrics and feedback  
-- If all is well, then release to 100% of users.  
+- Release to 5% of users
+- Monitor metrics and feedback
+- Expand to 25%, continue to monitor metrics and feedback
+- If all is well, then release to 100% of users.
 
 Allows monitoring for issues before a full-scale release..  
 
@@ -4704,9 +4715,9 @@ In Stateful Protocols, if a client sends a request to the server then it expects
 
 ### <mark style="background: #BABD00;">Conclusion</mark>
 
-There are two types of protocols: <mark style="background: #BABD00;">Stateless</mark> and <mark style="background: #BABD00;">Stateful</mark>. Each type has its benefits and pitfalls that qualify it for use in some contexts and not others. 
+There are two types of protocols: <mark style="background: #BABD00;">Stateless</mark> and <mark style="background: #BABD00;">Stateful</mark>. Each type has its benefits and pitfalls that qualify it for use in some contexts and not others.
 
-Since <mark style="background: #BABD00;">stateless</mark> protocols do not retain session specific details, the simplicity in design of servers and the management of resources is well adopted, especially in applications that do not necessarily require session information of clients. 
+Since <mark style="background: #BABD00;">stateless</mark> protocols do not retain session specific details, the simplicity in design of servers and the management of resources is well adopted, especially in applications that do not necessarily require session information of clients.
 
 On the other hand, <mark style="background: #BABD00;">stateful</mark> protocols possess better interactivity by maintaining session information that is advantageous for those applications that require session continuity and reliability. By elucidating these differences, one is better placed to determine the right protocol for budgeting purposes and in meeting the profound demands of the business’s specific network.
 
@@ -4717,7 +4728,7 @@ On the other hand, <mark style="background: #BABD00;">stateful</mark> protocols 
 - Since the session information is not required to be stored on the server, it also means that the design is easier and the server load is less.
 
 <mark style="background: #BABD00;">How do stateful protocols enhance client-server communication?</mark>
-- Stateful protocols improve the engagement between devices because it holds information regarding the connection between the engaging requests which in turn makes the engagement to be much more continuous and reliable as compared to stateless. 
+- Stateful protocols improve the engagement between devices because it holds information regarding the connection between the engaging requests which in turn makes the engagement to be much more continuous and reliable as compared to stateless.
 - For cases where it is necessary to monitor particular active sessions, this is quite helpful.
 
 <mark style="background: #BABD00;">Can you give an example of when to use a stateless protocol?</mark>
@@ -5122,17 +5133,25 @@ Load-balanced packets are sent to the backend VMs with their source and destinat
 
 Responses from the backend VMs go directly to the clients, not back through the load balancer. This process is known as direct server return (DSR).
 
-<mark style="background: #BABD00;">Backend service-based external passthrough Network Load Balancers support the following features:</mark>
-- <mark style="background: #BABD00;">Managed and unmanaged instance group backends.</mark> Backend service-based external passthrough Network Load Balancers support both managed and unmanaged instance groups as backends. Managed instance groups automate certain aspects of backend management and provide better scalability and reliability as compared to unmanaged instance groups.
-- <mark style="background: #BABD00;">Zonal NEG backends:</mark> Backend service-based external passthrough Network Load Balancers support using zonal NEGs with `GCE_VM_IP` endpoints. Zonal NEG `GCE_VM_IP` endpoints let you do the following:
-    - Forward packets to any network interface, not just `nic0`.
-    - Place the same `GCE_VM_IP` endpoint in two or more zonal NEGs connected to different backend services.
-- <mark style="background: #BABD00;">Support for multiple protocols:</mark> Backend service-based external passthrough Network Load Balancers can load-balance TCP, UDP, ESP, GRE, ICMP, and ICMPv6 traffic.
-- <mark style="background: #BABD00;">Support for IPv6 connectivity:</mark> Backend service-based external passthrough Network Load Balancers can handle both IPv4 and IPv6 traffic.
-- <mark style="background: #BABD00;">Fine-grained traffic distribution control:</mark> A backend service allows [traffic to be distributed](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#traffic-distribution) according to a configurable [session affinity](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#session-affinity), [connection tracking mode](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#tracking-mode), and [weighted load balancing](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#weighted-lb). The backend service can also be configured to enable [connection draining](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#connection_draining) and designate [failover backends](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#failover) for the load balancer. Most of these settings have default values that let you get started quickly.
-- <mark style="background: #BABD00;">Support for non-legacy health checks:</mark> Backend service-based external passthrough Network Load Balancers let you use [health checks](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#health-checks) that match the type of traffic (TCP, SSL, HTTP, HTTPS, or HTTP/2) that they are distributing.
-- <mark style="background: #BABD00;">Google Cloud Armor integration:</mark> Google Cloud Armor supports advanced network DDoS protection for external passthrough Network Load Balancers. For more information, see [Configure advanced network DDoS protection](https://cloud.google.com/armor/docs/advanced-network-ddos).
-- <mark style="background: #BABD00;">GKE integration:</mark> If you are building applications in GKE, we recommend that you use the built-in [GKE Service controller](https://cloud.google.com/kubernetes-engine/docs/concepts/service), which deploys Google Cloud load balancers on behalf of GKE users. This is the same as the standalone load balancing architecture described on this page, except that its lifecycle is fully automated and controlled by GKE.
+### <mark style="background: #BABD00;">Backend service-based external passthrough Network Load Balancers support the following features:</mark>
+
+<mark style="background: #BABD00;">Managed and unmanaged instance group backends.</mark> Backend service-based external passthrough Network Load Balancers support both managed and unmanaged instance groups as backends. Managed instance groups automate certain aspects of backend management and provide better scalability and reliability as compared to unmanaged instance groups.
+
+<mark style="background: #BABD00;">Zonal NEG backends:</mark> Backend service-based external passthrough Network Load Balancers support using zonal NEGs with `GCE_VM_IP` endpoints. Zonal NEG `GCE_VM_IP` endpoints let you do the following:
+- Forward packets to any network interface, not just `nic0`.
+- Place the same `GCE_VM_IP` endpoint in two or more zonal NEGs connected to different backend services.
+
+<mark style="background: #BABD00;">Support for multiple protocols:</mark> Backend service-based external passthrough Network Load Balancers can load-balance TCP, UDP, ESP, GRE, ICMP, and ICMPv6 traffic.
+
+<mark style="background: #BABD00;">Support for IPv6 connectivity:</mark> Backend service-based external passthrough Network Load Balancers can handle both IPv4 and IPv6 traffic.
+
+<mark style="background: #BABD00;">Fine-grained traffic distribution control:</mark> A backend service allows [traffic to be distributed](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#traffic-distribution) according to a configurable [session affinity](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#session-affinity), [connection tracking mode](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#tracking-mode), and [weighted load balancing](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#weighted-lb). The backend service can also be configured to enable [connection draining](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#connection_draining) and designate [failover backends](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#failover) for the load balancer. Most of these settings have default values that let you get started quickly.
+
+<mark style="background: #BABD00;">Support for non-legacy health checks:</mark> Backend service-based external passthrough Network Load Balancers let you use [health checks](https://cloud.google.com/load-balancing/docs/network/networklb-backend-service#health-checks) that match the type of traffic (TCP, SSL, HTTP, HTTPS, or HTTP/2) that they are distributing.
+
+<mark style="background: #BABD00;">Google Cloud Armor integration:</mark> Google Cloud Armor supports advanced network DDoS protection for external passthrough Network Load Balancers. For more information, see [Configure advanced network DDoS protection](https://cloud.google.com/armor/docs/advanced-network-ddos).
+
+<mark style="background: #BABD00;">GKE integration:</mark> If you are building applications in GKE, we recommend that you use the built-in [GKE Service controller](https://cloud.google.com/kubernetes-engine/docs/concepts/service), which deploys Google Cloud load balancers on behalf of GKE users. This is the same as the standalone load balancing architecture described on this page, except that its lifecycle is fully automated and controlled by GKE.
 
 <mark style="background: #BABD00;">Related GKE documentation:</mark> 
 - [LoadBalancer Service concepts](https://cloud.google.com/kubernetes-engine/docs/concepts/service-load-balancer)
