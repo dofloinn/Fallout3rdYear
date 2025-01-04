@@ -7,8 +7,8 @@ Android is an open-source operating system based on Linux and Java for smartphon
 Android was developed by the Open Handset Alliance which is led by Google.  
 - Why do you think google did that? A free OS for phones?  
 
-The first Android Software Development Kit (SDK) was  released in 2007. Google released Jelly Bean in 2012 with the idea of improving the user interface.  
-- Why google created the SDK for free?  
+The first Android Software Development Kit (SDK) was released in 2007. Google released Jelly Bean in 2012 with the idea of improving the user interface.  
+- Why did google create the SDK for free?  
 
 Android is designed as a unique platform in the sense that developers only need to code their application in Android and it will run on any device.
 
@@ -81,7 +81,7 @@ Folders to organise apps
 - Android Runtime (ART) with ahead-of-time (AOT) compilation and improved GC  
 - Support for 64-bit CPUs, Material Design, bringing a restyled User Interface  
 - "Lockdown" mode which disables biometric authentication once activated  
-- Rounded corners across the UI 
+- Rounded corners across the UI
 
 <mark style="background: #AD21D9;">Recent (2019-2022):</mark>
 - Platform optimisations. have been made for foldable smartphones.  
@@ -220,13 +220,13 @@ View is the <mark style="background: #AD21D9;">base class for widget</mark> (but
 
 A <mark style="background: #AD21D9;">ViewGroup</mark> is a subclass View that behaves like a <mark style="background: #AD21D9;">container</mark> for more Views or other ViewGroups.  
 
-Layouts which are subclasses of ViewGroup class  
+Layouts which are subclasses of ViewGroup class.
 
-Layouts are declared using the <mark style="background: #AD21D9;">XML</mark> file main_layout.xml located in "res/layout"
+Layouts are declared using the <mark style="background: #AD21D9;">XML</mark> file main_layout.xml located in "res/layout".
 
 ### <mark style="background: #AD21D9;">Android UI Controls:</mark>
 
-In the above figure:  
+<mark style="background: #AD21D9;">In the above figure:</mark>  
 1. Button  
 2. Text field  
 3. Seek bar  
@@ -243,9 +243,9 @@ In the above figure:
 
 Events are used for asynchrony interactions. It is used to interact the actions of the users such as clicking a button, scrolling up or down, or typing a text.  
 
-There are three different kind of events:  
-- <mark style="background: #AD21D9;">Event listeners:</mark> It only has one call-back action that is executed when the users triggers an event on that item.  
-- <mark style="background: #AD21D9;">Event handler:</mark> It is called by the event listener to handle the event.  
+<mark style="background: #AD21D9;">There are three different kind of events:</mark> 
+- <mark style="background: #AD21D9;">Event listeners:</mark> It only has one call-back action that is executed when the users triggers an event on that item.
+- <mark style="background: #AD21D9;">Event handler:</mark> It is called by the event listener to handle the event.
 - <mark style="background: #AD21D9;">Event Listeners Registration:</mark> It is the process by which the event handler is registered. <mark style="background: #AD21D9;">Links</mark> the <mark style="background: #AD21D9;">listener</mark> with the <mark style="background: #AD21D9;">handler</mark>.
 
 ### <mark style="background: #AD21D9;">Event handling Methods:</mark>
@@ -254,10 +254,10 @@ There are three different kind of events:
 
 ### <mark style="background: #AD21D9;">Callback Functions:</mark>
 
-A callback function is a function which is:
-- It is passed as a parameter 
-- It is accessible by another function, and  
-- It is invoked after the first function if that first function completes  
+<mark style="background: #AD21D9;">A callback function is a function which is:</mark>
+- Passed as a parameter.
+- Accessible by another function.
+- Invoked after the first function if that first function completes. 
 - The name tends to confuse. Maybe a better name would be “Call after function”. Maybe a better name would be a "call after" function.  
 - They are used in asynchronous communications to manage events.
 
@@ -328,7 +328,7 @@ If you look at your mobile device, every <mark style="background: #AD21D9;">User
 
 ``textCapCharacters:`` Set to ALL CAPITAL LETTERS  
 
-``textPassword:`` Conceal an entered p******d  
+``textPassword:`` Conceal an entered p*\*\*\*\*\*d  
 
 ``number:`` <mark style="background: #AD21D9;">Restrict</mark> text entry to numbers  
 
@@ -522,7 +522,7 @@ The API Framework allows us easily use app Resources.
 
 ### <mark style="background: #AD21D9;">Drawables:</mark> 
 
-Drawable—generic Android class used to represent any kind of graphic.  
+Drawable - generic Android class used to represent any kind of graphic.  
 
 Bitmaps e.g. PNG (.png), JPG (.jpg), or GIF (.gif) format.  
 
@@ -608,7 +608,6 @@ Themes are defined in styles.xml and may be customised
 	<item name="colorPrimary">@color/colorPrimary</item>  
 	<item name="colorPrimaryDark">@color/colorPrimaryDark</item>  
 	<item name="colorAccent">@color/colorAccent</item>  
-
 </style>
 ```
 
@@ -678,8 +677,7 @@ rv = (RecyclerView) findViewById(R.id.recyclerview);
 ```
 
 <mark style="background: #AD21D9;">String:</mark>
-```Java
-//Java
+```Kotlin
 R.string.title
 ```
 
@@ -702,7 +700,7 @@ Devices have different screen sizes (handsets, tablets, TVs...)
 
 Different pixel sizes e.g. 160 or 480 per square inch.  
 
-If you don't consider this, system might:  
+<mark style="background: #AD21D9;">If you don't consider this, system might: </mark>
 - Scale your images (resulting in blurry images).  
 - Images might appear at the completely wrong size.
 
@@ -793,9 +791,9 @@ Array<String> mMovies = { "Inception", "Spider Man", "Shawshank Redemption", "Fa
 
 ### <mark style="background: #AD21D9;">AdapterView:</mark>
 
-``ListView`` derives from ``AdapterView``  
+``ListView`` derives from ``AdapterView``
 
-``AdapterViews`` are Views that use Adapters.  
+``AdapterViews`` are Views that use Adapters.
 
 There are several other ``AdapterView`` subclasses that behave much like ``ListView``.
 
@@ -810,7 +808,7 @@ There are several other ``AdapterView`` subclasses that behave much like ``ListV
 ### <mark style="background: #AD21D9;">Modifying your List:</mark>
 
 <mark style="background: #AD21D9;">How do I add more items?</mark>  
-``add(T Object)`` – Adds the specified object to the end  of the array.  
+``add(T Object)`` – Adds the specified object to the end  of the array.
 
 <mark style="background: #AD21D9;">How can I add a set of items?</mark>  
 ``addAll(T... items)`` – Adds the specified items at the end of the array.  
@@ -901,14 +899,14 @@ Also, remember the default action of an ``ArrayAdapter`` is to call the ``toStri
 This means your list will change the text on the list item and nothing else.
 
 <mark style="background: #AD21D9;">Getting creative with Custom Adapters:</mark>  
-- With Custom Adapters, you can use your own layout to make lists more interesting.  
-- You can make the list items look any way you want.  
+- With Custom Adapters, you can use your own layout to make lists more interesting.
+- You can make the list items look any way you want.
 - You can make the list item have more data than just simple text.
 
 <mark style="background: #AD21D9;">Steps for create a custom adapter:</mark>  
-1. Extend an existing Adapter class  
-2. Define a constructor  
-3. @Override the Adapter’s ``getView()`` method.  
+1. Extend an existing Adapter class
+2. Define a constructor
+3. @Override the Adapter’s ``getView()`` method.
 	- Use this to inflate custom list items  
 	- Use this to populate the item with more data than just what comes from ``toString()``
 
@@ -923,9 +921,9 @@ This means your list will change the text on the list item and nothing else.
 
 Recycler view is a robust list drawing library that provides a fixed size window we can use to load a large dataset into.  
 
-It recycles the views it creates as we scroll (or the views go out of scope) and then if there is a need, it reuses them to make it seem as if the views were never offloaded.  
+It recycles the views it creates as we scroll (or the views go out of scope) and then if there is a need, it reuses them to make it seem as if the views were never offloaded.
 
-They appear to the user to be present outside the window.  
+They appear to the user to be present outside the window.
 
 This makes Recycler view exceptional for displaying data collections whose elements change at runtime based on user action or network events.
 
@@ -942,14 +940,13 @@ You’ll be required to not only add in a recycler view but also to tell the rec
 
 ``RecyclerViews`` take a bit of work to get up and running because of this but they are highly flexible and adaptable as a result.
 
-
 # <mark style="background: #AD21D9;">04 Activity Lifecycle</mark>
 
 ### <mark style="background: #AD21D9;">Activity Life in Android Applications:</mark>
 
 Manifest File  
 
-Activity Lifecycle  
+<mark style="background: #AD21D9;">Activity Lifecycle</mark> 
 - Callbacks  
 - Instance State  
 - Saving and Restoring Activity State
@@ -961,8 +958,8 @@ Every app project must have an AndroidManifest.xml file.
 It lives at the root of the project source set.  
 
 <mark style="background: #AD21D9;">Describes essential information about your app to:</mark>  
-1. Android Build Tools  
-2. Android Operating System  
+1. Android Build Tools
+2. Android Operating System
 3. Google Play
 
 ### <mark style="background: #AD21D9;">Location:</mark>
@@ -978,7 +975,7 @@ It lives at the root of the project source set.
 ### <mark style="background: #AD21D9;">Example:</mark>
 ```XML
 <?xml version="1.0" encoding="utf-8"?>  
-<manifest >  
+<manifest>  
 	<application  
 	android:theme = "@style/AppTheme">  
 		<activity android:name = ".ActivityA">  
@@ -993,7 +990,7 @@ It lives at the root of the project source set.
 
 ### <mark style="background: #AD21D9;">Contents:</mark>
 
-Things found inside the manifest file include:
+<mark style="background: #AD21D9;">Things found inside the manifest file include:</mark>
 1. <mark style="background: #AD21D9;">Package name:</mark> Used to find pieces of code when building your project.  
 2. <mark style="background: #AD21D9;">Components:</mark> (e.g. Activities) Each component must define basic properties e.g. name of Java/Kotlin class.   
 3. <mark style="background: #AD21D9;">Capabilities:</mark> Device configurations it can handle and Intent filters (start-up).  
@@ -1030,7 +1027,7 @@ If the permission is <mark style="background: #AD21D9;">granted</mark>, the app 
 
 ### <mark style="background: #AD21D9;">App Components:</mark>
 
-For each app component in your app, declare an XML element:  
+<mark style="background: #AD21D9;">For each app component in your app, declare an XML element:</mark>  
 - Activity  ``<activity>``
 - Service  `<service> `
 - BroadcastReceiver  `<receiver>`
@@ -1038,12 +1035,11 @@ For each app component in your app, declare an XML element:
  
 If you <mark style="background: #AD21D9;">subclass</mark> these components without declaring it in the manifest file, the system cannot start it.
 
-When an app issues an <mark style="background: #AD21D9;">Intent</mark> to the system, it locates an app component that can handle it based on ``<intent-filter>`` declarations  
-in each app's manifest file.
+When an app issues an <mark style="background: #AD21D9;">Intent</mark> to the system, it locates an app component that can handle it based on ``<intent-filter>`` declarations in each app's manifest file.
 
 ### <mark style="background: #AD21D9;">Device Compatibility:</mark>
 
-Play Store does not allow app be installed on devices that don't provide required features.  
+The Google Play Store does not allow apps to be installed on devices that don't provide the required features.  
 
 Hardware or software features your app requires are declared with ``<uses-feature>`` element.
 
@@ -1070,17 +1066,18 @@ The set of <mark style="background: #AD21D9;">states</mark> an Activity can be i
 
 Only ``onCreate()`` is <mark style="background: #AD21D9;">required</mark>.  
 
-Override the other callbacks to change <mark style="background: #AD21D9;">default</mark> behaviour
+Override the other callbacks to change <mark style="background: #AD21D9;">default</mark> behaviour.
 
 ### <mark style="background: #AD21D9;">On Create:</mark>
 
 ```Kotlin
 @Override  
 public void onCreate(Bundle savedInstanceState){  
-super.onCreate(savedInstanceState);  
-// Activity is being created.  
+	super.onCreate(savedInstanceState);  
+	// Activity is being created.  
 }
 ```
+
 Called when Activity is first created e.g. user hits <mark style="background: #AD21D9;">launcher</mark> icon.  
 
 Does all <mark style="background: #AD21D9;">static</mark> setup: create views, bind data to lists...  
@@ -1116,6 +1113,7 @@ protected void onRestart() {
 // Activity is between stopped and started.  
 }
 ```
+
 Called after Activity has been <mark style="background: #AD21D9;">stopped</mark>, immediately before it is started again.  
 - Transient state.  
 - Always followed by ``onStart()``.
@@ -1129,7 +1127,9 @@ Called after Activity has been <mark style="background: #AD21D9;">stopped</mark>
 	// Activity has become visible, it is now "resumed"  
 }
 ```
+
 Called when Activity will start interacting with user.  
+
 Activity has moved to top of the Activity Stack.  
 
 Starts accepting user input.  
@@ -1169,7 +1169,7 @@ Followed by either ``onResume()`` if the Activity returns back to the front or `
 ```
 Called when the Activity is no longer <mark style="background: #AD21D9;">visible</mark> to the user.  
 
-A <mark style="background: #AD21D9;">new</mark> Activity is being started, an existing one is brought in front of this one, or this one is being destroyed.  
+A <mark style="background: #AD21D9;">new</mark> Activity is being started, an existing one is brought in front of this one, or this one is being destroyed.
 
 Operations that were too heavy-weight for ``onPause()``  
 
@@ -1184,6 +1184,7 @@ Followed by either ``onRestart()`` if Activity is <mark style="background: #AD21
 	// Activity is about to be destroyed.  
 }
 ```
+
 <mark style="background: #AD21D9;">Final</mark> call before Activity is destroyed.  
 
 User navigates <mark style="background: #AD21D9;">back</mark> to previous Activity, or configuration changes.  
@@ -1220,7 +1221,6 @@ The system may destroy Activity without calling this, so use ``onPause()`` or ``
 ![](https://i.imgur.com/YoZlMzc.png)
 
 ### <mark style="background: #AD21D9;">Topics:</mark>
-
 - Intents (Implicit, Explicit)  
 - Passing Data  
 - Permissions  
@@ -1228,11 +1228,11 @@ The system may destroy Activity without calling this, so use ``onPause()`` or ``
 
 ### <mark style="background: #AD21D9;">Application Structure:</mark>
 
-Due to the limited screen space of devices applications are structured as a collection of activities connected by intents  
+Due to the limited screen space of devices applications are structured as a collection of activities connected by intents.
 
-Activities take up a full screen and are responsible for displaying a UI and interacting with the user  
+Activities take up a full screen and are responsible for displaying a UI and interacting with the user.
 
-Intents are responsible for launching and returning from activities and communicating data between the two  
+Intents are responsible for launching and returning from activities and communicating data between the two.
 
 ### <mark style="background: #AD21D9;">Activities:</mark>
 
@@ -1254,11 +1254,11 @@ An Intent (your intention for the app) is constructed by the activity that wants
 
 ### <mark style="background: #AD21D9;">Intents:</mark>
 
-Used to link from one activity to the next  
+Used to link from one activity to the next.  
 
-An intent asks the android system to start a new activity for this application  
+An intent asks the android system to start a new activity for this application.  
 
-Intents can also have data attached to them to either seed the new activity or contain results to be returns from an activity  
+Intents can also have data attached to them to either seed the new activity or contain results to be returns from an activity.
 
 <mark style="background: #AD21D9;">However, there are two different classes of intent:</mark>  
 - Explicit  
@@ -1323,20 +1323,19 @@ startActivity(helloAndroidIntent)
 ### <mark style="background: #AD21D9;">Class Demo HelloAndroidWithLogin:</mark>
 
 ``LoginScreen`` Activity calls ``HelloAndroid`` Activity  
+
 Code Available on BrightSpace
 ![](https://i.imgur.com/EEqQEu6.png)
 
 ### <mark style="background: #AD21D9;">Activity Manifest:</mark>
 
-All Activities must be registered in the Activity Manifest to be launched  
+All Activities must be registered in the Activity Manifest to be launched.
 
-For the activity launcher to start an activity, the  
-activity needs to be registered in the Android  
-manifest with the correct intent filter  
+For the activity launcher to start an activity, the activity needs to be registered in the Android manifest with the correct intent filter.
 
-Activities that are launched explicitly must also be declared in the Manifest file
+Activities that are launched explicitly must also be declared in the Manifest file.
 
-Review the ``HelloAndroidWithLogin`` code
+Review the ``HelloAndroidWithLogin`` code.
 
 ![](https://i.imgur.com/FTLBxJS.png)
 
@@ -1408,29 +1407,31 @@ Action: ACTION_VIEW
 
 Categories: DEFAULT, BROWSABLE  
 
-Data: URIs with the geo scheme This means that the component can be used to display geographical locations to the user, and it can be launched from a web browser or by other apps using an implicit intent with the ACTION_VIEW action and a geo URI.  
-- Example If an app sends an implicit intent with the ACTION_VIEW action and a URI like geo:0,0?q=TUD+Dublin+Ireland, the system will search for components with an intent filter that matches these criteria.  
-- If the provided intent filter is present in an activity's manifest, that activity will be considered a candidate to handle the intent.
+<mark style="background: #AD21D9;">Data:</mark> URIs with the geo scheme This means that the component can be used to display geographical locations to the user, and it can be launched from a web browser or by other apps using an implicit intent with the ACTION_VIEW action and a geo URI.  
+
+Example: If an app sends an implicit intent with the ACTION_VIEW action and a URI like geo:0,0?q=TUD+Dublin+Ireland, the system will search for components with an intent filter that matches these criteria.  
+If the provided intent filter is present in an activity's manifest, that activity will be considered a candidate to handle the intent.
 
 ### <mark style="background: #AD21D9;">Permissions:</mark>
 
 The Implicit Intents example needed a permission for the timer. This permission is placed in the Manifest file  
 ```Kotlin
-<uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+<uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
 ```  
 
 Android permissions control an app’s access to user data and device features.  
 
 They ensure apps only access the data they need to function.  
 
-Protect user privacy and prevent unauthorized access.
+Protect user privacy and prevent unauthorised access.
 
 <mark style="background: #AD21D9;">Normal Permissions: (Set Timer)</mark>  
 - Grant access to less sensitive information (e.g., Internet).  
 - Automatically granted by the system.  
 
 <mark style="background: #AD21D9;">Dangerous Permissions:</mark>  
-- Access more sensitive data (e.g., location, camera).Require explicit user approval.
+- Access more sensitive data (e.g., location, camera). 
+- Requires explicit user approval.
 
 ### <mark style="background: #AD21D9;">Sending and Receiving Data with Intents:</mark>
 
@@ -1464,7 +1465,7 @@ startActivity(helloAndroidIntent)
 
 ### <mark style="background: #AD21D9;">Back Navigation:</mark>
 - Provided by the device's Back button  
-- Controlled by the Android System's back 
+- Controlled by the Android System's back stack
 - Back Stack preserves the history of recently viewed screens. 
 - Back Stack contains all the Activity objects that have been launched by the user in reverse order for the current task  
 - Each task has its own Back Stack  
@@ -1490,6 +1491,7 @@ Annotations allow you to provide review information e.g. reviewer name, date
 
 ```Kotlin
 @Reviewed(reviewer = "Abubakr Siddig", date = 20231024)
+
 class MyClass {
 	// ...
 }
@@ -1524,7 +1526,6 @@ As ROOM takes care of these concerns for you, it is highly <mark style="backgrou
 
 ![](https://i.imgur.com/YX2UnIe.png)
 
-
 ### <mark style="background: #AD21D9;">Components:</mark>
 
 <mark style="background: #AD21D9;">3 major components in ROOM:</mark>
@@ -1552,7 +1553,6 @@ To store a field, ROOM must have <mark style="background: #AD21D9;">access</mark
 2 options make field <mark style="background: #AD21D9;">public</mark>, or you can provide a getter and setter.
 
 ![](https://i.imgur.com/69Uol6L.png)
-
 
 <mark style="background: #AD21D9;">Entities can have:</mark>
 - An <mark style="background: #AD21D9;">empty</mark> constructor
@@ -1606,7 +1606,7 @@ To <mark style="background: #AD21D9;">access</mark> app's data we work with data
 
 The set of DAO forms main component of Room, as each DAO includes methods that offer <mark style="background: #AD21D9;">abstract</mark> access to your app's database.
 
-Why use DAO class instead of query builders or direct queries?
+<mark style="background: #AD21D9;">Why use DAO class instead of query builders or direct queries?</mark>
 1. <mark style="background: #AD21D9;">Separate</mark> different components of your database architecture.
 2. Easily <mark style="background: #AD21D9;">mock</mark> database access to test app.
 
@@ -1680,7 +1680,6 @@ Room displays error with appropriate message as app compiles.
 
 ```Kotlin
 @Dao
-
 interface MyDao {
 	@Query("SELECT * FROM user")
 	fun getAll(): List<User>
@@ -1755,7 +1754,7 @@ DAO provides methods to access database
 
 ### <mark style="background: #AD21D9;">Motivation:</mark>
 
-At certain points during Android development, you will be required to develop a custom view
+<mark style="background: #AD21D9;">At certain points during Android development, you will be required to develop a custom view:</mark>
 - Not everything you will require in terms of views will be provided by the SDK
 - A lot of applications will have at least one custom view in their layouts and activities
 
@@ -1800,7 +1799,9 @@ Like method 1 this is rare but again very little code required if this can be us
 
 ### <mark style="background: #AD21D9;">Method 3 -Full Custom Implementation:</mark>
 
-Most common form of writing custom views Requires a lot of mathematics and working with primitives
+Most common form of writing custom views.
+
+Requires a lot of mathematics and working with primitives.
 
 Mainly a trial-and-error process as the display can only be verified visually. Here you require a view that is not provided by the SDK, in this case you have to take a bare view class, subclass it, and do all the operations yourself.
 
@@ -1816,32 +1817,35 @@ There are a minimum set of requirements that must be satisfied if you want your 
 
 ### <mark style="background: #AD21D9;">Constructors:</mark>
 
-When you subclass a view, you are required to implement three constructors each have a specific use case. Assuming our class is called ``CustomView`` we have the following
+When you subclass a view, you are required to implement three constructors each have a specific use case. 
+
+Assuming our class is called ``CustomView`` we have the following
 - ``CustomView(Context c)``
 - ``CustomView(Context c, AttributeSet as)``
 - ``CustomView(Context c, AttributeSet as, int def style)``
 
-The first constructor is used when your custom view is directly initialised from java code
+<mark style="background: #AD21D9;">The first constructor is used when your custom view is directly initialised from code:</mark>
 - Rarely used and not recommended
 - The Context attribute is the context of the activity that will own this custom view
 - Allows android to build an internal visual tree to manage event handling
 
-The second constructor is used in the case where the custom view is added in XML and is constructed with the layout inflator:
-- The AttributeSet holds the list of XML attributes that the caller wishes to set on this custom view
+<mark style="background: #AD21D9;">The second constructor is used in the case where the custom view is added in XML and is constructed with the layout inflator:</mark>
+- The ``AttributeSet`` holds the list of XML attributes that the caller wishes to set on this custom view
 - You may accept as many attributes as you like
 - Generally, a good idea to allow customisation through attributes as makes your view flexible
 
-The third constructor is used when the caller applies a style to views within their XML layout
+<mark style="background: #AD21D9;">The third constructor is used when the caller applies a style to views within their XML layout:</mark>
 - Permits your view to apply that style to itself
 - To enable better integration of your custom view into an application
 - Requires the most work but great custom views are completely flexible if they are to be used elsewhere
 
 ### <mark style="background: #AD21D9;">Constructors: Recommended Practice:</mark>
 
-It is recommended that when you go to implement these constructors that all common code between them is split into a shared method
-- Basic bit of code refactoring. Write once, instead of three times
-- Thus if you find a mistake in common behaviour you need only fix it once
-- For our purposes we will call this method ``init()``
+It is recommended that when you go to implement these constructors that all common code between them is split into a shared method:
+
+Basic bit of code refactoring. Write once, instead of three times
+
+Thus if you find a mistake in common behaviour you need only fix it once. For our purposes we will call this method ``init()``
 
 ### <mark style="background: #AD21D9;">What should init() be used for?</mark>
 
@@ -1881,7 +1885,7 @@ The reason for this is that the only method we have of describing drawing operat
 
 You will have to come up with all sorts of formulas to position, size, and angle your components, especially if you have primitives or sets of primitives that are required to move around the view.
 
-If you manage to describe a view accurately through algebra you will gain the following benefits
+<mark style="background: #AD21D9;">If you manage to describe a view accurately through algebra you will gain the following benefits:</mark>
 - You will get a view that will display properly on any screen, regardless of pixel density of the device or the physical screen size
 - If you previously used bitmaps to implement the view then you can remove them and save space
 - The component can be reused elsewhere with little to no modification required
@@ -1915,8 +1919,8 @@ Initially when the view is first constructed and initialised the origin of drawi
 ### <mark style="background: #AD21D9;">Matrix Stack: Save and Restore:</mark>
 
 The canvas provides two methods to manipulate this stack, they are ``save()`` and ``restore()``
-- With save() we take a copy of the current transformation matrix and store it on the stack
-- With restore() we remove the matrix on top of the stack and set that as our current transformation matrix
+- With ``save()`` we take a copy of the current transformation matrix and store it on the stack
+- With ``restore()`` we remove the matrix on top of the stack and set that as our current transformation matrix
 
 Take great care however to make sure that for every ``save()`` you have a corresponding ``restore()`` and vice versa
 
@@ -1945,7 +1949,7 @@ There will be times where you will internally modify the state of your view and 
 
 Sometimes you will want to restrict the size and shape of your view. ``onMeasure()`` can be used to do this.
 
-For example with game boards you may want ot have a square shaped view.
+For example with game boards you may want to have a square shaped view.
 
 ``onMeasure()`` will be called when android changes the size of your view. It does this to give your view a chance to reduce its pixel size should you not need the amount of pixels it is offered
 
@@ -1953,7 +1957,7 @@ Any changes made here will be reflected in your final view size
 
 Note that it is not possible to gain extra pixels in this method
 
-For example if you wish to make a square view in android using this method:
+<mark style="background: #AD21D9;">For example if you wish to make a square view in android using this method:</mark>
 - You will get a width and height provided to you
 - Pick whatever is the smallest dimension
 - Set your width and height to be that size
@@ -1961,13 +1965,18 @@ For example if you wish to make a square view in android using this method:
 ### <mark style="background: #AD21D9;">onTouchEvent():</mark>
 
 Most custom views will require some form of interaction with the user. In this environment the main method of interaction is through touch
-- Your interaction with all touch is handled through the ``onTouchEvent()`` method
-- Either through the use of single touch (simple)
-- Or combining multiple touches together (complex)
+
+Your interaction with all touch is handled through the ``onTouchEvent()`` method
+
+Either through the use of single touch (simple)
+
+Or combining multiple touches together (complex)
 
 ### <mark style="background: #AD21D9;">onTouchEvent() - Single Touch:</mark>
 
-Single touch is the easiest case as interaction here is similar to that of a pointer in a GUI such as Java Swing or Java FX. There are three main actions
+Single touch is the easiest case as interaction here is similar to that of a pointer in a GUI such as Java Swing or Java FX. 
+
+<mark style="background: #AD21D9;">There are three main actions:</mark>
 - ``ACTION DOWN:`` when the touch has started
 - ``ACTION MOVE:`` when the touch is being dragged along the screen in any direction
 - ``ACTION UP:`` when the touch has been finished
@@ -1976,7 +1985,9 @@ Single touch is the easiest case as interaction here is similar to that of a poi
 
 Multi-touch is more complex however, because the android method of touch was originally designed only to accept single touches
 
-However, it was modified to include multi-touch while still retaining support for applications using single touch, thus we have two new actions
+However, it was modified to include multi-touch while still retaining support for applications using single touch, 
+
+<mark style="background: #AD21D9;">thus we have two new actions:</mark>
 - ``ACTION POINTER DOWN:`` for when an additional touch is added
 - ``ACTION POINTER UP:`` for when an additional touch is removed
 
