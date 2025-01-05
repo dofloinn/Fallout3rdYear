@@ -8,7 +8,7 @@ Recall the previous attempt to 'model' how these components interconnect and int
 
 Source -> Transmitter -> Transmission System -> Receiver -> Destination
 
-Whilst the horizontal model is useful when looking at hardware components, the reality is it does not explain everything
+Whilst the horizontal model is useful when looking at hardware components, the reality is that it does not explain everything
 
 From previous discussions on: <mark style="background: #FF5582A6;">Data Link Control</mark>, <mark style="background: #FF5582A6;">LANs technologies</mark>, <mark style="background: #FF5582A6;">Internetworking</mark> etc. much of the functionality required to provide communications between host machines is not necessarily provided on individual hardware components.
 
@@ -79,19 +79,26 @@ Concerned with transmitting <mark style="background: #FF5582A6;">raw</mark> bits
 
 Its purpose is to ensure that the transmission of binary 1s and 0s adheres to what is appropriate for the transmission medium and what is expected by the <mark style="background: #FF5582A6;">receiver</mark>.
 
-Primarily it deals with matters such as: What voltage levels are used? What frequencies are used? How long does it take to transmit a bit (Bit Duration)? etc. 
+<mark style="background: #FF5582A6;">Primarily it deals with matters such as:</mark> 
+- What voltage levels are used? What frequencies are used? 
+- How long does it take to transmit a bit (Bit Duration)? etc. 
 
 There are certain design issues to address such as: the <mark style="background: #FF5582A6;">mechanical</mark> and <mark style="background: #FF5582A6;">electrical</mark> design of the plugs (RJ-45, BNC etc.) and sockets, timing interfaces, the physical <mark style="background: #FF5582A6;">transmission medium</mark> etc.
 
 ### <mark style="background: #FF5582A6;">The Data Link Layer:</mark>
 
-Concerned with the successful transmission of data across an individual link:
+Concerned with the successful transmission of data across an individual link.
 
 Its purpose is to transform a <mark style="background: #FF5582A6;">raw</mark> transmission facility into a <mark style="background: #FF5582A6;">data communications channel</mark> that <mark style="background: #FF5582A6;">appears</mark> free of transmission errors.
 
 Primarily it deals with matters such as the transmission/reception of <mark style="background: #FF5582A6;">data frames</mark>. 
 
-There are certain design issues to address such as: the creation of localised unique addressing, the creation of a unique framing structure, flow control, error control, controlling access to a <mark style="background: #FF5582A6;">shared</mark> channel etc.
+<mark style="background: #FF5582A6;">There are certain design issues to address such as:</mark>
+- the creation of localised unique addressing, 
+- the creation of a unique framing structure, 
+- flow control, 
+- error control, 
+- controlling access to a <mark style="background: #FF5582A6;">shared</mark> channel etc.
 
 <mark style="background: #FF5582A6;">Example DL functionality:</mark> 
 ![](https://i.imgur.com/dIX7TeT.png)
@@ -104,7 +111,9 @@ Its purpose is to control the operation of the <mark style="background: #FF5582A
 
 Primarily it deals with matters such as the routing of packets from the source station towards the <mark style="background: #FF5582A6;">destination</mark> station across sub-nets etc. 
 
-There are certain design issues to address such as: the creation a globally unique address space, the creation of a globally unique framing structure.
+<mark style="background: #FF5582A6;">There are certain design issues to address such as:</mark> 
+- the creation a globally unique address space,
+- the creation of a globally unique framing structure.
 
 Essentially this layer is responsible for managing data communications across interconnected <mark style="background: #FF5582A6;">heterogeneous</mark> networks.
 
@@ -114,17 +123,16 @@ Essentially this layer is responsible for managing data communications across in
 
 This is a key layer. 
 
-It is a true <mark style="background: #FF5582A6;">end-to-end</mark> layer responsible for the reliable delivery of data between <mark style="background: #FF5582A6;">processes</mark> on end-host machines i.e. process-to-process delivery:
+It is a true <mark style="background: #FF5582A6;">end-to-end</mark> layer responsible for the reliable delivery of data between <mark style="background: #FF5582A6;">processes</mark> on end-host machines i.e. process-to-process delivery.
 
 Its purpose is to provide a reliable data transport service to applications.
 
-Primarily it deals with interfacing with applications for the purpose of exchanging data between applications across a network.
+Primarily, it deals with interfacing with applications for the purpose of exchanging data between applications across a network.
 
 <mark style="background: #FF5582A6;">There are certain design issues to address, such as:</mark>
 - multiplexing data streams from/to remote applications, 
 - data loss,
-- network latency, 
-- etc
+- network latency, etc.
 
 ### <mark style="background: #FF5582A6;">Data Flows:</mark>
 
@@ -138,7 +146,7 @@ Encapsulation and Information flow between the layers on an end-host.
 
 ![](https://i.imgur.com/FU1KSte.png)
 
-Some of the layers are also implemented on intermediary networking devices such as Routers. This is because the functionality associated with these layers is needed for a particular purpose such as: frame reception/transmission, packet routing etc.
+Some of the layers are also implemented on intermediary networking devices such as Routers. This is because the functionality associated with these layers is needed for a particular purpose such as frame reception/transmission or packet routing etc.
 
 The following slide shows how the complete set of layers are implemented on the end-hosts as well as on the intermediary networking devices.
 
@@ -177,7 +185,7 @@ It can carry a <mark style="background: #FF5582A6;">single</mark> octet of data 
 
 Recall that a router makes its routing decision based on the <mark style="background: #FF5582A6;">destination IP address</mark>.
 
-Routing information is stored in a <mark style="background: #FF5582A6;">routing table</mark>. This table must be <mark style="background: #FF5582A6;">initialised on boot-up</mark> and <mark style="background: #FF5582A6;">updated</mark> if the topology changes:
+Routing information is stored in a <mark style="background: #FF5582A6;">routing table</mark>. This table must be <mark style="background: #FF5582A6;">initialised on boot-up</mark> and <mark style="background: #FF5582A6;">updated</mark> if the topology changes.
 
 The next three slides show example <mark style="background: #FF5582A6;">Routing Tables</mark>:
 - The first slide recalls a high-level <mark style="background: #FF5582A6;">Routing Table</mark> from previous discussions,
@@ -264,7 +272,6 @@ The size of the frame header may vary as it traverses different network technolo
 
 ![](https://i.imgur.com/XBAKdJr.png)
 
-
 ### <mark style="background: #FF5582A6;">TCP/IP Reference Model:</mark>
 
 ![](https://i.imgur.com/VYOqIHX.png)
@@ -273,21 +280,21 @@ The protocols upon which this model is based (<mark style="background: #FF5582A6
 - TCP and IP were adapted because they were available 
 - The ISO protocols on the other hand were still being developed
 
-The <mark style="background: #FF5582A6;">TCP/IP Reference Model</mark> was developed <mark style="background: #FF5582A6;">after</mark> the protocols. 
+The <mark style="background: #FF5582A6;">TCP/IP Reference Model</mark> was developed <mark style="background: #FF5582A6;">after</mark> the protocols.
 
-Specific design goals of this <mark style="background: #FF5582A6;">Reference Model</mark> included: 
+Specific design goals of this <mark style="background: #FF5582A6;">Reference Model</mark> included:
 - Ability to survive the loss of subnet hardware
 - Ability to handle multiple types of data including files and real-time speech
 
-These requirements led to the adoption of a connectionless packet-switching network within the <mark style="background: #FF5582A6;">internet</mark> layer
+These requirements led to the adoption of a connectionless packet-switching network within the <mark style="background: #FF5582A6;">internet</mark> layer.
 
 <mark style="background: #FF5582A6;">The Internet Layer:</mark> 
-- This layer is key to the whole architecture
-- It facilitates hosts injecting packets into any network 
-- It ensures correct routing of packets to the Destination station 
+- This layer is key to the whole architecture.
+- It facilitates hosts injecting packets into any network. 
+- It ensures correct routing of packets to the Destination station. 
 
 <mark style="background: #FF5582A6;">The Transport Layer:</mark> 
-- Facilitates <mark style="background: #FF5582A6;">end-to-end</mark> communication between the Source and Destination hosts
+- Facilitates <mark style="background: #FF5582A6;">end-to-end</mark> communication between the Source and Destination hosts.
 
 <mark style="background: #FF5582A6;">Two end-to-end transport protocols have been defined:</mark>
 - <mark style="background: #FF5582A6;">TCP (Transmission Control Protocol):</mark> This is a <mark style="background: #FF5582A6;">reliable</mark>, <mark style="background: #FF5582A6;">connection-oriented</mark> protocol that allows a byte stream originating on one machine to be delivered <mark style="background: #FF5582A6;">without</mark> error to any other machine in the internet. 
@@ -353,11 +360,11 @@ However, there are some notable differences as follows:
 
 ### <mark style="background: #FF5582A6;">Design Issues for Layered Software:</mark>
 
-There are a number of key design issues common to several layers:
-- <mark style="background: #FF5582A6;">Addressing</mark> – Each layer needs to be able to identify senders and receivers. Some form of addressing is required
-- <mark style="background: #FF5582A6;">Error control</mark> - The receiver must be able to tell the sender which messages have been correctly received and which have not
-- <mark style="background: #FF5582A6;">Sequencing</mark> - The protocol software on the the receiver must be able to re-sequence incoming messages
-- <mark style="background: #FF5582A6;">Flow Control</mark> – The receiver must be able to control the flow of information from the sender
+<mark style="background: #FF5582A6;">There are a number of key design issues common to several layers:</mark>
+- <mark style="background: #FF5582A6;">Addressing:</mark> Each layer needs to be able to identify senders and receivers. Some form of addressing is required
+- <mark style="background: #FF5582A6;">Error control:</mark> The receiver must be able to tell the sender which messages have been correctly received and which have not
+- <mark style="background: #FF5582A6;">Sequencing:</mark> The protocol software on the the receiver must be able to re-sequence incoming messages
+- <mark style="background: #FF5582A6;">Flow Control:</mark> The receiver must be able to control the flow of information from the sender
 
 The following are two examples of network <mark style="background: #FF5582A6;">models</mark>, namely the <mark style="background: #FF5582A6;">OSI</mark> and <mark style="background: #FF5582A6;">TCP/IP</mark> reference models
 
@@ -367,7 +374,7 @@ These form the basis for many of today’s <mark style="background: #FF5582A6;">
 ![](https://i.imgur.com/VNiWUzl.png)
 
 
-1. <mark style="background: #FF5582A6;">Preparing the data.</mark> The application protocol prepares a block of data for transmission. For example, an email message (SMTP). a file (FTP). a block of user input (TELNET).
+1. <mark style="background: #FF5582A6;">Preparing the data.</mark> The application protocol prepares a block of data for transmission. For example, an email message (SMTP), a file (FTP). a block of user input (TELNET).
 2. <mark style="background: #FF5582A6;">Using a common syntax.</mark> If necessary, data is converted to a form expected by the destination. This may include a different character code, the use of encryption. and/or compression.
 3. <mark style="background: #FF5582A6;">Segmenting the data.</mark> TCP may break data block into a number of segments, keeping track of their sequence. Each TCP segment includes a header containing a sequence number and a frame check sequence to detect errors.
 4. <mark style="background: #FF5582A6;">Duplicating segments.</mark> A copy is made of each TCP segment, in case the loss or damage of a segment necessitates retransmission. When an acknowledgment is received from the other TCP entity, a segment is erased.
@@ -380,25 +387,25 @@ These form the basis for many of today’s <mark style="background: #FF5582A6;">
  2. The two TCP entities agree to a connection.
  3. Each IP datagram is forwarded through networks and routers to the destination system.
  4. Each cell is forwarded through the ATM network
- 5. <mark style="background: #FF5582A6;">Peer-to-Peer dialogue.</mark> The router will pass this datagram onto another router or to destination system.
+ 5. <mark style="background: #FF5582A6;">Peer-to-Peer dialogue:</mark> The router will pass this datagram onto another router or to destination system.
 
 <mark style="background: #FF5582A6;">Operation of TCP/IP Router and Receiver:</mark>
 ![](https://i.imgur.com/21zWJiZ.png)
 ![](https://i.imgur.com/odytNcZ.png)
 
-8. <mark style="background: #FF5582A6;">Arriving at router.</mark> The incoming signal is received over the transmission medium and interpreted as a cell of bits.
-9. <mark style="background: #FF5582A6;">Processing the cell.</mark> the ATM layer removes the cell header and processes it. The header error control system is used for detection. The connection number identifies the source.
-10. <mark style="background: #FF5582A6;">Routing the packet.</mark> IP examines the IP header and makes a routing decision. It determines which outgoing link is to be used and then passes datagram back to the link layer for transmission on that link.
-11. <mark style="background: #FF5582A6;">Forming LLC PDU</mark>. An LLC (Logical Link Control) header is added to each IP datagram to form an LLC PDU. The header contains sequence number and address information. The trailer contains a frame sequence check.
-12. <mark style="background: #FF5582A6;">Framing.</mark> A MAC header and trailer is added to each LLC PDU, forming a MAC frame. The header contains address information and the trailer contains a frame check sequence.
-13. <mark style="background: #FF5582A6;">Transmission.</mark> Each frame is transmitted over the medium as a sequence of bits.
-14. <mark style="background: #FF5582A6;">Arriving at destination.</mark> The incoming signal is received over the transmission medium and interpreted as a frame of bits.
-15. <mark style="background: #FF5582A6;">Processing the frame.</mark> MAC layer removes the header and trailer and processes them. The frame check sequence is used for error detection.
-16. <mark style="background: #FF5582A6;">Processing the LLC PDU.</mark> The LLC layer removes the header and processes it. The sequence number is used for flow and error control.
-17. <mark style="background: #FF5582A6;">Processing the IP datagram.</mark> IP removes the header. The frame check sequence and other control information are processed.
-18. <mark style="background: #FF5582A6;">Processing the TCP segment.</mark> TCP removes the header. It checks the frame check sequence and acknowledges if there is a match and discards for mismatch. Flow control is also performed.
-19. <mark style="background: #FF5582A6;">Reassembling user data.</mark> If TCP has broken the user data into multiple segments, these are reassembled and the block is passed up to the application.
-20. <mark style="background: #FF5582A6;">Delivering the data.</mark> The application performs any needed transformations, including decompression and decryption. and directs the data to the appropriate file or other destination.
+8. <mark style="background: #FF5582A6;">Arriving at router:</mark> The incoming signal is received over the transmission medium and interpreted as a cell of bits.
+9. <mark style="background: #FF5582A6;">Processing the cell:</mark> the ATM layer removes the cell header and processes it. The header error control system is used for detection. The connection number identifies the source.
+10. <mark style="background: #FF5582A6;">Routing the packet:</mark> IP examines the IP header and makes a routing decision. It determines which outgoing link is to be used and then passes datagram back to the link layer for transmission on that link.
+11. <mark style="background: #FF5582A6;">Forming LLC PDU:</mark> An LLC (Logical Link Control) header is added to each IP datagram to form an LLC PDU. The header contains sequence number and address information. The trailer contains a frame sequence check.
+12. <mark style="background: #FF5582A6;">Framing:</mark> A MAC header and trailer is added to each LLC PDU, forming a MAC frame. The header contains address information and the trailer contains a frame check sequence.
+13. <mark style="background: #FF5582A6;">Transmission:</mark> Each frame is transmitted over the medium as a sequence of bits.
+14. <mark style="background: #FF5582A6;">Arriving at destination:</mark> The incoming signal is received over the transmission medium and interpreted as a frame of bits.
+15. <mark style="background: #FF5582A6;">Processing the frame:</mark> MAC layer removes the header and trailer and processes them. The frame check sequence is used for error detection.
+16. <mark style="background: #FF5582A6;">Processing the LLC PDU:</mark> The LLC layer removes the header and processes it. The sequence number is used for flow and error control.
+17. <mark style="background: #FF5582A6;">Processing the IP datagram:</mark> IP removes the header. The frame check sequence and other control information are processed.
+18. <mark style="background: #FF5582A6;">Processing the TCP segment:</mark> TCP removes the header. It checks the frame check sequence and acknowledges if there is a match and discards for mismatch. Flow control is also performed.
+19. <mark style="background: #FF5582A6;">Reassembling user data:</mark> If TCP has broken the user data into multiple segments, these are reassembled and the block is passed up to the application.
+20. <mark style="background: #FF5582A6;">Delivering the data:</mark> The application performs any needed transformations, including decompression and decryption. and directs the data to the appropriate file or other destination.
 
 # <mark style="background: #FF5582A6;">05 Client Server:</mark>
 
@@ -419,7 +426,7 @@ A data network is a <mark style="background: #FF5582A6;">passive</mark> entity, 
 
 Client applications can run on any machine.
 
-Server applications play a vital role in modern networked applications. They are continuously running waiting for contact from Client applications. 
+Server applications play a vital role in modern networked applications. They are continuously running, waiting for contact from Client applications. 
 
 Some texts use the analogy of two people communicating over the telephone network to represent client-server communications. However, the analogy falls short as there are some unique challenges when writing client and server  applications which we will explore in the lab.
 
@@ -477,13 +484,11 @@ With <mark style="background: #FF5582A6;">multiple</mark> servers running, how c
 - <mark style="background: #FF5582A6;">Clients</mark> and <mark style="background: #FF5582A6;">servers</mark> use this identifier in <mark style="background: #FF5582A6;">all</mark> interactions 
 
 The <mark style="background: #FF5582A6;">communications paradigm</mark> is as follows:
-- The server application starts execution first:
+- The server application starts execution first
 - It registers its identifier with the local protocol software
 - It then waits for contact from clients
-
-<mark style="background: #FF5582A6;">Clients</mark> contact <mark style="background: #FF5582A6;">servers</mark> by specifying the server’s <mark style="background: #FF5582A6;">location</mark> and <mark style="background: #FF5582A6;">unique identifier</mark> 
-
-The client and server exchange messages and terminate communication
+- <mark style="background: #FF5582A6;">Clients</mark> contact <mark style="background: #FF5582A6;">servers</mark> by specifying the server’s <mark style="background: #FF5582A6;">location</mark> and <mark style="background: #FF5582A6;">unique identifier</mark> 
+- The client and server exchange messages and terminate communication
 
 # <mark style="background: #FF5582A6;">06 The Transport Layer:</mark>
 
@@ -507,7 +512,7 @@ The next slide shows how the Transport Layer views the lower network interface l
 
 ### <mark style="background: #FF5582A6;">Services:</mark>
 
-Each layer of the reference model provides a set of functionality to the layer immediately above:
+<mark style="background: #FF5582A6;">Each layer of the reference model provides a set of functionality to the layer immediately above:</mark>
 - This set of functionalities is known as <mark style="background: #FF5582A6;">the Services</mark>.
 - The layer below is known as the <mark style="background: #FF5582A6;">Service Provider</mark> and the layer above is known as the <mark style="background: #FF5582A6;">Service User</mark>
 
@@ -619,7 +624,7 @@ During each phase a variety of PDUs are exchanged between the <mark style="backg
 - Each side must take turns using (blocking) <mark style="background: #FF5582A6;">RECEIVE</mark> and <mark style="background: #FF5582A6;">SEND</mark>.
 
 <mark style="background: #FF5582A6;">Release Phase:</mark>
-- Either the client or the server application can call a ``DISCONNECT`` primitive:
+- Either the client or the server application can call a ``DISCONNECT`` primitive
 - This causes a ``DISCONNECT TPDU`` to be sent to the remote transport entity.
 - Once the ``DISCONNECT TPDU`` has been received and acknowledged the connection is deemed <mark style="background: #FF5582A6;">released</mark>.
 
@@ -758,16 +763,15 @@ while ((numBytes = recv(sock, recvbuffer, BUFSIZE - 1, 0)) >0)
 ```
 
 <mark style="background: #FF5582A6;">The while loop is necessary as the data may not arrive across the connection in a single transfer:</mark>
-- Recall that data arriving from the remote socket is stored in the RECV-Q buffer within the local TCP entity,
+- Recall that data arriving from the remote socket is stored in the ``RECV-Q`` buffer within the local TCP entity,
 - Repeated calls to ``recv()`` are needed to transfer this data from TCP (the Transport layer) into the application (the Application layer).
 
-``numBytes`` is the return value from ``recv()``:
-- It represents the <mark style="background: #FF5582A6;">number of bytes</mark> read from the socket,
-- It returns one of three values: 
-	- ``<1`` represents an error condition,
-	- ``0`` represents a closed connection i.e. remote application has called close(), 
-	- ``>1`` represents an open connection with potentially more data to be received.
+``numBytes`` is the return value from ``recv()``, it represents the <mark style="background: #FF5582A6;">number of bytes</mark> read from the socket,
 
+<mark style="background: #FF5582A6;">numBytes returns one of three values:</mark> 
+- ``<1`` represents an error condition,
+- ``0`` represents a closed connection i.e. remote application has called ``close()``, 
+- ``>1`` represents an open connection with potentially more data to be received.
 
 ### <mark style="background: #FF5582A6;">Breaking from recv():</mark>
 
@@ -783,7 +787,7 @@ In order for the Client and Server applications to communicate with each other, 
 
 The Destination Server application requires an <mark style="background: #FF5582A6;">unambiguous (unique)</mark> address in order for the Source Client application to initiate a connection request:
 
-Uniqueness can only be achieved using <mark style="background: #FF5582A6;">both IP and TCP addressing</mark>
+Uniqueness can only be achieved using <mark style="background: #FF5582A6;">both IP and TCP addressing</mark>.
 
 Recall that the IP layer is responsible for delivering datagrams/packets to remote hosts across an internetwork: It uses IP addressing to achieve this host-to-host delivery.
 
@@ -803,7 +807,7 @@ To ensure unambiguous (unique) addressing of individual applications, the Transp
 - In TCP parlance, these end points are known as <mark style="background: #FF5582A6;">port numbers</mark> or more simply <mark style="background: #FF5582A6;">ports</mark>.
 
 <mark style="background: #FF5582A6;">Port numbers are used by:</mark>
-- Server applications to advertise their services and, to listen for Connection Requests,
+- Server applications to advertise their services and, to listen for Connection Requests.
 - Client applications to uniquely identify a Server application when making a Connection Request.
 - The <mark style="background: #FF5582A6;">network layer</mark> also defines <mark style="background: #FF5582A6;">end points</mark>. These are known as Network Service Access Points (NSAPs). IP addresses are examples of NSAPs.
 
@@ -1013,7 +1017,7 @@ Having examined the members of the socket address structure, it is important to 
 
 This requires an understanding of <mark style="background: #FF5582A6;">Byte-ordering</mark>.
 
-Fundamentally hosts store 16-bit integers (2 bytes) in one of two ways:
+<mark style="background: #FF5582A6;">Fundamentally hosts store 16-bit integers (2 bytes) in one of two ways:</mark>
 - Store the <mark style="background: #FF5582A6;">low-order</mark> byte at the starting address, known as <mark style="background: #FF5582A6;">little-endian</mark> byte order,
 - Store the <mark style="background: #FF5582A6;">high-order</mark> byte at the starting address, known as <mark style="background: #FF5582A6;">big-endian</mark> byte order.
 
@@ -1045,16 +1049,15 @@ The addressing information stored in members of a socket address structure must 
 - ``ntohs()`` – converts 16-bit network value to host byte order
 - ``ntohl()`` – converts 32-bit network value to host byte order
 
-``ht`` - host (if at the beginning)
-`h` - host (if at the end)
-`nt` - network (if at the beginning)
-`n` - network (if at the end)
+
+`h` - host
+`n` - network
 ``s`` - short (i.e. 16 bits)
 `l` - long (i.e. 32 bits)
 
 ### <mark style="background: #FF5582A6;">Byte Manipulation Functions:</mark>
 
-There are two byte manipulation functions to consider:
+<mark style="background: #FF5582A6;">There are two byte manipulation functions to consider:</mark>
 - ``inet_pton`` - This function takes an ASCII string (<mark style="background: #FF5582A6;">presentation</mark>) that represents the destination address (in dotted-decimal notation) and converts it to a binary value (<mark style="background: #FF5582A6;">numeric</mark>) for inputting to a socket address structure (i.e. <mark style="background: #FF5582A6;">network byte order</mark>)
 - ``inet_ntop`` - This function does the reverse conversion, i.e. from a <mark style="background: #FF5582A6;">numeric</mark> binary value to an ASCII string representation (<mark style="background: #FF5582A6;">presentation</mark>) i.e. <mark style="background: #FF5582A6;">dotted-decimal notation</mark>
 
@@ -1179,7 +1182,7 @@ In order to appreciate the potential problems to be addressed when developing Br
 
 ### <mark style="background: #FF5582A6;">Browser Architecture:</mark>
 
-Web browsers are much more complex in their operation. This can best seen from their architecture (see next slide).
+Web browsers are much more complex in their operation. This can be best seen from their architecture (see next slide).
 
 <mark style="background: #FF5582A6;">The functions of a Browser include:</mark>
 - Rendering and displaying disparate (different types) resources to the user,
@@ -1360,7 +1363,7 @@ Header lines provide information about the <mark style="background: #FF5582A6;">
 - e.g. Netscape 3.0 sends the header "User-agent: Mozilla/3.0Gold".
 
 <mark style="background: #FF5582A6;">Consider including the following headers in server responses:</mark>
-- A `Server`: header. Similar to the <mark style="background: #FF5582A6;">User-Agent</mark>: header: it identifies the server software in the form "<mark style="background: #FF5582A6;">Program-name/x.xx</mark>".
+- A `Server`: header. Similar to the ``User-Agent:`` header, it identifies the server software in the form "<mark style="background: #FF5582A6;">Program-name/x.xx</mark>".
 - e.g. An Apache server might return "Server: Apache/1.2b3-dev".
 - The `Last-Modified`: header gives the modification date (in GMT) of the resource that's being returned. It is used in caching.
 - e.g. `Last-Modified: Fri, 31 Dec 1999 23:59:59 GMT`
@@ -1389,13 +1392,11 @@ Two other commonly used methods are ``HEAD`` and ``POST``.
 - Useful for checking characteristics of a resource without actually downloading it.
 - The response to a ``HEAD`` request must never contain a <mark style="background: #FF5582A6;">message</mark> body.
 
-<mark style="background: #FF5582A6;">The POST Method</mark>
-
-A ``POST`` request is used to send data to the server to be processed in some way, like by a CGI script.
+<mark style="background: #FF5582A6;">The POST Method</mark> A ``POST`` request is used to send data to the server to be processed in some way, like by a CGI script.
 
 <mark style="background: #FF5582A6;">It differs from a GET request in the following ways:</mark>
 - There's a block of data sent with the request, in the message body. There are usually extra headers to describe this message body, like `Content-Type` and `Content-Length`:
-- The request URI is not a resource to retrieve; it's usually a program to handle the data you're sending.
+- The request URI is not a resource to retrieve, it's usually a program to handle the data you're sending.
 
 ### <mark style="background: #FF5582A6;">Sample Document Transfer with HTTP:</mark>
 
@@ -1631,9 +1632,9 @@ The program takes two command-line parameters, a hostname and a service name (or
 
 Line 16 is a <mark style="background: #FF5582A6;">struct</mark> that is used to restrict the type of information to be returned:
 - In this case we are only interested in TCP/IP addresses
-- The address of this struct is passed as the third argument (<mark style="background: #FF5582A6;">hints</mark>) to ``getaddrinfo( )``
+- The address of this struct is passed as the third argument (<mark style="background: #FF5582A6;">hints</mark>) to ``getaddrinfo()``
 
-Line 25 is the call to ``getaddrinfo( )``
+Line 25 is the call to ``getaddrinfo()``
 
 Lines 30 iterates over each node of the linked list
 
@@ -1688,7 +1689,7 @@ Central to the provision of these services are the concepts of Flow Control and 
 
 ### <mark style="background: #FF5582A6;">Example Sliding Windows Flow Control:</mark>
 
-Consider two Stations, A and B exchanging data. Assume Station A is sending data to Station B:
+Consider two Stations, A and B exchanging data. Assume Station A is sending data to Station B.
 
 Station A is the <mark style="background: #FF5582A6;">Sender</mark> and Station B is the <mark style="background: #FF5582A6;">Receiver</mark>.
 
@@ -1762,8 +1763,8 @@ Here it can seen that the available buffer space decreases as data is stored in 
 Recall that TCP creates two buffers per socket:
 
 <mark style="background: #FF5582A6;">These can be viewed with the netstat utility:</mark>
-- One for incoming data (known as RECV-Q in netstat)
-- One for outgoing data (known as SEND-Q in netstat)
+- One for incoming data (known as ``RECV-Q`` in netstat)
+- One for outgoing data (known as ``SEND-Q`` in netstat)
 
 Incoming buffers can easily overflow.
 
@@ -1844,6 +1845,183 @@ This is known as an <mark style="background: #FF5582A6;">adaptive retransmission
 
 This adaptability helps TCP to react <mark style="background: #FF5582A6;">quickly</mark> to changes in traffic levels and to <mark style="background: #FF5582A6;">maximise</mark> throughput on each connection.
 
+# <mark style="background: #FF5582A6;">12 TCP Operation OpenClose State Transition:</mark>
+
+### <mark style="background: #FF5582A6;">TCP Connections:</mark>
+
+Applications that need to exchange data interact with their local TCP entity through the local socket to handle the connection <mark style="background: #FF5582A6;">Establishment</mark> and <mark style="background: #FF5582A6;">Termination</mark> activities:
+
+These activities relate to <mark style="background: #FF5582A6;">Phase 1 (Initialisation)</mark> &  <mark style="background: #FF5582A6;">Phase 3 (Termination)</mark> of the communications model and are commonly referred to as <mark style="background: #FF5582A6;">Opening</mark> and <mark style="background: #FF5582A6;">Closing</mark> connections.
+
+To facilitate an exploration of TCP’s role in Opening and Closing connections it is important to explore the structure of a TCP PDU a.k.a. a <mark style="background: #FF5582A6;">Segment</mark>.
+
+### <mark style="background: #FF5582A6;">TCP Segment Header Format:</mark>
+
+![](https://i.imgur.com/eXpIoG6.png)
+
+### <mark style="background: #FF5582A6;">Opening a TCP connection: The Three-Way Handshake:</mark>
+
+<mark style="background: #FF5582A6;">Opening a TCP connection:</mark>
+- A client calling ``connect`` is performing an <mark style="background: #FF5582A6;">active</mark> open,
+- A server having previously called: ``socket``, ``bind``, ``listen`` and ``accept``, has resulted in the creation of a socket that is in passive mode i.e. awaiting connection requests.
+
+The call to ``connect`` causes the client TCP entity to send a ``SYN`` (synchronise) segment. This segment contains the client's initial <mark style="background: #FF5582A6;">sequence</mark> number for its data
+
+The server TCP entity must acknowledge receiving a ``SYN`` segment and it must send its own ``SYN`` segment
+
+This contains the initial sequence number for its data (note: the full duplex operation)
+
+In addition, the server’s ``SYN`` contains an ``ACK`` of the client's ``SYN`` message
+
+### <mark style="background: #FF5582A6;">The Three-Way Handshake – Contd:</mark>
+
+The client TCP entity must also acknowledge receipt of the server's ``SYN`` segment: As there are three segments used in the opening sequence this procedure is called a <mark style="background: #FF5582A6;">three-way handshake</mark>
+
+<mark style="background: #FF5582A6;">Note on sequence numbers:</mark>
+- Sequence numbers contained in a TCP acknowledgement segment (``ACK``) is the <mark style="background: #FF5582A6;">next expected</mark> sequence number
+- ``SYN`` messages occupy 1 byte of the sequence number space
+- ``ACKs`` on their own do not consume a sequence number
+- Refer to the example connection start-up sequence on the next slide
+
+### <mark style="background: #FF5582A6;">Example Opening Three Way Handshake:</mark>
+
+![](https://i.imgur.com/5Q799ds.png)
+
+### <mark style="background: #FF5582A6;">Closing a TCP connection:</mark>
+
+<mark style="background: #FF5582A6;">Closing a TCP Connection:</mark>
+- An application calling ``close`` is performing an active close
+- The other end of connection is said to be performing a passive close
+
+<mark style="background: #FF5582A6;">The call to close() causes the local TCP entity to sends a FIN segment:</mark>
+- This implies that the application is finished sending data
+- Either application, the client or the server, can call ``close()``
+
+### <mark style="background: #FF5582A6;">Example Closing using a Three-way Handshake:</mark>
+
+![](https://i.imgur.com/TcVmKeV.png)
+
+### <mark style="background: #FF5582A6;">Closing a TCP connection:</mark>
+
+<mark style="background: #FF5582A6;">The FIN segment is acknowledged by the receiving TCP entity:</mark>
+- This FIN message is passed to the application as an <mark style="background: #FF5582A6;">end-of-file</mark> and is queued <mark style="background: #FF5582A6;">after</mark> any remaining data
+- Receipt of a FIN means no more data will arrive on the connection
+
+<mark style="background: #FF5582A6;">An application that receives an end-of-file can choose to:</mark>
+- Leave the local socket open for longer in order to return data to the remote app. This is known as a <mark style="background: #FF5582A6;">half-close</mark>, OR,
+- Close its local socket by calling ``close()`` resulting in its local TCP entity sending a FIN. This FIN segment must be acknowledged by the remote TCP entity
+
+This choice results in either a <mark style="background: #FF5582A6;">three-way</mark> or <mark style="background: #FF5582A6;">four-way</mark> handshaking sequence for closing the connection
+
+### <mark style="background: #FF5582A6;">Closing a TCP connection:</mark>
+
+Closing a connection requires a ``FIN`` and an ``ACK`` in each direction i.e. four segments are <mark style="background: #FF5582A6;">normally</mark> required, however the <mark style="background: #FF5582A6;">active</mark> ``FIN`` is normally sent with data and the passive ``FIN`` can be combined with the ``ACK`` into a single segment i.e. a three-way handshake
+
+<mark style="background: #FF5582A6;">Connections can also be closed by terminating the application:</mark> 
+- i.e. terminating the associated Unix process:
+- This causes all open socket descriptors to <mark style="background: #FF5582A6;">close</mark>
+- This results in a ``FIN`` segment being sent on any open TCP connections
+
+<mark style="background: #FF5582A6;">Note on sequence numbers:</mark>
+- Just like SYN segments, FIN segment also occupy 1 byte of the sequence number space
+- ACKs on their own do not consume a sequence number
+- Refer to the example connection termination sequence on the next slide
+
+### <mark style="background: #FF5582A6;">Example Closing using a Four-way Handshake (a Half Close):</mark>
+
+![](https://i.imgur.com/DdQl787.png)
+
+### <mark style="background: #FF5582A6;">Example of a complete connection sequence:</mark>
+
+![](https://i.imgur.com/IEZst89.png)
+
+### <mark style="background: #FF5582A6;">TCP State Transition Diagram - explained:</mark>
+
+<mark style="background: #FF5582A6;">The TCP State Transition Diagram shows the operation of TCP’s connection establishment and termination phases:</mark>
+- There are 11 different states defined for a connection
+- Client and server transitions are shown as dark solid and dark dashed lines respectively
+- The transition from one state to another depends on the segment received in that state
+- e.g. an application performing an active open in the ``CLOSED`` state moves to the ``SYN_SENT`` state and then to the ``ESTABLISHED`` state upon receipt of a ``SYN`` with an ``ACK``
+
+The ``ESTABLISHED`` state is where most data transfer occurs
+
+![](https://i.imgur.com/qNX9QVz.png)
+
+<mark style="background: #FF5582A6;">Termination of a connection:</mark>
+- From the ``ESTABLISHED`` state there are two possible transitions:
+- An application calling ``close`` i.e. an active close moves to the ``FIN_WAIT_1`` state
+- An application receiving a ``FIN`` (i.e. a passive close) moves to the ``CLOSE_WAIT`` state
+
+In rare circumstances it is possible for both ends to
+send SYN/FINs simultaneously (known as simultaneous open/close). This scenario is not explored here
+
+### <mark style="background: #FF5582A6;">TCP’s TIME_WAIT State - explained:</mark>
+
+The end that performs the <mark style="background: #FF5582A6;">active close</mark> goes through the ``TIME_WAIT`` state for a period of twice the <mark style="background: #FF5582A6;">MSL (maximum segment lifetime)</mark> a.k.a. 2MSL
+- MSL is the maximum amount of time that an IP <mark style="background: #FF5582A6;">datagram</mark> can live in an internet. This is linked to the TTL field (max value is 255)
+- TCP chooses a value for MSL of between 1 min. and 4 minutes
+
+There are two reasons for the TIME_WAIT state:
+
+<mark style="background: #FF5582A6;">1. To implement TCP's full-duplex connection termination reliably:</mark>
+- Recall two of TCP’s service offerings is <mark style="background: #FF5582A6;">full-duplex communication</mark> and <mark style="background: #FF5582A6;">reliable termination</mark>
+- The end that performs an <mark style="background: #FF5582A6;">active close</mark> remains in the ``TIME_WAIT`` state as it might have to retransmit the final ``ACK``
+
+<mark style="background: #FF5582A6;">2. To allow old duplicate segments to expire in the network:</mark>
+- Datagrams containing TCP segments can get caught in <mark style="background: #FF5582A6;">routing loops</mark> within an internet due to routing errors. These are known as lost or <mark style="background: #FF5582A6;">wandering duplicates</mark>
+- TCP must handle these duplicates for connections that have been <mark style="background: #FF5582A6;">reincarnated</mark>
+- TCP will not initiate an <mark style="background: #FF5582A6;">incarnation</mark> of a connection that is currently in the ``TIME_WAIT`` state
+- This guarantees that all old <mark style="background: #FF5582A6;">duplicates</mark> from previous incarnations have expired
+
+# <mark style="background: #FF5582A6;">13 The Listen Primitive</mark>
+
+### <mark style="background: #FF5582A6;">The listen function:</mark>
+
+The listen function performs two actions.
+
+It converts an <mark style="background: #FF5582A6;">unconnected</mark> socket into a <mark style="background: #FF5582A6;">passive socket</mark>. This informs the kernel to accept incoming connection requests to this socket
+
+It limits the number of connections that will be queued for this server:
+
+``int listen(int sockfd, int backlog);``
+
+Returns: 0 if OK, -1 on error
+
+For a listening socket, the kernel maintains two
+queues:
+
+<mark style="background: #FF5582A6;">Incomplete:</mark>
+- An <mark style="background: #FF5582A6;">incomplete</mark> connection queue contains an entry for each ``SYN`` segment that has arrived from a client but is awaiting completion of the TCP 3WHS. These sockets are in the ``SYN_RCVD`` state.
+- Entries remain on this queue until the third segment of the 3WHS arrives or until the entry times out.
+
+<mark style="background: #FF5582A6;">Complete:</mark>
+- A <mark style="background: #FF5582A6;">completed</mark> connection queue contains an entry for each client for which the TCP 3WHS has been completed. These sockets are in the ``ESTABLISHED`` state.
+- Entries on this queue are returned to the process when accept is called
+
+<mark style="background: #FF5582A6;">TCP ignores the arriving SYN when the queues are full:</mark>
+- It does <mark style="background: #FF5582A6;">not</mark> send an ``RST`` (reset) preventing the client's <mark style="background: #FF5582A6;">connect</mark> returning an error
+- Instead, the client TCP entity is allowed retransmit its ``SYN`` segment
+
+Data that arrives after the 3WHS completes, but before the server calls accept, is queued by the TCP entity up to the size of the <mark style="background: #FF5582A6;">connected</mark> socket's receive buffer
+
+### <mark style="background: #FF5582A6;">TCP Queues:</mark>
+
+![](https://i.imgur.com/ay0sN7A.png)
+
+### <mark style="background: #FF5582A6;">The backlog argument:</mark>
+
+The backlog argument specifies the <mark style="background: #FF5582A6;">maximum</mark> value for the <mark style="background: #FF5582A6;">sum</mark> of <mark style="background: #FF5582A6;">both</mark> queues. 
+
+Do not specify a backlog of 0, as different implementations interpret this differently.
+
+If you do not want any clients connecting to your <mark style="background: #FF5582A6;">listening</mark> socket then close it
+
+A backlog of 5 was often used in the 1980s when busy servers handled only a few hundred client connections per day
+
+With the growth of the World Wide Web (WWW) HTTP servers can handle millions of connections per day, this small number is inadequate
+
+Hence, we specify an <mark style="background: #FF5582A6;">environment variable</mark> ``LISTENQ`` which can be changed without a recompile of the code.
+
 # <mark style="background: #FF5582A6;">Practice Test:</mark>
 
 ![](https://i.imgur.com/h12BsYT.png)
@@ -1916,10 +2094,8 @@ sudo is used in linux to run commands safely
 - ``ntohs()`` – converts 16-bit network value to host byte order
 - ``ntohl()`` – converts 32-bit network value to host byte order
 
-``ht`` - host (if at the beginning)
-`h` - host (if at the end)
-`nt` - network (if at the beginning)
-`n` - network (if at the end)
+`h` - host 
+`n` - network
 ``s`` - short (i.e. 16 bits)
 `l` - long (i.e. 32 bits)
 
@@ -2009,7 +2185,7 @@ if (listen(servSock, MAXPENDING) < 0)
 
 <mark style="background: #FF5582A6;">ACCEPT:</mark>
 ```C
-int clntSock = accept(servSock, (struct sockaddr *) NULL, NULL);
+int clntSock = accept(servSock, (struct sockaddr * ) NULL, NULL);
 ```
 
 <mark style="background: #FF5582A6;">RECV:</mark>
@@ -2215,15 +2391,13 @@ int main(int argc, char *argv[]) {
 
 	while ((numBytes = recv(sock, recvbuffer, BUFSIZE - 1, 0)) > 0) {
 		recvbuffer[numBytes] = '\0';
-		fputs(recvbuffer, stdout); 
-			
-		}
+		fputs(recvbuffer, stdout);
+	}
     if (numBytes < 0)
       DieWithSystemMessage("recv() failed");
-		
-  
+	
 	fputc('\n', stdout);
-
+	
 	close(sock);  
 	exit(0);
 }
@@ -2994,180 +3168,3 @@ int main(int argc, char *argv[]) {
     exit(0);
 }
 ```
-
-# <mark style="background: #FF5582A6;">12 TCP Operation OpenClose State Transition:</mark>
-
-### <mark style="background: #FF5582A6;">TCP Connections:</mark>
-
-Applications that need to exchange data interact with their local TCP entity through the local socket to handle the connection <mark style="background: #FF5582A6;">Establishment</mark> and <mark style="background: #FF5582A6;">Termination</mark> activities:
-
-These activities relate to <mark style="background: #FF5582A6;">Phase 1 (Initialisation)</mark> &  <mark style="background: #FF5582A6;">Phase 3 (Termination)</mark> of the communications model and are commonly referred to as <mark style="background: #FF5582A6;">Opening</mark> and <mark style="background: #FF5582A6;">Closing</mark> connections.
-
-To facilitate an exploration of TCP’s role in Opening and Closing connections it is important to explore the structure of a TCP PDU a.k.a. a <mark style="background: #FF5582A6;">Segment</mark>.
-
-### <mark style="background: #FF5582A6;">TCP Segment Header Format:</mark>
-
-![](https://i.imgur.com/eXpIoG6.png)
-
-### <mark style="background: #FF5582A6;">Opening a TCP connection: The Three-Way Handshake:</mark>
-
-<mark style="background: #FF5582A6;">Opening a TCP connection:</mark>
-- A client calling ``connect`` is performing an <mark style="background: #FF5582A6;">active</mark> open,
-- A server having previously called: ``socket``, ``bind``, ``listen`` and ``accept``, has resulted in the creation of a socket that is in passive mode i.e. awaiting connection requests.
-
-The call to ``connect`` causes the client TCP entity to send a ``SYN`` (synchronise) segment. This segment contains the client's initial <mark style="background: #FF5582A6;">sequence</mark> number for its data
-
-The server TCP entity must acknowledge receiving a ``SYN`` segment and it must send its own ``SYN`` segment
-
-This contains the initial sequence number for its data (note: the full duplex operation)
-
-In addition, the server’s ``SYN`` contains an ``ACK`` of the client's ``SYN`` message
-
-### <mark style="background: #FF5582A6;">The Three-Way Handshake – Contd:</mark>
-
-The client TCP entity must also acknowledge receipt of the server's ``SYN`` segment: As there are three segments used in the opening sequence this procedure is called a <mark style="background: #FF5582A6;">three-way handshake</mark>
-
-<mark style="background: #FF5582A6;">Note on sequence numbers:</mark>
-- Sequence numbers contained in a TCP acknowledgement segment (``ACK``) is the <mark style="background: #FF5582A6;">next expected</mark> sequence number
-- ``SYN`` messages occupy 1 byte of the sequence number space
-- ``ACKs`` on their own do not consume a sequence number
-- Refer to the example connection start-up sequence on the next slide
-
-### <mark style="background: #FF5582A6;">Example Opening Three Way Handshake:</mark>
-
-![](https://i.imgur.com/5Q799ds.png)
-
-### <mark style="background: #FF5582A6;">Closing a TCP connection:</mark>
-
-<mark style="background: #FF5582A6;">Closing a TCP Connection:</mark>
-- An application calling ``close`` is performing an active close
-- The other end of connection is said to be performing a passive close
-
-<mark style="background: #FF5582A6;">The call to close() causes the local TCP entity to sends a FIN segment:</mark>
-- This implies that the application is finished sending data
-- Either application, the client or the server, can call ``close()``
-
-### <mark style="background: #FF5582A6;">Example Closing using a Three-way Handshake:</mark>
-
-![](https://i.imgur.com/TcVmKeV.png)
-
-### <mark style="background: #FF5582A6;">Closing a TCP connection:</mark>
-
-<mark style="background: #FF5582A6;">The FIN segment is acknowledged by the receiving TCP entity:</mark>
-- This FIN message is passed to the application as an <mark style="background: #FF5582A6;">end-of-file</mark> and is queued <mark style="background: #FF5582A6;">after</mark> any remaining data
-- Receipt of a FIN means no more data will arrive on the connection
-
-<mark style="background: #FF5582A6;">An application that receives an end-of-file can choose to:</mark>
-- Leave the local socket open for longer in order to return data to the remote app. This is known as a <mark style="background: #FF5582A6;">half-close</mark>, OR,
-- Close its local socket by calling ``close()`` resulting in its local TCP entity sending a FIN. This FIN segment must be acknowledged by the remote TCP entity
-
-This choice results in either a <mark style="background: #FF5582A6;">three-way</mark> or <mark style="background: #FF5582A6;">four-way</mark> handshaking sequence for closing the connection
-
-### <mark style="background: #FF5582A6;">Closing a TCP connection:</mark>
-
-Closing a connection requires a ``FIN`` and an ``ACK`` in each direction i.e. four segments are <mark style="background: #FF5582A6;">normally</mark> required, however the <mark style="background: #FF5582A6;">active</mark> ``FIN`` is normally sent with data and the passive ``FIN`` can be combined with the ``ACK`` into a single segment i.e. a three-way handshake
-
-<mark style="background: #FF5582A6;">Connections can also be closed by terminating the application:</mark> 
-- i.e. terminating the associated Unix process:
-- This causes all open socket descriptors to <mark style="background: #FF5582A6;">close</mark>
-- This results in a ``FIN`` segment being sent on any open TCP connections
-
-<mark style="background: #FF5582A6;">Note on sequence numbers:</mark>
-- Just like SYN segments, FIN segment also occupy 1 byte of the sequence number space
-- ACKs on their own do not consume a sequence number
-- Refer to the example connection termination sequence on the next slide
-
-### <mark style="background: #FF5582A6;">Example Closing using a Four-way Handshake (a Half Close):</mark>
-
-![](https://i.imgur.com/DdQl787.png)
-
-### <mark style="background: #FF5582A6;">Example of a complete connection sequence:</mark>
-
-![](https://i.imgur.com/IEZst89.png)
-
-### <mark style="background: #FF5582A6;">TCP State Transition Diagram - explained:</mark>
-
-<mark style="background: #FF5582A6;">The TCP State Transition Diagram shows the operation of TCP’s connection establishment and termination phases:</mark>
-- There are 11 different states defined for a connection
-- Client and server transitions are shown as dark solid and dark dashed lines respectively
-- The transition from one state to another depends on the segment received in that state
-- e.g. an application performing an active open in the ``CLOSED`` state moves to the ``SYN_SENT`` state and then to the ``ESTABLISHED`` state upon receipt of a ``SYN`` with an ``ACK``
-
-The ``ESTABLISHED`` state is where most data transfer occurs
-
-![](https://i.imgur.com/qNX9QVz.png)
-
-<mark style="background: #FF5582A6;">Termination of a connection:</mark>
-- From the ``ESTABLISHED`` state there are two possible transitions:
-- An application calling ``close`` i.e. an active close moves to the ``FIN_WAIT_1`` state
-- An application receiving a ``FIN`` (i.e. a passive close) moves to the ``CLOSE_WAIT`` state
-
-In rare circumstances it is possible for both ends to
-send SYN/FINs simultaneously (known as simultaneous open/close). This scenario is not explored here
-
-### <mark style="background: #FF5582A6;">TCP’s TIME_WAIT State - explained:</mark>
-
-The end that performs the <mark style="background: #FF5582A6;">active close</mark> goes through the ``TIME_WAIT`` state for a period of twice the <mark style="background: #FF5582A6;">MSL (maximum segment lifetime)</mark> a.k.a. 2MSL
-- MSL is the maximum amount of time that an IP <mark style="background: #FF5582A6;">datagram</mark> can live in an internet. This is linked to the TTL field (max value is 255)
-- TCP chooses a value for MSL of between 1 min. and 4 minutes
-
-There are two reasons for the TIME_WAIT state:
-
-<mark style="background: #FF5582A6;">1. To implement TCP's full-duplex connection termination reliably:</mark>
-- Recall two of TCP’s service offerings is <mark style="background: #FF5582A6;">full-duplex communication</mark> and <mark style="background: #FF5582A6;">reliable termination</mark>
-- The end that performs an <mark style="background: #FF5582A6;">active close</mark> remains in the ``TIME_WAIT`` state as it might have to retransmit the final ``ACK``
-
-<mark style="background: #FF5582A6;">2. To allow old duplicate segments to expire in the network:</mark>
-- Datagrams containing TCP segments can get caught in <mark style="background: #FF5582A6;">routing loops</mark> within an internet due to routing errors. These are known as lost or <mark style="background: #FF5582A6;">wandering duplicates</mark>
-- TCP must handle these duplicates for connections that have been <mark style="background: #FF5582A6;">reincarnated</mark>
-- TCP will not initiate an <mark style="background: #FF5582A6;">incarnation</mark> of a connection that is currently in the ``TIME_WAIT`` state
-- This guarantees that all old <mark style="background: #FF5582A6;">duplicates</mark> from previous incarnations have expired
-
-# <mark style="background: #FF5582A6;">13 The Listen Primitive</mark>
-
-### <mark style="background: #FF5582A6;">The listen function:</mark>
-
-The listen function performs two actions.
-
-It converts an <mark style="background: #FF5582A6;">unconnected</mark> socket into a <mark style="background: #FF5582A6;">passive socket</mark>. This informs the kernel to accept incoming connection requests to this socket
-
-It limits the number of connections that will be queued for this server:
-
-``int listen(int sockfd, int backlog);``
-
-Returns: 0 if OK, -1 on error
-
-For a listening socket, the kernel maintains two
-queues:
-
-<mark style="background: #FF5582A6;">Incomplete:</mark>
-- An <mark style="background: #FF5582A6;">incomplete</mark> connection queue contains an entry for each ``SYN`` segment that has arrived from a client but is awaiting completion of the TCP 3WHS. These sockets are in the ``SYN_RCVD`` state.
-- Entries remain on this queue until the third segment of the 3WHS arrives or until the entry times out.
-
-<mark style="background: #FF5582A6;">Complete:</mark>
-- A <mark style="background: #FF5582A6;">completed</mark> connection queue contains an entry for each client for which the TCP 3WHS has been completed. These sockets are in the ``ESTABLISHED`` state.
-- Entries on this queue are returned to the process when accept is called
-
-<mark style="background: #FF5582A6;">TCP ignores the arriving SYN when the queues are full:</mark>
-- It does <mark style="background: #FF5582A6;">not</mark> send an ``RST`` (reset) preventing the client's <mark style="background: #FF5582A6;">connect</mark> returning an error
-- Instead, the client TCP entity is allowed retransmit its ``SYN`` segment
-
-Data that arrives after the 3WHS completes, but before the server calls accept, is queued by the TCP entity up to the size of the <mark style="background: #FF5582A6;">connected</mark> socket's receive buffer
-
-### <mark style="background: #FF5582A6;">TCP Queues:</mark>
-
-![](https://i.imgur.com/ay0sN7A.png)
-
-### <mark style="background: #FF5582A6;">The backlog argument:</mark>
-
-The backlog argument specifies the <mark style="background: #FF5582A6;">maximum</mark> value for the <mark style="background: #FF5582A6;">sum</mark> of <mark style="background: #FF5582A6;">both</mark> queues. 
-
-Do not specify a backlog of 0, as different implementations interpret this differently.
-
-If you do not want any clients connecting to your <mark style="background: #FF5582A6;">listening</mark> socket then close it
-
-A backlog of 5 was often used in the 1980s when busy servers handled only a few hundred client connections per day
-
-With the growth of the World Wide Web (WWW) HTTP servers can handle millions of connections per day, this small number is inadequate
-
-Hence, we specify an <mark style="background: #FF5582A6;">environment variable</mark> ``LISTENQ`` which can be changed without a recompile of the code.
