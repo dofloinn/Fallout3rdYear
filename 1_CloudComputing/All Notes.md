@@ -2420,7 +2420,7 @@ And finally, it is possible to use a hybrid architecture, with some serverless f
 - TCB of an information system is the set of all components that are critical to its security.
 - Vulnerabilities occurring inside the TCB might jeopardise the security of the entire system. 
 - This way, TCB essentially defines a boundary for security-critical and non critical parts of an information system; for example, kernel services of an OS are more critical for its security than application level services. 
-- Therefore, kernel services are part of a TCB for an OS, whereas application level services need not be a part of it.  
+- Therefore, kernel services are part of a TCB for an OS, whereas application level services need not be a part of it.
 
 <mark style="background: #BABD00;">Encryption:</mark> It is the conversion of data into a form that cannot be easily understood by unauthorised users. Decryption is the process of converting encrypted data back into its original form. Encryption is used to enforce confidentiality, privacy, and integrity.  
 
@@ -2447,13 +2447,13 @@ The following slides provide details on some of the above mentioned concepts.
 - Is a process to give specific access rights to a user to resources  
 - Defines the scope of the access rights of a user on a resource; for example, read-only access or read-write access  
 
-<mark style="background: #BABD00;">Auditing:</mark> Is a process to evaluate the effectiveness of security enforcement mechanisms
+<mark style="background: #BABD00;">Auditing:</mark> Is a process to evaluate the effectiveness of security enforcement mechanisms.
 
-In an information system security framework, authentication and authorisation capabilities are required to ensure legitimate access to data.  
+In an information system security framework, authentication and authorisation capabilities are required to ensure legitimate access to data.
 
-Authentication is a process to ensure that a user’s or asset’s credentials (for example identity) are genuine so that no illegitimate access to information is allowed. Multi-factor authentication is a special method for authentication, which considers multiple factors together for authenticating a user.  
+Authentication is a process to ensure that a user’s or asset’s credentials (for example identity) are genuine so that no illegitimate access to information is allowed. Multi-factor authentication is a special method for authentication, which considers multiple factors together for authenticating a user.
 
-Authorisation is a process to grant specific access rights to a user on resources. Authorisation defines the limits of the access rights of a user on a resource; for example, read-only access or read-write access on a file.  
+Authorisation is a process to grant specific access rights to a user on resources. Authorisation defines the limits of the access rights of a user on a resource; for example, read-only access or read-write access on a file.
 
 Finally, auditing is a process to evaluate the effectiveness of security enforcement mechanisms.
 
@@ -2500,7 +2500,7 @@ An example could be an antivirus software installed on individual VM when there 
 
 Different security products from multiple vendors may be deployed to defend different potential vulnerable resources within the network.  
 
-Defense-in-depth is an information assurance strategy in which multiple layers of defense are  placed throughout the system. For this reason, it is also known as a “layered approach to security”.  
+Defense-in-depth is an information assurance strategy in which multiple layers of defense are  placed throughout the system. For this reason, it is also known as a “layered approach to security”.
 
 Because there are multiple measures for security at different levels, defense-in-depth gives additional time to detect and respond to an attack. This reduces the scope of a security breach.  
 
@@ -2581,9 +2581,9 @@ From a security perspective, both Cloud users as well as service providers have 
 - Data leakage  
 - Denial of Service (DoS) attack
 
-Security concerns and threats in a Cloud environment can be classified for CSPs and Cloud users based upon whom that concern or threat affects more.  
+Security concerns and threats in a Cloud environment can be classified for CSPs and Cloud users based upon whom that concern or threat affects more.
 
-For a CSP, the <mark style="background: #BABD00;">key security concerns</mark> are <mark style="background: #BABD00;">multitenancy</mark> and ‘<mark style="background: #BABD00;">velocity-of-attack</mark>’. Though these are also concerns for Cloud users, it is the CSP who needs to adopt suitable counter measures to address these concerns.  
+For a CSP, the <mark style="background: #BABD00;">key security concerns</mark> are <mark style="background: #BABD00;">multitenancy</mark> and ‘<mark style="background: #BABD00;">velocity-of-attack</mark>’. Though these are also concerns for Cloud users, it is the CSP who needs to adopt suitable counter measures to address these concerns.
 
 <mark style="background: #BABD00;">Multitenancy</mark> refers to the fact that the Cloud infrastructure, by virtue of virtualisation, enables multiple independent clients (tenants) to be serviced using same set of resources. This consequently increases the risks for data confidentiality and integrity.
 
@@ -2591,7 +2591,7 @@ These risks are especially more severe in case of Public Cloud environment. This
 
 The <mark style="background: #BABD00;">Velocity-of-attack</mark> in the Cloud refers to a situation where any existing security threat in the Cloud spreads more rapidly and has larger impact than that in the Classic Data Centre (CDC) environments.  
 
-Information assurance, data privacy, and ownership are among the key Cloud security concerns for its users.  
+Information assurance, data privacy, and ownership are among the key Cloud security concerns for its users.
 
 Information assurance covers many related aspects of ensuring that data in a Cloud is “safe”. Data privacy and ownership concerns specifically relate to the risk of an unauthorised data disclosure.
 
@@ -2607,25 +2607,25 @@ These Cloud security concerns and vulnerabilities will be discussed next.
 ### <mark style="background: #BABD00;">Security Concern: Multitenancy</mark>
 
 <mark style="background: #BABD00;">Multitenancy is a key security concern in Cloud:</mark>  
-- <mark style="background: #BABD00;">For Cloud Clients:</mark> Co-location of multiple VMs in a single server and sharing the same resources increases the attack surface 
-- <mark style="background: #BABD00;">For CSPs:</mark> Enforcing uniform security controls and measures is difficult  
+- <mark style="background: #BABD00;">For Cloud Clients:</mark> Co-location of multiple VMs in a single server and sharing the same resources increases the attack surface. 
+- <mark style="background: #BABD00;">For CSPs:</mark> Enforcing uniform security controls and measures is difficult  .
 
 <mark style="background: #BABD00;">Mutual client isolation is a key measure against multitenancy-related concerns:</mark>  
 - Isolation of VMs  
 - Isolation of Data  
 - Isolation of network communication
 
-In spite of the benefits offered by multitenancy to a CSP, it is a major security concern for the Cloud clients.  
+In spite of the benefits offered by multitenancy to a CSP, it is a major security concern for the Cloud clients.
 
-This is because Cloud infrastructure and services are, by nature, shared among multiple business entities, for example, multiple business units in an organisation or different companies. Co-location of multiple VMs in a single server and sharing the same resources increase the attack surface of vulnerability. This gives rise to a potential security concern for the Cloud users because it makes private data of one client vulnerable to theft by other competing clients who run applications using the same resources.  
+This is because Cloud infrastructure and services are, by nature, shared among multiple business entities, for example, multiple business units in an organisation or different companies. Co-location of multiple VMs in a single server and sharing the same resources increase the attack surface of vulnerability. This gives rise to a potential security concern for the Cloud users because it makes private data of one client vulnerable to theft by other competing clients who run applications using the same resources.
 
-There also exists a danger that in the absence of adequate security controls, a tenant application might disrupt operations of other tenants, for example, by launching DoS attacks. 
+There also exists a danger that in the absence of adequate security controls, a tenant application might disrupt operations of other tenants, for example, by launching DoS attacks.
 
-An already compromised VM might enable an attacker to compromise the security of other VMs (running on the same server) or of the hypervisor. A compromised guest OS in a VM can also impact other guest OSs in other VMs.  
+An already compromised VM might enable an attacker to compromise the security of other VMs (running on the same server) or of the hypervisor. A compromised guest OS in a VM can also impact other guest OSs in other VMs.
 
-For CSPs also, multitenancy makes it harder to enforce uniform security controls and counter measures for all the clients.  
+For CSPs also, multitenancy makes it harder to enforce uniform security controls and counter measures for all the clients.
 
-Isolation of VMs, data, and network communication related to different clients is a key measure against multitenancy-related concerns. These measures will be discussed later in the module.  
+Isolation of VMs, data, and network communication related to different clients is a key measure against multitenancy-related concerns. These measures will be discussed later in the module.
 
 <mark style="background: #BABD00;">Note:</mark> An attack surface refers to various access points/interfaces that an attacker can use to launch an attack; for example, the code within a compute system, which can be executed without requiring any authorisation.
 
@@ -2672,7 +2672,7 @@ Ownership of data is yet another concern for Cloud clients. Ownership issues ari
 
 ### <mark style="background: #BABD00;">Security Concern: Data Privacy:</mark>
 
-Potential for unauthorised disclosure of private data of a Cloud client  
+Potential for unauthorised disclosure of private data of a Cloud client
 
 <mark style="background: #BABD00;">Private data may include:</mark>  
 - Individual identity of the client  
@@ -2699,12 +2699,12 @@ A CSP needs to ensure that private data of its clients is protected from unautho
 <mark style="background: #BABD00;">VMs are vulnerable to attack when they are running and when they are powered-off:</mark>  
 - A powered-off VM is still available as an image file, which is susceptible to malware infections 
 - Unprotected VM migration is vulnerable to network attacks  
-- Encryption of VM image files is required as a protection measure when it is powered-off or during its migration  
+- Encryption of VM image files is required as a protection measure when it is powered-off or during its migration
 
 <mark style="background: #BABD00;">VM templates are also vulnerable to attacks</mark>  
 - When new unauthorised VMs are created from a template  
 - When a template is modified to infect the VMs  
-- To protect, VM templates must be kept encrypted and access should be restricted to privileged users (administrators)
+- To protect VM templates, they must be kept encrypted and access should be restricted to privileged users (administrators)
 
 VM templates are vulnerable when they are running and when they are powered-off.  
 
@@ -2738,13 +2738,13 @@ The process of breaking out and interacting with the hypervisor is called a VM e
 
 ### <mark style="background: #BABD00;">Security Threat: HyperJacking:</mark>
 
-<mark style="background: #BABD00;">Hyperjacking:</mark> It enables an attacker to install a rogue hypervisor or Virtual Machine Monitor (VMM) that can take control of the underlying server resources
+<mark style="background: #BABD00;">Hyperjacking:</mark> It enables an attacker to install a rogue hypervisor or <mark style="background: #BABD00;">Virtual Machine Monitor (VMM)</mark> that can take control of the underlying server resources.
 
-An attacker can run unauthorised applications on a guest OS without the OS realising it  
+An attacker can run unauthorised applications on a guest OS without the OS realising it.
 
-An attacker could control the interaction between the VMs and the underlying server  
+An attacker could control the interaction between the VMs and the underlying server.
 
-Regular security measures are ineffective against hyperjacking  
+Regular security measures are ineffective against hyperjacking.
 
 <mark style="background: #BABD00;">Measures against hyperjacking include:</mark>  
 - Hardware-assisted secure launching of the hypervisor  
@@ -2766,13 +2766,13 @@ Using such a rogue hypervisor, an attacker can run unauthorised applications on 
 
 ### <mark style="background: #BABD00;">Security Threat: Data Leakage:</mark>
 
-Confidential data stored on a third party Cloud is potentially vulnerable to unauthorised access or manipulation
+Confidential data stored on a third party Cloud is potentially vulnerable to unauthorised access or manipulation.
 
-Attacks on service provider’s control systems (for example passwords lists) could make all the clients’ data vulnerable
+Attacks on service provider’s control systems (for example passwords lists) could make all the clients’ data vulnerable.
 
-Cloud users must evaluate end-to-end data protection measures by all the concerned parties who have any level of access on the data
+Cloud users must evaluate end-to-end data protection measures by all the concerned parties who have any level of access on the data.
 
-<mark style="background: #BABD00;">Side Channel Attacks (SCA) can be used for data leakage in Cloud:</mark> An SCA extracts information by monitoring indirect activities; for example cache data, keystroke activity, etc.  
+<mark style="background: #BABD00;">Side Channel Attacks (SCA) can be used for data leakage in Cloud:</mark> An SCA extracts information by monitoring indirect activities; for example cache data, keystroke activity, etc.
 
 <mark style="background: #BABD00;">Cross-VM SCA:</mark>  
 - Could reveal information of a client to another malicious client that runs its VMs on the same server  
@@ -2784,27 +2784,27 @@ A cross VM SCA involves one VM being used to launch an SCA on another VM running
 
 <mark style="background: #BABD00;">Denial of Service (DoS):</mark> It is an attempt to prevent legitimate users from accessing a resource or service.
 
-DoS attacks might affect software applications and network components  
+DoS attacks might affect software applications and network components.
 
 <mark style="background: #BABD00;">A DoS attack involves:</mark>  
-- Exhausting resources, for example, network bandwidth or CPU cycles  
-- Exploiting weaknesses in communication protocols, for example, resetting of TCP sessions, corrupting domain name server’s cache  
+- Exhausting resources, for example, network bandwidth or CPU cycles.
+- Exploiting weaknesses in communication protocols, for example, resetting of TCP sessions, corrupting domain name server’s cache.
 
-A malicious client VM might be used to launch a DoS attack against the hypervisor or other VMs running on the same hypervisor  
+A malicious client VM might be used to launch a DoS attack against the hypervisor or other VMs running on the same hypervisor.
 
-As a protective measure, resource consumption of a VM needs to be restricted
+As a protective measure, resource consumption of a VM needs to be restricted.
 
-A Denial of Service (DoS) attack is an attempt to make resources or services of an information system unavailable to its authorised users.  
+A Denial of Service (DoS) attack is an attempt to make resources or services of an information system unavailable to its authorised users.
 
-A DoS attack prevents legitimate users from accessing a resource or service. DoS attacks could be targeted against software applications (example OS) and network components including routers or servers.  
+A DoS attack prevents legitimate users from accessing a resource or service. DoS attacks could be targeted against software applications (example OS) and network components including routers or servers.
 
 <mark style="background: #BABD00;">Often a DoS attack involves either one or a combination of the following:</mark>  
-- Attack aims to exhaust computing resources, for example, network bandwidth and CPU cycles. An attack may involve massive quantities of data sent to the target with the intention of consuming bandwidth/processing resources.  
-- Attack involves exploiting weaknesses in a protocol to target network resources; for example, resetting of TCP sessions, IP address spoofing, or corrupting DNS server cache.  
+- Attack aims to exhaust computing resources, for example, network bandwidth and CPU cycles. An attack may involve massive quantities of data sent to the target with the intention of consuming bandwidth/processing resources.
+- Attack involves exploiting weaknesses in a protocol to target network resources; for example, resetting of TCP sessions, IP address spoofing, or corrupting DNS server cache.
 
-A Distributed DoS (DDoS) attack is a special type of DoS attack in which several systems launch coordinated DoS attack on their target(s), thereby causing denial of service to the users of the targeted system(s). In a DDoS attack, the main attacker is able to multiply the effectiveness of the DoS attack by harnessing the resources of multiple collaborating systems. 
+A Distributed DoS (DDoS) attack is a special type of DoS attack in which several systems launch coordinated DoS attack on their target(s), thereby causing denial of service to the users of the targeted system(s). In a DDoS attack, the main attacker is able to multiply the effectiveness of the DoS attack by harnessing the resources of multiple collaborating systems.
 
-These collaborating systems serve as attack platforms. Typically a DDoS master program is installed on one compute system using a stolen account. Then, at a designated time, the master program communicates to any number of "agent" programs installed on computers anywhere on the network. When the agents receive the command, they initiate the attack.  
+These collaborating systems serve as attack platforms. Typically a DDoS master program is installed on one compute system using a stolen account. Then, at a designated time, the master program communicates to any number of "agent" programs installed on computers anywhere on the network. When the agents receive the command, they initiate the attack.
 
 In a virtualised environment, a rough VM could be used to launch DoS attack against the hypervisor or other VMs running on the same hypervisor. Such a rough VM could use the internal virtual network for launching the DoS attacks. To protect against such VM based DoS attacks, the resource consumption of a VM should be restricted to specific limits.
 
@@ -2812,9 +2812,9 @@ In a virtualised environment, a rough VM could be used to launch DoS attack agai
 
 <mark style="background: #BABD00;">Topics covered in this lesson:</mark>  
 - Security at compute level, including securing server, hypervisor, VM, guest OS, and applications  
-- Security at network and storage levels, including virtual  firewall, demilitarised zone, and data shredding  
-- Intrusion detection in VDC and Cloud  
-- Physical Security of the premises  
+- Security at network and storage levels, including virtual  firewall, demilitarised zone, and data shredding
+- Intrusion detection in VDC and Cloud
+- Physical Security of the premises
 - Access Control and Identity management services in Cloud
 
 ### <mark style="background: #BABD00;">Security at Compute Level:</mark>
