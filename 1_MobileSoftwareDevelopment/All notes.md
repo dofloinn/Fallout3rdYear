@@ -8,7 +8,7 @@ Android was developed by the Open Handset Alliance which is led by Google.
 - Why do you think google did that? A free OS for phones?  
 
 The first Android Software Development Kit (SDK) was released in 2007. Google released Jelly Bean in 2012 with the idea of improving the user interface.  
-- Why did google create the SDK for free?  
+- Why did google create the SDK for free?
 
 Android is designed as a unique platform in the sense that developers only need to code their application in Android and it will run on any device.
 
@@ -53,11 +53,10 @@ Device contents <mark style="background: #AD21D9;">rotate</mark> as needed
 
 ![](https://i.imgur.com/PDdODiH.png)
 
-Self-updating <mark style="background: #AD21D9;">widgets</mark> for live contents
-
+<mark style="background: #AD21D9;">Self-updating widgets for live contents:</mark>
 ![](https://i.imgur.com/95h2yxH.png)
 
-Folders to organise apps
+<mark style="background: #AD21D9;">Folders to organise apps:</mark>
 ![](https://i.imgur.com/BBK9hq0.png)
 
 <mark style="background: #AD21D9;">Voice Assistance:</mark>
@@ -74,7 +73,7 @@ Folders to organise apps
 <mark style="background: #AD21D9;">Middle Age (2011 - 2014):</mark>
 - Support for <mark style="background: #AD21D9;">multi-core processors</mark>, ability to encrypt all user data  
 - Multiple browser tabs replacing browser windows and a new <mark style="background: #AD21D9;">“incognito” mode</mark>  
-- <mark style="background: #AD21D9;">Android Runtime</mark> (ART) with <mark style="background: #AD21D9;">ahead-of-time</mark> (AOT) compilation and improved GC  
+- <mark style="background: #AD21D9;">Android Runtime (ART)</mark> with <mark style="background: #AD21D9;">ahead-of-time (AOT)</mark> compilation and improved <mark style="background: #AD21D9;">garbage-collector GC</mark>  
 - Support for 64-bit CPUs, <mark style="background: #AD21D9;">Material Design</mark>, bringing a restyled User Interface
 
 <mark style="background: #AD21D9;">Modern Era (2015 – 2018):</mark>
@@ -84,8 +83,8 @@ Folders to organise apps
 - Rounded corners across the UI
 
 <mark style="background: #AD21D9;">Recent (2019-2022):</mark>
-- Platform optimisations. have been made for foldable smartphones.  
-- A feature known as "bubbles" that presents content in pop-up overlays.  
+- Platform optimisations. have been made for foldable smartphones.
+- A feature known as "bubbles" that presents content in pop-up overlays.
 
 <mark style="background: #AD21D9;">Most Recent (2022-2024):</mark>  
 - Enhanced Security  
@@ -134,11 +133,11 @@ Marketing: <mark style="background: #AD21D9;">understand the market</mark> and y
 
 ![](https://i.imgur.com/u7w9Od3.png)
 
-<mark style="background: #AD21D9;">Resources:</mark> layouts, images, strings, colours as XML and media files.  
+<mark style="background: #AD21D9;">Resources:</mark> layouts, images, strings, colours as XML and media files.
 
 <mark style="background: #AD21D9;">Components:</mark> activities, services, and helper classes as Java code.  
 
-<mark style="background: #AD21D9;">Manifest:</mark> information about app for the runtime.  
+<mark style="background: #AD21D9;">Manifest:</mark> information about app for the runtime.
 
 <mark style="background: #AD21D9;">Build configuration:</mark> APK versions in Gradle config files.
 
@@ -185,11 +184,11 @@ Develop, run, <mark style="background: #AD21D9;">debug</mark>, <mark style="back
 
 <mark style="background: #AD21D9;">Activities represent each screen of the app</mark>. For example, an email reading application can have an activity for messages, another for composing, and another for settings.
 
-<mark style="background: #AD21D9;">Android Services:</mark>
-An Android service is a <mark style="background: #AD21D9;">component</mark> that is designed to do some <mark style="background: #AD21D9;">work without</mark> a user <mark style="background: #AD21D9;">interface</mark>. A service might download a file, play music, or apply a filter to an image. Services can also be used for process communication (IPC) between Android applications.  
+<mark style="background: #AD21D9;">Android Services:</mark> 
+- An Android service is a <mark style="background: #AD21D9;">component</mark> that is designed to do some work <mark style="background: #AD21D9;">without a user interface</mark>. 
+- A service might download a file, play music, or apply a filter to an image. Services can also be used for process communication (IPC) between Android applications.  
 
-<mark style="background: #AD21D9;">Broadcast Receivers:</mark>
-They <mark style="background: #AD21D9;">respond to broadcast messages</mark> from apps or from the system. When a file is downloaded, or when the Wi-Fi is active, low battery.  
+<mark style="background: #AD21D9;">Broadcast Receivers:</mark> They <mark style="background: #AD21D9;">respond to broadcast messages</mark> from apps or from the system. When a file is downloaded, or when the Wi-Fi is active, low battery.  
 
 <mark style="background: #AD21D9;">Content provider:</mark>
 They supply <mark style="background: #AD21D9;">data to other applications</mark>. The <mark style="background: #AD21D9;">data</mark> can be <mark style="background: #AD21D9;">stored in a file</mark>, on a database, or on other systems (google cloud)
@@ -227,12 +226,12 @@ Layouts are declared using the <mark style="background: #AD21D9;">XML</mark> fil
 ### <mark style="background: #AD21D9;">Android UI Controls:</mark>
 
 <mark style="background: #AD21D9;">In the above figure:</mark>  
-1. Button  
-2. Text field  
-3. Seek bar  
-4. Checkboxes  
-5. Radio buttons  
-6. Toggle  
+1. Button
+2. Text field
+3. Seek bar
+4. Checkboxes
+5. Radio buttons
+6. Toggle
 7. Spinner
 
 ![](https://i.imgur.com/tKDYrzo.png)
@@ -241,10 +240,10 @@ Layouts are declared using the <mark style="background: #AD21D9;">XML</mark> fil
 
 ### <mark style="background: #AD21D9;">Event Handling:</mark>
 
-Events are used for asynchrony interactions. It is used to interact the actions of the users such as clicking a button, scrolling up or down, or typing a text.  
+Events are used for asynchronous interactions. It is used to handle the interactions of the users such as clicking a button, scrolling up or down, or typing a text.
 
 <mark style="background: #AD21D9;">There are three different kind of events:</mark> 
-- <mark style="background: #AD21D9;">Event listeners:</mark> It only has one call-back action that is executed when the users triggers an event on that item.
+- <mark style="background: #AD21D9;">Event listeners:</mark> It only has one call-back action that is executed when the user triggers an event on that item.
 - <mark style="background: #AD21D9;">Event handler:</mark> It is called by the event listener to handle the event.
 - <mark style="background: #AD21D9;">Event Listeners Registration:</mark> It is the process by which the event handler is registered. <mark style="background: #AD21D9;">Links</mark> the <mark style="background: #AD21D9;">listener</mark> with the <mark style="background: #AD21D9;">handler</mark>.
 
@@ -258,7 +257,7 @@ Events are used for asynchrony interactions. It is used to interact the actions 
 - Passed as a parameter.
 - Accessible by another function.
 - Invoked after the first function if that first function completes. 
-- The name tends to confuse. Maybe a better name would be “Call after function”. Maybe a better name would be a "call after" function.  
+- The name tends to confuse. Maybe a better name would be “Call after function”.
 - They are used in asynchronous communications to manage events.
 
 # <mark style="background: #AD21D9;">02 User Interface:</mark>
@@ -302,7 +301,7 @@ If you look at your mobile device, every <mark style="background: #AD21D9;">User
 
 <mark style="background: #AD21D9;">Messages:</mark>
 - Single line of text  
-- ``android:inputType =  “textShortMessage”``  
+- ``android:inputType =  "textShortMessage"``  
 - Tapping Emoticons key changes keyboard to emoticons 
 - Tapping ``Done`` key advances focus to next View
 
@@ -310,7 +309,7 @@ If you look at your mobile device, every <mark style="background: #AD21D9;">User
 
 <mark style="background: #AD21D9;">Phone Numbers:</mark>
 - For phone number entry  
-- ``android:inputType = “phone”``  
+- ``android:inputType = "phone"``  
 - Numeric keypad (numbers only)  
 - Tapping Done key advances focus to next View
 
@@ -321,7 +320,7 @@ If you look at your mobile device, every <mark style="background: #AD21D9;">User
 - ``android:inputType = “date”``  
 - Numeric keypad (numbers only)  
 - Tapping ``Done`` key advances focus to next View  
-- Note prominence of <mark style="background: #AD21D9;">backslash</mark> /
+- Note prominence of <mark style="background: #AD21D9;">forward slash</mark> /
 ![](https://i.imgur.com/Hlmxvo2.png)
 
 ### <mark style="background: #AD21D9;">Input types:</mark>
@@ -416,20 +415,17 @@ If necessary, ``create custom views`` by <mark style="background: #AD21D9;">subc
 ![](https://i.imgur.com/GnKAsKf.png)
 
 <mark style="background: #AD21D9;">Relative Layout:</mark>
-
-Displays child view in a relative position  
-
-The position of each view can be relative to the sibling, (like on the left or below another view)  
-
-Or relative to the position of the main area of the relative layout, like bottom, left, or centre.
+- Displays child view in a relative position  
+- The position of each view can be relative to the sibling, (like on the left or below another view)  
+- Or relative to the position of the main area of the relative layout, like bottom, left, or centre.
 
 ![](https://i.imgur.com/DrRVufz.png)
 
 <mark style="background: #AD21D9;">Constraint Layout:</mark>
 - Create large and complex layouts with a flat view hierarchy (no nested view groups).  
 - Laid out according to relationships between sibling views and the parent layout.  
-- Layout Editor specially built for it.  
-- Drag and drop v's XML editing
+- Layout Editor specially built for it.
+- Drag and drop vs XML editing
 
 ![](https://i.imgur.com/QXjZwMd.png)
 
@@ -458,7 +454,7 @@ View class-hierarchy is standard <mark style="background: #AD21D9;">object-orien
 - For example, ``Button`` is-a ``TextView`` is-a ``View`` is-an ``Object``  
 - Superclass-subclass relationship  
 
-Layout hierarchy is how Views are visually arranged  
+<mark style="background: #AD21D9;">Layout hierarchy is how Views are visually arranged:</mark>
 - ``LinearLayout`` can <mark style="background: #AD21D9;">contain</mark> Buttons arranged in a row  
 - Parent-child relationship
 
@@ -468,7 +464,6 @@ Layout hierarchy is how Views are visually arranged
 ![](https://i.imgur.com/x1dlF9G.png)
 
 <mark style="background: #AD21D9;">View hierarchy and screen layout:</mark>
-
 ![](https://i.imgur.com/79aedpq.png)
 
 ### <mark style="background: #AD21D9;">In the Layout editor:</mark>
@@ -498,10 +493,10 @@ Layout hierarchy is how Views are visually arranged
 
 Context is an interface to global information about an application environment  
 
-Get the context:  
+<mark style="background: #AD21D9;">Get the context:</mark>
 ``Context context = getApplicationContext();``  
 
-An Activity is its own context:  
+<mark style="background: #AD21D9;">An Activity is its own context:</mark>
 ``TextView myText = new TextView(this);``
 
 <mark style="background: #AD21D9;">Best Practices:</mark>
@@ -514,7 +509,7 @@ An Activity is its own context:
 - Strings, dimensions, images, menu text, colours, styles  
 - Useful for localisation
 
-The API Framework allows us easily use app Resources.
+The API Framework allows us to easily use app Resources.
 
 ![](https://i.imgur.com/cagJMFL.png)
 
@@ -522,11 +517,11 @@ The API Framework allows us easily use app Resources.
 
 ### <mark style="background: #AD21D9;">Drawables:</mark> 
 
-Drawable - generic Android class used to represent any kind of graphic.  
+<mark style="background: #AD21D9;">Drawable:</mark> generic Android class used to represent any kind of graphic.  
 
-Bitmaps e.g. PNG (.png), JPG (.jpg), or GIF (.gif) format.  
+<mark style="background: #AD21D9;">Bitmaps:</mark> representation of an image consisting of pixels with a specified width, height and colour format e.g. PNG (.png), JPG (.jpg), or GIF (.gif).  
 
-Vector Graphics, scale smoothly for all screen sizes e.g. defined in XML.
+<mark style="background: #AD21D9;">Vector Graphics:</mark> scale smoothly for all screen sizes e.g. defined in XML.
 
 ![](https://i.imgur.com/B3ZiCZj.png)
 
@@ -569,7 +564,7 @@ Manage visual appearance of many components with one style
 </resources>
 ```
 
-### <mark style="background: #AD21D9;">Inheritance: Parent</mark>
+### <mark style="background: #AD21D9;">Inheritance - Parent:</mark>
 
 Define a parent style...
 
@@ -584,7 +579,7 @@ Define a parent style...
 </resources>
 ```
 
-### <mark style="background: #AD21D9;">Inheritance: Define Child:</mark>
+### <mark style="background: #AD21D9;">Inheritance - Define Child:</mark>
 
 Define child with Codefont as parent
 
@@ -617,7 +612,7 @@ A colour value can be defined in XML.
 
 The colour is specified with an RGB value and alpha channel.  
 
-You can use a colour resource any place that accepts a hexadecimal colour value.  
+You can use a colour resource in any place that accepts a hexadecimal colour value.
 
 Value always begins with # character and then the Alpha-Red-Green-Blue info e.g. ``#RGB``
 
@@ -659,7 +654,7 @@ XML: @drawable/filename
 	android:src="@drawable/myimage"/>  
 ```
 
-```Java
+```Kotlin
 Java: R.drawable.filename  
 
 Resources res = getResources();  
@@ -742,7 +737,7 @@ A <mark style="background: #AD21D9;">ViewGroup</mark> that displays scrollable i
 
 <mark style="background: #AD21D9;">Three Parts of a ListView:</mark>
 - The ``ListView`` itself (aka a ``ViewGroup``)  
-- List items (Each row/item in the list. Each item is a layout consisting of a View or ``ViewGroup``.)  
+- List items (Each row/item in the list. Each item is a layout consisting of a View or ``ViewGroup``.)
 - Data for each item
 
 ### <mark style="background: #AD21D9;">ListItem:</mark>
@@ -783,7 +778,7 @@ Array<String> mMovies = { "Inception", "Spider Man", "Shawshank Redemption", "Fa
 
 <mark style="background: #AD21D9;">ArrayAdapter:</mark>  
 - Works with Arrays  
-- Can handle any Java Object as input  
+- Can handle objects as input  
 - Uses the ``.toString()`` method of the ``JavaObject`` to obtain text for list item.  
 
 <mark style="background: #AD21D9;">SimpleCursorAdapter:</mark>  
@@ -846,7 +841,7 @@ Useful when your Activity only supports a <mark style="background: #AD21D9;">sin
 - Internally calls ``setAdapter()`` on the ``ListView`` for the ``ListActivity``
 
 <mark style="background: #AD21D9;">Initial impression of ListView:</mark>
-- The ListView probably creates a view for each list item and only displays the item currently on screen.
+- The ``ListView`` probably creates a view for each list item and only displays the item currently on screen.
 
 <mark style="background: #AD21D9;">Example:</mark>
 
@@ -861,6 +856,7 @@ Array<String> mMovies = { "Bill and Ted's Excellent Adventures", "Teen Wolf", "H
 <mark style="background: #AD21D9;">ListView recycles its items:</mark>
 - To cut down on View Objects, a ``ListView`` will only allocate enough Item Views to “roughly” fill the size of a ``ListView``. 
 - When an item gets scrolled off the ``ListView``, its view will be reused by a new Item that is scrolling on to the ``ListView``.
+
 ![](https://i.imgur.com/NaYjeZo.png)
 
 
@@ -892,9 +888,9 @@ Array<String> mMovies = { "Bill and Ted's Excellent Adventures", "Teen Wolf", "H
 
 ### <mark style="background: #AD21D9;">Implementing your own adapter:</mark>
 
-The default look and feel of the Android ``ListView`` is not very attractive.  
+The default look and feel of the Android ``ListView`` is not very attractive.
 
-Also, remember the default action of an ``ArrayAdapter`` is to call the ``toString()`` method on the data object it contains.  
+Also, remember the default action of an ``ArrayAdapter`` is to call the ``toString()`` method on the data object it contains.
 
 This means your list will change the text on the list item and nothing else.
 
@@ -932,11 +928,11 @@ This makes Recycler view exceptional for displaying data collections whose eleme
 - ``GridLayoutManager``  
 - ``LinearLayoutManager``
 
-``RecyclerViews`` are generally used to show a scrolling list of items in either a list or grid format.  
+``RecyclerViews`` are generally used to show a scrolling list of items in either a list or grid format.
 
-As items in a list or grid can look different in different applications or even in different activities belonging to the same application.  
+As items in a list or grid can look different in different applications or even in different activities belonging to the same application.
 
-You’ll be required to not only add in a recycler view but also to tell the recycler view how to add in and display items.  
+You’ll be required to not only add in a recycler view but also to tell the recycler view how to add in and display items.
 
 ``RecyclerViews`` take a bit of work to get up and running because of this but they are highly flexible and adaptable as a result.
 
@@ -991,10 +987,10 @@ It lives at the root of the project source set.
 ### <mark style="background: #AD21D9;">Contents:</mark>
 
 <mark style="background: #AD21D9;">Things found inside the manifest file include:</mark>
-1. <mark style="background: #AD21D9;">Package name:</mark> Used to find pieces of code when building your project.  
-2. <mark style="background: #AD21D9;">Components:</mark> (e.g. Activities) Each component must define basic properties e.g. name of Java/Kotlin class.   
-3. <mark style="background: #AD21D9;">Capabilities:</mark> Device configurations it can handle and Intent filters (start-up).  
-4. <mark style="background: #AD21D9;">Permissions:</mark> For App to access protected parts of the system or other apps.  
+1. <mark style="background: #AD21D9;">Package name:</mark> Used to find pieces of code when building your project.
+2. <mark style="background: #AD21D9;">Components:</mark> (e.g. Activities) Each component must define basic properties e.g. name of Java/Kotlin class.
+3. <mark style="background: #AD21D9;">Capabilities:</mark> Device configurations it can handle and Intent filters (start-up).
+4. <mark style="background: #AD21D9;">Permissions:</mark> For App to access protected parts of the system or other apps.
 5. <mark style="background: #AD21D9;">Features required:</mark> Affects which devices can install the app from Google Play
 
 ### <mark style="background: #AD21D9;">Package Name:</mark>
@@ -1039,12 +1035,12 @@ When an app issues an <mark style="background: #AD21D9;">Intent</mark> to the sy
 
 ### <mark style="background: #AD21D9;">Device Compatibility:</mark>
 
-The Google Play Store does not allow apps to be installed on devices that don't provide the required features.  
+The Google Play Store does not allow apps to be installed on devices that don't provide the required features.
 
 Hardware or software features your app requires are declared with ``<uses-feature>`` element.
 
 ```XML
-<uses-feature android:name = "android.hardware.sensor.compass" android:required = "true" />
+<uses-feature android:name = "android.hardware.sensor.compass" android:required = "true"/>
 ```
 
 ### <mark style="background: #AD21D9;">Activity Lifecycle:</mark>
@@ -1053,7 +1049,7 @@ Hardware or software features your app requires are declared with ``<uses-featur
 
 ### <mark style="background: #AD21D9;">What is the activity lifecycle?</mark>
 
-The set of <mark style="background: #AD21D9;">states</mark> an Activity can be in during its lifetime, from when it is created <mark style="background: #AD21D9;">until</mark> it is destroyed  
+The set of <mark style="background: #AD21D9;">states</mark> an Activity can be in during its lifetime, from when it is created <mark style="background: #AD21D9;">until</mark> it is destroyed.
 
 <mark style="background: #AD21D9;">In Google Speak:</mark>  
 - A directed graph of all the states an Activity can be in, and the <mark style="background: #AD21D9;">callbacks</mark> associated with transitioning from each state to the next one
@@ -1167,11 +1163,12 @@ Followed by either ``onResume()`` if the Activity returns back to the front or `
 	// Activity is no longer visible it is now "stopped"  
 }
 ```
+
 Called when the Activity is no longer <mark style="background: #AD21D9;">visible</mark> to the user.  
 
 A <mark style="background: #AD21D9;">new</mark> Activity is being started, an existing one is brought in front of this one, or this one is being destroyed.
 
-Operations that were too heavy-weight for ``onPause()``  
+Operations that were too heavy-weight for ``onPause()``
 
 Followed by either ``onRestart()`` if Activity is <mark style="background: #AD21D9;">coming back</mark> to interact with user, or ``onDestroy()`` if Activity is <mark style="background: #AD21D9;">going away</mark>.
 
@@ -1199,11 +1196,11 @@ The system may destroy Activity without calling this, so use ``onPause()`` or ``
 
 ### <mark style="background: #AD21D9;">App Visibility:</mark>
 
-- Created (not visible yet)  
-- Started (visible)  
-- Resume (visible)  
-- Paused(partially invisible)  
-- Stopped (hidden)  
+- Created (not visible yet)
+- Started (visible)
+- Resume (visible)
+- Paused(partially invisible)
+- Stopped (hidden)
 - Destroyed (gone from <mark style="background: #AD21D9;">memory</mark>)
 
 ### <mark style="background: #AD21D9;">Summary:</mark>
@@ -1221,9 +1218,9 @@ The system may destroy Activity without calling this, so use ``onPause()`` or ``
 ![](https://i.imgur.com/YoZlMzc.png)
 
 ### <mark style="background: #AD21D9;">Topics:</mark>
-- Intents (Implicit, Explicit)  
-- Passing Data  
-- Permissions  
+- Intents (Implicit, Explicit)
+- Passing Data
+- Permissions
 - Navigation
 
 ### <mark style="background: #AD21D9;">Application Structure:</mark>
@@ -1244,9 +1241,11 @@ If it is not possible to use a single activity to represent the full functionali
 
 ### <mark style="background: #AD21D9;">What is an intent?</mark>
 
-Intents are objects that provide the language/description of an operation to be performed.  
+<mark style="background: #AD21D9;">Intents</mark> are objects that provide the language/description of an operation to be performed.
 
-An Intent (your intention for the app) is constructed by the activity that wants some work done. Received by another activity that can perform that work.
+An Intent (your intention for the app) is constructed by the activity that wants some work done. 
+
+Received by another activity that can perform that work.
 
 ![](https://i.imgur.com/BcpJdCP.png)
 
@@ -1282,33 +1281,33 @@ Create an intent for a specific activity. Pass intent to ``startActivity()`` met
 
 An explicit intent is one where you know the fully qualified name of the activity you wish to start.  
 
-Generally, you will use this to refer to activities that are in your own application  
+Generally, you will use this to refer to activities that are in your own application.
 
-Or if there is an external application you use where you know the fully qualified name of the activity to start
+Or if there is an external application you use where you know the fully qualified name of the activity to start.
 
 ### <mark style="background: #AD21D9;">Implicit Intent:</mark>
 
-An implicit intent is one where you have data you need to display or interact with however, you do not know how to do this  
+An implicit intent is one where you have data you need to display or interact with however, you do not know how to do this.
 
-With such an intent android will try to find another external application that is capable of rendering the content or interacting with it  
+With such an intent android will try to find another external application that is capable of rendering the content or interacting with it.
 
-Thus there is the possibility that a compatible application may not be present  
+Thus there is the possibility that a compatible application may not be present.
 
-This has implications for application design
+This has implications for application design.
 
 From an OS perspective, applications are expected to do a single job and do it well.  
 
-If they need support for different types of data then they should hand that to a separate application instead of self-implementing  
+If they need support for different types of data then they should hand that to a separate application instead of self-implementing.
 
-The idea is that by removing duplicate functionality applications are small, bug-free, and integrate with each other.  
+The idea is that by removing duplicate functionality applications are small, bug-free, and integrate with each other.
 
-Thus if you need some common functionality to try linking up to another application  
+Thus if you need some common functionality to try linking up to another application.
 
 Reduces the amount of code you need to write and increases reliability.
 
 ### <mark style="background: #AD21D9;">Start - Explicit Way:</mark>
 
-If you know the name of the Activity, use an Explicit Intent  
+<mark style="background: #AD21D9;">If you know the name of the Activity, use an Explicit Intent:</mark>
 1. Create an Intent  
 2. Use the Intent to start the Activity– Method call is ``startActivity()`` (Code taken from ``HelloAndroidWithLogin``)
 
@@ -1341,8 +1340,8 @@ Review the ``HelloAndroidWithLogin`` code.
 
 ### <mark style="background: #AD21D9;">Start - Implicit Way:</mark>
 
-To ask Android to find an Activity to handle your request, use an implicit Intent  
-1. <mark style="background: #AD21D9;">Create an Intent:</mark> Constructor take a String Action and Data Value specified as a URI  
+<mark style="background: #AD21D9;">To ask Android to find an Activity to handle your request, use an implicit Intent:</mark>
+1. <mark style="background: #AD21D9;">Create an Intent:</mark> Constructor takes a String Action and Data Value specified as a URI  
 2. Use the Intent to <mark style="background: #AD21D9;">start the Activity</mark> i.e. Google Maps
 
 ```Kotlin
@@ -1382,10 +1381,11 @@ Look at the ``ImplicitIntents`` Code
 
 ### <mark style="background: #AD21D9;">Intent Resolution - Implicit Intent</mark>
 
-Illustration of how an implicit intent is delivered through the system to start another activity: 
+<mark style="background: #AD21D9;">Illustration of how an implicit intent is delivered through the system to start another activity:</mark>
 1. Activity A creates an Intent with an action description and passes it to ``startActivity()`` 
 2. The Android System searches all apps for an intent filter that matches the intent. 
 3. When a match is found the system starts the matching activity (Activity B) by invoking its ``onCreate()`` method and passing it the Intent.  
+
 Ref:  http://developer.android.com/guide/components/intents-filters.html
 
 ### <mark style="background: #AD21D9;">Example of Google Maps Intent Filter:</mark>
@@ -1414,7 +1414,8 @@ If the provided intent filter is present in an activity's manifest, that activit
 
 ### <mark style="background: #AD21D9;">Permissions:</mark>
 
-The Implicit Intents example needed a permission for the timer. This permission is placed in the Manifest file  
+The Implicit Intents example needed a permission for the timer. This permission is placed in the Manifest file
+
 ```Kotlin
 <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
 ```  
@@ -1435,7 +1436,7 @@ Protect user privacy and prevent unauthorised access.
 
 ### <mark style="background: #AD21D9;">Sending and Receiving Data with Intents:</mark>
 
-<mark style="background: #AD21D9;">putExtra()</mark> – for passing data  
+<mark style="background: #AD21D9;">putExtra()</mark> – for passing data.
 
 <mark style="background: #AD21D9;">Data</mark> - Data can be added to an intent object before it is started via the ``putExtra()`` method. Data is added in the form of key-value pairs. Data (Username) was passed from the Login Screen to the ``HelloAndroid`` Screen in the ``HelloAndroidWithLogin`` code.
 
@@ -1451,7 +1452,7 @@ startActivity(helloAndroidIntent)
 <mark style="background: #AD21D9;">In Activity A (sender);</mark>  
 - Create the Intent object  
 - Put data into that Intent  
-- Start the new Activity with startActivity()  
+- Start the new Activity with ``startActivity()``  
 
 <mark style="background: #AD21D9;">In Activity B (receiver):</mark>  
 - Get the Intent object that Activity was started with  
@@ -1460,7 +1461,7 @@ startActivity(helloAndroidIntent)
 ### <mark style="background: #AD21D9;">Navigation:</mark>
 
 <mark style="background: #AD21D9;">Activity Stack:</mark>  
-- When a new Activity is <mark style="background: #AD21D9;">started</mark>, the previous Activity is <mark style="background: #AD21D9;">stopped</mark> and pushed on the Activity back stack  
+- When a new Activity is <mark style="background: #AD21D9;">started</mark>, the previous Activity is <mark style="background: #AD21D9;">stopped</mark> and pushed on the Activity back stack.
 - <mark style="background: #AD21D9;">Last In First Out</mark> Stack - when the current Activity ends, or the user presses the Back button, it is popped from the stack and the previous Activity resumes
 
 ### <mark style="background: #AD21D9;">Back Navigation:</mark>
@@ -1779,11 +1780,11 @@ There are three methods of constructing a custom view in android listed here alo
 
 ### <mark style="background: #AD21D9;">Method 1 - Subclass an Existing View:</mark>
 
-A good example of this is to extend the ``NumberPicker`` class to accept minimum and maximum values through XML
+A good example of this is to extend the ``NumberPicker`` class to accept minimum and maximum values through XML.
 
-Depending on behaviour required you may need very little code
+Depending on behaviour required you may need very little code.
 
-Rare chance that this can be done but very little effort when it can
+Rare chance that this can be done but very little effort when it can.
 
 If you only want to add a small piece of behaviour to an already existing view that can’t be set through attributes then this is the method to use.
 
@@ -1817,7 +1818,7 @@ There are a minimum set of requirements that must be satisfied if you want your 
 
 ### <mark style="background: #AD21D9;">Constructors:</mark>
 
-When you subclass a view, you are required to implement three constructors each have a specific use case. 
+When you subclass a view, you are required to implement three constructors each have a specific use case.
 
 Assuming our class is called ``CustomView`` we have the following
 - ``CustomView(Context c)``
@@ -1894,7 +1895,7 @@ You will have to come up with all sorts of formulas to position, size, and angle
 
 As you will be doing all the drawing you have access to a set of primitives
 
-Things like lines, arcs, circlues, rectangles, ovals, and text
+Things like lines, arcs, circles, rectangles, ovals, and text
 
 These are easy to describe mathematically. More complex shapes can be described by composing out of these simpler shapes
 
@@ -1922,9 +1923,9 @@ The canvas provides two methods to manipulate this stack, they are ``save()`` an
 - With ``save()`` we take a copy of the current transformation matrix and store it on the stack
 - With ``restore()`` we remove the matrix on top of the stack and set that as our current transformation matrix
 
-Take great care however to make sure that for every ``save()`` you have a corresponding ``restore()`` and vice versa
+Take great care however to make sure that for every ``save()`` you have a corresponding ``restore()`` and vice versa.
 
-Otherwise you will get graphical glitches and possibly exceptions
+Otherwise you will get graphical glitches and possibly exceptions.
 
 ### <mark style="background: #AD21D9;">Matrix Stack: Translate, Scale, and Rotate</mark>
 
@@ -1937,7 +1938,7 @@ It does this by multiplying in a matrix representing the operation to the curren
 
 ### <mark style="background: #AD21D9;">Invalidation:</mark>
 
-For this we use the ``invalidate()`` method, this asks the OS to schedule a redraw of the view
+For this we use the ``invalidate()`` method, this asks the OS to schedule a redraw of the view.
 
 Never under any circumstances call the ``onDraw()`` method directly.
 
@@ -1953,9 +1954,9 @@ For example with game boards you may want to have a square shaped view.
 
 ``onMeasure()`` will be called when android changes the size of your view. It does this to give your view a chance to reduce its pixel size should you not need the amount of pixels it is offered
 
-Any changes made here will be reflected in your final view size
+Any changes made here will be reflected in your final view size.
 
-Note that it is not possible to gain extra pixels in this method
+Note that it is not possible to gain extra pixels in this method.
 
 <mark style="background: #AD21D9;">For example if you wish to make a square view in android using this method:</mark>
 - You will get a width and height provided to you
@@ -1964,13 +1965,13 @@ Note that it is not possible to gain extra pixels in this method
 
 ### <mark style="background: #AD21D9;">onTouchEvent():</mark>
 
-Most custom views will require some form of interaction with the user. In this environment the main method of interaction is through touch
+Most custom views will require some form of interaction with the user. In this environment the main method of interaction is through touch.
 
-Your interaction with all touch is handled through the ``onTouchEvent()`` method
+Your interaction with all touch is handled through the ``onTouchEvent()`` method.
 
-Either through the use of single touch (simple)
+Either through the use of single touch (simple).
 
-Or combining multiple touches together (complex)
+Or combining multiple touches together (complex).
 
 ### <mark style="background: #AD21D9;">onTouchEvent() - Single Touch:</mark>
 
@@ -1983,9 +1984,9 @@ Single touch is the easiest case as interaction here is similar to that of a poi
 
 ### <mark style="background: #AD21D9;">onTouchEvent() - Multi Touch:</mark>
 
-Multi-touch is more complex however, because the android method of touch was originally designed only to accept single touches
+Multi-touch is more complex however, because the android method of touch was originally designed only to accept single touches.
 
-However, it was modified to include multi-touch while still retaining support for applications using single touch, 
+However, it was modified to include multi-touch while still retaining support for applications using single touch.
 
 <mark style="background: #AD21D9;">thus we have two new actions:</mark>
 - ``ACTION POINTER DOWN:`` for when an additional touch is added
@@ -2011,7 +2012,7 @@ It is also possible to make your view understand attributes to make them more fl
 
 ### <mark style="background: #AD21D9;">Integration - Event Handlers:</mark>
 
-Finally, if you are considering releasing your custom view for others to use you may wish to implement event handlers and event listeners
+Finally, if you are considering releasing your custom view for others to use you may wish to implement event handlers and event listeners:
 - Prevents the need for other developers to access your source code
 - Gives them the minimum required effort to integrate your view into their own application
 - Won’t cover here but easy enough to implement
@@ -2035,7 +2036,7 @@ When <mark style="background: #AD21D9;">OS</mark> starts running a program, it c
 - When JVM is started, a new process is created
 
 <mark style="background: #AD21D9;">You might think of Java code execution as:</mark>
-1. starting with main() method
+1. starting with ``main()`` method
 2. following a path until all statements are completed.
 
 This is an example of a single thread.
@@ -2048,7 +2049,7 @@ This is an example of a single thread.
 
 ### <mark style="background: #AD21D9;">In Java:</mark>
 
-Steps to create and run new thread in Java are:
+<mark style="background: #AD21D9;">Steps to create and run new thread in Java are:</mark>
 1. Extend ``Java.lang.Thread`` class. Implement run method in this subclass.
 2. Create an object of this subclass.
 3. Call start method on this object
@@ -2100,7 +2101,7 @@ T2 simply pauses, until its next time slice on a processor.
 
 We can do a lot of different operations using the thread class but if we try to modify the UI then we will most likely get an error.
 
-However, Android allows you to use the method ``.runOnUiThread`` to modify the UI directly from a thread
+However, Android allows you to use the method ``.runOnUiThread`` to modify the UI directly from a thread.
 
 ```Kotlin
 private fun yourMethodName() {
@@ -2143,7 +2144,7 @@ Independent <mark style="background: #AD21D9;">path of execution</mark> in a run
 
 Code is executed <mark style="background: #AD21D9;">line by line</mark>.
 
-App runs on Java thread called "main" or "UI thread"
+<mark style="background: #AD21D9;">App runs on Java thread called "main" or "UI thread":</mark>
 1. <mark style="background: #AD21D9;">Draws</mark> UI on the screen
 2. <mark style="background: #AD21D9;">Responds</mark> to user actions by handling UI events
 
@@ -2151,14 +2152,13 @@ Must be Fast!
 
 Hardware updates screen every 16 milliseconds
 
-UI thread has 16 ms to do all its work
+UI thread has 16ms to do all its work
 
 If it takes too long, app stutters or hangs
 
 ![](https://i.imgur.com/2Zmy4iV.png)
 
-
-If the UI waits <mark style="background: #AD21D9;">too long</mark> for an operation to finish, it becomes unresponsive. After 5 seconds of this… The framework shows an <mark style="background: #AD21D9;">Application Not Responding (ANR)</mark> dialog
+If the UI waits <mark style="background: #AD21D9;">too long</mark> for an operation to finish, it becomes unresponsive. After 5 seconds of this the framework shows an <mark style="background: #AD21D9;">Application Not Responding (ANR)</mark> dialog
 
 <mark style="background: #AD21D9;">There are two rules that android uses to determine if an app is unresponsive:</mark>
 - Must process a user input event < 5 seconds
@@ -2170,7 +2170,7 @@ If the UI waits <mark style="background: #AD21D9;">too long</mark> for an operat
 ### <mark style="background: #AD21D9;">Rules – Consequences of non-observance:</mark>
 
 If you do not respect these rules and adapt your applications in response you can expect the following to happen to your application
-- It will be killed by android for being irresponsive
+- It will be killed by android for being un-responsive
 - Your application may lose data as a result
 - Eventually users will become frustrated with your application and will uninstall it and replace it by something else
 
@@ -2262,9 +2262,9 @@ If you only need to perform something in the background while user interacts wit
 
 ### <mark style="background: #AD21D9;">Service Types:</mark>
 
-<mark style="background: #AD21D9;">Started:</mark> A service is "started" when an application component (such as an activity) starts it by calling ``startService()``
+<mark style="background: #AD21D9;">Started:</mark> A service is "started" when an application component (such as an activity) starts it by calling ``startService()``.
 
-<mark style="background: #AD21D9;">Bound:</mark> A service is "bound" when an application component binds to it by calling ``bindService()``
+<mark style="background: #AD21D9;">Bound:</mark> A service is "bound" when an application component binds to it by calling ``bindService()``.
 
 ### <mark style="background: #AD21D9;">Started Service:</mark>
 
@@ -2307,7 +2307,7 @@ By default service runs within the main thread of the application!
 
 ### <mark style="background: #AD21D9;">Services - Uses:</mark>
 
-Used when need to keep something running in background while application is not running
+<mark style="background: #AD21D9;">Used when need to keep something running in background while application is not running:</mark>
 - Polling for notifications for a user
 - Facebook app (amongst others) are capable of sending you notifications even though the application is not active
 
@@ -2315,7 +2315,7 @@ Or used for monitoring something without the need for a foreground application e
 
 ### <mark style="background: #AD21D9;">Sending notifications to the user:</mark>
 
-When a service is running, it can notify the user of events using:
+<mark style="background: #AD21D9;">When a service is running, it can notify the user of events using:</mark>
 - snackbar notifications or
 - status bar notifications.
 
@@ -2359,7 +2359,7 @@ Launch the coroutine in background
 
 ``yourClass.launch(){x.insert()}``
 
-You can also use asynch instead of launch where:
+<mark style="background: #AD21D9;">You can also use asynch instead of launch where:</mark>
 - <mark style="background: #AD21D9;">launch:</mark> fire and forget
 - <mark style="background: #AD21D9;">async:</mark> perform a task and return a result
 
@@ -2474,7 +2474,7 @@ An accelerometer is used to measure accelerations in all three directions
 
 Higher absolute values state that device is undergoing quicker changes in speed  
 
-The SI unit here is metres per second squared ms<sup>−2</sup> but common to convert this is G-force units as well 1g = 9.81ms<sup>−2</sup>  
+The SI unit here is metres per second squared ms<sup>−2</sup> but common to convert this is G-force units as well 1g = 9.81ms<sup>−2</sup>
 
 More commonly used sensors
 
@@ -2492,19 +2492,19 @@ Used with an accelerometer to generate device orientation
 
 ### <mark style="background: #AD21D9;">Magnetic field sensors:</mark> 
 
-Magnetic field = detect the magnetic field strength of the earth  
+Magnetic field = detect the magnetic field strength of the earth.
 
 Unit of measurement here is the <mark style="background: #AD21D9;">micro-Tesla</mark> (μT).  
 
-Higher values indicate a stronger magnetic field  
+Higher values indicate a stronger magnetic field.
 
-Generally used to get device orientation if gyroscope is not available  
+Generally used to get device orientation if gyroscope is not available.  
 
 More recent use is for magnetic covers to turn screens on and off automatically.
 
 ### <mark style="background: #AD21D9;">Virtual Sensors:</mark>  
 
-Using sensors like the accelerometer may not be the best approach  
+Using sensors like the accelerometer may not be the best approach.
 
 In the case of the accelerometer, will not always have a gravity component need in application  
 
@@ -2512,25 +2512,17 @@ Thus, Android provides a series of virtual sensors that will provide filtered ve
 
 Here we look at a few of these virtual sensors.
 
-### <mark style="background: #AD21D9;">Linear Accelerometer:</mark>
+<mark style="background: #AD21D9;">Linear Accelerometer:</mark>
+- The linear accelerometer is a high pass filter applied to the values that come back from the accelerometer  
+- The high pass filter will remove the gravity component from the accelerometer as it is constant and has a frequency of zero  
+- This will only leave the accelerations on the device that are caused by the user  
+- Generally used in place of the raw accelerometer
 
-The linear accelerometer is a high pass filter applied to the values that come back from the accelerometer  
-
-The high pass filter will remove the gravity component from the accelerometer as it is constant and has a frequency of zero  
-
-This will only leave the accelerations on the device that are caused by the user  
-
-Generally used in place of the raw accelerometer
-
-### <mark style="background: #AD21D9;">Gravity Sensor:</mark> 
-
-The gravity sensor is a low pass filter applied to the accelerometer  
-
-Thus removing all of the user induced accelerations on the device  
-
-Main use = determining orientation  
-
-Generally more interested in removing the gravity component
+<mark style="background: #AD21D9;">Gravity Sensor:</mark> 
+- The gravity sensor is a low pass filter applied to the accelerometer  
+- Thus removing all of the user induced accelerations on the device  
+- Main use = determining orientation  
+- Generally more interested in removing the gravity component
 
 ### <mark style="background: #AD21D9;">Rotation Vector:</mark> 
 
@@ -2602,9 +2594,9 @@ May cause privacy issues if sensor is being used for gait analysis to determine 
 
 No guarantee that a sensor will be on a device  
 
-While variety of sensors appear on majority of devices, some rarely default on all (temperature and barometric )  
+While a variety of sensors appear on majority of devices, some rarely default on all (temperature and barometric ).  
 
-Expected to query the existence of a sensor before using it  
+Expected to query the existence of a sensor before using it.
 
 Generally ask for the default sensor of the type you are interested in.  
 
@@ -2622,13 +2614,13 @@ It will then take responsibility for triggering your listeners whenever a new se
 
 ### <mark style="background: #AD21D9;">Sensor Class:</mark> 
 
-Contains all the information about each sensor that a device has  
+Contains all the information about each sensor that a device has.
 
-Includes all the constants that differentiate between the different sensor types  
+Includes all the constants that differentiate between the different sensor types.
 
-You can use this to query the specification of the individual sensors  
+You can use this to query the specification of the individual sensors.
 
-For example if you are looking to compare the sensors of each individual type and are looking for the best one
+For example if you are looking to compare the sensors of each individual type and are looking for the best one.
 
 ### <mark style="background: #AD21D9;">Sensor Listeners:</mark> 
 
@@ -2654,15 +2646,15 @@ There are three main default sensor update rates (possible to define custom rate
 
 Recommended that sensors should register when application is not in the stopped state  
 
-Generally users are not interested in sensor values if not active  
+<mark style="background: #AD21D9;">Generally users are not interested in sensor values if not active:</mark>
 - Deregister listeners in the ``onStop()`` method and  
 - Reregister in the ``onStart()`` method as a way of conserving battery power
 
 ### <mark style="background: #AD21D9;">GPS and the activity lifecycle:</mark> 
 
-The same advice applies to location sensors with a few minor exceptions  
+The same advice applies to location sensors with a few minor exceptions.
 
-The main exception is the navigation case  
+The main exception is the navigation case.
 
 This is because if a navigation app is interrupted and removes location listeners, upon reregistering it will take about 5 to 10 seconds to get a GPS fix.  
 
@@ -2672,9 +2664,7 @@ If you are constrained by this then keep the sensor active, otherwise deregister
 
 While sensors do provide a lot of information about the environment and your user there are issues to consider with their use  
 
-These must be considered carefully  
-
-As they will affect the level of trust of your users and also the amount of information you collect on them  
+These must be considered carefully  as they will affect the level of trust of your users and also the amount of information you collect on them  
 
 Also the performance of your application and associated battery drain
 
@@ -2698,56 +2688,56 @@ And also if you can anonymise and scrub as much identifying information as is po
 
 ### <mark style="background: #AD21D9;">Battery Use:</mark>  
 
-Delicate balancing act between  
-- sensor accuracy  
-- performance 
-- battery power  
+<mark style="background: #AD21D9;">Delicate balancing act between:</mark>
+- sensor accuracy
+- performance
+- battery power
 
 Higher poll rates on sensors produce quicker updates & will improve the accuracy of application  
 
-But ... this will cause higher battery power consumption  
+But . . . this will cause higher battery power consumption
 
 Inversely, save battery at the expense of timeliness & accuracy
 
 ### <mark style="background: #AD21D9;">Sensor Accuracy:</mark> 
 
-Another issue to consider is that every sensor will have different accuracies and value ranges  
+Another issue to consider is that every sensor will have different accuracies and value ranges
 
-Devices with cheaper sensors may not provide many values and their accuracy may be questionable  
+Devices with cheaper sensors may not provide many values and their accuracy may be questionable
 
-More expensive sensors will provide higher accuracy and values but will cost more  
+More expensive sensors will provide higher accuracy and values but will cost more
 
 You cannot assume any base level with regards to accuracy and value range with any sensor on any device
 
 ### <mark style="background: #AD21D9;">When to use multiple sensors of the same type:</mark> 
 
-Some devices will provide more than one of the same sensor type  
+Some devices will provide more than one of the same sensor type
 
-It is possible to register interest in more than one sensor of the same type  
+It is possible to register interest in more than one sensor of the same type
 
-Only done if you need higher accuracy than you get from a single sensor  
+Only done if you need higher accuracy than you get from a single sensor 
 
 Through the use of averaging or filtering both sensors
 
 ### <mark style="background: #AD21D9;">Sensor values are not absolute:</mark>  
 
-Sensors may not represent values as a continuous range but as discrete steps with a gap in between  
+Sensors may not represent values as a continuous range but as discrete steps with a gap in between.
 
-While a sensor measure a continuous variable the sensor has to represent this as a discrete value  
+While a sensor measure a continuous variable the sensor has to represent this as a discrete value.
 
-Thus there will be a level of error associated between what the sensor reports and the actual value of that property in the environment  
+Thus there will be a level of error associated between what the sensor reports and the actual value of that property in the environment.
 
-Usually more expensive sensors will have more discrete levels leading to a larger set of values that can be represented
+Usually more expensive sensors will have more discrete levels leading to a larger set of values that can be represented.
 
 ### <mark style="background: #AD21D9;">Rotation Coordinate System:</mark> 
 
-Rotation vector uses the ground plane as reference instead of the device  
+Rotation vector uses the ground plane as reference instead of the device.
 
-X axis is pointing right - represents <mark style="background: #AD21D9;">pitch</mark> axis of device  
+X axis is pointing right - represents <mark style="background: #AD21D9;">pitch</mark> axis of device.
 
-Y axis pointing vertically up - represents <mark style="background: #AD21D9;">roll</mark> axis of device  
+Y axis pointing vertically up - represents <mark style="background: #AD21D9;">roll</mark> axis of device.
 
-Z axis pointing towards user - represents the <mark style="background: #AD21D9;">compass</mark> direction
+Z axis pointing towards user - represents the <mark style="background: #AD21D9;">compass</mark> direction.
 
 ![](https://i.imgur.com/lsEFvei.png)
 
@@ -2768,8 +2758,8 @@ Longitude determines east/west range of [-180,180]
 To locate object on Earth’s surface, geographical coordinates are needed.  
 
 <mark style="background: #AD21D9;">Most common solution assigns 3 coordinates to each location:</mark> 
-- latitude, 
-- longitude 
+- latitude,
+- longitude, 
 - altitude (km above sea level).  
 
 Earth assumed to be perfect sphere with known radius R.  
@@ -2789,8 +2779,6 @@ Loosely speaking, latitude contributes to y (or vertical) component of location.
 ### <mark style="background: #AD21D9;">Longitude:</mark>
 
 Longitude measures x (or <mark style="background: #AD21D9;">horizontal</mark>) component
-
-Longitude measures x (or horizontal) component.  
 
 Imaginary line that connects Poles passing through Greenwich called Prime Meridian.
 
@@ -2815,13 +2803,13 @@ Decreases <mark style="background: #AD21D9;">Westwards</mark> Antipodal Prime Me
 
 ### <mark style="background: #AD21D9;">Location:</mark>
 
-Finding location in space of object <mark style="background: #AD21D9;">difficult</mark>.  
+Finding location in space of object <mark style="background: #AD21D9;">difficult</mark>.
 
-No traditional sensor able to locate an object.  
+No traditional sensor able to locate an object.
 
-What most sensors do is <mark style="background: #AD21D9;">estimate</mark> distance from target object.  
+What most sensors do is <mark style="background: #AD21D9;">estimate</mark> distance from target object.
 
-Sonars and radars send out sound waves and calculate distance by detecting <mark style="background: #AD21D9;">how long</mark> it takes for their signal to bounce back.  
+Sonars and radars send out sound waves and calculate distance by detecting <mark style="background: #AD21D9;">how long</mark> it takes for their signal to bounce back.
 
 Satellites basically do the same, but using radio waves.
 
@@ -2835,11 +2823,11 @@ Solution to locate object relies on <mark style="background: #AD21D9;">several</
 
 ### <mark style="background: #AD21D9;">How it Works:</mark>
 
-Suppose we want to find location <mark style="background: #AD21D9;">P</mark>  
+Suppose we want to find location <mark style="background: #AD21D9;">P</mark>.
 
-Our 1st try uses beacon L, at <mark style="background: #AD21D9;">known</mark> position.  
+Our 1st try uses beacon L, at <mark style="background: #AD21D9;">known</mark> position.
 
-L can estimate its distance to P, d  
+L can estimate its distance to P, d.
 
 Cannot identify <mark style="background: #AD21D9;">exact</mark> position of P.
 
@@ -2897,19 +2885,19 @@ Receiver multiplies this time by <mark style="background: #AD21D9;">speed of lig
 
 Assuming signal travelled in <mark style="background: #AD21D9;">straight line</mark>, this is distance from receiver to satellite.  
 
-NOTE: A GPS receiver has to have clear <mark style="background: #AD21D9;">line of sight</mark> to satellite to operate, so dense tree cover and buildings can keep it from getting fix on location.
+<mark style="background: #AD21D9;">NOTE:</mark> A GPS receiver has to have clear <mark style="background: #AD21D9;">line of sight</mark> to satellite to operate, so dense tree cover and buildings can keep it from getting fix on location.
 
 ### <mark style="background: #AD21D9;">WiFi Positioning System (WPS):</mark>
 
-WPS is geolocation system that uses characteristics of WiFi hotspots and other wireless access points to discover where device located.  
+WPS is geolocation system that uses characteristics of WiFi hotspots and other wireless access points to discover where device located.
 
-Used when satellite navigation such as GPS inadequate:  
+<mark style="background: #AD21D9;">Used when satellite navigation such as GPS inadequate:</mark>
 1. Multipath <mark style="background: #AD21D9;">interference</mark> / signal blockage indoors.  
 2. Establishing a satellite fix would take too long.  
 
 Viable due to <mark style="background: #AD21D9;">rapid growth</mark> of wireless access points in urban areas.
 
-Typical data useful to geolocate wireless access point include its SSID and MAC address:
+<mark style="background: #AD21D9;">Typical data useful to geolocate wireless access point include its SSID and MAC address:</mark>
 ![](https://i.imgur.com/pgvVwjE.png)
 
 Accuracy depends on number of nearby access points whose positions have been entered into <mark style="background: #AD21D9;">database</mark>
@@ -2944,7 +2932,7 @@ Location <mark style="background: #AD21D9;">APIs</mark> available in Google <mar
 
 ### <mark style="background: #AD21D9;">Battery Drain:</mark>
 
-Location gathering and battery drain are directly related as follows:  
+<mark style="background: #AD21D9;">Location gathering and battery drain are directly related as follows:</mark>
 1. <mark style="background: #AD21D9;">Accuracy:</mark> Precision of location data. Higher accuracy, higher battery drain.  
 2. <mark style="background: #AD21D9;">Frequency:</mark> How often location is computed. Frequent location computations, more battery used.  
 3. <mark style="background: #AD21D9;">Delay:</mark> How quickly location data is delivered. Less delay requires more battery.
@@ -2974,19 +2962,19 @@ High accuracy should be reserved for apps running in <mark style="background: #A
 
 ### <mark style="background: #AD21D9;">Frequency:</mark>
 
-In <mark style="background: #AD21D9;">Request</mark> to Fused Location API for location updates configure ``setinterval()`` with interval at which location is computed for your app.  
+In <mark style="background: #AD21D9;">Request</mark> to Fused Location API for location updates configure ``setinterval()`` with interval at which location is computed for your app.
 
-Use <mark style="background: #AD21D9;">largest</mark> possible value for the interval.  
+Use <mark style="background: #AD21D9;">largest</mark> possible value for the interval.
 
-Especially true for <mark style="background: #AD21D9;">background</mark> location gathering, often a source of unwelcome battery drain.  
+Especially true for <mark style="background: #AD21D9;">background</mark> location gathering, often a source of unwelcome battery drain.
 
 Intervals of a few seconds should be <mark style="background: #AD21D9;">reserved</mark> for foreground use cases.
 
 ### <mark style="background: #AD21D9;">Delay:</mark>
 
-In Request to Fused Location API for location updates use ``setMaxWaitTime()``  
+In Request to Fused Location API for location updates use ``setMaxWaitTime()``
 
-Pass a value several times larger than interval used in ``setInterval()``  
+Pass a value several times larger than interval used in ``setInterval()``
 
 Locations determined at ``setInterval()`` rate, but delivered in batch after interval set in this method.
 
@@ -2994,41 +2982,34 @@ Locations determined at ``setInterval()`` rate, but delivered in batch after int
 
 ![](https://i.imgur.com/QwfDIil.png)
 
-1.) Create Request to store details of  
-location updates.
-
+<mark style="background: #AD21D9;">1.) Create Request to store details of location updates.</mark>
 ![](https://i.imgur.com/0yqQ3yM.png)
 
-2.) Implement callback for action when location updates arrive.
-
+<mark style="background: #AD21D9;">2.) Implement callback for action when location updates arrive.</mark>
 ![](https://i.imgur.com/ulJ859p.png)
 
-3.) Get hold of Location Services.
-
+<mark style="background: #AD21D9;">3.) Get hold of Location Services.</mark>
 ![](https://i.imgur.com/kCMwqna.png)
 
-4.) Ask it for Fused Location Provider Client.
-
+<mark style="background: #AD21D9;">4.) Ask it for Fused Location Provider Client.</mark>
 ![](https://i.imgur.com/DPCfQ8g.png)
 
-5.) Request Location Updates with Request and Callback as arguments.
-
+<mark style="background: #AD21D9;">5.) Request Location Updates with Request and Callback as arguments.</mark>
 ![](https://i.imgur.com/2RPrual.png)
 
-6.) Hardware feeds location data into system and Location object created.
+<mark style="background: #AD21D9;">6.) Hardware feeds location data into system and Location object created.</mark>
 ![](https://i.imgur.com/FBT8i6n.png)
 
-7.) Gets stored in list with Locations recorded at other times.
+<mark style="background: #AD21D9;">7.) Gets stored in list with Locations recorded at other times.</mark>
 ![](https://i.imgur.com/x5DdkNn.png)
 
-8.) Based on delay settings callback called by system with Location Result.
-
+<mark style="background: #AD21D9;">8.) Based on delay settings callback called by system with Location Result</mark>
 ![](https://i.imgur.com/wqtQMwC.png)
 
-9.) Perform action e.g. draw marker on a map
+<mark style="background: #AD21D9;">9.) Perform action e.g. draw marker on a map:</mark>
 ![](https://i.imgur.com/Sz25frX.png)
 
-10.) When no longer needed, best practice to remove updates.
+<mark style="background: #AD21D9;">10.) When no longer needed, best practice to remove updates:</mark>
 ![](https://i.imgur.com/n6yBZud.png)
 
 ### <mark style="background: #AD21D9;">Best Practices</mark>
@@ -3050,13 +3031,13 @@ location updates.
 
 ![](https://i.imgur.com/JRfQQO1.png)
 
-Location computed roughly every 10 mins. and 6 location data points delivered in batch per hour.  
+Location computed roughly every 10 mins, and 6 location data points delivered in batch per hour.  
 
 Still get location updates every 10 minutes, battery conserved because device woken up only once an hour.
 
 ### <mark style="background: #AD21D9;">Permissions:</mark>
 
-Apps must request location permission in Manifest:
+<mark style="background: #AD21D9;">Apps must request location permission in Manifest:</mark>
 ![](https://i.imgur.com/iPq0IYZ.png)
 
 ``ACCESS_COARSE_LOCATION`` for location accurate to within city block  
@@ -3119,7 +3100,10 @@ Use lifecycle methods to stop and start location updates - see code sample:
 
 Every Android app runs in a limited-access sandbox.  
 
-App needs permissions to user resource or info outside its sandbox -e.g. sending SMS, location tracking, contacts, Access  
+<mark style="background: #AD21D9;">App needs permissions to user resource or info outside its sandbox e.g.</mark> 
+- sending SMS, 
+- location tracking, 
+- contacts access  
 
 All permissions must be published/listed in the manifest file
 
@@ -3137,8 +3121,8 @@ All permissions must be published/listed in the manifest file
 
 <mark style="background: #AD21D9;">Normal permissions:</mark>  
 - Permission needed to get outside user sandbox
-- Low risk to user privacy e.g. connecting to the internet, Bluetooth, wifi, and NFC information, setting alarms & wallpapers, modifying audio settings on a device etc.  
-- Automatically granted at install time – no user prompt  
+- Low risk to user privacy e.g. connecting to the internet, Bluetooth, wifi, and NFC information, setting alarms & wallpapers, modifying audio settings on a device etc.
+- Automatically granted at install time – no user prompt
 
 <mark style="background: #AD21D9;">Runtime (also called Dangerous):</mark>  
 - Dangerous permissions = permissions which could potentially affect the user’s privacy;  
@@ -3267,8 +3251,8 @@ Designed to create a more dynamic / flexible design environment for large androi
 With the development of larger/high density screens for android phones such, they have begun to be used for many apps, that want to support smaller and larger screens with content that can adapt automatically to screen size, beyond the standard android resource model.
 
 <mark style="background: #AD21D9;">A fragment is:</mark>
-- like a kind of subactivity that’s displayed inside an activity’s layout.
-- It has Java/Kotlin code that controls its behavior, and an associated layout that defines its appearance.
+- like a kind of sub-activity that’s displayed inside an activity’s layout.
+- It has Java/Kotlin code that controls its behaviour, and an associated layout that defines its appearance.
 - Fragments can't live on their own. They must be hosted by an activity or another fragment.
 
 <mark style="background: #AD21D9;">While your activity is in the STARTED lifecycle state or higher:</mark>
@@ -3279,7 +3263,7 @@ With the development of larger/high density screens for android phones such, the
 
 Similar to creating an Activity, you create a subclass of Fragment
 
-Its call back methods mirror Activity but you should implement the following methods
+<mark style="background: #AD21D9;">Its call back methods mirror Activity but you should implement the following methods:</mark>
 - ``onCreate()``: Initialise the components of the fragment page
 - ``onCreateView()``: This is where you create the UI and return it as a view object
 - ``onPause()``: Commit any changes. Pause/ release any resources that you are using
@@ -3364,17 +3348,17 @@ Then, a container should be used, usually a ``<frameLayout>`` tag is used to res
 
 Calling it by using ``getFragmentManager()``
 
-You can then find your fragment by tag or ID
+<mark style="background: #AD21D9;">You can then find your fragment by tag or ID:</mark>
 - ``findFragmentById()``
 - ``findFragmentByTag()``
 
-You can pop fragments directly off the back stack or register a listener to monitor such changes.
+<mark style="background: #AD21D9;">You can pop fragments directly off the back stack or register a listener to monitor such changes:</mark>
 - ``popBackStack()``
 - ``addOnBackStackChangedListener()``
 
 ### <mark style="background: #AD21D9;">Fragment Transactions:</mark>
 
-Fragments are great to setup applications where you may want multiple windows , but if you are on a smaller screen, how do you swap between fragments.
+Fragments are great to setup applications where you may want multiple windows. But if you are on a smaller screen, how do you swap between fragments?
 
 This is achieved by <mark style="background: #AD21D9;">Fragment Transactions</mark>
 
@@ -3386,8 +3370,7 @@ FragmentManager fragmentManager = getFragmentManager();
 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 ```
 
-Once you have the transaction object, you can call
-- ``add(), remove() or replace()``
+Once you have the transaction object, you can call``add()``, ``remove()`` or ``replace()``
 
 But you must ``commit()`` before anything will happen , for example
 
@@ -3420,7 +3403,7 @@ ExampleFragment fragment =
 
 ### <mark style="background: #AD21D9;">Notes:</mark>
 
-Fragments don’t have a findViewById() method
+Fragments don’t have a ``findViewById()`` method
 
 <mark style="background: #AD21D9;">The Fragment class isn’t a subclass of Activity.</mark>
 
@@ -3452,7 +3435,7 @@ Fragments don’t have a ``findViewById()`` method
 
 ### <mark style="background: #AD21D9;">Structuring your code and classes:</mark> 
 
-When you create your various classes in an application, you want to:  
+<mark style="background: #AD21D9;">When you create your various classes in an application, you want to:</mark>
 - Promote reusability (e.g. panels for OK/Cancel buttons might be used in several screens)  
 - Minimise code maintenance when something changes (e.g. dB structure, new GUI device )  
 - Maintain as much flexibility as possible
@@ -3471,7 +3454,7 @@ When you create your various classes in an application, you want to:
 
 <mark style="background: #AD21D9;">Philosophy:</mark> Keep the parts that may be re-used elsewhere or changed SEPARATE
 
-Similar approach to internet layers:
+<mark style="background: #AD21D9;">Similar approach to internet layers:</mark>
 ![](https://i.imgur.com/dz4Z2DZ.png)
 
 We need to keep the layers independent and loose so the changes in the code of one layer do not affect the other modules.
@@ -3482,7 +3465,7 @@ We need to keep the layers independent and loose so the changes in the code of o
 
 If data structure(s) or rules change... Just change these classes  
 
-Can have multiple different GUIs using the same model?  
+<mark style="background: #AD21D9;">Multiple different GUIs can use the same model:</mark>
 - E.g. calculator functions add/subtract, etc  
 - Different GUIs (standard web, accessible web, etc)
 
@@ -3530,14 +3513,14 @@ Controller code?
 
 ### <mark style="background: #AD21D9;">MVC - List Example:</mark>  
 
-Classes /layouts needed?  
+Classes/layouts needed?  
 
 <mark style="background: #AD21D9;">For View bit:</mark>
-- Listview Layout to display list etc  
+- ``Listview`` Layout to display list etc  
 - Row layout  
 
 <mark style="background: #AD21D9;">For Model bit:</mark>  
-- What “data” is involved? What can be done to it? Is there a dB involved?  
+- What "data" is involved? What can be done to it? Is there a dB involved?  
 - Put dB connection/operations into separate class(es) to the activity – then other activities can use this class for dB connection and operations and code is centralised  
 
 <mark style="background: #AD21D9;">For Controller bit:</mark>  
@@ -3560,7 +3543,7 @@ Classes /layouts needed?
 <mark style="background: #AD21D9;">MVC is one S/W architecture and some techniques we’ve seen contradict it</mark>  
 - E.g. implementing listeners directly in the activity code  
 - Anonymous listeners – embedded against the GUI component – has its own advantages..  
-- These approaches have their own merits..  
+- These approaches have their own merits.
 - Be aware of the trade offs.
 
 # <mark style="background: #AD21D9;">13 Performance:</mark>
@@ -3595,8 +3578,9 @@ By observing these rules you will create an application that shows high performa
 
 Most of the performance numbers that you will see here have come from experimentation on Android code  
 
-Code profiler  
-- A tool for monitoring execution time of code. A profiler will produce a range of statistics that will show where a program spends the majority of its time.  
+<mark style="background: #AD21D9;">Code profiler:</mark> 
+- A tool for monitoring execution time of code. 
+- A profiler will produce a range of statistics that will show where a program spends the majority of its time.  
 
 Gives an indication as to where the code can be improved to produce extra performance  
 
@@ -3609,13 +3593,13 @@ https://developer.android.com/studio/profile/android-profiler.htm
 
 ### <mark style="background: #AD21D9;">Bottlenecks:</mark> 
 
-When performing optimisation, must remember the law of diminishing returns  
+When performing optimisation, must remember the law of diminishing returns.
 
-Each subsequent optimisation will result in diminishing performance gain  
+Each subsequent optimisation will result in diminishing performance gain.
 
-<mark style="background: #AD21D9;">Goal:</mark> only do optimisation to the point where performance is perceived as being good enough  
+<mark style="background: #AD21D9;">Goal:</mark> only do optimisation to the point where performance is perceived as being good enough.
 
-This is because you don’t remove bottlenecks in code you simply move them elsewhere
+This is because you don’t remove bottlenecks in code you simply move them elsewhere.
 
 ### <mark style="background: #AD21D9;">Memory Allocation/Deallocation - Avoid</mark>  
 
@@ -3676,8 +3660,7 @@ It is possible however, to modify the behaviour of your application in response 
 
 By registering an intent filter that looks for the ``ACTION BATTERY CHANGED`` intent you can determine information about the charging state  
 
-Will enable you to not only determine if the  
-device is charging  
+Will enable you to not only determine if the device is charging  
 
 But also if it is charging via USB or from AC  
 
@@ -3691,7 +3674,9 @@ Enables device to minimize power as possible when the battery level is >=15%
 
 ### <mark style="background: #AD21D9;">Battery Levels and Charging States - Responding:</mark>
 
-Good applications will do this when they have been informed that the battery level of the device is low. Some example actions include  
+Good applications will do this when they have been informed that the battery level of the device is low. 
+
+<mark style="background: #AD21D9;">Some example actions include:</mark>  
 - Reducing the sample rate on sensors to consume less battery power  
 - Disabling some functionality entirely e.g. disable access to flash with low power  
 
@@ -3699,7 +3684,7 @@ If the application is not critical to the system or user then all functionality 
 
 ### <mark style="background: #AD21D9;">Final Optimisations:</mark>
 
-If you must implement an algorithm that is not found in the standard libraries  
+<mark style="background: #AD21D9;">If you must implement an algorithm that is not found in the standard libraries:</mark>
 - Implement in the most efficient way possible  
 - More efficiency == less battery drain  
 
@@ -3750,7 +3735,7 @@ Approved patches will be brought mainline in next release.
 
 Linux imposes an ID on every user and group  
 
-Users considered individuals while groups are a collection of related users, Any user outside a group is “other”  
+Users considered individuals while groups are a collection of related users, any user outside a group is “other”  
 
 File access permissions (read, write, and execute) are managed by a set of permissions on each file  
 
@@ -3810,7 +3795,7 @@ If app tries to access permissions it does not have, OS will immediately kill it
 
 <mark style="background: #AD21D9;">Blacklisting:</mark> Gives all permissions by default and only removes permissions as needed  
 
-Whitelisting is used to encourage developers to use the minimum set of required permissions  
+<mark style="background: #AD21D9;">Whitelisting is used to encourage developers to use the minimum set of required permissions:</mark>
 - Apps with a long list of permissions will be viewed sceptically by users  
 - Particularly when sensitive data is involved  
 
@@ -3889,13 +3874,13 @@ Less likely that it will be captured as well.
 
 ### <mark style="background: #AD21D9;">Security Measures - Cryptography:</mark>  
 
-When storing user sensitive information, encrypt it 
+<mark style="background: #AD21D9;">When storing user sensitive information, encrypt it:</mark>
 - API provides a number of ciphers use them where possible  
 - A secure random number generator is also provided.  
 
 Most random number generators are pseudorandom and predictable  
 
-Don’t implement your own encryption mechanism -likely be weaker than whatever is already there.  
+Don’t implement your own encryption mechanism it likely be weaker than whatever is already there.  
 
 <mark style="background: #AD21D9;">Android Encryption – Various levels:</mark>  
 - Full Disk  
