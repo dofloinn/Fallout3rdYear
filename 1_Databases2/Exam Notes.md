@@ -48,45 +48,43 @@ We will use a different example to learn.
 
 ```SQL
 Create TABLE product_groups (  
-group_id serial PRIMARY KEY,  
-group_name VARCHAR (255) NOT NULL  
+	group_id serial PRIMARY KEY,  
+	group_name VARCHAR (255) NOT NULL  
 );  
 
 Create TABLE products (  
-product_id serial PRIMARY KEY,  
-product_name VARCHAR (255) NOT NULL,  
-price DECIMAL (11, 2),  
-group_id INT NOT NULL,  
-FOREIGN KEY (group_id) REFERENCES product_groups (group_id));
+	product_id serial PRIMARY KEY,  
+	product_name VARCHAR (255) NOT NULL,  
+	price DECIMAL (11, 2),  
+	group_id INT NOT NULL,  
+	FOREIGN KEY (group_id) REFERENCES product_groups (group_id)
+);
 ```
 
 ### <mark style="background: #69E772;">Add rows:</mark>
 
 ```SQL
-INSERT INTO  
-product_groups  
-(group_name)  
+INSERT INTO product_groups (group_name)  
 VALUES  
-('Smartphone'),  
-('Laptop'),  
-('Tablet');
+	('Smartphone'),  
+	('Laptop'),  
+	('Tablet');
 ```
 
 ```SQL
-INSERT INTO products  
-(product_name, group_id,price)  
+INSERT INTO products (product_name, group_id,price)  
 VALUES  
-('Microsoft Lumia', 1, 200),  
-('HTC One', 1, 400),  
-('Nexus', 1, 500),  
-('iPhone', 1, 900),  
-('HP Elite', 2, 1200),  
-('Lenovo Thinkpad', 2, 700),  
-('Sony VAIO', 2, 700),  
-('Dell Vostro', 2, 800),  
-('iPad', 3, 700),  
-('Kindle Fire', 3, 150),  
-('Samsung Galaxy Tab', 3, 200);
+	('Microsoft Lumia', 1, 200),  
+	('HTC One', 1, 400),  
+	('Nexus', 1, 500),  
+	('iPhone', 1, 900),  
+	('HP Elite', 2, 1200),  
+	('Lenovo Thinkpad', 2, 700),  
+	('Sony VAIO', 2, 700),  
+	('Dell Vostro', 2, 800),  
+	('iPad', 3, 700),  
+	('Kindle Fire', 3, 150),  
+	('Samsung Galaxy Tab', 3, 200);
 ```
 
 ### <mark style="background: #69E772;">Run the queries - individual rows:</mark>
@@ -113,7 +111,7 @@ GROUP BY group_name;
 
 Windows functions allow you to combine the two:
 
-```SQL
+```SQLite
 SELECT product_name, price, group_name, AVG (price) OVER (  
 	PARTITION BY group_name)  
 FROM products  
@@ -308,9 +306,9 @@ Return the names of customers who have not collected their orders.
 select customer_name  
 from b2_customer  
 Where Customer_id in  
-(select customer_id  
-from b2_corder  
-where staffissued is null);
+	(select customer_id  
+	from b2_corder  
+	where staffissued is null);
 ```
 
 ![](https://i.imgur.com/WoIwDtl.png)
@@ -348,7 +346,7 @@ where staff_no
 not in (select reports_to from b2_staff);
 ```  
 
-This query returns an empty set, because NOT IN cannot evaluate a column that has NULLs.
+This query returns an empty set, because ``NOT IN`` cannot evaluate a column that has NULLs.
 
 ### <mark style="background: #69E772;">Using aggregates in sub-queries:</mark>
 
@@ -375,7 +373,7 @@ The sub-query is generally correlated to the outer query
 The ``EXISTS`` condition is met if the sub-query returns at least one row.  
 
 The syntax for the ``EXISTS`` condition is:  
-```SQL
+```plSQL
 SELECT columns  
 FROM tables  
 WHERE EXISTS ( subquery );
@@ -532,7 +530,6 @@ What’s next?
 
 ![](https://i.imgur.com/gVa3Qsm.png)
 
-
 <mark style="background: #69E772;">Who bought what?</mark>
 To find a list of the customer names and what they bought, I would need:
 
@@ -650,7 +647,6 @@ Where are A, X and B?
 
 ![](https://i.imgur.com/jRGaGAN.png)
 
-
 <mark style="background: #69E772;">The final query:</mark>
 ![](https://i.imgur.com/36nQ4lu.png)
 
@@ -660,7 +656,7 @@ Where are A, X and B?
 
 ### <mark style="background: #69E772;">Outline:</mark>
 
-Where is the database?  
+<mark style="background: #69E772;">Where is the database?</mark>
 - Where do the programs work?  
 - Parameters  
 - Declaring variables  
@@ -698,30 +694,29 @@ When you look at a software schematic, the data is almost always at the opposite
 
 ### <mark style="background: #69E772;">Function Skeleton:</mark>
 
-```SQL
+```plSQL
 CREATE OR REPLACE FUNCTION <function name> (  
 	<parameter-names parameter data types>)  
 	RETURNS <return data type>  
 	LANGUAGE plpgsql  
 AS $function$  
 DECLARE  
-	<local variable names and datatypes>;  
+	< /* local variable names and datatypes */ >;  
 BEGIN  
-	<function logic, including return statement> 
+	< /*function logic, including return statement*/ > 
 EXCEPTION  
-	<exeption logic>  
+	< /*exeption logic*/ >  
 END;  
-$function$;
+	$function$;
 ```
 
 ### <mark style="background: #69E772;">Creating and running the function:</mark>
 
-To create the function, the function code is run in a SQL code window.  
+<mark style="background: #69E772;">To create the function, the function code is run in a SQL code window:</mark>
 - See next slides for function code  
 - This compiles the function and saves it in the schema.  
 
-The function can be run in a SQL code window as  ``SELECT * from <function call with parameters>``;
-
+The function can be run in a SQL code window as  ``SELECT * from <function call with parameters>``
 
 ![](https://i.imgur.com/uNXaAbX.png)
 
@@ -731,16 +726,16 @@ Name follows naming rules in PostgreSQL.
 
 Parameters are declared with a name and data type.  
 
-The data type can be a standard data type, or can be inherited from a table column, suffixed with ``‘%type’``. This promotes data independence, E.g. customer_name b2_customer.customer_name%type;  
+The data type can be a standard data type, or can be inherited from a table column, suffixed with ``'%type'``. This promotes data independence, E.g. ``customer_name b2_customer.customer_name%type;``  
 By default, parameters are ‘in out’ or pass by reference  – i.e if you change their values in the function, they retain the changed value in the calling environment.  
 
 <mark style="background: #69E772;">Function logic:</mark> ALWAYS contains at least one SQL statement!
 
 ### <mark style="background: #69E772;">Declarations in addcustomer function:</mark>
 
-We want to take in a customer’s name and optional address and add a row to the customer table. We want to return the new customer id.  
+We want to take in a customer’s name and optional address and add a row to the customer table. We want to return the new customer id.
 
-```SQL
+```plSQL
 CREATE OR REPLACE FUNCTION addcustomer(  
 p_cname b2_customer.customer_name%type,  
 p_caddr b2_customer.customer_address DEFAULT NULL)  
@@ -755,7 +750,7 @@ DECLARE
 
 Functions can only hold data in the declared section.  
 
-This means:  
+<mark style="background: #69E772;">This means:</mark>
 - When I SELECT, I must say where the data is going!!!!  
 - All data that is SELECTed must be selected INTO a declared variable or area.  
 
@@ -769,7 +764,7 @@ The RETURNING keyword in PostgreSQL gives an opportunity to return from the inse
 
 ### <mark style="background: #69E772;">Add a customer:</mark>
 
-```SQL
+```plSQL
 create or replace FUNCTION ADDCUSTOMER(  
 	p_cname b2_customer.customer_name%type,  
 	p_caddr b2_customer.customer_address%type default NULL)  
@@ -821,9 +816,9 @@ These are similar to functions, but there is no RETURN.
 
 Procedures are initiated using CALL.  
 
-Procedures are used to:  
-- Carry out a process.  
-- Often used to perform maintenance or upgrade tasks.  
+<mark style="background: #69E772;">Procedures are used to:</mark>
+- Carry out a process.
+- Often used to perform maintenance or upgrade tasks.
 - Often have iteration.
 
 <mark style="background: #69E772;">Resources on brightspace:</mark>
@@ -854,13 +849,13 @@ Add all the matches for that round.
 
 ### <mark style="background: #69E772;">Create the Procedure:</mark>
 
-```SQL
+```plSQL
 create or replace procedure make_matches(  
 p_tkey tournament.tkey%type,  
 p_round match.tround%type,  
 nomatches integer)  
 LANGUAGE plpgsql  
-AS $$  
+as $$  
 	begin  
 	for i in 1..nomatches loop  
 	insert into match (tkey, tround, matchno)  
@@ -892,7 +887,7 @@ select * from match;
 
 Raise exceptions in the code, and return the database's own error messages.  
 
-Before the END;insert the following: 
+Before the END, insert the following: 
 
 ```SQL
 exception 
@@ -903,13 +898,13 @@ raise info 'Error Code:%', SQLSTATE;
 
 ### <mark style="background: #69E772;">Back to theory:</mark>
 
-The relational database offers the following protection:  
+<mark style="background: #69E772;">The relational database offers the following protection:</mark>
 - Primary keys prevent adding duplicates  
 - Check and references constraints prevent invalid data from being entered.  
 
-Other requirements:  
-- Further checks on INSERT, UPDATE and DELETE.  
-- Privacy from unauthorized users  
+<mark style="background: #69E772;">Other requirements:</mark>
+- Further checks on ``INSERT``, ``UPDATE`` and ``DELETE``.  
+- Privacy from unauthorised users  
 - Atomicity to prevent concurrency issues
 
 # <mark style="background: #69E772;">Triggers:</mark>
@@ -918,10 +913,10 @@ Other requirements:
 
 An action that is taken when some event occurs.  
 
-The events we will address are Data Manipulation events:  
-- INSERT, 
-- UPDATE and 
-- DELETE operations.
+<mark style="background: #69E772;">The events we will address are Data Manipulation events:</mark>
+- ``INSERT``, 
+- ``UPDATE`` and 
+- ``DELETE`` operations.
 
 ### <mark style="background: #69E772;">Piggyback:</mark>
 
@@ -935,15 +930,15 @@ While the ``INSERT``, ``UPDATE`` or ``DELETE`` manipulate the table as intended.
 
 ### <mark style="background: #69E772;">Reasons for triggers:</mark>
 
-Triggers can be used for:  
+<mark style="background: #69E772;">Triggers can be used for:</mark>
 - Logging user actions  (Who updated a staff member’s salary? When?)  
-- Checking constraints  (I don’t want to sell stock I do not have. I don’t want a student to register for modules if they are already registered for 60 ECTS  credits worth. )
+- Checking constraints (I don’t want to sell stock I do not have. I don’t want a student to register for modules if they are already registered for 60 ECTS  credits worth. )
 
 Other reasons: Automatically generate derived column values
 
 ### <mark style="background: #69E772;">Logging actions:</mark>
 
-These triggers apply to:  
+<mark style="background: #69E772;">These triggers apply to:</mark>
 - ``INSERT``  
 - ``UPDATE``
 - ``DELETE``  
@@ -952,28 +947,28 @@ To log these commands we need a log table.
 
 ### <mark style="background: #69E772;">To log actions:</mark>
 
-When logging user actions, in general, we need to know:  
+<mark style="background: #69E772;">When logging user actions, in general, we need to know:</mark>
 - What table is being changed.  
-- What the change is (INSERT, UPDATE or DELETE).  
+- What the change is (``INSERT``, ``UPDATE`` or ``DELETE``).  
 - Who has made the change.  
 - When was the change made.  
 
-This information tells us a little about the transaction. For future use we add:  
-- Keyval, oldprice, newprice
+This information tells us a little about the transaction. 
+
+For future use we add ``Keyval``, ``oldprice``, ``newprice``.
 
 ### <mark style="background: #69E772;">Logging actions:</mark>
 
-To log these actions, we must  
+<mark style="background: #69E772;">To log these actions, we must</mark>
 1. Set up a table into which the ``TRIGGER`` can insert rows.  
 2. Attach a ``TRIGGER`` to an ``OPERATION`` on a ``TABLE``.  
 
-i.e. we attach a trigger to  
+<mark style="background: #69E772;">i.e. we attach a trigger to:</mark>
 - An ``INSERT`` on ``B2_STOCK`` table.  
 - An ``UPDATE`` on ``B2_STOCK`` table.  
 - A ``DELETE`` on ``B2_STOCK`` table
 
 <mark style="background: #69E772;">Set up the log table:</mark>
-
 ```SQL
 create table stock_log(  
 stock_code char(5),  
@@ -986,11 +981,11 @@ changedate date);
 
 ### <mark style="background: #69E772;">Triggers:</mark>
 
-We will set up:  
-• A row level INSERT and update audit trigger.  
-• A row level INSERT and UPDATE constraint trigger.
+<mark style="background: #69E772;">We will set up:</mark>
+• A row level ``INSERT`` and update audit trigger.  
+• A row level ``INSERT`` and ``UPDATE`` constraint trigger.
 
-```SQL
+```plSQL
 CREATE or replace FUNCTION audit_stock() RETURNS trigger AS $audit_stock$  
 DECLARE  
 	uname varchar(80);  
@@ -1019,17 +1014,17 @@ Output was: `K144 8.99 5.00 30 G99999999 2023-10-07`
 
 ### <mark style="background: #69E772;">Trigger fired by the SQL operation:</mark>
 
-The operation works as normal on the table in the database, but it now fires a trigger.  
+<mark style="background: #69E772;">The operation works as normal on the table in the database, but it now fires a trigger:</mark>
 - The ``TRIGGER`` adds a row to the ``logtable``.  
 - While the ``INSERT`` adds a row to the ``b2_stock`` table,  
 
-Other operations: Triggers can be adapted to work on ``UPDATEs`` or ``DELETEs``.
+<mark style="background: #69E772;">Other operations:</mark> Triggers can be adapted to work on ``UPDATEs`` or ``DELETEs``.
 
 ### <mark style="background: #69E772;">Audit Trails:</mark>
 
-When an INSERT ... FOR EACH ROW... trigger is active, it has access to the new values that the INSERT is trying to put into the table.  
+When an ``INSERT ... FOR EACH ROW...`` trigger is active, it has access to the new values that the ``INSERT`` is trying to put into the table.  
 
-These values can be accessed by preceding the attribute name with new.  
+These values can be accessed by preceding the attribute name with new:
 - E.g. to get the value that the insert is trying to put into the ``stock_code`` column in the table, we can reference ``new.stock_code``
 
 ### <mark style="background: #69E772;">Data available to INSERT trigger:</mark>
@@ -1041,13 +1036,13 @@ These values can be accessed by preceding the attribute name with new.
 
 ### <mark style="background: #69E772;">Who added rows to the subject table?</mark>
 
-Create a table to hold the log of changes. Needs to know: 
+<mark style="background: #69E772;">Create a table to hold the log of changes. Needs to know:</mark>
 - username, 
 - date, 
 - st_name
 - st_id.  
 
-Create a function 'audit_student', when someone performs 'INSERT' on the STUDENT table, record:  
+<mark style="background: #69E772;">Create a function 'audit_student', when someone performs 'INSERT' on the STUDENT table, record:</mark>
 - The student name 'st_name'  
 - The generated student id 'st_id'  
 - The username  
@@ -1076,15 +1071,14 @@ FOR EACH ROW EXECUTE FUNCTION ...();
 
 ### <mark style="background: #69E772;">Activate the trigger:</mark>
 
-From the schema that owns 'student':  
+<mark style="background: #69E772;">From the schema that owns 'student':</mark>  
 - Insert into student (st_name) values ('Delia');  
 - Select from your log table.  
 
-From G99999999:  
+From G99999999:
 - ``select "Sample".addstudent('Deirdre');``  
 
 Did it work? What would you need to do to make it work?
-
 
 ## <mark style="background: #69E772;">Constraint Triggers:</mark>
 
@@ -1094,14 +1088,14 @@ Where possible, the state of the data in the database is guarded by declarative 
 
 ```plSQL
 CREATE TABLE B2_SORDER (  
-SORDERNO SERIAL PRIMARY KEY,  
-SORDERDATE DATE  
-DEFAULT CURRENT_DATE NOT NULL,  
-DELIVEREDDATE DATE,  
-SUPPLIER_ID INTEGER  
-REFERENCES B2_SUPPLIER NOT NULL,  
-CONSTRAINT DATECHECK  
-CHECK(DELIVEREDDATE >SORDERDATE));
+	SORDERNO SERIAL PRIMARY KEY,  
+	SORDERDATE DATE  
+	DEFAULT CURRENT_DATE NOT NULL,  
+	DELIVEREDDATE DATE,  
+	SUPPLIER_ID INTEGER  
+	REFERENCES B2_SUPPLIER NOT NULL,  
+	CONSTRAINT DATECHECK  
+	CHECK(DELIVEREDDATE >SORDERDATE));
 ```
 
 ### <mark style="background: #69E772;">Limitations on CHECK constraint:</mark>
@@ -1128,7 +1122,7 @@ Create a trigger to fire before the operation, executing the function.
 
 ### <mark style="background: #69E772;">Recalling the builder schema:</mark>
 
-When a customer order line is added, the customer   specifies a quantity required.  
+When a customer order line is added, the customer specifies a quantity required.
 
 Is there enough stock? Check the ``stock_level`` in the stock table.
 
@@ -1169,28 +1163,28 @@ The syntax for a dropping a Trigger is:
 
 ### <mark style="background: #69E772;">Sample triggers for BUILDER:</mark>
 
-Insert trigger that could go on corderline:  
+<mark style="background: #69E772;">Insert trigger that could go on corderline:</mark>
 - Check there is enough stock before selling.  
 - Reject invalid transactions  
 - Record reorder requirements  
 
-Update trigger on supplier order delivery date  
+<mark style="background: #69E772;">Update trigger on supplier order delivery date:</mark>
 - Check that date is not already there  
 - Check that date is not in the future.
 
 ### <mark style="background: #69E772;">Built-in variables available in a trigger:</mark>
 
-<mark style="background: #69E772;">NEW record</mark> - new database row for INSERT/UPDATE operations in row-level triggers. This variable is null in statement-level triggers and for DELETE operations.  
+<mark style="background: #69E772;">NEW record</mark> - new database row for ``INSERT/UPDATE`` operations in row-level triggers. This variable is null in statement-level triggers and for ``DELETE`` operations.  
 
-<mark style="background: #69E772;">OLD record</mark> - old database row for UPDATE/DELETE operations in row-level triggers. This variable is null in statement-level triggers and for INSERT operations.  
+<mark style="background: #69E772;">OLD record</mark> - old database row for ``UPDATE/DELETE`` operations in row-level triggers. This variable is null in statement-level triggers and for ``INSERT`` operations.  
 
 <mark style="background: #69E772;">TG_NAME name</mark> - name of the trigger which fired.  
 
-<mark style="background: #69E772;">TG_WHEN text</mark> - BEFORE, AFTER, or INSTEAD OF, depending on the trigger's definition.  
+<mark style="background: #69E772;">TG_WHEN text</mark> - ``BEFORE``, ``AFTER``, or ``INSTEAD OF``, depending on the trigger's definition.  
 
-<mark style="background: #69E772;">TG_LEVEL text</mark> - ROW or STATEMENT, depending on the trigger's definition.  
+<mark style="background: #69E772;">TG_LEVEL text</mark> - ``ROW`` or ``STATEMENT``, depending on the trigger's definition.  
 
-<mark style="background: #69E772;">TG_OP text</mark> - operation for which the trigger was fired: INSERT, UPDATE, DELETE, or TRUNCATE.  
+<mark style="background: #69E772;">TG_OP text</mark> - operation for which the trigger was fired: ``INSERT``, ``UPDATE``, ``DELETE``, or ``TRUNCATE``.  
 
 <mark style="background: #69E772;">TG_TABLE_NAME name</mark> - table that caused the trigger invocation.  
 
@@ -1198,7 +1192,7 @@ Update trigger on supplier order delivery date
 
 ### <mark style="background: #69E772;">Transactions and multiple users:</mark>
 
-Concurrent usage  
+<mark style="background: #69E772;">Concurrent usage:</mark>
 - Enabling  
 - Problems arising  
 - ACID properties  
@@ -1213,9 +1207,9 @@ A schema has at least one role with full access.
 
 Other users can only manipulate data in your schema if you grant them privileges to do so.  
 
-You can GRANT privileges to specific users, or to PUBLIC (all users).  
+You can ``GRANT`` privileges to specific users, or to PUBLIC (all users).  
 
-You can REVOKE privileges you have previously granted.  
+You can ``REVOKE`` privileges you have previously granted.  
 
 Note: In PostgreSQL you must first:  
 ``GRANT USAGE ON SCHEMA <myschema> TO <other_user>;``
@@ -1234,19 +1228,19 @@ You can ``REVOKE INSERT`` on ``<mytable>`` FROM PUBLIC;
 
 Probably a good idea.  
 
-GRANT ALL ON ``<mytable>`` TO PUBLIC;  
+``GRANT ALL ON`` ``<mytable>`` TO PUBLIC;  
 
-Probably NOT a good idea. Now everyone can INSERT, UPDATE, DELETE and SELECT your data.
+Probably NOT a good idea. Now everyone can ``INSERT``, ``UPDATE``, ``DELETE`` and ``SELECT`` your data.
 
 ### <mark style="background: #69E772;">What other privileges?</mark>
 
-I can grant / revoke  
+<mark style="background: #69E772;">I can grant / revoke:</mark>
 - SELECT, INSERT, UPDATE or DELETE on my tables or views to roles.  
 - EXECUTE on functions or stored procedures.  
 
-Note:  
-- If the function / procedure does an INSERT, the grantee must be granted INSERT privileges on the table.  
-- If the INSERT generates a new serial ID, the grantee must be granted UPDATE on the SEQUENCE.
+<mark style="background: #69E772;">Note:</mark>
+- If the function / procedure does an ``INSERT``, the grantee must be granted ``INSERT`` privileges on the table.  
+- If the ``INSERT`` generates a new serial ID, the grantee must be granted ``UPDATE`` on the ``SEQUENCE``.
 
 ### <mark style="background: #69E772;">Sample access:</mark>
 
@@ -1268,7 +1262,7 @@ https://www.us-cert.gov/bsi/articles/knowledge/principles/least-privilege  - Uni
 
 ### <mark style="background: #69E772;">Major weakness in security:</mark>
 
-Granting all privileges on CREATE USER:  
+Granting all privileges on ``CREATE USER``:  
 
 “...I cannot think of any circumstances when ALL PRIVILEGES should be granted to anyone. It is simply unnecessary. Do the job correctly and find out the exact privileges needed for the job in hand and grant those. Granting all privileges is a security risk as it means the user having those privileges can do just about anything in your database.”  - Pete Finnigan, Oracle Security Expert
 
@@ -1312,7 +1306,7 @@ But what if they are both are working at the same time?
 
 ### <mark style="background: #69E772;">Problems with Concurrency:</mark>
 
-Concurrent transaction can cause three kinds of database problems  
+<mark style="background: #69E772;">Concurrent transaction can cause three kinds of database problems:</mark>
 - Lost Update  
 - Violation of Integrity Constraints  
 - Inconsistent Retrieval
@@ -1333,9 +1327,9 @@ Either update could go a fraction of a second earlier and overwrite the other.
 
 ### <mark style="background: #69E772;">Inconsistent Retrieval (Dirty Reads):</mark>
 
-If transaction are allowed to read the partial results of incomplete transactions, they can obtain an inconsistent view of the DB (dirty or unrepeatable reads).
+If transactions are allowed to read the partial results of incomplete transactions, they can obtain an inconsistent view of the DB (dirty or unrepeatable reads).
 
-### <mark style="background: #69E772;">Concurrency Control:</mark>  
+### <mark style="background: #69E772;">Concurrency Control:</mark>
 
 <mark style="background: #69E772;">Transaction:</mark> the basic unit of work in a RDBMS  
 
@@ -1349,11 +1343,11 @@ If transaction are allowed to read the partial results of incomplete transaction
 
 ### <mark style="background: #69E772;">A.C.I.D properties:</mark>
 
-<mark style="background: #69E772;">Atomicity:</mark> the is the “all or nothing” property ; a transaction is an indivisible unit of work  
+<mark style="background: #69E772;">Atomicity:</mark> the is the “all or nothing” property ; a transaction is an indivisible unit of work.  
 
-<mark style="background: #69E772;">Consistency:</mark> transactions transform the DB from one consistent state to another consistent state
+<mark style="background: #69E772;">Consistency:</mark> transactions transform the DB from one consistent state to another consistent state.
 
-<mark style="background: #69E772;">Isolation:</mark> transactions execute in isolation i.e. the partial effect of one transaction is not  visible to other transactions.  
+<mark style="background: #69E772;">Isolation:</mark> transactions execute in isolation i.e. the partial effect of one transaction is not visible to other transactions.
 
 <mark style="background: #69E772;">Durability (aka Persistence):</mark> the effect of a successfully completed (i.e. committed) transaction are permanently recorded in the DB and cannot be undone.
 
@@ -1397,8 +1391,8 @@ A transaction (or logical unit of work) is a sequence of SQL statements that ``p
 
 <mark style="background: #69E772;">In autocommit mode:</mark>  
 - Every SQL statement is considered to be a transaction  
-- It has an implicit BEGIN before it.  
-- It has an implicit COMMIT after it.  
+- It has an implicit ``BEGIN`` before it.  
+- It has an implicit ``COMMIT`` after it.  
 
 TURN AUTOCOMMIT OFF!!!
 
@@ -1407,11 +1401,11 @@ TURN AUTOCOMMIT OFF!!!
 ### <mark style="background: #69E772;">Transactions and locking:</mark>
 
 Transactions start with ``BEGIN``  
-- When an ``INSERT``, ``UPDATE`` or ``DELETE`` takes place:  
+
+When an ``INSERT``, ``UPDATE`` or ``DELETE`` takes place:  
 - It locks the row that is being ``INSERTed`` / ``UPDATEd`` / ``DELETEd``  
 - Other sessions cannot see the changes that are being made.  
-- The lock holds until the transaction session is finished by issuing  
-- ``COMMIT`` or ``ROLLBACK``
+- The lock holds until the transaction session is finished by issuing ``COMMIT`` or ``ROLLBACK``
 
 ### <mark style="background: #69E772;">The transaction control commands:</mark>
 
@@ -1433,7 +1427,7 @@ Transactions start with ``BEGIN``
 - There are several levels of locking.
 
 <mark style="background: #69E772;">When modifying:</mark>  
-- The transaction should place a lock until committed or rolled back.  
+- The transaction should place a lock until committed or rolled back.
 - This is known as data concurrency.
 
 <mark style="background: #69E772;">Read-consistency:</mark>
@@ -1451,7 +1445,7 @@ Other sessions can still read all rows.
 
 When other sessions read locked rows, they see the pre-locked values for the row.  
 
-When the lock is released, by COMMIT or ROLLBACK, the new values are visible to other sessions.
+When the lock is released, by ``COMMIT`` or ``ROLLBACK``, the new values are visible to other sessions.
 
 ### <mark style="background: #69E772;">Locking rows:</mark>
 
@@ -1460,8 +1454,8 @@ When the lock is released, by COMMIT or ROLLBACK, the new values are visible to 
 ### <mark style="background: #69E772;">Exclusive locks:</mark>
 
 <mark style="background: #69E772;">Exclusive locks occur on ROWS when:</mark>  
-- The row is ``INSERTed``  
-- The row is ``DELETEd``  
+- The row is ``INSERTed`` 
+- The row is ``DELETEd``
 - The row is ``UPDATEd``  
 - The row is ``SELECTed``... FOR ``UPDATE``...
 
@@ -1506,7 +1500,7 @@ To be safe, you should adopt a strict locking order, but you must also <mark sty
 
 Normalisation is a process for assigning attributes to entities. It reduces data redundancies and helps eliminate the data anomalies.  
 
-Normalisation works through a series of stages called normal forms:  
+<mark style="background: #69E772;">Normalisation works through a series of stages called normal forms:</mark>
 - First normal form (1NF)  
 - Second normal form (2NF)  
 - Third normal form (3NF)  
@@ -1522,15 +1516,15 @@ The highest level of normalisation is not always desirable. (we’ll see why...)
 
 Case of a Construction Company  
 
-Building project -- Project number, Name, Employees assigned to the project.  
+Building project - Project number, Name, Employees assigned to the project.  
 
-Employee -- Employee number, Name, Job classification  
+Employee - Employee number, Name, Job classification  
 
 The company charges its clients by billing the hours spent on each project. The hourly billing rate is dependent on the employee’s position.  
 
 Periodically, a report is generated.  
 
-Employees can work on multiple project. The hourly rate for each employee position is fixed
+Employees can work on multiple projects. The hourly rate for each employee position is fixed
 
 ### <mark style="background: #69E772;">Sample Form:</mark>
 
@@ -1563,7 +1557,7 @@ The primary key components are bold, underlined, and shaded in a different colou
 The arrows above entities indicate all desirable dependencies, i.e., dependencies that are based on  
 PK.  
 
-The arrows below the dependency diagram indicate less desirable dependencies -- partial dependencies
+The arrows below the dependency diagram indicate less desirable dependencies - partial dependencies
 
 ![](https://i.imgur.com/qFutkN8.png)
 
@@ -1571,7 +1565,7 @@ The arrows below the dependency diagram indicate less desirable dependencies -- 
 
 Conversion to Second Normal Form  
 
-Definition: all the non-key attributes are dependant on the full primary key  
+<mark style="background: #69E772;">Definition:</mark> all the non-key attributes are dependent on the full primary key  
 
 Starting with the 1NF format, the database can be converted into the 2NF format by  
 
@@ -1620,6 +1614,7 @@ When a relation has more than one candidate key, anomalies may result even thoug
 BCNF is based on the concept of a determinant.  
 
 A determinant is any attribute (simple or composite) on which some other attribute is fully functionally dependent.  
+
 A relation is in BCNF is, and only if, every determinant is a candidate key.
 
 A table is in Boyce-Codd normal form (BCNF) if every determinant in the table is a candidate key.  
@@ -1668,27 +1663,23 @@ Normalisation purity is often difficult to sustain in the modern database enviro
 <mark style="background: #69E772;">Move data into a table:</mark>  
 
 ```plSQL
-INSERT INTO staff( firstName, lastName,  
-address, homePhone, cellPhone, latitude,  
-longitude )  
-SELECT firstName, lastName, address,  
-homePhone, cellPhone, latitude, longitude  
-FROM gfxContact
+INSERT INTO staff( firstName, lastName, address, homePhone, cellPhone, latitude, longitude)  
+SELECT firstName, lastName, address, homePhone, cellPhone, latitude, longitude  
+FROM gfxContact;
 ```
 
 <mark style="background: #69E772;">Create a table from another table:</mark>
 
 ```plSQL
 CREATE TABLE EMP (
-EMPNO NUMBER(4) NOT NULL,  
-ENAME VARCHAR2(10),  
-JOB VARCHAR2(9),  
-MGR NUMBER(4),  
-HIREDATE DATE,  
-SAL NUMBER(7, 2),  
-COMM NUMBER(7, 2),  
-DEPTNO NUMBER(2)
-);
+	EMPNO NUMBER(4) NOT NULL,  
+	ENAME VARCHAR2(10),  
+	JOB VARCHAR2(9),  
+	MGR NUMBER(4),  
+	HIREDATE DATE,  
+	SAL NUMBER(7, 2),  
+	COMM NUMBER(7, 2),  
+	DEPTNO NUMBER(2));
 
 INSERT INTO EMP VALUES (7369, 'SMITH', 'CLERK', 7902, TO_DATE('17-DEC-1980', 'DD-MON-YYYY'), 800, NULL, 20);
 
@@ -1728,7 +1719,7 @@ Also called a <mark style="background: #69E772;">sequential</mark> file.
 
 File records are kept sorted by the values of an <mark style="background: #69E772;">ordering field</mark>.  
 
-Insertion is expensive: records must be inserted in the correct order.  
+<mark style="background: #69E772;">Insertion is expensive:</mark> records must be inserted in the correct order.  
 
 It is common to keep a separate unordered overflow (or transaction) file for new records to improve insertion efficiency; this is periodically merged with the main ordered file.  
 
@@ -1748,7 +1739,7 @@ The following table shows the average access time to access a specific record fo
 
 ### <mark style="background: #69E772;">Hashed Files:</mark>
 
-The file blocks are divided into M equal-sized <mark style="background: #69E772;">buckets</mark>, numbered ``bucket0, bucket1, ..., bucketM-1.``  
+The file blocks are divided into M equal-sized <mark style="background: #69E772;">buckets</mark>, numbered ``bucket0, bucket1, ..., bucketM-1.``
 
 Typically, a bucket corresponds to one (or a fixed number of) disk block.  
 
@@ -1764,7 +1755,7 @@ An overflow file is kept for storing such records.
 
 Overflow records that hash to each bucket can be linked together.
   
-There are numerous methods for collision resolution, including the following:  
+<mark style="background: #69E772;">There are numerous methods for collision resolution, including the following:</mark>
 - <mark style="background: #69E772;">Open addressing:</mark> Proceeding from the occupied position specified by the hash address, the program checks the subsequent positions in order until an unused (empty) position is found.  
 - <mark style="background: #69E772;">Chaining:</mark> For this method, various overflow locations are kept, usually by extending the array with a number of overflow positions. In addition, a pointer field is added to each record location. A collision is resolved by placing the new record in an unused overflow location and setting the pointer of the occupied hash address location to the address of that overflow location.  
 - <mark style="background: #69E772;">Multiple hashing:</mark> The program applies a second hash function if the first results in a collision. If another collision results, the program uses open addressing or applies a third hash function and then uses open addressing if necessary.
@@ -1785,7 +1776,7 @@ Otherwise, search time will be increased because many overflow records will exis
 
 ### <mark style="background: #69E772;">Dynamic and Extendible Hashed Files:</mark>
 
-Dynamic and Extendible Hashing Techniques  
+<mark style="background: #69E772;">Dynamic and Extendible Hashing Techniques</mark>
 - Hashing techniques are adapted to allow the dynamic growth and shrinking of the number of file records.  
 - These techniques include the following: <mark style="background: #69E772;">dynamic</mark> <mark style="background: #69E772;">hashing</mark>, <mark style="background: #69E772;">extendible hashing</mark>, and <mark style="background: #69E772;">linear hashing</mark>.  
 
@@ -1809,7 +1800,7 @@ Dynamic and extendible hashing do not require an overflow area.
 
 ### <mark style="background: #69E772;">Indexes:</mark>
 
-<mark style="background: #69E772;">Indexes</mark> are additional auxiliary access structures with typically provide <mark style="background: #69E772;">either</mark> faster access to data or secondary access paths without effecting the physical storage of the data.  
+<mark style="background: #69E772;">Indexes</mark> are additional auxiliary access structures with typically provide <mark style="background: #69E772;">either</mark> faster access to data or secondary access paths without effecting the physical storage of the data.
 
 They are based on <mark style="background: #69E772;">indexing field(s)</mark> that are used to construct the <mark style="background: #69E772;">index</mark>.  
 
@@ -1828,17 +1819,17 @@ Indexes can be <mark style="background: #69E772;">sparse or dense</mark>. A dens
 
 ### <mark style="background: #69E772;">Single Level Indexes:</mark>
 
-Single Level = there is only 1 level of indirection. The entries in the index are pointing to the data in the table  
+<mark style="background: #69E772;">Single Level</mark> = there is only 1 level of indirection. The entries in the index are pointing to the data in the table.
 
-Multiple-Index = entries in the index might point to other entries in the index , that eventually point to the data  
+<mark style="background: #69E772;">Multiple-Index</mark> = entries in the index might point to other entries in the index , that eventually point to the data.
 
-A <mark style="background: #69E772;">Primary Index</mark> is specified on the <mark style="background: #69E772;">ordering key field</mark> where each tuple has a <mark style="background: #69E772;">unique</mark> value.  
+A <mark style="background: #69E772;">Primary Index</mark> is specified on the <mark style="background: #69E772;">ordering key field</mark> where each tuple has a <mark style="background: #69E772;">unique</mark> value.
 
 A <mark style="background: #69E772;">Secondary Index</mark> is specified on a ``NON-ORDERING`` <mark style="background: #69E772;">Field</mark> of the file.
 
 ### <mark style="background: #69E772;">Primary Indexes:</mark>
 
-A Primary Index is constructed of two parts: The first  field is the same data type of the primary key of a file block of the data file and the second field is file block pointer.  
+A Primary Index is constructed of two parts: The first field is the same data type of the primary key of a file block of the data file and the second field is file block pointer.  
 
 If the primary index is clustered, the file is physically sorted using the indexing field. If this is the case:  
 
@@ -1848,19 +1839,19 @@ The Anchor Record or Block anchor is the first record in a file block. This is w
 
 # <mark style="background: #69E772;">Primary Indexes (clustered):</mark>
 
-The primary index file is usually smaller than the data file it’s indexing because  
+<mark style="background: #69E772;">The primary index file is usually smaller than the data file it’s indexing because:</mark>
 - There are usually fewer index entries than records in the data file (because a block holds more than one record)  
 - The individual index records are smaller than data file records  
 
 Binary <mark style="background: #69E772;">search</mark> on index file is faster than binary search on the database  
 
-But slow for insertion and deletion:  
+<mark style="background: #69E772;">But slow for insertion and deletion:</mark>  
 - records have to be kept in order in the data file 
 - AND index file has to be kept in order too
 
 We have shown a primary sparse index, where the “big” file (=table) is physically sorted by the key and the index structure indexes each block. This is usually called a clustered index, since each entry in the index points to a “cluster” or values  
 
-Some DBs (latest Oracle versions) implement primary index like secondary index.  
+<mark style="background: #69E772;">Some DBs (latest Oracle versions) implement primary index like secondary index:</mark>
 - The table is left unordered like a heap  
 - The index structure has an entry for each record (not each block) and it is a dense index
 
@@ -1945,7 +1936,7 @@ There is <mark style="background: #69E772;">no</mark> requirement that the Searc
 
 <mark style="background: #69E772;">B-Trees</mark> address the problems with Search Trees in that they have the <mark style="background: #69E772;">additional</mark> constraint that they be <mark style="background: #69E772;">balanced</mark> and they contain pointers to data records.  
 
-Each B-Trees is made up of at most P tree pointers and P-1 field values K and data pointers Pr.
+Each B-Tree is made up of at most P tree pointers and P-1 field values K and data pointers Pr.
 
 ![](https://i.imgur.com/sqXTxK4.png)
 
@@ -1957,18 +1948,20 @@ Each B-Trees is made up of at most P tree pointers and P-1 field values K and da
 <mark style="background: #69E772;">2. Index Scan:</mark> the Index Scan performs a B-tree traversal, walks through the leaf nodes to find all matching entries, and fetches the corresponding table data. The so-called index filter predicates often cause performance problems for an Index Scan.  
 
 <mark style="background: #69E772;">3. Index Only Scan:</mark> The Index Only Scan performs a B-tree traversal and walks through the leaf nodes to find all matching entries. There is no table access needed because the index has all columns to satisfy the query  
+
 <mark style="background: #69E772;">4. Bitmap Index Scan / Bitmap Heap Scan / Recheck Cond:</mark> A plain Index Scan fetches one tuple-pointer at a time from the index, and immediately visits that tuple in the table. A bitmap scan fetches all the tuple-pointers from the index in one go, sorts them using an in-memory “bitmap” data structure, and then visits the table tuples in physical tuple-location order.
 
 Generally join operations process only two tables at a time. In case a query has more joins, they are executed sequentially: first two tables, then the intermediate result with the next table. In the context of joins, the term “table” could therefore also mean “intermediate result”.  
 
 <mark style="background: #69E772;">1. Nested Loops:</mark> Joins two tables by fetching the result from one table and querying the other table for each row from the first.  
+
 <mark style="background: #69E772;">2. Hash Join / Hash:</mark> The hash join loads the candidate records from one side of the join into a hash table (marked with Hash in the plan) which is then probed for each record from the other side of the join. 
 
-<mark style="background: #69E772;">3. Merge Join:</mark> The (sort) merge join combines two sorted lists like a zipper. Both sides of the join must be presorted.
+<mark style="background: #69E772;">3. Merge Join:</mark> The (sort) merge join combines two sorted lists like a zipper. Both sides of the join must be pre-sorted.
 
-<mark style="background: #69E772;">1. Sort / Sort Key:</mark> Sorts the set on the columns mentioned in Sort Key. The Sort operation needs large amounts of memory to materialize the intermediate result.  
+<mark style="background: #69E772;">1. Sort / Sort Key:</mark> Sorts the set on the columns mentioned in Sort Key. The Sort operation needs large amounts of memory to materialise the intermediate result.  
 
-<mark style="background: #69E772;">2. GroupAggregate:</mark> Aggregates a presorted set according to the group by clause. This operation does not buffer large amounts of data  
+<mark style="background: #69E772;">2. GroupAggregate:</mark> Aggregates a pre-sorted set according to the group by clause. This operation does not buffer large amounts of data  
 
 <mark style="background: #69E772;">3. HashAggregate:</mark> Uses a temporary hash table to group records. The ``HashAggregate`` operation does not require a pre-sorted data set, instead it uses large amounts of memory to materialize the intermediate result. The output is not ordered in any meaningful way.  
 
@@ -2005,7 +1998,7 @@ Also called a <mark style="background: #69E772;">sequential</mark> file.
 
 File records are kept sorted by the values of an <mark style="background: #69E772;">ordering field</mark>.
 
-Insertion is expensive: records must be inserted in the correct order.
+<mark style="background: #69E772;">Insertion is expensive:</mark> records must be inserted in the correct order.
 
 It is common to keep a separate unordered <mark style="background: #69E772;">overflow</mark> (or <mark style="background: #69E772;">transaction</mark>) file for new records to improve insertion efficiency; this is periodically merged with the main ordered file.
 
@@ -2017,189 +2010,6 @@ Reading the records in order of the ordering field is quite efficient.
 
 ![](https://i.imgur.com/c5Ndqu0.png)
 
-### <mark style="background: #69E772;">Average Access Times:</mark>
-
-The following table shows the average access time to access a specific record for a given type of file
-
-![](https://i.imgur.com/JTzu8BH.png)
-
-### <mark style="background: #69E772;">Hashed Files:</mark>
-
-The file blocks are divided into M equal-sized buckets, numbered bucket0, bucket1, ..., bucketM-1.
-
-Typically, a bucket corresponds to one (or a fixed number of) disk block.
-
-One of the file fields is designated to be the <mark style="background: #69E772;">hash key</mark> of the file.
-
-The record with hash key value K is stored in bucket i, where i=h(K), and h is the <mark style="background: #69E772;">hashing function</mark>.
-
-Search is very efficient on the hash key.
-
-Collisions occur when a new record hashes to a bucket that is already full.
-- An overflow file is kept for storing such records.
-- Overflow records that hash to each bucket can be linked together. 
-
-There are numerous methods for collision resolution, including the following:
-
-<mark style="background: #69E772;">Open addressing:</mark> Proceeding from the occupied position specified by the hash address, the program checks the subsequent positions in order until an unused (empty) position is found. 
-
-<mark style="background: #69E772;">Chaining:</mark> For this method, various overflow locations are kept, usually by extending the array with a number of overflow positions. In addition, a pointer field is added to each record location. A collision is resolved by placing the new record in an unused overflow location and setting the pointer of the occupied hash address location to the address of that overflow location. 
-
-<mark style="background: #69E772;">Multiple hashing:</mark> The program applies a second hash function if the first results in a collision. If another collision results, the program uses open addressing or applies a third hash function and then uses open addressing if necessary.
-
-### <mark style="background: #69E772;">Hashed Files - Chaining:</mark>
-
-![](https://i.imgur.com/pjIgtt7.png)
-
-To reduce overflow records, a hash file is typically kept 70-80% full.
-
-The hash function h should distribute the records uniformly among the buckets
-
-Otherwise, search time will be increased because many overflow records will exist.
-
-Main disadvantages of static external hashing:
-
-Fixed number of buckets M is a problem if the number of records in the file grows or shrinks.
-
-Ordered access on the hash key is quite inefficient (requires  sorting the records).
-
-### <mark style="background: #69E772;">Dynamic Hashing:</mark>
-
-![](https://i.imgur.com/oAQHXxv.png)
-
-### <mark style="background: #69E772;">Extendible Hashing:</mark>
-
-![](https://i.imgur.com/76GX5Km.png)
-
-### <mark style="background: #69E772;">Indexes:</mark>
-
-<mark style="background: #69E772;">Indexes</mark> are additional auxiliary access structures with typically provide either faster access to data or secondary access paths without effecting the physical storage of the data.
-
-They are based on <mark style="background: #69E772;">indexing field(s)</mark> that are used to construct the <mark style="background: #69E772;">index</mark>.
-
-Indexes can be <mark style="background: #69E772;">sparse</mark> or <mark style="background: #69E772;">dense</mark>. A dense index has an entry for each record.
-
-<mark style="background: #69E772;">Single-Level Indexes:</mark>
-- Primary (Clustered or not)
-- Secondary
-- Bitmap
-
-<mark style="background: #69E772;">Multi-Level Indexes:</mark>
-- Binary Trees
-- B-Trees
-
-Single Level = there is only 1 level of indirection. The entries in the index are pointing to the data in the table
-
-Multiple-Index = entries in the index might point to other entries in the index , that eventually point to the data
-
-A <mark style="background: #69E772;">Primary Index</mark> is specified on the <mark style="background: #69E772;">ordering key field</mark> where each tuple has a <mark style="background: #69E772;">unique</mark> value.
-
-A <mark style="background: #69E772;">Secondary Index</mark> is specified on a <mark style="background: #69E772;">NON-ORDERING Field</mark> of the file.
-
-### <mark style="background: #69E772;">Primary Indexes:</mark>
-
-A <mark style="background: #69E772;">Primary Index</mark> is constructed of two parts: The <mark style="background: #69E772;">first field</mark> is the same data type of the primary key of a file block of the data file and the second field is file block pointer.
-
-If the primary index is clustered, the file is physically sorted using the indexing field. If this is the case:
-
-The <mark style="background: #69E772;">Anchor Record</mark> or <mark style="background: #69E772;">Block anchor</mark> is the <mark style="background: #69E772;">first</mark> record in a file block. This is where the <mark style="background: #69E772;">value</mark> for the <mark style="background: #69E772;">first field</mark> of the <mark style="background: #69E772;">primary index</mark> come from along with the respective address of that block.
-
-![](https://i.imgur.com/HEXDLxH.png)
-
-### <mark style="background: #69E772;">Primary Indexes (clustered)</mark>
-
-The primary index file is usually smaller than the data file it’s indexing because
-- There are usually fewer index entries than records in the data file (because a block holds more than one record)
-- The individual index records are smaller than data file records
-
-Binary <mark style="background: #69E772;">search</mark> on index file is faster than binary search on the database
-
-But slow for insertion and deletion 
-- records have to be kept in order in the data file
-- AND index file has to be kept in order too
-
-### <mark style="background: #69E772;">Note on Primary Index (clustered):</mark>
-
-We have shown a primary <mark style="background: #69E772;">sparse</mark> index, where the “big” file (=table) is physically sorted by the key and the index structure indexes each block. This is usually called a clustered index, since each entry in the index points to a “cluster” or values
-
-Some DBs (latest Oracle versions) implement primary index like secondary index. 
-- The table is left unordered like a heap
-- The index structure has an entry for each record (not each block) and it is a dense index
-
-### <mark style="background: #69E772;">Secondary Indexes:</mark>
-
-An index file that uses a non primary field as an index e.g. Job field in the employee table
-
-They improve the performance of queries that use attributes <mark style="background: #69E772;">other</mark> than the primary key
-
-You can use a separate index for every attribute you wish to use in the ``WHERE`` clause of your select query
-
-But there is the overhead of maintaining a large number of these indexes 
-
-A <mark style="background: #69E772;">Secondary Index</mark> is an <mark style="background: #69E772;">ordered file</mark> with two fields.  The first is of the same data type as some <mark style="background: #69E772;">non-ordering</mark> field and the second is either a block or a record pointer.
-
-If the <mark style="background: #69E772;">entries</mark> in this <mark style="background: #69E772;">non-ordering</mark> field <mark style="background: #69E772;">must</mark> be <mark style="background: #69E772;">unique</mark> this field is sometime referred to as a <mark style="background: #69E772;">Secondary Key</mark>. This results in a dense index.
-
-For a secondary index, an external index file has a list of pointers to the various values of the indexed column (i.e. It’s a logical index, not physical)  so you can have many secondary indexes
-- What would a secondary index to a telephone directory look like? E.g. Road Name?
-- WHY would you use a secondary index?
-
-### <mark style="background: #69E772;">Primary Indexes (not clustered):</mark>
-
-A <mark style="background: #69E772;">Primary Index</mark> can also be not clustered. In this case, the file (table) is not physically sorted by the index key.
-
-For each entry in the table, there is an entry in the index, so a primary index not clustered is a dense index.
-
-![](https://i.imgur.com/TbQHCBr.png)
-
-
-### <mark style="background: #69E772;">Secondary Index on a Non-key field:</mark>
-
-A secondary index is an index defined on a non-key field. It can be implemented as a primary index (not clustered) but since there is <mark style="background: #69E772;">no guarantee</mark> that the value will be <mark style="background: #69E772;">unique</mark> the previous index method will not work in all the case.
-- <mark style="background: #69E772;">Option 1:</mark> Include index entries for each record.  This results in multiple entries of the same value.
-- <mark style="background: #69E772;">Option 2:</mark> Use variable length records with a pointer to each block/record with that value.
-- <mark style="background: #69E772;">Option 3:</mark> Have the pointer; point to a block or chain of blocks that contain pointers to all the blocks/records that contain the field value. Example of multi-level index
-
-![](https://i.imgur.com/nMjJWpC.png)
-
-### <mark style="background: #69E772;">Multilevel Indexes:</mark>
-
-A <mark style="background: #69E772;">Multilevel Index</mark> is where you construct an <mark style="background: #69E772;">Second- Level</mark> index on a <mark style="background: #69E772;">First-Level</mark> Index. Continue this process until the entire index can be contained in a <mark style="background: #69E772;">Single File Block</mark>.
-
-This allows much faster access than binary search because at each level the size of the index is reduced by the fan out factor. Rather just by 2 as in binary search.
-
-![](https://i.imgur.com/0K6Gs1T.png)
-
-
-### <mark style="background: #69E772;">Bitmap Index:</mark>
-
-An index implemented as a map of bits
-
-Each unique entry in the index is a string of bits
-
-Usually used on fields that are not (or rarely)  modified 
-
-Fields with low cardinality
-
-Used in read-only environment like data warehouses
-
-Typical example: day of the week, gender,…
-
-<mark style="background: #69E772;">How many bytes is a bitmap index on:</mark>
-- Day of the week for 10 millions records 
-- Gender for 1 billion records
-
-![](https://i.imgur.com/18a9SKZ.png)
-
-![](https://i.imgur.com/u5yJKVk.png)
-
-
-### <mark style="background: #69E772;">Multilevel index:</mark>
-
-In databases, multi-level indexes are implemented using a tree structure
-
-A tree is a data structure with specific rules, which ones?
-
 ### <mark style="background: #69E772;">Explain Analyse in Postgres:</mark>
 
 It gives information on query execution time, cost and steps need to compute the output of each query
@@ -2210,11 +2020,12 @@ It gives information on query execution time, cost and steps need to compute the
 ### <mark style="background: #69E772;">Query Cost:</mark>
 
 Cost: arbitrary units, 1 unit = cost to read a page (of data) sequentially. They make sense only to compare queries.
-	Sort  (cost=66.83..69.33 rows=1000 width=17) 
+
+Sort  (cost=66.83..69.33 rows=1000 width=17) 
 
 <mark style="background: #69E772;">Two costs:</mark>
-- Startup cost. This is an estimate of how long it will take to fetch the first row
-- Total cost: how long will it take to return all the rows the query requires
+- <mark style="background: #69E772;">Start-up cost:</mark> This is an estimate of how long it will take to fetch the first row
+- <mark style="background: #69E772;">Total cost:</mark> how long will it take to return all the rows the query requires
 
 Rows = number of rows (estimated) and width = estimated size in bytes
 
@@ -2236,13 +2047,12 @@ explain analyze select * from persons;
 Seq Scan on persons  (cost=0.00..214.00 rows=10000 width=60)
 ```
 
-
 <mark style="background: #69E772;">Why total cost of 214?</mark>
-- The cost parameters seq_page_cost, cpu_tuple_cost  have the following defaults values:
-- seq_page_cost  = 1, 
-- cpu_tuple_cost  = 0.01 (time to process each tuple, see https://postgresqlco.nf/doc/en/param/cpu_tuple_cost/)
+- The cost parameters ``seq_page_cost``, ``cpu_tuple_cost``  have the following defaults values:
+- ``seq_page_cost  = 1``, 
+- ``cpu_tuple_cost  = 0.01`` (time to process each tuple, see https://postgresqlco.nf/doc/en/param/cpu_tuple_cost/)
 
-Total cost of Seq Scan = (estimated sequential page reads * seq_page_cost) + (estimated rows returned * cpu_tuple_cost)
+Total cost of Seq Scan = (estimated sequential page reads * ``seq_page_cost``) + (estimated rows returned * ``cpu_tuple_cost``)
 
 How do I know how many pages were read?
 
@@ -2280,8 +2090,7 @@ Index Scan Backward using per_index on persons  (cost=0.29..387.29 rows=10000 wi
 
 ![](https://i.imgur.com/IsiVKhD.png)
 
-
-There is an index on the unique1 field
+There is an index on the ``unique1`` field
 
 The second query has a higher cost even if it filters the row, why?
 
@@ -2305,7 +2114,8 @@ A bitmap index scan becomes lossy if ``work_mem`` is not big enough to contain a
 
 ### <mark style="background: #69E772;">Introduction to Transaction Processing:</mark>
 
-<mark style="background: #69E772;">Single-User System:</mark> At most one user at a time can use the system. 
+<mark style="background: #69E772;">Single-User System:</mark> At most, one user at a time can use the system. 
+
 <mark style="background: #69E772;">Multi-user System:</mark> Many users can access the system concurrently.
 
 <mark style="background: #69E772;">Concurrency:</mark>
@@ -2345,26 +2155,25 @@ An <mark style="background: #69E772;">application program</mark> may contain sev
 
 ![](https://i.imgur.com/0JXmWkI.png)
 
-
 ### <mark style="background: #69E772;">Why Concurrency Control is needed:</mark>
 
-<mark style="background: #69E772;">The Lost Update Problem:</mark> This occurs when two transactions that access the same database items have their operations interleaved in a way that makes the value of some database item incorrect. 
+<mark style="background: #69E772;">The Lost Update Problem:</mark> This occurs when two transactions that access the same database items have their operations interleaved in a way that makes the value of some database item incorrect.
 
-<mark style="background: #69E772;">The Temporary Update (or Dirty Read) Problem:</mark> This occurs when one transaction updates a database item and then the transaction fails for some reason. The updated item is accessed by another transaction before it is changed back to its original value. 
+<mark style="background: #69E772;">The Temporary Update (or Dirty Read) Problem:</mark> This occurs when one transaction updates a database item and then the transaction fails for some reason. The updated item is accessed by another transaction before it is changed back to its original value.
 
 <mark style="background: #69E772;">The Incorrect Summary Problem:</mark> If one transaction is calculating an aggregate summary function on a number of records while other transactions are updating some of these records, the aggregate function may calculate some values before they are updated and others after they are updated. 
 
 ### <mark style="background: #69E772;">Lost Update problem:</mark>
 
-# <mark style="background: #FF5582A6;">SLIDE 9</mark>
+![](https://i.imgur.com/vDkdKlg.png)
 
 ### <mark style="background: #69E772;">The temporary update problem:</mark>
 
-# <mark style="background: #FF5582A6;">SLIDE 10</mark>
+![](https://i.imgur.com/UOGe6tZ.png)
 
 ### <mark style="background: #69E772;">The incorrect summary problem:</mark>
-# <mark style="background: #FF5582A6;">SLIDE 11</mark>
 
+![](https://i.imgur.com/YL4QSUy.png)
 
 ### <mark style="background: #69E772;">Concurrency Control:</mark>
 
@@ -2374,7 +2183,7 @@ An <mark style="background: #69E772;">application program</mark> may contain sev
 - ISOLATION
 - DURABILITY
 
-# <mark style="background: #FF5582A6;">SLIDE 12</mark>
+![](https://i.imgur.com/51LGvh4.png)
 
 ### <mark style="background: #69E772;">A.C.I.D. properties:</mark>
 
@@ -2406,15 +2215,15 @@ A <mark style="background: #69E772;">transaction</mark> is an atomic unit of wor
 
 ### <mark style="background: #69E772;">State diagram illustrating the states for transaction execution.</mark>
 
-# <mark style="background: #FF5582A6;">SLIDE 17</mark>
+![](https://i.imgur.com/FRiGcps.png)
 
 ### <mark style="background: #69E772;">Making changes persist:</mark>
 
 When data is changed, it must be persisted, to ensure that the change takes.
 
 <mark style="background: #69E772;">E.g. a text editor:</mark>
-- SAVE will COMMIT your changes.
-- QUIT will ROLLBACK your changes.
+- ``SAVE`` will ``COMMIT`` your changes.
+- ``QUIT`` will ``ROLLBACK`` your changes.
 
 <mark style="background: #69E772;">AUTOCOMMIT:</mark>
 - When this feature is ON, changes are persisted as soon as they happen.
@@ -2440,14 +2249,14 @@ Many modern database clients set autocommit on by default.
 
 <mark style="background: #69E772;">In autocommit mode:</mark>
 - Every SQL statement is considered to be a transaction
-- It has an implicit BEGIN before it.
-- It has an implicit COMMIT after it.
+- It has an implicit ``BEGIN`` before it.
+- It has an implicit ``COMMIT`` after it.
 
 ![](https://i.imgur.com/Fgzm0n8.png)
 
 ### <mark style="background: #69E772;">Why recovery is needed:</mark> 
 
-(What causes a Transaction to fail)
+<mark style="background: #69E772;">What causes a Transaction to fail:</mark>
 1. <mark style="background: #69E772;">A computer failure (system crash):</mark> A hardware or  software error occurs in the computer system during transaction execution. If the hardware crashes, the contents of the computer’s internal memory may be lost.
 2. <mark style="background: #69E772;">A transaction or system error:</mark> Some operation in the transaction may cause it to fail, such as integer overflow or division by zero. Transaction failure may also occur because of erroneous parameter values or because of a logical programming error. In addition, the user may interrupt the transaction during its execution.
 3. <mark style="background: #69E772;">Local errors or exception conditions</mark> detected by the transaction: 
@@ -2469,7 +2278,7 @@ T in the following discussion refers to a unique <mark style="background: #69E77
 
 <mark style="background: #69E772;">Types of log record:</mark> 
 - ``[start_transaction,T]:`` Records that transaction T has started execution.
-- ``[write_item,T,X,old_value,new_value]:`` Records that transaction T has changed the value of database item X from old_value to new_value.
+- ``[write_item,T,X,old_value,new_value]:`` Records that transaction T has changed the value of database item X from ``old_value`` to ``new_value``.
 - ``[read_item,T,X]:`` Records that transaction T  has read the value of database item X.
 - ``[commit,T]:`` Records that transaction T has completed successfully, and affirms that its effect can be committed (recorded permanently) to the database.
 - ``[abort,T]:`` Records that transaction T has been aborted. 
@@ -2488,12 +2297,11 @@ We can also <mark style="background: #69E772;">redo</mark> the effect of the wri
 
 A <mark style="background: #69E772;">schedule</mark> (or <mark style="background: #69E772;">history</mark>) S of n transactions T1, T2, ..., Tn: It is an ordering of the operations of the transactions subject to the constraint that, for each transaction Ti that participates in S, the operations of T1 in S must appear in the same order in which they occur in T1. Note, however, that operations from other transactions Tj can be interleaved with the operations of Ti in S. 
 
-Two operations are <mark style="background: #69E772;">conflicting</mark> if the belongs to 2 active transactions and at least one of the 2 is a write and they use the same data item
+Two operations are <mark style="background: #69E772;">conflicting</mark> if the belongs to 2 active transactions and at least one of the 2 is a write and they use the same data item.
 
 ![](https://i.imgur.com/iYAteB5.png)
 
 ### <mark style="background: #69E772;">Characterising Schedules based on recoverability:</mark>
-
 
 <mark style="background: #69E772;">Recoverable schedule:</mark> One where no transaction needs to be rolled back. 
  
@@ -2508,34 +2316,32 @@ Two operations are <mark style="background: #69E772;">conflicting</mark> if the 
 <mark style="background: #69E772;">Serial schedule:</mark> A schedule S is <mark style="background: #69E772;">serial</mark> if, for every transaction T participating in the schedule, all the operations of T are executed consecutively in the schedule. Otherwise, the schedule is called non-serial schedule.
 
 <mark style="background: #69E772;">Serialisable schedule:</mark> A schedule S is <mark style="background: #69E772;">serialisable</mark> if it is equivalent to some serial schedule of the same n transactions
-
  
-Being serialisable implies that the schedule is a correct schedule.
+<mark style="background: #69E772;">Being serialisable implies that the schedule is a correct schedule:</mark>
 - It will leave the database in a consistent state. 
 - The interleaving is appropriate and will result in a state as if the transactions were serially executed, yet will achieve efficiency due to concurrent execution. 
 
 Being serialisable is not the same as being serial
 
-<mark style="background: #69E772;">conflict – serialisable:</mark> A schedule is conflict – serializable if by swapping non conflicting operations a serial schedule can be obtained
+<mark style="background: #69E772;">conflict – serialisable:</mark> A schedule is conflict – serialisable if by swapping non conflicting operations a serial schedule can be obtained
 
 ### <mark style="background: #69E772;">Schedule examples:</mark>
 
 ![](https://i.imgur.com/nh5kQ4p.png)
 
-
 ### <mark style="background: #69E772;">Database Concurrency Control:</mark>
 
 <mark style="background: #69E772;">Why Concurrency Control is needed:</mark>
-- The Lost Update Problem. 
-- The Temporary Update (or Dirty Read) Problem. 
-- The Incorrect Summary Problem . 
+- The Lost Update Problem.
+- The Temporary Update (or Dirty Read) Problem.
+- The Incorrect Summary Problem.
 
 <mark style="background: #69E772;">Purpose of Concurrency Control:</mark>
 - To enforce Isolation (through mutual exclusion) among conflicting transactions. 
 - To preserve database consistency through consistency preserving execution of transactions.
 - To resolve read-write and write-write conflicts.
 
-<mark style="background: #69E772;">Example:</mark>  In concurrent execution environment if T1 conflicts with T2 over a data item A, then the existing concurrency control decides if T1 or T2 should get the A and if the other transaction should wait.  
+<mark style="background: #69E772;">Example:</mark>  In concurrent execution environment if T1 conflicts with T2 over a data item A, then the existing concurrency control decides if T1 or T2 should get the A and if the other transaction should wait.
 
 ### <mark style="background: #69E772;">Concurrency control is based on locks:</mark>
 
@@ -2556,9 +2362,9 @@ Being serialisable is not the same as being serial
 - When an ``INSERT``, ``UPDATE`` or ``DELETE``  takes place:
 - It locks the row that is being ``INSERTed`` / ``UPDATEd`` / ``DELETEd``. Other sessions cannot see the changes that are being made.
 
-The lock holds until the transaction session is finished by issuing 
-- COMMIT or
-- ROLLBACK
+<mark style="background: #69E772;">The lock holds until the transaction session is finished by issuing:</mark>
+- ``COMMIT`` or
+- ``ROLLBACK``
 
 ### <mark style="background: #69E772;">Exclusive locks:</mark>
 
@@ -2609,9 +2415,9 @@ if any transactions are waiting then wake up one of the waiting the transactions
 
 ### <mark style="background: #69E772;">Locking Techniques: Essential components</mark>
 
-To use the binary locking scheme, every transaction must obey the following rules:
-- A transaction T must issue the operation lock_item(X) before any read_item(X) or write_item(X) operations are performed in T.
-- A transaction T must issue the operation unlock_item(X) after all read_item(X) or write_item(X) operations are completed in T.
+<mark style="background: #69E772;">To use the binary locking scheme, every transaction must obey the following rules:</mark>
+- A transaction T must issue the operation ``lock_item(X)`` before any ``read_item(X)`` or ``write_item(X)`` operations are performed in T.
+- A transaction T must issue the operation ``unlock_item(X)`` after all ``read_item(X)`` or ``write_item(X)`` operations are completed in T.
 - A transaction T will not issue a lock_item(X) operation if it already holds the lock on item X.
 - A transaction T will not issue a unlock_item(X) unless it already holds the lock on item X.
 
@@ -2626,7 +2432,7 @@ To use the binary locking scheme, every transaction must obey the following rule
 <mark style="background: #69E772;">Conflict matrix:</mark>
 ![](https://i.imgur.com/zX7YS7T.png)
 
-Locking Techniques: Shared/Exclusive Lock Operations
+<mark style="background: #69E772;">Locking Techniques:</mark> Shared/Exclusive Lock Operations
 
 <mark style="background: #69E772;">The following code performs the read lock operation:</mark>
 ```
@@ -2698,7 +2504,7 @@ Ti has a write-lock (X)    (*no transaction can have any lock on X*)
 ### <mark style="background: #69E772;">Two-Phase Locking Techniques - The algorithm:</mark>
 
 <mark style="background: #69E772;">Two Phases:  (a) Locking (Growing) (b) Unlocking (Shrinking).</mark>
-- <mark style="background: #69E772;">Locking (Growing) Phase:</mark>  A transaction applies locks (read or write) on desired data items one at a time.
+- <mark style="background: #69E772;">Locking (Growing) Phase:</mark> A transaction applies locks (read or write) on desired data items one at a time.
 - <mark style="background: #69E772;">Unlocking (Shrinking) Phase:</mark> A transaction unlocks its locked data items one at a time.
 - <mark style="background: #69E772;">Requirement:</mark> For a transaction these two phases must be mutually exclusively, that is, during locking phase unlocking phase must not start and during unlocking phase locking phase must not begin.
 
@@ -2731,11 +2537,9 @@ The next example illustrates two transactions in a deadlock.
 
 ### <mark style="background: #69E772;">Deadlock Prevention:</mark>
 
-A transaction locks all data items it refers to before it begins execution.  This way of locking prevents deadlock since a transaction never waits for a data item.  The conservative two-phase locking uses this approach.
+A transaction locks all data items it refers to before it begins execution. This way of locking prevents deadlock since a transaction never waits for a data item. The conservative two-phase locking uses this approach.
 
-Other deadlock prevention algorithms use the concept of a timestamp TS(T) which is a unique identifier assigned to transactions based on the order in which they start. If T1 starts before T2, then
-
-TS(T1) < TS(T2) (older transaction has the smaller timestamp value)  
+Other deadlock prevention algorithms use the concept of a timestamp TS(T) which is a unique identifier assigned to transactions based on the order in which they start. If T1 starts before T2, then TS(T1) < TS(T2) (older transaction has the smaller timestamp value)  
 
 <mark style="background: #69E772;">Examples of such algorithms are:</mark>       
 - <mark style="background: #69E772;">Wait-die:</mark> If TS(Ti) < TS(Tj), then (Ti is older than Tj) Ti is allowed to wait; otherwise (Ti younger than Tj) abort Ti (Ti dies) and restart it later with the same timestamp.
@@ -2790,7 +2594,7 @@ Schema defined at the start
 Create Table (Column1 Datatype1, Column2 Datatype 2, ...)
 ```  
 
-Constraints to define and enforce relationships  
+<mark style="background: #69E772;">Constraints to define and enforce relationships:</mark>
 - Primary Key  
 - Foreign Key  
 - Etc.  
@@ -2823,7 +2627,7 @@ Began to look at multi-node database solutions
 
 Known as ‘scaling out’ or ‘horizontal scaling’  
 
-Different approaches include:   
+<mark style="background: #69E772;">Different approaches include:</mark>
 - Master-slave  
 - Sharding
 
@@ -2857,9 +2661,9 @@ NO SQL started with the aim to address the scaling problem
 
 A Generation of Databases mostly addressing some of the points: being <mark style="background: #69E772;">non-relational</mark>, <mark style="background: #69E772;">distributed</mark>, <mark style="background: #69E772;">open-source</mark> and <mark style="background: #69E772;">horizontal scalable</mark>. 
 
-The original intention has been <mark style="background: #69E772;">modern web-scale databases</mark>. 
+The original intention has been <mark style="background: #69E772;">modern web-scale databases</mark>.
 
-The movement began early 2009 and is growing rapidly. 
+The movement began early 2009 and is growing rapidly.
 
 <mark style="background: #69E772;">Often more characteristics apply as:</mark> 
 - schema-free, 
@@ -2874,7 +2678,7 @@ Stands for <mark style="background: #69E772;">Not Only SQL</mark>
 
 Class of non-relational data storage systems  
 
-Class of data management systems inherently  
+<mark style="background: #69E772;">Class of data management systems inherently:</mark>
 - Non-relational  
 - Distributed  
 - Horizontally scalable  
@@ -2891,7 +2695,7 @@ All NoSQL relax one or more of the ACID properties. But some of them can also do
 - Asynchronous Inserts & Updates  
 - Schema-less  
 - ACID transaction properties are not needed – BASE  
-- CAP Theorem 
+- CAP Theorem
 - Open source development
 
 ### <mark style="background: #69E772;">CAP THEOREM:</mark>
@@ -2901,14 +2705,14 @@ All NoSQL relax one or more of the ACID properties. But some of them can also do
 <mark style="background: #69E772;">C - Consistency:</mark>
 - This is a given in a relational database
 - If a RDBMS is not in a consistent state, it is not available.
-- Remember what happens when two sessions are accessing the same data — only the consistent data is available to both.
+- Remember what happens when two sessions are accessing the same data - only the consistent data is available to both.
 - all nodes should see the same data at the same time
 
-<mark style="background: #69E772;">A — Availability:</mark>
+<mark style="background: #69E772;">A - Availability:</mark>
 - A MongoDB database will always have data available because it has replicas of every piece of data and it only promises "eventual consistency"
 - node failures do not prevent survivors continuing to operate
 
-<mark style="background: #69E772;">P — Partition tolerance (tolerating network breaks):</mark>
+<mark style="background: #69E772;">P - Partition tolerance (tolerating network breaks):</mark>
 - In a distributed situation, RDBMS will not allow a transaction to go through unless all nodes involved are in a consistent state.
 - In a distributed situation, MongoDB will go ahead with transactions for available nodes and let the others catch up later.
 - the system continues to operate despite arbitrary message loss, No set of failures less than total network failure is allowed to cause the system to respond incorrectly.
@@ -2932,7 +2736,7 @@ All NoSQL relax one or more of the ACID properties. But some of them can also do
 
 ### <mark style="background: #69E772;">ACID properties of transactions:</mark>
 
-Basic (ACID) properties of a transaction are:  
+<mark style="background: #69E772;">Basic (ACID) properties of a transaction are:</mark>  
 1. <mark style="background: #69E772;">Atomicity</mark> ‘All or nothing’ property.  
 2. <mark style="background: #69E772;">Consistency</mark> Must transform database from one consistent state to another.  
 3. <mark style="background: #69E772;">Isolation</mark> Partial effects of incomplete transactions should not be visible to other transactions.  
@@ -3230,7 +3034,7 @@ Schema-free.
 
 Based on Binary JSON; BSON.  
 
-Organized in Group of Documents  Collections  
+Organized in Group of Documents and Collections  
 
 Auto-Sharding in order to scale horizontally.  
 
@@ -3407,17 +3211,17 @@ db.<collection>.find({<field>: {$in [<value>, <value>]}})
 
 ### <mark style="background: #69E772;">Mongo is basically schema-free:</mark>
 
-The purpose of schema in SQL is for meeting the requirements of tables and SQL implementation  
+The purpose of schema in SQL is for meeting the requirements of tables and SQL implementation.
 
-Every “row” in a database “table” is a data structure, much like a “struct” in C, or a “class” in Java. A table is then an array (or list) of such data structures  
+Every “row” in a database “table” is a data structure, much like a “struct” in C, or a “class” in Java. A table is then an array (or list) of such data structures.
 
-So what we design in mongoDB is basically same way how we design a compound data type binding in JSON
+So what we design in mongoDB is basically same way how we design a compound data type binding in JSON.
 
 ### <mark style="background: #69E772;">There are some patterns:</mark>
 
 <mark style="background: #69E772;">Embedding:</mark> 
 - Embed the document into the other document  
-- Similar to denormalized joins
+- Similar to denormalised joins
 
 <mark style="background: #69E772;">Linking (also known as reference):</mark>  
 - Use the id of a document as a field in another document  
@@ -3426,8 +3230,6 @@ So what we design in mongoDB is basically same way how we design a compound data
 ### <mark style="background: #69E772;">One to One relationship - embedding:</mark>
 
 ![](https://i.imgur.com/uXnJ4UF.png)
-
-### <mark style="background: #69E772;">One to many relationship - embedding:</mark>
 
 ![](https://i.imgur.com/8u1uw9a.png)
 
@@ -3496,7 +3298,7 @@ db.categories.find( { parent: "Databases" } )
 
 Suppose a client needs a database design for his blog/website and see the differences between RDBMS and MongoDB schema design.  
 
-Website has the following requirements:  
+<mark style="background: #69E772;">Website has the following requirements:</mark>  
 - Every post has the unique title, description and url.  
 - Every post can have one or more tags.  
 - Every post has the name of its publisher and total number of likes.  
@@ -3543,7 +3345,7 @@ Duplicate the data (but limited) because disk space is cheap as compare to compu
 
 Do joins while write, not on read.  
 
-Optimize your schema for most frequent use cases.  
+Optimise your schema for most frequent use cases.  
 
 Do complex aggregation in the schema.
 
@@ -3563,30 +3365,26 @@ Indexes are special data structures that store a small portion of the <mark styl
 
 ### <mark style="background: #69E772;">Index in MongoDB:</mark>  
 
-<mark style="background: #69E772;">Creation index:</mark>  ``db.users. createIndex( { score: 1 } )``  
+<mark style="background: #69E772;">Creation index:</mark>  ``db.users.createIndex( { score: 1 } )``  
 
 <mark style="background: #69E772;">Show existing indexes:</mark> ``db.users.getIndexes()``  
 
-<mark style="background: #69E772;">Drop index:</mark>  
-``db.users.dropIndex( {score: 1}``
+<mark style="background: #69E772;">Drop index:</mark>  ``db.users.dropIndex( {score: 1}``
 
 <mark style="background: #69E772;">Types:</mark>    
-- Single Field Indexes  
-- Compound Field Indexes  
+- Single Field Indexes
+- Compound Field Indexes
 - Multikey Indexes
 
-<mark style="background: #69E772;">Single Field Indexes:</mark>  
-``db.users. createIndex( { score: 1 } )``
+<mark style="background: #69E772;">Single Field Indexes:</mark>  ``db.users. createIndex( { score: 1 } )``
 
 ![](https://i.imgur.com/885a68a.png)
 
-<mark style="background: #69E772;">Compound Field Indexes:</mark>  
-``db.users. createIndex( { userid:1, score: -1 } )``
+<mark style="background: #69E772;">Compound Field Indexes:</mark>   ``db.users. createIndex( { userid:1, score: -1 } )``
 
 ![](https://i.imgur.com/SRzjtb7.png)
 
-<mark style="background: #69E772;">Multikey Indexes:</mark>  
-``db.users.createIndex( { addr.zip:1} )``
+<mark style="background: #69E772;">Multikey Indexes:</mark>  ``db.users.createIndex( { addr.zip:1} )``
 
 ![](https://i.imgur.com/YItYx1r.png)
 
@@ -3707,8 +3505,8 @@ while (myCursor.hasNext()) {
 myCursor.forEach(printjson);  
 
 var documentArray = myCursor.toArray();  
-var myDocument = documentArray[3];  
 
+var myDocument = documentArray[3];  
 var myDocument = myCursor[3];
 ```
 
