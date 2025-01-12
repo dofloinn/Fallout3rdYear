@@ -18,3 +18,22 @@
 ![](https://i.imgur.com/4okrEZ4.png)
 
 ![](https://i.imgur.com/KwFuzWu.png)
+![](https://i.imgur.com/3bG8GRg.png)
+![](https://i.imgur.com/6tHY8co.png)
+
+![](https://i.imgur.com/tpsfNHv.png)
+
+![[Pasted image 20250112180708.png]]
+
+![](https://i.imgur.com/S9yeVr3.png)
+![](https://i.imgur.com/RmkqNvR.png)
+
+![](https://i.imgur.com/jp2Rnnw.png)
+![](https://i.imgur.com/aXn6yE5.png)
+
+![](https://i.imgur.com/kMpU6Lf.png)
+
+
+![](https://i.imgur.com/QfdhFUF.png)
+![](https://i.imgur.com/twTTkcN.png)
+![](https://i.imgur.com/ee0hqtW.png)
