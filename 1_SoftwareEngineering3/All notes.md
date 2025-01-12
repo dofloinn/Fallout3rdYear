@@ -1148,6 +1148,9 @@ public class MyServerTest {
 
 E.g. Request from client browser to the server to list all users – we can encapsulate the code to handle this request on the server into a  single object.
 
+<mark style="background: #FFB8EBA6;">Example diagram from internet:</mark>
+![](https://i.imgur.com/P3soGWA.png)
+
 <mark style="background: #FFB8EBA6;">Recall - Example Servlet</mark>
 ```Java
 public class UserController extends HttpServlet {  
