@@ -7,7 +7,7 @@ USEFUL DIAGRAM:
 
 OOP is a way of writing programmes
 
-An object is an abstraction of something in the **problem domain** e.g. Table
+An object is an abstraction of something in the <mark style="background: #FFB8EBA6;">problem domain</mark> e.g. Table
 
 <mark style="background: #FFB8EBA6;">Purpose:</mark>
 - promotes an understanding of the real world
@@ -29,8 +29,6 @@ An object is an abstraction of something in the **problem domain** e.g. Table
 ### <mark style="background: #FFB8EBA6;">Encapsulation:</mark>
 
 Fundamentally, <mark style="background: #FFB8EBA6;">encapsulation</mark> is a simple concept – hide the internals (data & behaviour) of an object from other objects
-
-Fundamentally, encapsulation is a simple concept – hide the internals (data & behaviour) of an object from other objects.  
 
 With this, we can then control the access to the object’s internals whatever way we want. Also, we can implement and modify the implementation without affecting other objects (i.e. the rest of the system)
 
@@ -68,6 +66,7 @@ Methods from the superclass can be overridden in the subclass.
 The superclass is a <mark style="background: #FFB8EBA6;">generalisation</mark> and the subclass is a <mark style="background: #FFB8EBA6;">specialisation</mark> "is-a" relationship.
 
 The terms <mark style="background: #FFB8EBA6;">base class</mark> and <mark style="background: #FFB8EBA6;">derived class</mark> are also used for the superclass and subclass, respectively.
+
 A class diagram is intended to give a clear picture of the classes in a system and the relationships between them.
 
 <mark style="background: #FFB8EBA6;">Note:</mark> In Java, every class has the class Object as a superclass, i.e. class Object is the root of  the class hierarchy in Java. See the API documentation.
@@ -79,21 +78,21 @@ A class diagram is intended to give a clear picture of the classes in a system a
 - <mark style="background: #FFB8EBA6;">Weakly typed</mark> languages: will perform implicit conversions between different types.  
 
 E.g.  
-Java / C# - Statically and Strongly typed  
-Python – Dynamically and Strongly typed  
-C++ - Statically and Weakly typed  
-JavaScript - Dynamically and Weakly typed
+- Java / C# - Statically and Strongly typed  
+- Python – Dynamically and Strongly typed  
+- C++ - Statically and Weakly typed  
+- JavaScript - Dynamically and Weakly typed
 
 ### <mark style="background: #FFB8EBA6;">Polymorphism:</mark>
 
-The core of polymorphism is that objects of different types can be accessed through a single interface - they appear the same but behave differently.
+The core of <mark style="background: #FFB8EBA6;">polymorphism</mark> is that objects of different types can be accessed through a single interface - they appear the same but behave differently.
 
 ![](https://i.imgur.com/oVkXdYQ.png)
 
 <mark style="background: #FFB8EBA6;">Subtype:</mark>  
 - declare a class as a subclass of another class  
-- inheritance - subclass inherits attributes and operations of the superclass  
-- operation overriding - subclass can override superclass operations (same name and  signature)  
+- <mark style="background: #FFB8EBA6;">inheritance</mark> - subclass inherits attributes and operations of the superclass  
+- <mark style="background: #FFB8EBA6;">operation overriding</mark> - subclass can override superclass operations (same name and  signature)  
 - relevant to both statically typed & dynamically typed languages  
 - design and code re-use - aids maintainability  
 
@@ -114,13 +113,12 @@ There are various ways in which the Animal, Pig, Dog and Cat classes/interfaces 
 
 ## <mark style="background: #FFB8EBA6;">UML Review:</mark>
 
-
 <mark style="background: #FFB8EBA6;">Model Views:</mark>
-- **User View** - Use-case diagrams
-- **Structural View** - Class Diagrams. How the system does it.
-- **Behavioural View** - Sequence Diagrams. State chart diagrams.
-- **Environment View** Deployment Diagrams.
-- **Implementation View** - Component Diagrams
+- <mark style="background: #FFB8EBA6;">User View:</mark> Use-case diagrams
+- <mark style="background: #FFB8EBA6;">Structural View:</mark> Class Diagrams. How the system does it.
+- <mark style="background: #FFB8EBA6;">Behavioural View</mark> Sequence Diagrams. State chart diagrams.
+- <mark style="background: #FFB8EBA6;">Environment View:</mark> Deployment Diagrams.
+- <mark style="background: #FFB8EBA6;">Implementation View:</mark> Component Diagrams
 
 <mark style="background: #FFB8EBA6;">UML Definitions:</mark>
 
@@ -128,11 +126,9 @@ There are various ways in which the Animal, Pig, Dog and Cat classes/interfaces 
 - A class is a description of a set of objects that share attribute, operations (behaviours), relationship with other objects.  
 - The purpose of a class is to declare a collection of operations, and attributes that fully describe the structure and behaviour for all objects of that class.  
 
-<mark style="background: #FFB8EBA6;">Object:</mark>  
-- An Object is an instance that originates from a class; it is structured and behaves according to its class.  
+<mark style="background: #FFB8EBA6;">Object:</mark> An Object is an instance that originates from a class; it is structured and behaves according to its class.  
 
-<mark style="background: #FFB8EBA6;">Generalisation:</mark>  
-- Taxonomic(hierarchical) relationship between a more general element and a more specific element that is fully consistent with the first element and that adds additional information
+<mark style="background: #FFB8EBA6;">Generalisation:</mark> Taxonomic(hierarchical) relationship between a more general element and a more specific element that is fully consistent with the first element and that adds additional information
 
 <mark style="background: #FFB8EBA6;">Generalisations in Object Classes:</mark>
 - Arrange real-world object classes into hierarchies
@@ -142,16 +138,15 @@ There are various ways in which the Animal, Pig, Dog and Cat classes/interfaces 
 ![](https://i.imgur.com/dwd5DbP.png)
 
 <mark style="background: #FFB8EBA6;">Generalisation has a number of benefits:</mark>
-- Reduces redundancy – if there was only an Employee class with an employeeType attribute, we would need all three attributes of the subclasses above in the Employee class. So if an instance/object represents a monthly paid employee then hourlyRate and hoursWorked may be redundant (this could depend on other factors...)  
-- Reuses design artefacts – e.g. superclasses and already designed subclasses  
-- Reuses compile time artefacts – existing classes  
-- Reduces brittleness – adding new subclasses does not affect existing classes/code  
+- <mark style="background: #FFB8EBA6;">Reduces redundancy:</mark> if there was only an Employee class with an ``employeeType`` attribute, we would need all three attributes of the subclasses above in the Employee class. So if an instance/object represents a monthly paid employee then ``hourlyRate`` and ``hoursWorked`` may be redundant (this could depend on other factors...)  
+- <mark style="background: #FFB8EBA6;">Reuses design artefacts:</mark> e.g. superclasses and already designed subclasses  
+- <mark style="background: #FFB8EBA6;">Reuses compile time artefacts:</mark> existing classes  
+- <mark style="background: #FFB8EBA6;">Reduces brittleness:</mark> adding new subclasses does not affect existing classes/code  
 - Eases maintainability & understanding
-
 
 ### <mark style="background: #FFB8EBA6;"> Review of the Object Model:</mark>
 
-The object model is a general way of thinking about the structure of OO programs
+The <mark style="background: #FFB8EBA6;">object model</mark> is a general way of thinking about the structure of OO programs
 
 The fundamental property of the object model is that computation takes place in and between objects
 
@@ -165,9 +160,9 @@ Developing an <mark style="background: #FFB8EBA6;">Object Model</mark> allows us
 
 ### <mark style="background: #FFB8EBA6;">Network of Objects:</mark>
 
-The global behaviour of the system emerges from the interaction of many distinct objects. The relationships between the data stored in the individual objects must be recorded.  
+The global behaviour of the system emerges from the <mark style="background: #FFB8EBA6;">interaction</mark> of many <mark style="background: #FFB8EBA6;">distinct objects</mark>. The relationships between the data stored in the individual objects must be recorded.  
 
-These requirements are supported by allowing objects to be linked together - this is typically achieved by enabling one object to hold a reference to another.  
+These requirements are supported by allowing objects to be linked together - this is typically achieved by enabling one object to hold a <mark style="background: #FFB8EBA6;">reference</mark> to another.  
 
 The object model views a running program as a  network, or graph of objects. The objects form  the nodes in the graph, and the arcs connecting the objects are known as <mark style="background: #FFB8EBA6;">links</mark>. 
 
@@ -177,7 +172,7 @@ The object network represents relationships between data entities - Objects can 
 
 ### <mark style="background: #FFB8EBA6;">Associations:</mark>
 
-Associations are <mark style="background: #FFB8EBA6;">one type of relationship</mark> that can be modelled between classes (others are Dependencies, Generalisations, Realisations).  
+<mark style="background: #FFB8EBA6;">Associations</mark> are <mark style="background: #FFB8EBA6;">one type of relationship</mark> that can be modelled between classes (others are Dependencies, Generalisations, Realisations).  
 
 Associations <mark style="background: #FFB8EBA6;">describe the reason</mark> for the relationship between the classes and the rules that govern it (e.g. Multiplicities).  
 
@@ -185,7 +180,7 @@ Associations can be termed <mark style="background: #FFB8EBA6;">Aggregate</mark>
 
 Associations can be termed <mark style="background: #FFB8EBA6;">Composite</mark> (one class is considered the whole and the other is considered part-of the whole, the part-of class has a lifetime that is dependent on the other).  
 
-Associations can be <mark style="background: #FFB8EBA6;">Directed</mark> – the relationship only goes one way (uni-directional). If not, they are considered bi-directional.
+Associations can be <mark style="background: #FFB8EBA6;">Directed</mark> - the relationship only goes one way (uni-directional). If not, they are considered bi-directional.
 
 <mark style="background: #FFB8EBA6;">Implementing Associations:</mark>
 - We can implement a simple association using a <mark style="background: #FFB8EBA6;">class member variable</mark> that holds a reference  
@@ -216,21 +211,16 @@ Remember the reason that 0..1 is the default multiplicity here is that if the �
 
 ![](https://i.imgur.com/SVp8UXL.png)
 
-Here the ``Account`` class has the responsibility to  
-maintain the association because it has the  
-reference member variable.  
+Here the ``Account`` class has the responsibility to maintain the association because it has the reference member variable.  
 
 In this example, there is a simple accessor (getter) and mutator (setter) but also a business method ``removeCard()``
 
 We can also make this association <mark style="background: #FFB8EBA6;">immutable</mark>:
 ![](https://i.imgur.com/7KaVU5t.png)
 
-There are a number of ways this could be implemented. The getter and setter are commonly implemented but methods like ``removeCard``, ``addCard`` or ``cancelCard`` might be modelled as part of the design and be more appropriate. These kind of methods might be identified through the business use cases.  
+There are a number of ways this could be implemented. The getter and setter are commonly implemented but methods like ``removeCard``, ``addCard`` or ``cancelCard`` might be modelled as part of the design and be more appropriate. These kind of methods might be identified through the business use cases.
 
-For the immutable example, we can see that the ``setCard()`` will only work if a card is  
-not currently assigned. In this case, in order to change the card on an account, the  
-``removeCard()`` must be invoked first – in this way we can encapsulate any business  
-logic that needs to be executed when a card is removed from an account.
+For the immutable example, we can see that the ``setCard()`` will only work if a card is not currently assigned. In this case, in order to change the card on an account, the ``removeCard()`` must be invoked first – in this way we can encapsulate any business logic that needs to be executed when a card is removed from an account.
 
 <mark style="background: #FFB8EBA6;">One to One – 1..1 (mandatory association):</mark>
 
@@ -238,8 +228,7 @@ logic that needs to be executed when a card is removed from an account.
 
 Consider the above model – in this case the <mark style="background: #FFB8EBA6;">Guarantor is mandatory</mark>  
 
-A <mark style="background: #FFB8EBA6;">null reference</mark> to a Guarantor in the Account  
-class <mark style="background: #FFB8EBA6;">cannot be allowed to exist</mark>.
+A <mark style="background: #FFB8EBA6;">null reference</mark> to a Guarantor in the Account class <mark style="background: #FFB8EBA6;">cannot be allowed to exist</mark>.
 
 This needs to be handled in the code implementing the association.
 
@@ -257,14 +246,16 @@ Consider the above model – in this case a Manager object can be linked with ma
 
 A Manager object will need to hold multiple references to Account objects
 
-This needs to be handled in the code implementing the association. We will need some sort of Collection object.
-- In Java we can use an ``ArrayList`` object  
-- This object gives us all the facilities to handle a collection of references  
+This needs to be handled in the code implementing the association. 
+
+<mark style="background: #FFB8EBA6;">We will need some sort of Collection object:</mark>
+- In Java we can use an ``ArrayList`` object
+- This object gives us all the facilities to handle a collection of references
 - The Manager object then just concentrates on the business operations
 
 ![](https://i.imgur.com/QWMOINI.png)
 
-<mark style="background: #FFB8EBA6;">Note 1:</mark> “0..\*” can be denoted as just “\*”. This would be an optional association – the Manager object may not have any Account objects linked to it (but can have many). “1..*” means the Manager object must have one Account object linked to it. Also remember, something like “0..5” is also possible if the business requirements dictate it.  
+<mark style="background: #FFB8EBA6;">Note 1:</mark> "0..\*" can be denoted as just "\*". This would be an optional association – the Manager object may not have any Account objects linked to it (but can have many). “1..*” means the Manager object must have one Account object linked to it. Also remember, something like “0..5” is also possible if the business requirements dictate it.  
 
 <mark style="background: #FFB8EBA6;">Note 2:</mark> This is a unidirectional association – the system requirements here would lead us to model that it needs to identify all the accounts for a manager but it doesn’t need to be able to identify the manager for a specific account. I.e. the Manager object knows the accounts its linked to but Account objects do not know what manager object they are linked to.  
 
@@ -273,8 +264,7 @@ This needs to be handled in the code implementing the association. We will need 
 ### <mark style="background: #FFB8EBA6;">Implementing Bi-directional Associations:</mark>
 
 <mark style="background: #FFB8EBA6;">Bidirectional Links:</mark>  
-
-Some associations need to be navigated in both directions 
+- Some associations need to be navigated in both directions 
 - remember references are unidirectional – this means it will take two references to implement a link in each direction  
 - the association can be implemented by including a suitable reference field in each of the associated classes
 
@@ -296,7 +286,7 @@ Some associations need to be navigated in both directions
 
 ![](https://i.imgur.com/3e5zES1.png)
 
-The concept is the same as one-to-one but in this case we can see that the Member  class will need to hold a collection of references to Book objects but the Book object only needs to hold one reference to a Member object
+The concept is the same as one-to-one but in this case we can see that the Member class will need to hold a collection of references to Book objects but the Book object only needs to hold one reference to a Member object
 
 ### <mark style="background: #FFB8EBA6;">Referential Integrity:</mark>
 
@@ -339,8 +329,7 @@ Note again, the checks in the code to stop an infinite loop from occurring. In t
 
 ### <mark style="background: #FFB8EBA6;">Sequence Diagrams Revisited:</mark>
 
-<mark style="background: #FFB8EBA6;">Object Links:</mark>
-Consider an instance of the above class - it will contain two references to two Circle objects. This means that at runtime it will be linked to those objects.
+<mark style="background: #FFB8EBA6;">Object Links:</mark> Consider an instance of the above class - it will contain two references to two Circle objects. This means that at runtime it will be linked to those objects.
 
 ![](https://i.imgur.com/JY5TeYm.png)
 
@@ -436,7 +425,7 @@ An association or dependency between two classes can be thought of as a <mark st
 
 ![](https://i.imgur.com/6mI0Ry7.png)
 
-In the diagram above, objects of class A may talk to (i.e. send messages to) objects of class B and objects of class B may talk to objects of class A.  
+In the diagram above, objects of class A may talk to (i.e. send messages to) objects of class B and objects of class B may talk to objects of class A.
 
 Likewise, objects of classes B and C may also communicate. As there is no direct line of communication between A and C, objects of these classes <mark style="background: #FFB8EBA6;">may not communicate directly</mark>. If they do communicate, then there is an inconsistency in the model.
 
@@ -452,7 +441,7 @@ In response to a message M, an object O should send messages only to the followi
 3. Objects which O creates as part of its reaction to M  
 4. Objects which are directly accessible from O, that is, using values of attributes of O.
 
-In principle:  
+<mark style="background: #FFB8EBA6;">In principle:</mark>
 - Each unit should have only limited knowledge about other units: only units "closely" related to the current unit.  
 - Each unit should only talk to its friends; don't talk to strangers.  
 - Only talk to your immediate friends.
@@ -521,10 +510,10 @@ Also note that in the model (class diagram) we do not see b (E’s member attrib
 
 ### <mark style="background: #FFB8EBA6;">Illustration of the principle of Least Knowledge:</mark>
 
-Consider the following classes:
+<mark style="background: #FFB8EBA6;">Consider the following classes:</mark>
 ![](https://i.imgur.com/4FQ4X2L.png)
 
-An object of class Person may talk to (i.e. send messages to) an object of class Oracle  
+An object of class Person may talk to (i.e. send messages to) an object of class Oracle.
 
 An object of class Oracle may talk to an object of class Knowledge.  
 
@@ -671,7 +660,7 @@ Again, note that we are defining what a interface means in terms of classes and 
 
 It provides a mechanism for a class to communicate with a <mark style="background: #FFB8EBA6;">restricted view</mark> of another class  
 
-An interface class has:
+<mark style="background: #FFB8EBA6;">An interface class has:</mark>
 - no internal structure 
 - no attributes  
 - no implementation of its own  
@@ -697,14 +686,13 @@ The <mark style="background: #FFB8EBA6;">Advert</mark> class provides the implem
 
 In this case, there are two interfaces defined. The Advert class realises (implements) both interfaces. We can see the Viewable interface only allows a Customer object to utilise the ``display()`` method of an Advert object (the Customer objects only “sees” a Viewable object).
 
-<mark style="background: #FFB8EBA6;">Modelling requirement:</mark>  Several classes may be required to present the same interface e.g. an API specification
+<mark style="background: #FFB8EBA6;">Modelling requirement:</mark> Several classes may be required to present the same interface e.g. an API specification
 
 <mark style="background: #FFB8EBA6;">Java Database Connectivity:</mark>
 
 ![](https://i.imgur.com/YyB6fBs.png)
 
-Most major RDBMS providers supply JDBC code libraries to allow java developers to  
-easily connect to their database.
+Most major RDBMS providers supply JDBC code libraries to allow java developers to easily connect to their database.
 
 In this case, interfaces are defined for a set of classes that need to be implemented/supplied by the vendor of an RDBMS.  
 
@@ -750,7 +738,6 @@ We can write this in our code above the ``DriverManager.getConnection()`` call, 
 
 This works fine but is no longer necessary since JDBC 4.
 
-
 ### <mark style="background: #FFB8EBA6;">Boundary & Controller Classes:</mark>
 
 Boundary and Controller classes are two other common types of objects found in software architecture.
@@ -767,7 +754,7 @@ The aim is to separate the classes that have the responsibility for the interfac
 - <mark style="background: #FFB8EBA6;">Interface Independence:</mark> Object attributes may be input/displayed in several ways and this responsibility is assigned to the presentation classes  
 - <mark style="background: #FFB8EBA6;">Reuse:</mark> Of classes from all 3 layers
 
-Note that there may be more than three tiers, and that the logical layers can map to physical platforms in a number of ways.
+<mark style="background: #FFB8EBA6;">Note:</mark> there may be more than three tiers, and the logical layers can map to physical platforms in a number of ways.
 
 <mark style="background: #FFB8EBA6;">Presentation Layer:</mark>
 - Handles the interface with users and other connected systems 
@@ -794,7 +781,7 @@ This is a simple illustration of an external request. The UI boundary class prov
 
 Have you ever encountered a design problem and silently thought: <mark style="background: #FFB8EBA6;">I wonder if anyone has developed a solution to this?</mark>
 
-What if there was a standard way of describing a problem (so you could look it up), and an organized method for representing the solution to the problem?
+What if there was a standard way of describing a problem (so you could look it up), and an organised method for representing the solution to the problem?
 
 <mark style="background: #FFB8EBA6;">Design patterns</mark> are a codified method for describing problems and their solution that allows the software engineering community to capture design knowledge in a way that enables it to be reused.  
 
@@ -809,10 +796,10 @@ A set of requirements, including limitations and constraints, acts as a system o
 ### <mark style="background: #FFB8EBA6;">Categories of Patterns:</mark>
 
 <mark style="background: #FFB8EBA6;">Creational patterns</mark> focus on the creation, composition, and representation of objects, e.g.  
-- <mark style="background: #FFB8EBA6;">Abstract factory pattern:</mark> centralize decision of what factory to instantiate  
-- <mark style="background: #FFB8EBA6;">Factory method pattern:</mark> centralize creation of an object of a specific type choosing one of several implementations  
+- <mark style="background: #FFB8EBA6;">Abstract factory pattern:</mark> centralise decision of what factory to instantiate  
+- <mark style="background: #FFB8EBA6;">Factory method pattern:</mark> centralise creation of an object of a specific type choosing one of several implementations  
 
-<mark style="background: #FFB8EBA6;">Structural patterns</mark> focus on problems and solutions associated with how classes and objects are organized and integrated to build a larger structure, e.g.,  
+<mark style="background: #FFB8EBA6;">Structural patterns</mark> focus on problems and solutions associated with how classes and objects are organised and integrated to build a larger structure, e.g.,  
 - <mark style="background: #FFB8EBA6;">Adapter pattern:</mark> 'adapts' one interface for a class into one that a client expects  
 - <mark style="background: #FFB8EBA6;">Aggregate pattern:</mark> a version of the Composite pattern with methods for aggregation of children  
 
@@ -832,9 +819,9 @@ A set of requirements, including limitations and constraints, acts as a system o
 
 ### <mark style="background: #FFB8EBA6;">Frameworks:</mark>
 
-Patterns themselves may not be sufficient to develop a complete design.  
+<mark style="background: #FFB8EBA6;">Patterns themselves may not be sufficient to develop a complete design:</mark>  
 - In some cases it may be necessary to provide an implementation-specific skeletal infrastructure, called a <mark style="background: #FFB8EBA6;">framework</mark>, for design work.  
-- That is, you can select a “reusable mini-architecture that provides the generic structure and behavior for a family of software abstractions, along with a context ... which specifies their collaboration and use within a given domain.”  
+- That is, you can select a “reusable mini-architecture that provides the generic structure and behaviour for a family of software abstractions, along with a context ... which specifies their collaboration and use within a given domain.”  
 
 A framework <mark style="background: #FFB8EBA6;">is not an architectural pattern</mark>, but rather a skeleton with a collection of “plug points” (hooks and slots) that enable it to be adapted to a specific problem domain.  
 
@@ -842,29 +829,29 @@ The plug points enable you to integrate problem specific classes or functionalit
 
 ### <mark style="background: #FFB8EBA6;">Describing a Pattern:</mark>
 
-<mark style="background: #FFB8EBA6;">Pattern name:</mark> describes the essence of the pattern in a short but expressive name  
+<mark style="background: #FFB8EBA6;">Pattern name:</mark> describes the essence of the pattern in a short but expressive name.
 
-<mark style="background: #FFB8EBA6;">Intent:</mark> describes the pattern and what it does  
+<mark style="background: #FFB8EBA6;">Intent:</mark> describes the pattern and what it does.
 
-<mark style="background: #FFB8EBA6;">Problem:</mark> describes the problem that the pattern addresses  
+<mark style="background: #FFB8EBA6;">Problem:</mark> describes the problem that the pattern addresses.
 
-<mark style="background: #FFB8EBA6;">Motivation:</mark> provides an example of the problem  
+<mark style="background: #FFB8EBA6;">Motivation:</mark> provides an example of the problem.
 
-<mark style="background: #FFB8EBA6;">Context:</mark> describes the environment in which the problem resides including application domain  
+<mark style="background: #FFB8EBA6;">Context:</mark> describes the environment in which the problem resides including application domain.
 
-<mark style="background: #FFB8EBA6;">Forces:</mark> lists the system of forces that affect the manner in which the problem must be solved (including limitations / constraints)  
+<mark style="background: #FFB8EBA6;">Forces:</mark> lists the system of forces that affect the manner in which the problem must be solved (including limitations / constraints).
 
-<mark style="background: #FFB8EBA6;">Solution:</mark> provides a detailed description of the solution proposed for the problem  
+<mark style="background: #FFB8EBA6;">Solution:</mark> provides a detailed description of the solution proposed for the problem.
 
-<mark style="background: #FFB8EBA6;">Collaborations:</mark> describes how other patterns contribute to the solution  
+<mark style="background: #FFB8EBA6;">Collaborations:</mark> describes how other patterns contribute to the solution.
 
-<mark style="background: #FFB8EBA6;">Consequences:</mark> describes the potential trade-offs that must be considered when the pattern is implemented and consequences of its use  
+<mark style="background: #FFB8EBA6;">Consequences:</mark> describes the potential trade-offs that must be considered when the pattern is implemented and consequences of its use.
 
-<mark style="background: #FFB8EBA6;">Implementation:</mark> identifies special issues that should be considered when implementing the pattern  
+<mark style="background: #FFB8EBA6;">Implementation:</mark> identifies special issues that should be considered when implementing the pattern.
 
-<mark style="background: #FFB8EBA6;">Known uses:</mark> provides examples of actual uses of the design pattern in real applications  
+<mark style="background: #FFB8EBA6;">Known uses:</mark> provides examples of actual uses of the design pattern in real applications.
 
-<mark style="background: #FFB8EBA6;">Related patterns:</mark> cross-references related design patterns
+<mark style="background: #FFB8EBA6;">Related patterns:</mark> cross-references related design patterns.
 
 ### <mark style="background: #FFB8EBA6;">Thinking in Patterns:</mark>
 
@@ -890,17 +877,17 @@ Be certain to refine the design as it is derived from patterns using design qual
 
 ### <mark style="background: #FFB8EBA6;">Common Design Mistakes</mark>
 
-Not enough time has been spent to understand the underlying problem, its context and forces, and as a consequence, you select a pattern that looks right, but is inappropriate for the solution required.  
+Not enough time has been spent to understand the underlying problem, its context and forces, and as a consequence, you select a pattern that looks right, but is inappropriate for the solution required.
 
-Once the wrong pattern is selected, you refuse to see your error and force fit the pattern.  
+Once the wrong pattern is selected, you refuse to see your error and force fit the pattern.
 
-In other cases, the problem has forces that are not considered by the pattern you’ve chosen, resulting in a poor or erroneous fit.  
+In other cases, the problem has forces that are not considered by the pattern you’ve chosen, resulting in a poor or erroneous fit.
 
 Sometimes a pattern is applied too literally and the required adaptations for your problem space are not implemented.
 
 ### <mark style="background: #FFB8EBA6;">DAO Pattern:</mark>
 
-Recall our discussion on database connectivity...
+Recall our discussion on database connectivity.
 
 ![](https://i.imgur.com/N6Zw4RG.png)
 
@@ -979,9 +966,9 @@ We can re-use our ``PreparedStatement`` object without requiring re-compilation 
 
 ![](https://i.imgur.com/7HArCaY.png)
 
-<mark style="background: #FFB8EBA6;">HTTP</mark> – Hypertext Transfer Protocol, rules used to transfer data across the internet  
+<mark style="background: #FFB8EBA6;">HTTP</mark> – Hypertext Transfer Protocol, rules used to transfer data across the internet
 
-<mark style="background: #FFB8EBA6;">Client</mark> – Any software – PC, Laptop, Smartphone, Tablet  
+<mark style="background: #FFB8EBA6;">Client</mark> – Any software – PC, Laptop, Smartphone, Tablet
 
 <mark style="background: #FFB8EBA6;">Web Server</mark> – Computer system that provides the service of responding to HTTP requests, can “serve” web site pages, images etc. using an HTTP response
 
@@ -1083,7 +1070,7 @@ Browser requests a ``.jsp`` file instead of a ``.html`` file from the server
 
 If you just renamed a .html to a ``.jsp`` file, the first time you loaded/requested the file it would take longer to load than the HMTL version...  
 
-What’s happening?  
+<mark style="background: #FFB8EBA6;">What’s happening?</mark>  
 The first time the .jsp page is requested by the browser, the server reads the file and converts it to a java class and compiles it. Once compiled, it is executed completely as a java program.  
 
 This generated java class is a <mark style="background: #FFB8EBA6;">servlet</mark>
@@ -1314,7 +1301,7 @@ private void processRequest(HttpServletRequest request, HttpServletResponse resp
 
 Web Application example  
 
-Start with a Login User use case  
+<mark style="background: #FFB8EBA6;">Start with a Login User use case:</mark>
 1. User enters username and password  
 2. User clicks Login button  
 3. System validates username / password  
@@ -1433,9 +1420,7 @@ Examine the Map interface in the Java documentation.
 
 ``HttpServletRequest`` is replaced by ``Map``
 
-``request.setAttribute( /* etc. */ )``  
-is replaced by  
-``myMap.put( /* etc. */ )``
+``request.setAttribute( /* etc. */ )``   is replaced by  ``myMap.put( /* etc. */ )``
 
 As the ``ListUsersCommand`` class is <mark style="background: #FFB8EBA6;">no longer protocol-dependent</mark>, it is a simple matter to test the class without starting the web server (e.g. Tomcat).
 
@@ -1449,7 +1434,7 @@ As the ``ListUsersCommand`` class is <mark style="background: #FFB8EBA6;">no lon
 
 This method returns a ``java.util.Map`` of the parameters of this request. Request parameters are extra information sent with the request. For HTTP servlets, parameters are contained in the query string or posted form data.  
 
-Note: for the map returned from the method `getParameterMap()` the <mark style="background: #FFB8EBA6;">key</mark> is of type String and the <mark style="background: #FFB8EBA6;">value</mark> is of type String[].
+<mark style="background: #FFB8EBA6;">Note:</mark> for the map returned from the method `getParameterMap()` the <mark style="background: #FFB8EBA6;">key</mark> is of type String and the <mark style="background: #FFB8EBA6;">value</mark> is of type String[].
 
 ### <mark style="background: #FFB8EBA6;">Wrapper Patterns:</mark>
 
@@ -1460,8 +1445,7 @@ Note: for the map returned from the method `getParameterMap()` the <mark style="
 
 ### <mark style="background: #FFB8EBA6;">Adapter</mark> 
 
-<mark style="background: #FFB8EBA6;">Intent:</mark> Convert the interface of a class into another interface that clients expect. Adapter lets classes work together that couldn't otherwise because of  
-incompatible interfaces.  
+<mark style="background: #FFB8EBA6;">Intent:</mark> Convert the interface of a class into another interface that clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.  
 
 Provide an Adapter class which wraps the class that will ultimately perform the requested logic. The Adapter class provides a different interface to that provided by the wrapped class.
 
@@ -1531,7 +1515,7 @@ Define both the abstract interface and the underlying implementation – can swa
 
 <mark style="background: #FFB8EBA6;">Architectural Style or Design Pattern?</mark>
 
-W3C - A software system designed to support interoperable machine-to-machine interaction over a network  
+<mark style="background: #FFB8EBA6;">W3C:</mark> A software system designed to support interoperable machine-to-machine interaction over a network  
 
 <mark style="background: #FFB8EBA6;">Two implementations:</mark>  
 - <mark style="background: #FFB8EBA6;">SOAP:</mark> Defines the runtime message that contains the service request and response – the <mark style="background: #FFB8EBA6;">envelope</mark>. SOAP is independent of any particular transport and implementation technology. 
@@ -1560,8 +1544,8 @@ Data and functionality are considered resources and are accessed using <mark sty
 
 The resources are acted upon by using a set of simple, well-defined operations (the HTTP methods)  
 
-E.g. GET http://localhost:8080/RestExample/rest/hello  
-E.g. POST http://localhost:8080/RestExample/rest/hello
+E.g. ``GET`` http://localhost:8080/RestExample/rest/hello  
+E.g. ``POST`` http://localhost:8080/RestExample/rest/hello
 
 ### <mark style="background: #FFB8EBA6;">JAX-RS:</mark>
 
@@ -1725,7 +1709,7 @@ public class HelloWorld {
 - Black Box  
 
 <mark style="background: #FFB8EBA6;">Top down and bottom up do not apply to the architecture of OO:</mark>  
-- The architecture of OO software is a network of   collaborating classes.  
+- The architecture of OO software is a network of collaborating classes. 
 - Therefore it is necessary to test an OO system at a variety of different levels in an effort to uncover errors that may occur as classes collaborate with one another and the subsystems communicate across architectural layers.
 
 ### <mark style="background: #FFB8EBA6;">Approach to testing OO systems:</mark>
@@ -1736,7 +1720,7 @@ As a class evolves through analysis and design to the coded stage, it becomes a 
 
 Once classes are coded, a series of tests are designed that exercise class operations and examine whether errors exist as objects of one class collaborates with those of other classes.  
 
-Attributes and operations are <mark style="background: #FFB8EBA6;">encapsulated</mark>  
+Attributes and operations are <mark style="background: #FFB8EBA6;">encapsulated</mark>.
 
 Encapsulation produces test obstacles such as the reporting of the attribute values.  
 
@@ -1752,15 +1736,15 @@ Black box testing is also appropriate to OO and the Use Case is a natural source
 
 Because OO analysis and design models align more closely in structure and content to the resultant OO software, testing can begin with a <mark style="background: #FFB8EBA6;">review of these models</mark>.  
 
-<mark style="background: #FFB8EBA6;">These models iteratively evolve</mark> from informal representations of system requirements to detailed models of classes, attributes, operations, associations, messages and sequencing, events ..  
+<mark style="background: #FFB8EBA6;">These models iteratively evolve</mark> from informal representations of system requirements to detailed models of classes, attributes, operations, associations, messages and sequencing, events.  
 
 Therefore problems that are <mark style="background: #FFB8EBA6;">detected</mark> in these <mark style="background: #FFB8EBA6;">properties</mark> at the <mark style="background: #FFB8EBA6;">early iteration stages</mark> of <mark style="background: #FFB8EBA6;">analysis</mark> and <mark style="background: #FFB8EBA6;">design</mark> stage will circumvent problems at the later stages of development.  
 
 Technical reviews of these models are considered as important as final testing
 
 <mark style="background: #FFB8EBA6;">Correctness of OOA and OOD Models:</mark>  
-- Syntactic Correctness: The notation and syntax should conform to the methodology  
-- Semantic Correctness: The model is examined by expert users (domain experts) to check if it conforms to the real world problem as specified in use cases.
+- <mark style="background: #FFB8EBA6;">Syntactic Correctness:</mark> The notation and syntax should conform to the methodology  
+- <mark style="background: #FFB8EBA6;">Semantic Correctness:</mark> The model is examined by expert users (domain experts) to check if it conforms to the real world problem as specified in use cases.
 
 <mark style="background: #FFB8EBA6;">Consistency of OOA and OOD Models:</mark>  
 - This involves cross-checking the class diagram with the detailed use-case descriptions, object collaboration diagram/interaction sequence diagrams and state transition diagrams to ensure that the associations and collaborations and responsibilities are consistent.
@@ -1769,7 +1753,7 @@ Technical reviews of these models are considered as important as final testing
 
 Inheritance does not remove the need to test all derived classes.  
 
-Example:  
+<mark style="background: #FFB8EBA6;">Example:</mark>
 Class Derived redefines ``redefined()`` to serve in a local context.  
 
 ``Derived::redefined()`` must also be tested but does ``Derived::inherited()`` need to be tested?  
@@ -1788,7 +1772,7 @@ New test will be required only for the <mark style="background: #FFB8EBA6;">addi
 
 ### <mark style="background: #FFB8EBA6;">Test Cases for a Class:</mark>
 
-The test should drive a selection of objects from the class through its states and for each test, the following characteristics should be tested for
+The test should drive a selection of objects from the class through its states and for each test, the following characteristics should be tested for:
 - List of states for the class
 - List of messages / operations invoked
 - List of exceptions occurring
@@ -1850,7 +1834,7 @@ Collaboration or Interaction errors are targeted by exercising multiple subsyste
 
 <mark style="background: #FFB8EBA6;">Benefits:</mark> 
 - A unit test explicitly specifies conditions that the individual program parts must satisfy.  
-- This facilitates uncovering issues at an early stage and also ease in testing future modifications to ensure existing tests are still successful.  
+- This facilitates uncovering issues at an early stage and also ease in testing future modifications to ensure existing tests are still successful.
 
 <mark style="background: #FFB8EBA6;">Limitations:</mark> Testing cannot be expected to catch every error in the program
 
@@ -1866,7 +1850,9 @@ Collaboration or Interaction errors are targeted by exercising multiple subsyste
 
 ### <mark style="background: #FFB8EBA6;">Test Driven Development (TDD):</mark>
 
-Test Driven Development (TDD) is a design technique that drives the development process through testing. In essence you follow three simple steps repeatedly:  
+Test Driven Development (TDD) is a design technique that drives the development process through testing. 
+
+<mark style="background: #FFB8EBA6;">In essence you follow three simple steps repeatedly:</mark> 
 1. Write a test for the next bit of functionality you want to add.  
 2. Write the functional code until the test passes.  
 3. Refactor both new and old code to make it well structured.
@@ -1874,15 +1860,15 @@ Test Driven Development (TDD) is a design technique that drives the development 
 ![](https://i.imgur.com/Vr1jE0g.png)
 
 ### <mark style="background: #FFB8EBA6;">Why TDD:</mark>
-- Code Modularisation, Flexibility, Extensibility  
-- Clean code  
-- Leads to better design  
-- Better code documentation 
+- Code Modularisation, Flexibility, Extensibility
+- Clean code
+- Leads to better design
+- Better code documentation
 - Well tested codebase
 
 ### <mark style="background: #FFB8EBA6;">What to do:</mark>
 
-A design model will have defined our classes (attributes and <mark style="background: #FFB8EBA6;">operations</mark>).  
+A design model will have defined our classes (attributes and <mark style="background: #FFB8EBA6;">operations</mark>).
 
 Tools can generally automatically create the skeleton code from the class diagram (e.g MyClass.java) – where methods have return values, one line of code is inserted which returns a null.  
 
@@ -1894,17 +1880,17 @@ Take one test at a time and go back to our actual class and write just enough co
 
 ### <mark style="background: #FFB8EBA6;">Using Mock Objects in Testing:</mark>
 
-When writing Unit tests, there can be a number of collaborating objects that are required to be available in order to test a given class.  
+When writing Unit tests, there can be a number of collaborating objects that are required to be available in order to test a given class.
 - Objects can be passed as parameters to the method under test.  
 - The method under test may use objects which are attributes of its class.  
 
-The test class needs to create the necessary instances of these objects so that the method under test can be called in an appropriate context  
+The test class needs to create the necessary instances of these objects so that the method under test can be called in an appropriate context.
 
 This can be a challenging obstacle when testing non-trivial classes (object creation, attribute setting etc.).
 
-Remember – when we are writing unit tests, we are only interested in testing the unit and not any other units that it requires to perform its function.  
+Remember – when we are writing unit tests, we are only interested in testing the unit and not any other units that it requires to perform its function.
 
-What if we could ‘mock up’ any other objects that our object under test requires.  
+What if we could ‘mock up’ any other objects that our object under test requires.
 
 This would free us up from being dependent on those other objects.
 
@@ -1920,7 +1906,7 @@ This would free us up from being dependent on those other objects.
 
 <mark style="background: #FFB8EBA6;">TDD</mark> and <mark style="background: #FFB8EBA6;">Mock Objects</mark> can help in a number of ways when it comes to design and development.  
 
-Once the domain model has been defined and behavioural models developed:  
+<mark style="background: #FFB8EBA6;">Once the domain model has been defined and behavioural models developed:</mark>
 - A set of interfaces can be defined and created  
 - Different development teams can work on different aspects concurrently through the use of those interfaces  
 - Unit tests can be written independent of required objects  
@@ -1961,7 +1947,7 @@ How to deal with associations?
 
 How to map object inheritance to relational tables?  
 
-How to deal with the different design goals  
+<mark style="background: #FFB8EBA6;">How to deal with the different design goals:</mark> 
 - The relational model is designed for data storage and retrieval. Its focus is in terms of how to best manage data.  
 - The OO model is all about how to best model behaviour.  
 
@@ -1980,7 +1966,7 @@ Use the rich features of Object Technologies
 ### <mark style="background: #FFB8EBA6;">Database Connectivity:</mark>
 
 <mark style="background: #FFB8EBA6;">Open Database Connectivity</mark> (ODBC) - standard software API for using RDBMS.  
-- ODBC spec. offers a procedural API for using SQL queries to access data.  
+- ODBC spec offers a procedural API for using SQL queries to access data.  
 - Programmer can write applications without concern for the specifics of each RDBMS encountered.  
 
 <mark style="background: #FFB8EBA6;">Java Database Connectivity</mark> (JDBC)
@@ -2000,10 +1986,10 @@ E.g. Each JDBC library must have a class that implements the ``Statement`` inter
 ### <mark style="background: #FFB8EBA6;">JDBC Approaches:</mark>
 
 <mark style="background: #FFB8EBA6;">Write SQL conversion methods by hand:</mark>  
-- Tedious and requires lots of code  
-- Extremely error-prone  
-- Non-standard SQL ties the application to specific databases  
-- Vulnerable to changes in the object model  
+- Tedious and requires lots of code
+- Extremely error-prone
+- Non-standard SQL ties the application to specific databases
+- Vulnerable to changes in the object model
 - Difficult to represent associations between objects
 
 ![](https://i.imgur.com/bYb7ZHJ.png)
@@ -2058,7 +2044,7 @@ Provides an abstraction layer between the domain model and the database.
 - Easier to manage change in the object model  
 
 <mark style="background: #FFB8EBA6;">Performance:</mark>  
-- Lazy loading –associated/linked objects are fetched only when needed  
+- Lazy loading –associated/linked objects are fetched only when needed
 - Caching  
 
 <mark style="background: #FFB8EBA6;">Database vendor independence:</mark>  
@@ -2087,7 +2073,7 @@ An additional attribute is added to indicate the type of Department
 
 <mark style="background: #FFB8EBA6;">Disadvantages:</mark>  
 - Not all attributes are relevant resulting in many null or empty attributes  
-- The tables may not comply with normalization practices.
+- The tables may not comply with normalisation practices.
 
 ### <mark style="background: #FFB8EBA6;">Map Each Concrete Class to a Table:</mark>
 
@@ -2173,10 +2159,10 @@ Many to many implemented using a join or associative table
 ### <mark style="background: #FFB8EBA6;">Saving Objects and Relationships:</mark>
 
 <mark style="background: #FFB8EBA6;">Example:</mark>  
-- Create a SQL transaction to ensure referential integrity 
+- Create a SQL transaction to ensure referential integrity.
 - Add update/insert statements for each object to the transaction.  
-- Update/insert statement includes both the attributes and the key values.  
-- Submit and commit the transaction
+- Update/insert statement includes both the attributes and the key values.
+- Submit and commit the transaction.
 
 ### <mark style="background: #FFB8EBA6;">Some ORM Tool Vendors:</mark>
 
@@ -2193,7 +2179,7 @@ EclipseLink http://www.eclipse.org/eclipselink/
 ### <mark style="background: #FFB8EBA6;">Java Specifications</mark>  
 
 <mark style="background: #FFB8EBA6;">Java Data Object (JDO):</mark>  
-- One of the initial object mapping Java specifications  
+- One of the initial object mapping Java specifications
 - Flexible persistence options: RDBMS, OODBMS, files etc.  
 
 <mark style="background: #FFB8EBA6;">Java Persistence API (JPA):</mark>  
@@ -2204,23 +2190,23 @@ EclipseLink http://www.eclipse.org/eclipselink/
 ### <mark style="background: #FFB8EBA6;">ORM Tools Features:</mark>  
 
 <mark style="background: #FFB8EBA6;">Basic features:</mark>  
-- Be able to use inheritance, create hierarchies between entities  
-- Handle any type of relations (1-1, 1-n, n-n)  
-- Support for transactions  
+- Be able to use inheritance, create hierarchies between entities
+- Handle any type of relations (1-1, 1-n, n-n)
+- Support for transactions
 
 <mark style="background: #FFB8EBA6;">Support various databases:</mark>  
-- A big advantage of mapping tools is that they provide an abstraction of the underlying database engine.  
-- Most of them allow switching easily between RDBMSs  
+- A big advantage of mapping tools is that they provide an abstraction of the underlying database engine.
+- Most of them allow switching easily between RDBMSs
 
 <mark style="background: #FFB8EBA6;">Be able to map a single object to data coming from multiple tables </mark>
 - (joins, views).  
 - Most of the tools handle a direct mapping of a class to one table.  
 
-<mark style="background: #FFB8EBA6;">GUI to set up the mapping:</mark> Such a graphical tool presents the relational data model and lets you specify the objects to be created or at least the links between the objects and the tables.  
+<mark style="background: #FFB8EBA6;">GUI to set up the mapping:</mark> Such a graphical tool presents the relational data model and lets you specify the objects to be created or at least the links between the objects and the tables.
 
 <mark style="background: #FFB8EBA6;">Generation of the classes:</mark>
-- This can speed up the development  
-- In some cases the database is mapped to hand-coded classes which may be a preference  
+- This can speed up the development
+- In some cases the database is mapped to hand-coded classes which may be a preference
 
 <mark style="background: #FFB8EBA6;">Generation of the database schema:</mark>  
 - Some tools work only with a database they generated.  
@@ -2266,7 +2252,6 @@ Use a query (DELETE FROM Customer WHERE Balance < 0).
 ![](https://i.imgur.com/M3ozCFh.png)
 
 <mark style="background: #FFB8EBA6;">Object Links:</mark>
-
 ![](https://i.imgur.com/2lMHdAt.png)
 
 Consider an instance of the above class - it will contain two <mark style="background: #FFB8EBA6;">references</mark> to two Circle objects. This means that at runtime it will be <mark style="background: #FFB8EBA6;">linked</mark> to those objects.
@@ -2303,11 +2288,11 @@ public class SomeClient {
 
 ### <mark style="background: #FFB8EBA6;">Dependencies & Associations:</mark>
 
-An association or dependency between two classes can be thought of as a <mark style="background: #FFB8EBA6;">path of communication </mark>between instances (objects) of those classes.
+An association or dependency between two classes can be thought of as a <mark style="background: #FFB8EBA6;">path of communication</mark> between instances (objects) of those classes.
 
 ![](https://i.imgur.com/udi6Wtr.png)
 
-In the diagram above, objects of class A may talk to (i.e. send messages to) objects of class B and objects of class B may talk to objects of class A.  
+In the diagram above, objects of class A may talk to (i.e. send messages to) objects of class B and objects of class B may talk to objects of class A. 
 
 Likewise, objects of classes B and C may also communicate. As there is no direct line of communication between A and C, objects of these classes <mark style="background: #FFB8EBA6;">may not communicate directly</mark>. If they do communicate, then there is an inconsistency in the mode.
 
