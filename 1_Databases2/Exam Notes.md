@@ -1296,7 +1296,7 @@ Fred will put in his order and the stock-level for the bicycle locks will go dow
 
 Joe will try to order 7 locks and won’t be allowed.  
 
-OR  
+OR
 
 Joe will put in his order and stock-level for the locks will go down to 8.  
 
@@ -1491,7 +1491,7 @@ However, in complex applications, this is easier said than done, particularly if
 To be safe, you should adopt a strict locking order, but you must also <mark style="background: #69E772;">handle locking exceptions</mark>.  
 
 <mark style="background: #69E772;">To handle locking exceptions:</mark>  
-- Pause for three seconds, and then retry the statement.  
+- Pause for three seconds, and then retry the statement.
 - Or, roll back the transaction, wait 3 seconds and retry.
 
 # <mark style="background: #69E772;">04 Normalisation and Indexes:</mark>
@@ -1547,7 +1547,7 @@ Employees can work on multiple projects. The hourly rate for each employee posit
 <mark style="background: #69E772;">In a nutshell:</mark> you must have a valid primary key.  
 
 <mark style="background: #69E772;">Terminology:</mark>  
-- Candidate key: one or more field that can act as primary key  
+- <mark style="background: #69E772;">Candidate key:</mark> one or more fields that can act as primary key
 - "dependent" on primary key = A depends on B if I can compute the value of B if I know A.
 
 ### <mark style="background: #69E772;">Dependency Diagram:</mark>
@@ -1588,7 +1588,7 @@ ASSIGN (PROJ_NUM, EMP_NUM, HOURS)
 
 ### <mark style="background: #69E772;">3NF:</mark>
 
-Conversion to Third Normal Form: Create a separate table with attributes in a transitive functional dependence relationship.  
+Conversion to Third Normal Form: Create a separate table with attributes in a transitive functional dependence relationship. 
 
 ```
 PROJECT (PROJ_NUM, PROJ_NAME)  
@@ -1598,7 +1598,7 @@ JOB (JOB_CLASS, CHG_HOUR)
 ```
 
 <mark style="background: #69E772;">3NF Definition -  A table is in 3NF if:</mark>  
-- It is in 2NF and  
+- It is in 2NF and
 - It contains no transitive dependencies.
 
 ### <mark style="background: #69E772;">The Completed Database:</mark>
@@ -1951,11 +1951,11 @@ Each B-Tree is made up of at most P tree pointers and P-1 field values K and dat
 
 <mark style="background: #69E772;">4. Bitmap Index Scan / Bitmap Heap Scan / Recheck Cond:</mark> A plain Index Scan fetches one tuple-pointer at a time from the index, and immediately visits that tuple in the table. A bitmap scan fetches all the tuple-pointers from the index in one go, sorts them using an in-memory “bitmap” data structure, and then visits the table tuples in physical tuple-location order.
 
-Generally join operations process only two tables at a time. In case a query has more joins, they are executed sequentially: first two tables, then the intermediate result with the next table. In the context of joins, the term “table” could therefore also mean “intermediate result”.  
+Generally join operations process only two tables at a time. In case a query has more joins, they are executed sequentially: first two tables, then the intermediate result with the next table. In the context of joins, the term “table” could therefore also mean “intermediate result”.
 
 <mark style="background: #69E772;">1. Nested Loops:</mark> Joins two tables by fetching the result from one table and querying the other table for each row from the first.  
 
-<mark style="background: #69E772;">2. Hash Join / Hash:</mark> The hash join loads the candidate records from one side of the join into a hash table (marked with Hash in the plan) which is then probed for each record from the other side of the join. 
+<mark style="background: #69E772;">2. Hash Join / Hash:</mark> The hash join loads the candidate records from one side of the join into a hash table (marked with Hash in the plan) which is then probed for each record from the other side of the join.
 
 <mark style="background: #69E772;">3. Merge Join:</mark> The (sort) merge join combines two sorted lists like a zipper. Both sides of the join must be pre-sorted.
 
